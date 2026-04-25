@@ -34,7 +34,3 @@ Automatizzare la generazione e il mantenimento dei dati demo personalizzati per 
 ## 👤 Ruolo
 
 Ottimizzazione DB, sviluppo automazioni SQL, supporto al team commerciale.
-
----
-
-> ⚠️ *Codice sorgente non disponibile per motivi di riservatezza aziendale.*
