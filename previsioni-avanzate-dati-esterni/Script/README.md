@@ -1,96 +1,60 @@
-# 🔧 Guida Tecnica — Script
+# 🔧 Advanced Time-Series Forecasting: Custom TSMixer Implementation
 
-## Struttura
+## 📌 Project Overview
+Questo progetto documenta lo sviluppo di una pipeline avanzata per la previsione di serie storiche multivariate. L'obiettivo principale è l'integrazione di metriche di business core con covariate esogene (ambientali e macroeconomiche) per migliorare la precisione del forecast su orizzonti a medio termine.
 
-```
-Script/
-├── main.py              # Pipeline completa (unico entry point)
-├── syeewdataset.csv     # Dati di vendita (anonimizzati)
-├── weather.csv          # Dati meteo giornalieri (anonimizzati)
-└── economia.csv         # Indicatori macroeconomici mensili
-```
+Il cuore tecnologico risiede nell'implementazione personalizzata dell'architettura **TSMixer**, ottimizzata per catturare pattern non lineari e gestire la stagionalità complessa attraverso un approccio probabilistico.
 
-## Dataset
+---
 
-| File | Granularità | Contenuto |
-|------|-------------|-----------|
-| `syeewdataset.csv` | Giornaliera × punto vendita × categoria | Fatturato netto, quantità, dimensione, giorni lavorativi |
-| `weather.csv` | Giornaliera × località | Temperatura, umidità, precipitazioni |
-| `economia.csv` | Mensile | Indice di fiducia consumatori, indice dei prezzi |
+## 🏗️ Architettura Tecnica e Metodologia
 
-> ⚠️ I dati sono **anonimizzati**: ID clienti, CAP, coordinate e valori economici sono stati sostituiti o perturbati. La struttura e le relazioni tra i dati sono preservate.
+### 1. Custom TSMixer con Attivazione Mish
+La pipeline utilizza un'estensione del modello **TSMixer** (Time-Series Mixer). La modifica principale riguarda la sostituzione della funzione di attivazione standard (ReLU) con la **Mish Activation Function**:
 
-## Architettura della Pipeline
+f(x) = x * tanh(ln(1 + e^x))
 
-La pipeline è organizzata in 6 sezioni all'interno di `main.py`:
+**Vantaggi tecnici:**
+*   **Gradient Flow:** A differenza di ReLU, Mish è una funzione continua e liscia, il che facilita l'ottimizzazione durante la backpropagation.
+*   **Avoidance of Dying ReLU:** Previene la scomparsa del gradiente per valori negativi, permettendo una migliore capacità espressiva dei blocchi mixer.
 
-### 1. Custom TSMixer
+### 2. Integrazione Multi-Sorgente
+Il sistema è progettato per consolidare flussi di dati con diverse granularità e chiavi di aggregazione:
+*   **Dati Target:** Serie storiche ad alta frequenza (giornaliere) aggregate per categorie e cluster geografici.
+*   **Covariate Ambientali:** Integrazione di dati meteorologici (temperatura, precipitazioni) come variabili dinamiche passate per catturare l'influenza del contesto esterno.
+*   **Indicatori Macro:** Inserimento di indici economici a bassa frequenza (mensili), riproiettati sulla scala giornaliera per fungere da proxy dei trend di mercato.
 
-Estensione del modello `TSMixerModel` di Darts con **attivazione Mish** (al posto di ReLU). Mish fornisce un gradient flow più regolare e non presenta il problema del "dying neuron" tipico di ReLU.
+### 3. Feature Engineering & Preprocessing
+*   **Temporal Encoding:** Implementazione di feature cicliche (Seno/Coseno) per modellare la stagionalità settimanale e annuale, unite a positional encoding per mantenere il contesto sequenziale.
+*   **Static Covariates:** Gestione di metadati non temporali (es. tipologia di asset, coordinate geografiche) tramite embedding dedicati.
+*   **Robust Scaling:** Applicazione di trasformazioni differenziate per target e covariate, garantendo l'assenza di data leakage tra i set di training e validation.
 
-```
-TSMixerModel (Darts)
-  └── CustomTSMixerModel
-        └── _CustomTSMixerModule  ← sostituzione attivazione in tutti i blocchi
-```
+### 4. Strategia di Forecasting Probabilistico
+A differenza dei modelli deterministici, questa pipeline implementa la **Quantile Regression**. 
+Il modello non restituisce un singolo valore, ma una distribuzione di probabilità (quantili), permettendo di:
+*   Valutare l'incertezza della previsione.
+*   Supportare decisioni di business basate su scenari (ottimista, pessimista, neutro).
+*   Configurare l'output su orizzonti mobili (es. 32 giorni di look-ahead su 64 giorni di osservazione).
 
-### 2. Data Integration
+---
 
-Merge di tre fonti dati su chiavi temporali e geografiche:
-- **Vendite ↔ Meteo**: join su `(Date, Cap)` ↔ `(date, zip)`
-- **Risultato ↔ Economia**: join su `(year, month)` per aggiungere indicatori mensili
+## 🛠️ Stack Tecnologico
 
-### 3. TimeSeries & Preprocessing
+*   **Core Framework:** Darts (Time Series Manipulation & Modeling)
+*   **Deep Learning:** PyTorch & PyTorch Lightning
+*   **Optimization:** Optuna (Hyperparameter Tuning via NSGA-III)
+*   **Data Science:** Pandas, NumPy, Scikit-Learn
 
-- **Serie target**: `[Netto, Qta, Dim, Lav]` — raggruppate per `(idMatrice, idCat)` con covariate statiche `(TipoAttivita, Cap, TipoCalc)`
-- **Covariate passate**: `[temp, precipitation, fiducia]` + festività italiane (auto-generate)
-- **Scaling**: `Scaler` su target e covariate dinamiche, `StaticCovariatesTransformer` sulle statiche
+---
 
-### 4. Configurazione Modello
+## 📈 Ottimizzazione degli Iperparametri
+Il tuning del modello è affidato a un framework di ottimizzazione bayesiana multi-obiettivo. Lo spazio di ricerca comprende:
+*   **Architettura:** Numero di blocchi mixer e dimensione dei layer nascosti.
+*   **Regolarizzazione:** Dropout dinamico per prevenire l'overfitting su dataset rumorosi.
+*   **Training:** Ottimizzazione del batch size e della patience per l'Early Stopping.
 
-Parametri principali configurati in `DEFAULT_CONFIG`:
+L'algoritmo **NSGA-III** è stato selezionato per bilanciare simultaneamente la minimizzazione del RMSE (accuratezza globale) e del MAE (robustezza agli outlier).
 
-| Parametro | Valore | Descrizione |
-|-----------|--------|-------------|
-| `input_chunk_length` | 64 | Finestra di osservazione (giorni) |
-| `output_chunk_length` | 32 | Orizzonte di previsione (giorni) |
-| `hidden_size` | 32 | Dimensione layer nascosti |
-| `num_blocks` | 4 | Blocchi mixer |
-| `dropout` | 0.075 | Regolarizzazione |
-| `likelihood` | Quantile Regression | Output probabilistico |
+---
 
-Encoding temporale: ciclico + datetime attributes + posizionale per catturare stagionalità a diverse scale.
-
-### 5. Training & Prediction
-
-- **Training**: split 60/40, EarlyStopping su `train_loss` (patience=20), accelerazione CUDA
-- **Prediction**: previsioni per gruppo con MC Dropout (150 campioni) → output quantilico aggregato per mese
-
-### 6. Hyperparameter Optimization
-
-Tuning multi-obiettivo con **Optuna** (sampler NSGA-III):
-- Obiettivi: minimizzare RMSE e MAE simultaneamente
-- Spazio di ricerca: `hidden_size`, `batch_size`, `num_blocks`, `dropout`, `ff_size`
-
-## Requisiti
-
-```
-darts
-torch
-pytorch-lightning
-scikit-learn
-pandas
-numpy
-optuna          # opzionale, solo per hyperparameter tuning
-```
-
-> Richiede una GPU CUDA per il training. Per eseguire su CPU, modificare `accelerator` in `_get_trainer_kwargs()`.
-
-## Esecuzione
-
-```bash
-cd Script/
-python main.py
-```
-
-Il main esegue: caricamento dati → creazione TimeSeries → training. Le sezioni di previsione e ottimizzazione sono commentate nel blocco `__main__` e attivabili al bisogno.
+> **Nota Professionale**: Questa documentazione descrive l'architettura logica e tecnica del sistema. Per motivi di riservatezza, il codice sorgente originale e i dataset proprietari non sono inclusi in questa esposizione.

@@ -10,24 +10,23 @@ Il sistema interroga semanticamente un corpus di documenti contrattuali indicizz
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│                      CLI (argparse)                      │
-│            crea_scheda_rag.py — entry point              │
+│                   Entry Point Principale                 │
 └──────────────┬───────────────────────────────────────────┘
                │
                ▼
 ┌──────────────────────────────────────────────────────────┐
-│               SchedaGenerator (orchestratore)            │
+│                    Orchestrator                          │
 │  ┌──────────────┐┌────────────────┐┌─────────────────┐   │
-│  │ ConfigLoader ││SectionProcessor││CitationFormatter│   │
+│  │Config Handler││Section Handler ││Citation Handler │   │
 │  └─────┬────────┘└───────┬────────┘└──────────┬──────┘   │
 │        │                 │                    │          │
 │        ▼                 ▼                    ▼          │
-│  sezioni.json    RAGEngine.query()    [N] → (Doc, pag.)  │
+│  Configuration  RAG Engine Query   [N] → (Source, pos.)  │
 └──────────────────────────┬───────────────────────────────┘
                            │
                            ▼
                ┌───────────────────┐
-               │     MongoDB       │
+               │   Vector Store    │
                │ (document chunks  │
                │  + embeddings)    │
                └───────────────────┘
@@ -45,12 +44,12 @@ Il sistema interroga semanticamente un corpus di documenti contrattuali indicizz
 
 | Componente | Tecnologia |
 |------------|-----------|
-| Linguaggio | Python 3.11+ (async), Node.js |
-| LLM | Azure OpenAI — GPT-4 |
+| Linguaggio | Python 3.11+ (async) |
+| LLM | Cloud-based LLM API |
 | Vector Store | Vector database |
-| Conversione PDF | Puppeteer (headless Chrome) via Docker |
-| Configurazione | JSON (sezioni), variabili d'ambiente (credenziali) |
-| CLI | Framework command-line con exit code strutturati |
+| Conversione PDF | Rendering engine headless |
+| Configurazione | File di configurazione strutturato, variabili d'ambiente (credenziali) |
+| CLI | Interface command-line con exit code strutturati |
 
 ---
 
@@ -58,36 +57,36 @@ Il sistema interroga semanticamente un corpus di documenti contrattuali indicizz
 
 Il sistema è organizzato attorno a componenti ben definiti:
 
-**Orchestratore**
+**Orchestrator**
 - Inizializzazione del RAG engine (lazy loading)
 - Validazione dell'ente e delle sezioni
 - Iterazione sul set di sezioni
 - Assemblaggio e salvataggio del documento finale
 - Gestione di backup e protezione da sovrascritture
 
-**Processore di Sezione**
+**Section Handler**
 - Invio della query RAG per ciascuna sezione
 - Estrazione delle citazioni dalla risposta
 - Formattazione dell'output secondo il tipo della sezione
 - Determinazione dello stato di completamento
 
-**Formattatore Citazioni**
-- Risoluzione dei marker di citazione inline
+**Citation Handler**
+- Risoluzione dei marker di citazione
 - Formattazione dei range di pagine
 - Aggregazione dei riferimenti per documento
 - Generazione della tabella di appendice
 
-**Config Manager**
+**Configuration Manager**
 - Caricamento e validazione della configurazione
 - Normalizzazione dei nomi enti per il filesystem
 - Gestione della coerenza schema
 
-**Modelli di Dominio**
+**Domain Models**
 - Strutture tipizzate per citazioni e sezioni
 - Documento scheda con metodi di serializzazione
 - Risultati batch
 
-**Gerarchia Eccezioni**
+**Error Handling Hierarchy**
 - Eccezioni specializzate per dominio
 - Attributi contestuali strutturati
 
@@ -131,12 +130,12 @@ La conversione PDF opzionale (via Docker + Puppeteer) applica uno stile professi
 
 ## Conversione PDF
 
-La conversione opzionale verso formato PDF avviene in un container Docker:
+La conversione opzionale verso formato PDF avviene mediante un rendering engine dedicato:
 
 - Scansione della directory di output per documenti generati
-- Conversione in HTML tramite motore di markdown
-- Rendering in PDF A4 con motore headless browser
-- CSS personalizzato per formatting professionale
+- Conversione in formato intermedio tramite motore di rendering
+- Rendering in PDF A4 con formatting strutturato
+- Stile personalizzato per professionalità visiva
 - Idempotente: salta file già elaborati
 
 ---
@@ -145,36 +144,15 @@ La conversione opzionale verso formato PDF avviene in un container Docker:
 
 Il sistema è configurabile tramite:
 
-**Configurazione Sezioni**
+**Section Definitions**
 - Definizione delle sezioni tematiche
-- Prompt RAG specifico per l'estrazione di ciascuna sezione
+- Query template specifico per l'estrazione di ciascuna sezione
 - Formato di output (tabella / lista / discorsivo)
-- Colonne e campi richiesti (per la validazione)
+- Campi richiesti (per la validazione)
 - Metadati e versionamento
 
-**Validazione della Configurazione**
-- Coerenza dello schema: numero di sezioni, nessun duplicato di codice/ordine
-- Lunghezza minima dei prompt
-- Coerenza formato-colonne
+**Configuration Validation**
+- Coerenza dello schema
+- Integrità dei template di estrazione
+- Coerenza formato-campi
 - Versionamento semantico
-
----
-
-## Struttura del progetto
-
-```
-Generatore Schede/
-├── config/
-│   └── Configurazione sezioni (prompt, formato, validazione)
-├── core/
-│   ├── Orchestratore principale
-│   ├── Processore di sezione via RAG
-│   ├── Formattatore di citazioni
-│   ├── Config manager
-│   ├── Modelli di dominio
-│   └── Gerarchia eccezioni
-├── output/
-│   ├── Schede generate
-│   └── PDF convertiti (opzionale)
-└── requirements
-```
