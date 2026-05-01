@@ -1,0 +1,59 @@
+# ----------------------------------------
+#       Cartelle/file da escludere
+# ----------------------------------------
+
+# valorizzazione-impianti-pubblicitari
+valorizzazione-impianti-pubblicitari/Documentenzione/
+valorizzazione-impianti-pubblicitari/Output_interpretazione/
+valorizzazione-impianti-pubblicitari/Scripts/__init__.py
+valorizzazione-impianti-pubblicitari/Scripts/__main__.py
+valorizzazione-impianti-pubblicitari/Scripts/pipeline.py
+valorizzazione-impianti-pubblicitari/Scripts/calibration.json
+valorizzazione-impianti-pubblicitari/Scripts/config/
+valorizzazione-impianti-pubblicitari/Scripts/data/
+valorizzazione-impianti-pubblicitari/Scripts/features/
+valorizzazione-impianti-pubblicitari/Scripts/interpretation/
+valorizzazione-impianti-pubblicitari/Scripts/models/
+valorizzazione-impianti-pubblicitari/Scripts/scoring/
+valorizzazione-impianti-pubblicitari/Scripts/tracking/
+valorizzazione-impianti-pubblicitari/Scripts/validation/
+
+# automazione-documentale
+automazione-documentale/Script_nomina/genera_nomina.py
+automazione-documentale/Script_nomina/indicizza_schede.py
+automazione-documentale/Script_nomina/config/
+automazione-documentale/Script_nomina/data/
+automazione-documentale/Script_nomina/nomina_core/
+automazione-documentale/Script_nomina/output/
+automazione-documentale/Script_nomina/rag_utils/
+automazione-documentale/Script_nomina/Schede_commessa/
+
+automazione-documentale/Script_scheda/crea_scheda_rag.py
+automazione-documentale/Script_scheda/DOCKER_crea_scheda.py
+automazione-documentale/Script_scheda/DOCKER_md_to_pdf.js
+automazione-documentale/Script_scheda/config/
+automazione-documentale/Script_scheda/output_test/
+automazione-documentale/Script_scheda/requirements_scheda_generator.txt
+automazione-documentale/Script_scheda/scheda_core/
+
+# automazione-demo-commerciali
+automazione-demo-commerciali/Script/Store_procedures_DEMO.sql
+
+# ricerca-intelligente-documenti
+ricerca-intelligente-documenti/Scripts/1_Scansione_documenti/
+ricerca-intelligente-documenti/Scripts/5_Rag/
+ricerca-intelligente-documenti/Scripts/6_creazione_scheda/
+ricerca-intelligente-documenti/Scripts/DOCUMENTAZIONE_SISTEMA.md
+
+# previsioni-avanzate-dati-esterni
+previsioni-avanzate-dati-esterni/Script/main.py
+previsioni-avanzate-dati-esterni/Script/economia.csv
+previsioni-avanzate-dati-esterni/Script/syeewdataset.csv
+previsioni-avanzate-dati-esterni/Script/weather.csv
+
+
+
+
+
+
+# 
