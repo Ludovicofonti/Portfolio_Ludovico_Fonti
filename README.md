@@ -55,6 +55,12 @@ Data Scientist con background economico-statistico, specializzato nel ciclo end-
 | [Previsioni Avanzate con Dati Esterni](./previsioni-avanzate-dati-esterni) | Previsioni · ML | Scikit-Learn, API, Time Series |
 | [Automazione Demo Commerciali](./automazione-demo-commerciali) | Automazione · SQL | SQL Server, Stored Procedures |
 
+### 💻 Progetti Personali
+
+| Progetto | Ambito | Tech |
+|----------|--------|------|
+| [Conversione PDF a Markdown con AI](./conversione-pdf-markdown-ai-coding) | AI Generativa · Coding Agent | Python, LLM, FastAPI, React |
+
 ### 🎓 Progetti Universitari
 
 | Progetto | Cliente/Contesto | Tech |
