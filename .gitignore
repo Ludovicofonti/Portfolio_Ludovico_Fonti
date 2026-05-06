@@ -51,9 +51,19 @@ previsioni-avanzate-dati-esterni/Script/economia.csv
 previsioni-avanzate-dati-esterni/Script/syeewdataset.csv
 previsioni-avanzate-dati-esterni/Script/weather.csv
 
+#crypto-analysis
+crypto-analysis/
 
+#conversione-pdf-markdown-ai-coding
+conversione-pdf-markdown-ai-coding/specs/
 
-
-
+# ----------------------------------------
+#       Python cache
+# ----------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
 
 # 
