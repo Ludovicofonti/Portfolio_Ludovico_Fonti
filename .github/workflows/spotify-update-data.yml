@@ -8,6 +8,9 @@ on:
 permissions:
   contents: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   update-data:
     runs-on: ubuntu-latest
@@ -25,6 +28,14 @@ jobs:
 
       - name: Install public pipeline dependencies
         run: pip install -r spotify-analytics/scripts/requirements-public.txt
+
+      - name: Validate Spotify secrets
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        run: |
+          test -n "$SPOTIFY_CLIENT_ID" || (echo "SPOTIFY_CLIENT_ID repository secret is missing." && exit 1)
+          test -n "$SPOTIFY_CLIENT_SECRET" || (echo "SPOTIFY_CLIENT_SECRET repository secret is missing." && exit 1)
 
       - name: Refresh public Spotify snapshot
         env:
