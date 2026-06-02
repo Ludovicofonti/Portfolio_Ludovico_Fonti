@@ -345,7 +345,9 @@ workflow schedulato
   -> GitHub Pages
 ```
 
-Evidence legge la source CSV `spotify_public`, quindi il sito statico non dipende dal PostgreSQL locale. Il workflow `spotify-update-data.yml` aggiorna giornalmente i dati, mentre `spotify-deploy-evidence.yml` pubblica il report tramite GitHub Pages.
+Evidence legge la source CSV `spotify_public`, quindi il sito statico non dipende dal PostgreSQL locale. Il workflow `spotify-update-data.yml` aggiorna giornalmente i dati, esegue build Evidence e pubblica il report tramite GitHub Pages nello stesso run.
+
+Il workflow separato `spotify-deploy-evidence.yml` resta utile quando cambiano solo pagine, configurazione o dipendenze Evidence. Questa separazione evita di dipendere da un secondo workflow avviato dal commit del bot, perche GitHub Actions non rilancia automaticamente altri workflow quando il push e fatto con `GITHUB_TOKEN`.
 
 ## Fonti
 

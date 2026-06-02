@@ -2,6 +2,14 @@
 
 Evidence dashboard for the Spotify Italy pipeline.
 
+Public GitHub Pages URL:
+
+```text
+https://ludovicofonti.github.io/Portfolio_Ludovico_Fonti/
+```
+
+The dashboard reads committed CSV marts from `sources/spotify_public/`. PostgreSQL remains the local warehouse for the dlt and dbt pipeline, but it is not required to serve the public static site.
+
 ## Local Docker Run
 
 From `spotify-analytics/`:
@@ -34,4 +42,8 @@ npm run sources
 npm run dev
 ```
 
-The dashboard reads the committed CSV snapshot in `sources/spotify_public/`. PostgreSQL remains the local warehouse for the dlt and dbt pipeline.
+## GitHub Pages
+
+The workflow `.github/workflows/spotify-update-data.yml` refreshes the public CSV snapshot, builds Evidence, uploads the Pages artifact, and deploys the dashboard in one run.
+
+The separate `.github/workflows/spotify-deploy-evidence.yml` workflow remains useful when only the Evidence app or page layout changes.

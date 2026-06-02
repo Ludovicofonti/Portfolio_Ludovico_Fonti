@@ -491,7 +491,9 @@ Responsabilita:
 - esegue uno script Python leggero;
 - salva snapshot raw in `data/raw/`;
 - aggiorna i CSV Evidence in `evidence/sources/spotify_public/`;
-- committa i dataset aggiornati.
+- committa i dataset aggiornati;
+- builda Evidence;
+- pubblica il sito su GitHub Pages nello stesso run.
 
 Workflow deploy:
 
@@ -502,7 +504,7 @@ Workflow deploy:
 Responsabilita:
 
 - builda Evidence;
-- pubblica il sito su GitHub Pages.
+- pubblica il sito su GitHub Pages quando cambiano codice, pagine o configurazione Evidence.
 
 Secret da configurare su GitHub:
 
@@ -549,12 +551,16 @@ Queste limitazioni non indeboliscono il progetto: lo rendono piu realistico. Un 
 - [x] Creazione dashboard Evidence
 - [x] Creazione script GitHub Actions per refresh gratuito
 - [x] Configurazione deploy Evidence su GitHub Pages
+- [x] Configurazione secret GitHub `SPOTIFY_CLIENT_ID` e `SPOTIFY_CLIENT_SECRET`
+- [x] Abilitazione GitHub Pages con sorgente GitHub Actions
+- [x] Esecuzione workflow completo refresh + deploy
+- [x] Pubblicazione dashboard su `https://ludovicofonti.github.io/Portfolio_Ludovico_Fonti/`
 
 ### Prossimi Step
 
-- [ ] Configurare i secret GitHub `SPOTIFY_CLIENT_ID` e `SPOTIFY_CLIENT_SECRET`
-- [ ] Abilitare GitHub Pages con sorgente GitHub Actions
-- [ ] Eseguire manualmente i workflow e verificare il sito pubblico
+- [ ] Conservare piu snapshot giornalieri per analisi storiche
+- [ ] Aggiungere trend temporali reali nel report Evidence
+- [ ] Integrare alert o summary automatici sui cambiamenti piu rilevanti
 
 ---
 
