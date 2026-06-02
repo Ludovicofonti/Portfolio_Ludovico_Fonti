@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -50,3 +52,38 @@ jobs:
           git add spotify-analytics/data/raw spotify-analytics/evidence/sources/spotify_public
           git diff --cached --quiet || git commit -m "chore(spotify): refresh public chart data"
           git push
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: spotify-analytics/evidence/package-lock.json
+
+      - name: Install Evidence dependencies
+        working-directory: spotify-analytics/evidence
+        run: npm ci --no-audit --no-fund
+
+      - name: Build Evidence sources
+        working-directory: spotify-analytics/evidence
+        run: npm run sources
+
+      - name: Configure GitHub Pages base path
+        working-directory: spotify-analytics/evidence
+        run: |
+          sed -i "s|basePath:.*|basePath: /${GITHUB_REPOSITORY#*/}|" evidence.config.yaml
+
+      - name: Build Evidence static site
+        working-directory: spotify-analytics/evidence
+        run: npm run build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: spotify-analytics/evidence/build
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
