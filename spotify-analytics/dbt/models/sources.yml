@@ -1,0 +1,68 @@
+version: 2
+
+sources:
+  - name: spotify_raw
+    description: Raw tables loaded by dlt from Kworb and Spotify Web API.
+    schema: spotify_raw
+    tables:
+      - name: italy_daily_chart
+        description: Daily Spotify Italy Top 200 chart from Kworb.
+        columns:
+          - name: _dlt_id
+            tests:
+              - not_null
+              - unique
+          - name: chart_date
+            tests:
+              - not_null
+          - name: rank
+            tests:
+              - not_null
+          - name: track_id
+            tests:
+              - not_null
+          - name: streams
+            tests:
+              - not_null
+
+      - name: italy_daily_track_details
+        description: Track metadata enriched via Spotify Search API.
+        columns:
+          - name: _dlt_id
+            tests:
+              - not_null
+              - unique
+          - name: id
+            tests:
+              - not_null
+          - name: chart_track_id
+            tests:
+              - not_null
+          - name: chart_rank
+            tests:
+              - not_null
+
+      - name: italy_daily_track_details__artists
+        description: Normalized Spotify artists for each enriched track.
+        columns:
+          - name: _dlt_id
+            tests:
+              - not_null
+              - unique
+          - name: _dlt_parent_id
+            tests:
+              - not_null
+          - name: id
+            tests:
+              - not_null
+
+      - name: italy_daily_track_details__album__images
+        description: Normalized album artwork images for enriched tracks.
+        columns:
+          - name: _dlt_id
+            tests:
+              - not_null
+              - unique
+          - name: _dlt_parent_id
+            tests:
+              - not_null

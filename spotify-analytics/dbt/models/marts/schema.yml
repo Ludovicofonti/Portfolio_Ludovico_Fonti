@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: mart_top_songs_italy
+    description: One row per charted song enriched with Spotify metadata and portfolio-ready metrics.
+    columns:
+      - name: chart_date
+        tests:
+          - not_null
+      - name: chart_rank
+        tests:
+          - not_null
+      - name: track_name
+        tests:
+          - not_null
+      - name: streams
+        tests:
+          - not_null
+
+  - name: mart_top_artists_italy
+    description: Artist-level aggregation of daily Top 200 streams.
+    columns:
+      - name: chart_date
+        tests:
+          - not_null
+      - name: artist_name
+        tests:
+          - not_null
+      - name: streams
+        tests:
+          - not_null
+
+  - name: mart_album_release_analysis
+    description: Album and release-level chart performance.
+    columns:
+      - name: chart_date
+        tests:
+          - not_null
+      - name: spotify_album_id
+        tests:
+          - not_null
+
+  - name: mart_chart_momentum
+    description: Song-level rank and stream movement for trend views.
+    columns:
+      - name: chart_date
+        tests:
+          - not_null
+      - name: chart_rank
+        tests:
+          - not_null

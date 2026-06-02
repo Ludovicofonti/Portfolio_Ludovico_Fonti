@@ -1,0 +1,30 @@
+{
+  "name": "spotify-analytics-evidence",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "evidence dev --host 0.0.0.0",
+    "build": "evidence build",
+    "build:strict": "evidence build:strict",
+    "sources": "evidence sources",
+    "sources:strict": "evidence sources --strict",
+    "preview": "evidence preview --host 0.0.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=7.0.0"
+  },
+  "dependencies": {
+    "@evidence-dev/core-components": "^5.4.2",
+    "@evidence-dev/csv": "^1.0.16",
+    "@evidence-dev/evidence": "^40.1.8",
+    "typescript": "5.4.2"
+  },
+  "overrides": {
+    "axios": "^1.7.4",
+    "jsonwebtoken": "9.0.0",
+    "sqlite3": "5.1.5",
+    "trim@<0.0.3": ">0.0.3"
+  }
+}

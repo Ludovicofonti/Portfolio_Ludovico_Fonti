@@ -1,0 +1,2 @@
+CREATE DATABASE spotify_db;
+GRANT ALL PRIVILEGES ON DATABASE spotify_db TO airflow;

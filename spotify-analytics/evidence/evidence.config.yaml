@@ -1,0 +1,49 @@
+appearance:
+  default: light
+  switcher: true
+deployment:
+  basePath: /Portfolio
+theme:
+  colorPalettes:
+    default:
+      light:
+        - "#1db954"
+        - "#191414"
+        - "#f59e0b"
+        - "#0ea5e9"
+        - "#ef4444"
+        - "#64748b"
+      dark:
+        - "#1db954"
+        - "#f8fafc"
+        - "#f59e0b"
+        - "#38bdf8"
+        - "#f87171"
+        - "#94a3b8"
+  colors:
+    primary:
+      light: "#1db954"
+      dark: "#1ed760"
+    accent:
+      light: "#191414"
+      dark: "#f8fafc"
+    base:
+      light: "#ffffff"
+      dark: "#0f1115"
+    info:
+      light: "#0ea5e9"
+      dark: "#38bdf8"
+    positive:
+      light: "#16a34a"
+      dark: "#4ade80"
+    warning:
+      light: "#d97706"
+      dark: "#fbbf24"
+    negative:
+      light: "#dc2626"
+      dark: "#f87171"
+plugins:
+  components:
+    "@evidence-dev/core-components": {}
+  datasources:
+    "@evidence-dev/csv": {}
