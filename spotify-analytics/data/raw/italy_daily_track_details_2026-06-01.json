@@ -5875,25 +5875,25 @@
         }
       ],
       "external_urls": {
-        "spotify": "https://open.spotify.com/album/18Fki3SqVPkAlPosQoQe5L"
+        "spotify": "https://open.spotify.com/album/0sWJ3v0FROzcNzyjNYUs6t"
       },
-      "href": "https://api.spotify.com/v1/albums/18Fki3SqVPkAlPosQoQe5L",
-      "id": "18Fki3SqVPkAlPosQoQe5L",
+      "href": "https://api.spotify.com/v1/albums/0sWJ3v0FROzcNzyjNYUs6t",
+      "id": "0sWJ3v0FROzcNzyjNYUs6t",
       "images": [
         {
           "height": 640,
           "width": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b27353596a050e8369c51da11029"
+          "url": "https://i.scdn.co/image/ab67616d0000b2736abd0fcf50a20ac09a028c92"
         },
         {
           "height": 300,
           "width": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e0253596a050e8369c51da11029"
+          "url": "https://i.scdn.co/image/ab67616d00001e026abd0fcf50a20ac09a028c92"
         },
         {
           "height": 64,
           "width": 64,
-          "url": "https://i.scdn.co/image/ab67616d0000485153596a050e8369c51da11029"
+          "url": "https://i.scdn.co/image/ab67616d000048516abd0fcf50a20ac09a028c92"
         }
       ],
       "is_playable": true,
@@ -5902,7 +5902,7 @@
       "release_date_precision": "day",
       "total_tracks": 12,
       "type": "album",
-      "uri": "spotify:album:18Fki3SqVPkAlPosQoQe5L"
+      "uri": "spotify:album:0sWJ3v0FROzcNzyjNYUs6t"
     },
     "artists": [
       {
@@ -5933,16 +5933,16 @@
       "isrc": "USLD91766968"
     },
     "external_urls": {
-      "spotify": "https://open.spotify.com/track/2dd3G3ZqEcG2cNS1tp3oEk"
+      "spotify": "https://open.spotify.com/track/4DnrAI8WyUY6gkOwl8GlPN"
     },
-    "href": "https://api.spotify.com/v1/tracks/2dd3G3ZqEcG2cNS1tp3oEk",
-    "id": "2dd3G3ZqEcG2cNS1tp3oEk",
+    "href": "https://api.spotify.com/v1/tracks/4DnrAI8WyUY6gkOwl8GlPN",
+    "id": "4DnrAI8WyUY6gkOwl8GlPN",
     "is_local": false,
     "is_playable": true,
     "name": "capaz (merengueton)",
     "track_number": 9,
     "type": "track",
-    "uri": "spotify:track:2dd3G3ZqEcG2cNS1tp3oEk"
+    "uri": "spotify:track:4DnrAI8WyUY6gkOwl8GlPN"
   },
   "4vbxC18tQdekz9pOEvly2X": {
     "album": {
