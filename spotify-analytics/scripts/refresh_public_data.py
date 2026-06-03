@@ -8,6 +8,7 @@ from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
 
+import requests
 from dotenv import load_dotenv
 
 
@@ -62,12 +63,22 @@ def enrich_chart(chart_rows, token):
     track_details = {}
     for row in chart_rows:
         artists = row["artist_names"]
-        track = search_track_details(
-            token,
-            row["track_name"],
-            artists[0] if artists else "",
-            market=row["country"],
-        )
+        try:
+            track = search_track_details(
+                token,
+                row["track_name"],
+                artists[0] if artists else "",
+                market=row["country"],
+            )
+        except requests.HTTPError as exc:
+            response = exc.response
+            if response is not None and response.status_code == 429:
+                print(
+                    f"Spotify rate limit reached while enriching rank {row['rank']} "
+                    f"({row['track_name']}). Continuing with available metadata."
+                )
+                break
+            raise
         if track:
             track_details[row["track_id"]] = track
         time.sleep(0.25)
@@ -81,6 +92,14 @@ def load_raw_track_details(chart_date):
 
     with raw_details_path.open("r", encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def load_cached_track_details():
+    cached_details = {}
+    for raw_details_path in sorted(RAW_DIR.glob("italy_daily_track_details_*.json")):
+        with raw_details_path.open("r", encoding="utf-8") as handle:
+            cached_details.update(json.load(handle))
+    return cached_details or None
 
 
 def build_top_songs(chart_rows, track_details):
@@ -303,6 +322,9 @@ def main():
 
     chart_date = chart_rows[0]["chart_date"]
     track_details = load_raw_track_details(chart_date)
+    if track_details is None:
+        track_details = load_cached_track_details()
+
     if track_details is None:
         token = get_access_token(client_id, client_secret)
         track_details = enrich_chart(chart_rows, token)
