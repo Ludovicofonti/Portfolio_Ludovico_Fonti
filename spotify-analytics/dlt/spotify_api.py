@@ -1,4 +1,5 @@
 import re
+import time
 
 import requests
 from bs4 import BeautifulSoup
@@ -7,6 +8,8 @@ from bs4 import BeautifulSoup
 SPOTIFY_TOKEN_URL = "https://accounts.spotify.com/api/token"
 SPOTIFY_API_BASE_URL = "https://api.spotify.com/v1"
 KWORB_ITALY_DAILY_URL = "https://kworb.net/spotify/country/it_daily.html"
+SPOTIFY_MAX_RETRIES = 6
+SPOTIFY_RETRY_BACKOFF_SECONDS = 5
 
 
 def raise_for_spotify_error(response):
@@ -17,6 +20,29 @@ def raise_for_spotify_error(response):
         f"{response.status_code} error from Spotify: {response.text}",
         response=response,
     )
+
+
+def get_spotify_with_retry(url, token, params=None, max_retries=SPOTIFY_MAX_RETRIES):
+    for attempt in range(max_retries):
+        response = requests.get(
+            url,
+            headers={"Authorization": f"Bearer {token}"},
+            params=params,
+            timeout=30,
+        )
+        if response.status_code != 429:
+            raise_for_spotify_error(response)
+            return response
+
+        retry_after = response.headers.get("Retry-After")
+        if retry_after and retry_after.isdigit():
+            sleep_seconds = int(retry_after)
+        else:
+            sleep_seconds = SPOTIFY_RETRY_BACKOFF_SECONDS * (attempt + 1)
+
+        time.sleep(min(sleep_seconds, 90))
+
+    raise_for_spotify_error(response)
 
 
 def get_access_token(client_id, client_secret):
@@ -101,17 +127,15 @@ def fetch_italy_daily_chart():
 
 
 def search_track_details(token, track_name, artist_name, market="IT"):
-    response = requests.get(
+    response = get_spotify_with_retry(
         f"{SPOTIFY_API_BASE_URL}/search",
-        headers={"Authorization": f"Bearer {token}"},
+        token,
         params={
             "q": f"track:{track_name} artist:{artist_name}",
             "type": "track",
             "market": market,
             "limit": 1,
         },
-        timeout=30,
     )
-    raise_for_spotify_error(response)
     items = response.json()["tracks"]["items"]
     return items[0] if items else None

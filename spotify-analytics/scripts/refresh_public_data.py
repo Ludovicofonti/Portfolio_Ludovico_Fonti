@@ -3,6 +3,7 @@ import csv
 import json
 import os
 import sys
+import time
 from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
@@ -69,7 +70,17 @@ def enrich_chart(chart_rows, token):
         )
         if track:
             track_details[row["track_id"]] = track
+        time.sleep(0.25)
     return track_details
+
+
+def load_raw_track_details(chart_date):
+    raw_details_path = RAW_DIR / f"italy_daily_track_details_{chart_date}.json"
+    if not raw_details_path.exists():
+        return None
+
+    with raw_details_path.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
 
 
 def build_top_songs(chart_rows, track_details):
@@ -290,23 +301,36 @@ def main():
     if args.limit:
         chart_rows = chart_rows[: args.limit]
 
-    token = get_access_token(client_id, client_secret)
-    track_details = enrich_chart(chart_rows, token)
+    chart_date = chart_rows[0]["chart_date"]
+    track_details = load_raw_track_details(chart_date)
+    if track_details is None:
+        token = get_access_token(client_id, client_secret)
+        track_details = enrich_chart(chart_rows, token)
+    else:
+        expected_track_ids = {row["track_id"] for row in chart_rows}
+        missing_track_ids = expected_track_ids.difference(track_details)
+        if missing_track_ids:
+            token = get_access_token(client_id, client_secret)
+            missing_rows = [row for row in chart_rows if row["track_id"] in missing_track_ids]
+            track_details.update(enrich_chart(missing_rows, token))
+
     songs = build_top_songs(chart_rows, track_details)
     artists = build_top_artists(songs, track_details)
     albums = build_album_release_analysis(songs)
     momentum = build_chart_momentum(songs)
 
-    write_raw_snapshot(chart_rows, track_details)
-    write_csv(PUBLIC_SOURCE_DIR / "mart_top_songs_italy.csv", songs)
-    write_csv(PUBLIC_SOURCE_DIR / "mart_top_artists_italy.csv", artists)
-    write_csv(PUBLIC_SOURCE_DIR / "mart_album_release_analysis.csv", albums)
-    write_csv(PUBLIC_SOURCE_DIR / "mart_chart_momentum.csv", momentum)
+    if not args.limit:
+        write_raw_snapshot(chart_rows, track_details)
+        write_csv(PUBLIC_SOURCE_DIR / "mart_top_songs_italy.csv", songs)
+        write_csv(PUBLIC_SOURCE_DIR / "mart_top_artists_italy.csv", artists)
+        write_csv(PUBLIC_SOURCE_DIR / "mart_album_release_analysis.csv", albums)
+        write_csv(PUBLIC_SOURCE_DIR / "mart_chart_momentum.csv", momentum)
 
     print(
         json.dumps(
             {
                 "chart_date": songs[0]["chart_date"],
+                "dry_run": bool(args.limit),
                 "songs": len(songs),
                 "matched_tracks": len(track_details),
                 "artists": len(artists),
