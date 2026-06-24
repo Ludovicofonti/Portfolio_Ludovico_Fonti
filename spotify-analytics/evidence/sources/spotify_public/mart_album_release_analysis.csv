@@ -1,148 +1,149 @@
 chart_track_count,streams,has_explicit_track,chart_date,country,spotify_album_id,album_name,album_type,album_image_url,album_release_date,release_year,best_rank,average_days_since_release
-10,966789,True,2026-06-21,IT,2gqFeF2xx9zMEwUWRc5UK4,Vangelo,album,https://i.scdn.co/image/ab67616d0000b273106c24b2e7323189f68e8a4c,2026-04-10,2026,6,72.0
-10,929722,True,2026-06-21,IT,58OUscdI2nOUKFpoPlp2eb,TUTTO È POSSIBILE,album,https://i.scdn.co/image/ab67616d0000b2738f6566879ccbdbc90b4fc974,2026-01-16,2026,3,156.0
-6,529700,True,2026-06-21,IT,5K79FLRUCSysQnVESLcTdb,DeBÍ TiRAR MáS FOToS,album,https://i.scdn.co/image/ab67616d0000b273bbd45c8d36e0e045ef640411,2025-01-05,2025,24,532.0
-6,360992,False,2026-06-21,IT,7Hww6TqaOQMRjWJSNqVyyY,IL GIORNO CHE ASPETTAVO,album,https://i.scdn.co/image/ab67616d0000b273ec2b58c5dbabf8745c701799,2026-06-19,2026,56,2.0
-4,321997,False,2026-06-21,IT,3tiuh424B3Leg8bxHc1Jv5,Comuni Mortali,album,https://i.scdn.co/image/ab67616d0000b273264663d274f67b13c4ae531e,2025-04-18,2025,33,429.0
-3,304272,True,2026-06-21,IT,2NBjD7HfilmlALNet5aPFH,LA BELLAVITA,album,https://i.scdn.co/image/ab67616d0000b2739e03e651e481bb0b5fb14b7a,2025-03-28,2025,15,450.0
-1,291549,False,2026-06-21,IT,2DbfTApmD8EQye9mNgVpcK,OSSESSIONE,single,https://i.scdn.co/image/ab67616d0000b2734305c86a243ca7e7db9d710c,2026-02-25,2026,1,116.0
-4,288166,False,2026-06-21,IT,4QpLnSupGsuYYJYYoj29Q7,TUTTA VITA,album,https://i.scdn.co/image/ab67616d0000b2739a9754efa9799615cf6045e9,2024-10-25,2024,55,604.0
-1,267843,True,2026-06-21,IT,2UXBH30efrkteg2hSfUB10,SWAG MUSIC,single,https://i.scdn.co/image/ab67616d0000b273367221e0ff226ec629714cc6,2026-05-15,2026,2,37.0
-1,257421,False,2026-06-21,IT,7GQvp2mrr9bRxhPV18oBok,LA TESTA GIRA,single,https://i.scdn.co/image/ab67616d0000b27303fcfef7dec7395e7f34a83b,2026-03-27,2026,4,86.0
-4,256049,False,2026-06-21,IT,08SB1CgIS0yVIH7ZV99I6f,TUTTA VITA (SEMPRE),album,https://i.scdn.co/image/ab67616d0000b2736752cb3279906514dd04c8aa,2025-09-26,2025,52,268.0
-1,244523,False,2026-06-21,IT,2puopS5aH6YlpFJYqx6jGK,AL MIO PAESE,single,https://i.scdn.co/image/ab67616d0000b2737743f0476cc177c770396986,2026-04-03,2026,5,79.0
-2,203296,False,2026-06-21,IT,7o2Ac7nDPNLO0tOsdZ73JD,SOLITO CINEMA,album,https://i.scdn.co/image/ab67616d0000b27311db5c0adf8b90e0c5138336,2026-04-24,2026,31,58.0
-3,197859,True,2026-06-21,IT,71agI93AilqukvHURp6tGy,SANTANA MONEY GANG,album,https://i.scdn.co/image/ab67616d0000b273d6cdd0e09df54245b00fa9c6,2025-04-10,2025,66,437.0
-3,196552,True,2026-06-21,IT,3ixf929ty0cKT46gJ0sJ9Y,PER SOLDI E PER AMORE,album,https://i.scdn.co/image/ab67616d0000b273c1fc667f2f142100a44348e8,2025-09-18,2025,50,276.0
-1,196165,True,2026-06-21,IT,3TV20ouePm2YUPAMSj4C0n,AYAYAY,single,https://i.scdn.co/image/ab67616d0000b27353942b2114b943472cc99c83,2026-06-05,2026,7,16.0
-1,187810,False,2026-06-21,IT,1XjzMjgg0ktZSGrUv3j1bs,Da Dio,single,https://i.scdn.co/image/ab67616d0000b2733ad214f34f047352b54a2ebd,2026-05-15,2026,8,37.0
-2,187600,False,2026-06-21,IT,2ANVost0y2y52ema1E9xAZ,Thriller,album,https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5,1982-11-30,1982,39,15909.0
-1,182901,True,2026-06-21,IT,6R0HGRmgF4A0wMrwkTh6yr,Splinter Cell,single,https://i.scdn.co/image/ab67616d0000b273e9c1ffd4d58b8b5be2e2d602,2026-05-22,2026,9,30.0
-1,169384,True,2026-06-21,IT,1MdbSkPqc1AeqWJQBk3Weq,WHITE GIRL WASTED,single,https://i.scdn.co/image/ab67616d0000b27302175b6fb6e333973c7af750,2026-06-18,2026,11,3.0
-1,160270,False,2026-06-21,IT,10y0yFd5imPOaVmDIQ2lP1,ROMANTICA,single,https://i.scdn.co/image/ab67616d0000b273bf9b4c37370c80131a4a6809,2026-05-22,2026,12,30.0
-1,159595,False,2026-06-21,IT,6fsms67vLncXwehxDegR5I,Sorry Scusa Lo Siento,single,https://i.scdn.co/image/ab67616d0000b273d91aefd33813beab9a9f23ff,2026-05-15,2026,13,37.0
-2,158177,False,2026-06-21,IT,0Put06lJPKgGFHmMntdV7f,AMATORE,album,https://i.scdn.co/image/ab67616d0000b273ec6dd44403255d31f03eb164,2026-05-21,2026,37,31.0
-3,147922,True,2026-06-21,IT,1bdXMUERNI9dwREDryk6C7,DIO LO SA,album,https://i.scdn.co/image/ab67616d0000b273b68cc2f7d1956d743a7ee322,2024-06-07,2024,140,744.0
-2,147625,True,2026-06-21,IT,3vAjsYdC3b1kYWqmZaM4sd,È O G.,album,https://i.scdn.co/image/ab67616d0000b27307bdc873725e7084d79d693f,2026-06-04,2026,57,17.0
-1,145156,False,2026-06-21,IT,7vTk9JCF1hzUNCjUA5vgkI,Maladie,single,https://i.scdn.co/image/ab67616d0000b2730bec8cf6742b5d00f101b0e8,2026-03-20,2026,16,93.0
-1,137305,False,2026-06-21,IT,374Z5kI6lNCztQV7HItzUJ,Talk To You (ft. 54 Ultra),single,https://i.scdn.co/image/ab67616d0000b273b42ed7f52290f1583760a7e2,2026-03-06,2026,17,107.0
-1,133131,True,2026-06-21,IT,2CCna0QTtaOVDjFvobTZeO,AUTORITÀ,single,https://i.scdn.co/image/ab67616d0000b2737d5cf75f7c49628406fe56fc,2026-06-04,2026,18,17.0
-2,128279,False,2026-06-21,IT,5IMzuX8ITydV8NBq10xG2T,È sempre bello,album,https://i.scdn.co/image/ab67616d0000b2735ae8c639d8e9c6c2a02989a2,2019-03-29,2019,73,2641.0
-1,125521,True,2026-06-21,IT,4Xdo78uvvt1P7rWRX8TOPt,La Plena (W Sound 05),single,https://i.scdn.co/image/ab67616d0000b273c0353d023daf5ebda0eb003b,2025-02-19,2025,19,487.0
-1,123463,False,2026-06-21,IT,3IZTQfXDz7gAJtqB6UDKt9,Cuore rotto,single,https://i.scdn.co/image/ab67616d0000b27358005fdf22ddffcd402f207d,2026-06-05,2026,20,16.0
-1,123167,False,2026-06-21,IT,5cxMa6oLINJzmZ8lF7wWQN,Believe,album,https://i.scdn.co/image/ab67616d0000b273f1d02a6cec967f8b6b78f76e,2012-01-01,2012,21,5285.0
-1,121934,False,2026-06-21,IT,164ST8Sbg81Pr7rJZ1iKBN,Canto d’amore (con Marco Mengoni),single,https://i.scdn.co/image/ab67616d0000b273d5c202928352e775059dedbb,2026-06-12,2026,22,9.0
-1,121123,True,2026-06-21,IT,5fTgdXawyLC7oZEry7jGEk,Famoso,album,https://i.scdn.co/image/ab67616d0000b273affffa7ab8803fca453be456,2021-02-12,2021,23,1955.0
-1,118462,False,2026-06-21,IT,06ge45XUS63W0ENu9QjjQN,Buon Vento,single,https://i.scdn.co/image/ab67616d0000b2737265c7cbbc7f89bba30614ff,2026-05-21,2026,25,31.0
-1,117395,False,2026-06-21,IT,2MAslE3CpEJAIvLG8EW1Gh,Questa domenica,single,https://i.scdn.co/image/ab67616d0000b273b2543a4312d07cffe4205d98,2025-08-29,2025,27,296.0
-1,116611,True,2026-06-21,IT,4Kb07sqP1OQ9xkfazOi7C3,ACQUARIO,single,https://i.scdn.co/image/ab67616d0000b273644652160595bfc09c495c22,2026-01-09,2026,28,163.0
-1,112936,False,2026-06-21,IT,7aeDTh7h77f5hsLz6f7DrP,Bandito,single,https://i.scdn.co/image/ab67616d0000b273b1b466b83a568261768acaa3,2026-06-19,2026,30,2.0
-1,111791,False,2026-06-21,IT,3ROTuddVE79FtfYVw5BfzG,ALASKA BABY,album,https://i.scdn.co/image/ab67616d0000b2738105d9afaf9247e8345e0ed6,2024-11-28,2024,32,570.0
-1,108935,False,2026-06-21,IT,02UzV7oxqKA0Kkp3n205KB,DISINCANTO,album,https://i.scdn.co/image/ab67616d0000b2732e29d8e9ccb757f686385250,2026-04-16,2026,35,66.0
-1,108597,True,2026-06-21,IT,3RQQmkQEvNCY4prGKE6oc5,Un Verano Sin Ti,album,https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72,2022-05-06,2022,36,1507.0
-2,107987,True,2026-06-21,IT,0zjgFMnfRoOd0meFbxIogc,Il mio lato peggiore,album,https://i.scdn.co/image/ab67616d0000b273c62c7920980cba87cda1867f,2025-05-16,2025,103,401.0
-1,105744,False,2026-06-21,IT,5ZX3Zdp20YCGI4ruAfZlMj,Jamaican (Bam Bam),single,https://i.scdn.co/image/ab67616d0000b273450a730dd72f3bf49882ae9d,2025-11-07,2025,38,226.0
-1,105074,False,2026-06-21,IT,6jZqXuGjnCopndMocQFEcm,Cabana,single,https://i.scdn.co/image/ab67616d0000b27357a423d58da2d9d974de3df6,2026-05-15,2026,40,37.0
-2,104955,True,2026-06-21,IT,5QGyZ7xyZX8vrwI4DB6pvV,Anche gli Eroi Muoiono,album,https://i.scdn.co/image/ab67616d0000b27361d90e6750f76fe0ad95befe,2026-01-30,2026,124,142.0
-1,102961,False,2026-06-21,IT,2op7wmZ9fVyLGLhjGmrLMG,Stupida sfortuna,single,https://i.scdn.co/image/ab67616d0000b2736ee6ea583faf9653c920b030,2026-02-25,2026,41,116.0
-1,100952,False,2026-06-21,IT,6QXhh6j3OifW2hTvVWXbVW,I romantici,single,https://i.scdn.co/image/ab67616d0000b273f36d9162096b9c61c3fd388b,2026-02-25,2026,43,116.0
-2,97778,True,2026-06-21,IT,79HurwZ9TQ8y5jrWlUDrIE,Hello World,album,https://i.scdn.co/image/ab67616d0000b27335f945f4057381447c5bb654,2024-12-06,2024,150,562.0
-1,97065,False,2026-06-21,IT,0fRRdNGgVZ1tiPjfDPlD8k,TU MI PIACI TANTO,single,https://i.scdn.co/image/ab67616d0000b273e1eafe16a2cb5d4e306f1918,2026-02-25,2026,44,116.0
-1,96223,True,2026-06-21,IT,582gc2Nyig9saw8gHx9sUw,Via dei Mille,single,https://i.scdn.co/image/ab67616d0000b273fba738f77d26eebb07d07e0d,2026-03-13,2026,45,100.0
-1,95429,False,2026-06-21,IT,1CSskxZMvTHis0a3YwBOHR,Schiena,album,https://i.scdn.co/image/ab67616d0000b273dcceee76ed8d7d01d0b0d109,2013-01-01,2013,46,4919.0
-1,93637,False,2026-06-21,IT,7Cdqksm4yTfiq0EfKPa86M,Self Aware,single,https://i.scdn.co/image/ab67616d0000b273d6c26d2ae723f7ab553d64cc,2026-02-15,2026,47,126.0
-1,92749,False,2026-06-21,IT,0WijS8Oq1zVzbVCepggKgV,LA GRACIOSA,single,https://i.scdn.co/image/ab67616d0000b273762bb4d1f3481df994ce5f40,2026-04-23,2026,49,59.0
-1,91396,False,2026-06-21,IT,0vrr3P8BXPhM3eXtsBptuq,Labirinto,single,https://i.scdn.co/image/ab67616d0000b273797d3bac974be0c1292bed48,2026-02-25,2026,51,116.0
-1,89835,False,2026-06-21,IT,2eeufspLkAubwTJfOGSrI8,Dai Dai,single,https://i.scdn.co/image/ab67616d0000b27303cadf1b3fe324c1dc710ed4,2026-05-14,2026,54,38.0
-1,83974,False,2026-06-21,IT,18YymC6IWBNcNo46Qe8r50,"PARTENOPE (feat. Serena Brancale, The Kolors)",single,https://i.scdn.co/image/ab67616d0000b27381e9c6bfc08d4a1e56a38400,2026-06-05,2026,61,16.0
-1,82753,False,2026-06-21,IT,17jBG75ANeNCWTNsi4QSwn,BUONA DOMENICA,single,https://i.scdn.co/image/ab67616d0000b273482ba9d105682caa91f0ddc8,2026-04-02,2026,63,80.0
-1,78077,False,2026-06-21,IT,05jbNkYoEQdjVDHEHtg1gY,"Don't Forget About Me, Demos",album,https://i.scdn.co/image/ab67616d0000b2737b1b6f41c1645af9757d5616,2018-10-16,2018,67,2805.0
-1,76882,True,2026-06-21,IT,4Are0mNScwygiibFFK39db,BIG 5,single,https://i.scdn.co/image/ab67616d0000b273ae327bdcc50cf2b33e8e254f,2025-07-18,2025,69,338.0
-1,76721,False,2026-06-21,IT,3s3ThjVMEWRqXV8b4H6sy4,Faccio un casino,album,https://i.scdn.co/image/ab67616d0000b273061bf53ff7abeb2e89429bdf,2017-05-05,2017,70,3334.0
-1,73619,False,2026-06-21,IT,0Kh1PxZEW7VJa84HBdjnNa,Canzone Estiva,single,https://i.scdn.co/image/ab67616d0000b273f9a91a2ef78e9d2c60611d32,2026-03-13,2026,72,100.0
-1,71494,False,2026-06-21,IT,3sysiYphqNRQw7VKLCg1yE,Love?,album,https://i.scdn.co/image/ab67616d0000b273d7b2aa3834b82b1cbe899a48,2011-04-29,2011,74,5532.0
-1,70550,True,2026-06-21,IT,4BmvCSV4ZqsnyAcQQQnv0S,Hustle Mixtape Vol. 2,album,https://i.scdn.co/image/ab67616d0000b27361e1eb765192dae01672b56a,2025-10-31,2025,75,233.0
-1,69965,False,2026-06-21,IT,5CZNj3Q2W3mOnK4n71zq9C,MA IO SONO FUOCO,album,https://i.scdn.co/image/ab67616d0000b273f34a244e1db435c40720d9d2,2025-10-10,2025,77,254.0
-1,68725,False,2026-06-21,IT,5ylbxH7EqpsmHZCRuiYewS,Si Antes Te Hubiera Conocido,single,https://i.scdn.co/image/ab67616d0000b273491678beaffcefac517a699e,2024-06-21,2024,78,730.0
-1,67813,False,2026-06-21,IT,5PdqPLG4hUzuLAWUDFaZap,"Gira, il mondo gira",album,https://i.scdn.co/image/ab67616d0000b2734743343cec324c534a99ca39,2023-02-10,2023,79,1227.0
-1,67541,False,2026-06-21,IT,2g1UKV8THjSEhJjmCqOoWd,Nord Sud Ovest Est,album,https://i.scdn.co/image/ab67616d0000b273243b73f0b9fd2500f491f5bf,1993-01-01,1993,80,12224.0
-1,67529,False,2026-06-21,IT,4t5euIQosseN76E6f3b8NF,Halo,single,https://i.scdn.co/image/ab67616d0000b2735dd97ee52973b7230b4b7a95,2025-06-13,2025,81,373.0
-1,67162,True,2026-06-21,IT,5w4WlFG5HhXOichH3hwKPH,EL MOCO VERDE,single,https://i.scdn.co/image/ab67616d0000b2735c72961c9ad2bfe912fb56c3,2026-06-12,2026,82,9.0
-1,66280,False,2026-06-21,IT,0sWJ3v0FROzcNzyjNYUs6t,LA CIUDAD,album,https://i.scdn.co/image/ab67616d0000b2736abd0fcf50a20ac09a028c92,2024-12-24,2024,83,544.0
-1,66231,True,2026-06-21,IT,3AtmmwCyWNlimeMrEC8rq7,M'AMA NON M'AMA,single,https://i.scdn.co/image/ab67616d0000b27350586a7401ee494fc8f47a08,2026-06-18,2026,84,3.0
-1,65707,False,2026-06-21,IT,53b1lFTsC7lV3pieOFYZ9i,Edge of Desire,single,https://i.scdn.co/image/ab67616d0000b2736d69d34ade62de08bff530ca,2025-07-18,2025,85,338.0
-1,65607,False,2026-06-21,IT,4JDXBZdRPId4devseaAOKH,DECIDE,album,https://i.scdn.co/image/ab67616d0000b273fddfffec51b4580acae727c1,2022-09-16,2022,86,1374.0
-1,65373,False,2026-06-21,IT,1MMVWEgrIylF7v0er9IjWm,Poesie Clandestine,single,https://i.scdn.co/image/ab67616d0000b273c3528a1f7556e36edb0b0cf8,2026-02-25,2026,88,116.0
-1,64014,False,2026-06-21,IT,5spP5OwikL076tVBuw7gb8,Magnetic / Addicted To Your Love,single,https://i.scdn.co/image/ab67616d0000b273158cbe80b9b9573b46d2b50f,2026-02-27,2026,90,114.0
-1,63891,False,2026-06-21,IT,3OpmNTT7hIZMoO9NNcKnmz,La Teoria Dei Colori,album,https://i.scdn.co/image/ab67616d0000b27322ae5b5ba67f6f218b5f3e34,2012-01-01,2012,91,5285.0
-1,63813,True,2026-06-21,IT,3ATVZVuF9q5phfA8Fwl96O,MUCHACHA,single,https://i.scdn.co/image/ab67616d0000b273bf3151af9c5e4d7c1de59ae9,2026-02-05,2026,92,136.0
-1,63577,False,2026-06-21,IT,1afcyvrWTSivDef7JDO0ot,Introvabile,single,https://i.scdn.co/image/ab67616d0000b273beb9c31e5cbe50c5f7d9371d,2026-01-23,2026,93,149.0
-1,63391,False,2026-06-21,IT,4UMjBXcRqIgMZ1XumU2x5T,Dizzy up the Girl,album,https://i.scdn.co/image/ab67616d0000b273eda9478c39a21e1cdc6609ca,1998-01-01,1998,94,10398.0
-1,62918,False,2026-06-21,IT,3pHFjWCK7d5YLtEuFwfR5N,54+1,album,https://i.scdn.co/image/ab67616d0000b273d8243a13e6f41310a5fa7b96,2019-03-22,2019,95,2648.0
-1,62700,False,2026-06-21,IT,3WZZF72ihlKPZBS4zSsNHl,you seem pretty sad for a girl so in love,album,https://i.scdn.co/image/ab67616d0000b2735cf234eeb7a2edf44bf64a46,2026-06-12,2026,96,9.0
-1,62510,False,2026-06-21,IT,1sIUqfQsBmRIlSmhDnkB0u,Che fastidio!,single,https://i.scdn.co/image/ab67616d0000b27357fc29e972e43683bc409cd1,2026-02-25,2026,97,116.0
-1,62027,False,2026-06-21,IT,32HEGXJyQkqHh888V70rdu,Per sempre sì,single,https://i.scdn.co/image/ab67616d0000b2739fee241bfd5d68e758b4e4e5,2026-02-25,2026,101,116.0
-1,60733,False,2026-06-21,IT,59i1dzyF8wpUTk3KJ5zNXq,"Status (Inediti, Rarità & Live)",album,https://i.scdn.co/image/ab67616d0000b273bfff1cc3a4f34f0b59445642,2016-01-22,2016,105,3803.0
-1,59684,False,2026-06-21,IT,64mzxfRIXYCm6NVj0NTefe,Kriminal (Prod. by Roberto Ferrante),single,https://i.scdn.co/image/ab67616d0000b273b5664fc4700d1a24595116d0,2025-07-18,2025,106,338.0
-1,59523,True,2026-06-21,IT,3mFxzu5rkiqHh8P6xqJc7B,WAR,album,https://i.scdn.co/image/ab67616d0000b2730a9af73ab167cd5aac3c1709,2026-06-12,2026,108,9.0
-1,59450,False,2026-06-21,IT,1tcX4ysSZEeMMshVVbkkDa,Possibili Scenari,album,https://i.scdn.co/image/ab67616d0000b27312d5ab24a8b636d56d3e39e9,2017-11-24,2017,109,3131.0
-1,59400,False,2026-06-21,IT,6tOe4eAF8xNhEkl9WyvsE4,(What's The Story) Morning Glory? (Deluxe Remastered Edition),album,https://i.scdn.co/image/ab67616d0000b2737a4c8c59851c88f6794c3cbf,1995-01-01,1995,111,11494.0
-1,58970,False,2026-06-21,IT,4M05X6484OBedfXnueiugs,ITALIA STARTER PACK,single,https://i.scdn.co/image/ab67616d0000b273e0ed7743fb9034a663e195cd,2026-02-25,2026,113,116.0
-1,58897,True,2026-06-21,IT,5r8qz3XZd9YULzc47y8Nd5,Arricchiti (feat. Guè),single,https://i.scdn.co/image/ab67616d0000b2733229760f6f277909f88d0710,2026-06-11,2026,114,10.0
-1,57971,False,2026-06-21,IT,6zm0N3GCyTiHOD7V5i8TZQ,DIO LO SA - ATTO II,album,https://i.scdn.co/image/ab67616d0000b273e76cba16da2dd7b52ed3577d,2024-11-22,2024,117,576.0
-1,57808,True,2026-06-21,IT,6LmhYmD5q0vflzqQhkfeN1,Hustle Mixtape,album,https://i.scdn.co/image/ab67616d0000b273b7f751e1f4c492ab41c9d9d3,2022-06-03,2022,118,1479.0
-1,57708,True,2026-06-21,IT,4KakTQXezMez5owYFuGAF2,VERA BADDIE,album,https://i.scdn.co/image/ab67616d0000b273fb7329a6fb6154b1fa3704c7,2024-06-27,2024,119,724.0
-1,57670,False,2026-06-21,IT,3jCG9BHzeIC5m4ifWQozsS,Bossa Nostra,single,https://i.scdn.co/image/ab67616d0000b273418d5ec9d002ad8ff54cc6ce,2026-05-01,2026,120,51.0
-1,57641,False,2026-06-21,IT,7DCQMEasHZn2y5VHAmSlBF,Tu Me Quieres,single,https://i.scdn.co/image/ab67616d0000b273425ff4d7d6105cc5be872dca,2024-09-13,2024,121,646.0
-1,56382,False,2026-06-21,IT,5W9OT0a5iZlBr83a9WMKFY,Synchronicity (Remastered 2003),album,https://i.scdn.co/image/ab67616d0000b273c8e97cafeb2acb85b21a777e,1983-06-17,1983,123,15710.0
-1,56213,False,2026-06-21,IT,1n1JDgaChYT1nDCvbQAOGn,Le più belle canzoni di Loretta Goggi,album,https://i.scdn.co/image/ab67616d0000b27357ed9ab403ec31e3e8554776,2005-05-27,2005,125,7695.0
-1,55836,True,2026-06-21,IT,2U9mwmcJrUmkIpJm9gq8n7,RYAN TED,album,https://i.scdn.co/image/ab67616d0000b273112a9d73a9662074bb98a086,2026-05-22,2026,126,30.0
-1,55432,False,2026-06-21,IT,2fip0ycNIWi34aIEaderBP,Comuni Immortali,album,https://i.scdn.co/image/ab67616d0000b273d486121d31133e11814c4e29,2026-04-17,2026,128,65.0
-1,55073,True,2026-06-21,IT,14aEL5lLrcr9ohOnpdIeVi,DÉSOLÉE,single,https://i.scdn.co/image/ab67616d0000b273d1d098940f465aa6cbcabf42,2025-06-12,2025,129,374.0
-1,54952,False,2026-06-21,IT,4k06f6YoESEJSz52yesIOX,Mediterraneo,album,https://i.scdn.co/image/ab67616d0000b2739791f57ba5b3843bda70c0fd,2025-06-06,2025,131,380.0
-1,54929,False,2026-06-21,IT,1eoYupgvxWRBT6nHnAHjEQ,Emigrante Del Mundo (Remastered),album,https://i.scdn.co/image/ab67616d0000b273dd6b19d30e8b2531c625fbc4,2011-12-19,2011,132,5298.0
-1,54603,False,2026-06-21,IT,75fqs09f3rJCfAUdf9Vl3I,Non so chi ha creato il mondo ma so che era innamorato (Deluxe),album,https://i.scdn.co/image/ab67616d0000b2737665d2abd6083ca6663b135a,2025-05-30,2025,133,387.0
-1,54494,False,2026-06-21,IT,2biVG6BYnVVSwLYd1OjbPT,Dream Your Life Away (Deluxe Edition),album,https://i.scdn.co/image/ab67616d0000b27305d081cbdc2f67d37a364d63,2014-08-05,2014,135,4338.0
-1,54470,False,2026-06-21,IT,14JkAa6IiFaOh5s0nMyMU9,KPop Demon Hunters (Soundtrack from the Netflix Film),album,https://i.scdn.co/image/ab67616d0000b2734dcb6c5df15cf74596ab25a4,2025-06-20,2025,136,366.0
-1,54353,False,2026-06-21,IT,2UsIHnX2RaOOQVkpspAYDj,Completamente Sold Out,album,https://i.scdn.co/image/ab67616d0000b273ebcc0e1956fb93e0d3e13c24,2016-10-21,2016,137,3530.0
-1,53256,False,2026-06-21,IT,0uo2O3BcYrZJzCnHk0I0BU,Free Your Mind,single,https://i.scdn.co/image/ab67616d0000b27338974737cba5770d9dba1cd6,2026-03-27,2026,138,86.0
-1,52487,False,2026-06-21,IT,3m8nR8iBBvwln3ziNW2QZ1,Buon compleanno Elvis [Remastered Version],album,https://i.scdn.co/image/ab67616d0000b2736d6b8a01a80f084d6e35ccbb,1995-01-01,1995,143,11494.0
-1,52138,False,2026-06-21,IT,01sqwTOTrN9gaYQc1rr6Zw,WHERE IS MY HUSBAND!,single,https://i.scdn.co/image/ab67616d0000b2736ac3c7938191585c53c8180d,2025-09-19,2025,144,275.0
-1,51912,False,2026-06-21,IT,4L3EeygK6Qm1blF5q4PQyX,Plume,album,https://i.scdn.co/image/ab67616d0000b273a6f221182f3372804a24a901,2018-06-01,2018,146,2942.0
-1,51753,True,2026-06-21,IT,0Rqdxqcqq0wKQISWQwGLT1,SEXY RAVE (feat. Baby Gang),single,https://i.scdn.co/image/ab67616d0000b273d690b3baacf4199f53fb4f95,2025-04-11,2025,147,436.0
-1,51742,False,2026-06-21,IT,78tnU3OxzvnGue3gOIPTlZ,Nessun Pericolo...Per Te (Remastered 2017),album,https://i.scdn.co/image/ab67616d0000b273121902de4bc28e87685506ec,1996-10-28,1996,148,10828.0
-1,51716,False,2026-06-21,IT,0Ua2qdU4Z3xzdmcXFkDCgF,SANTISSIMO,album,https://i.scdn.co/image/ab67616d0000b273a5c0891335314e40e309ae91,2026-05-08,2026,149,44.0
-1,51250,False,2026-06-21,IT,0idasMxjLcTfRitXmkvJ93,CALCINACCI,album,https://i.scdn.co/image/ab67616d0000b273ff26d9e6888e0a1ab315aa6a,2026-03-13,2026,151,100.0
-1,51055,False,2026-06-21,IT,6v8Dh5jr3ykfLoBPvZKrmj,QUESTA INSENSATA VOGLIA DI TE,single,https://i.scdn.co/image/ab67616d0000b27366f37f0953e6f6821a9f78ff,2026-04-29,2026,152,53.0
-1,51028,True,2026-06-21,IT,5tSQtQGkrCJx3hoQxmLgfM,Gata Only,single,https://i.scdn.co/image/ab67616d0000b273c4583f3ad76630879a75450a,2024-02-02,2024,153,870.0
-1,50879,False,2026-06-21,IT,4PNqWiJAfjj32hVvlchV5u,"Quevedo: Bzrp Music Sessions, Vol. 52/66",single,https://i.scdn.co/image/ab67616d0000b273946f1ea32cc7681e7a86e9ca,2022-07-06,2022,155,1446.0
-1,50762,False,2026-06-21,IT,5k3P92L8FfhP1n8ye6FotE,20 (Deluxe Edition),album,https://i.scdn.co/image/ab67616d0000b273b2396df413b2694c4a93d81a,2018-11-30,2018,158,2760.0
-1,50269,False,2026-06-21,IT,77QYi88mcI4qXClwTAwxjg,Good Vibes,album,https://i.scdn.co/image/ab67616d0000b273b4fc74c424cbd48f54b7eaee,2019-10-18,2019,159,2438.0
-1,50077,False,2026-06-21,IT,4LPEPv5dG2Cu5aceakd1cm,M' Manc (con Geolier & Sfera Ebbasta),single,https://i.scdn.co/image/ab67616d0000b273521496cca18501a2ffeebfa9,2020-06-11,2020,160,2201.0
-1,49738,True,2026-06-21,IT,1vU1ePx8IOwsYRo5nh63nn,VETRI NERI,single,https://i.scdn.co/image/ab67616d0000b27389d383468d78b997ca457ab7,2023-05-19,2023,162,1129.0
-1,49511,True,2026-06-21,IT,3qeuGcOLjfDGmMYIYJI4OU,PECCATO PER I TESTI (Acoustic Version),single,https://i.scdn.co/image/ab67616d0000b27314f560a2fd915fb25a44667e,2025-12-04,2025,164,199.0
-1,49435,True,2026-06-21,IT,17R63Sb8OrPikc2R4mlpdC,GIRLS,single,https://i.scdn.co/image/ab67616d0000b273c8af7237bb25ad59488944c1,2024-06-28,2024,165,723.0
-1,49398,False,2026-06-21,IT,3EREGNLTHWi1SZCoDKT4Pd,This Is Elodie,album,https://i.scdn.co/image/ab67616d0000b273bad09f776b795f1adeac2744,2020-05-12,2020,166,2231.0
-1,49393,False,2026-06-21,IT,0zMH1I8EZPPGYAzxZ9H0gU,1969 - Achille Idol Rebirth,album,https://i.scdn.co/image/ab67616d0000b273bf803cb00dd8eadd0a98b28f,2020-09-25,2020,167,2095.0
-1,49255,True,2026-06-21,IT,1g9x6zzynCJggRwNaeAExc,Scendo E Cerco Un’Altra,single,https://i.scdn.co/image/ab67616d0000b27372392744c47a65a3b1467be5,2026-04-24,2026,168,58.0
-1,49204,True,2026-06-21,IT,4oJZFEKPVLVViFlG5VnAhN,KING OF DARK,album,https://i.scdn.co/image/ab67616d0000b273bc46258c61df24809b76d98f,2026-02-13,2026,169,128.0
-1,48825,False,2026-06-21,IT,5QWHes9ODwn42DHTifGkXd,The Heist,album,https://i.scdn.co/image/ab67616d0000b2732a6b364528b128a4a17d100d,2012-10-09,2012,170,5003.0
-1,48610,True,2026-06-21,IT,3LXvt5r3boBy4sQQpxmsi9,Gemelli,album,https://i.scdn.co/image/ab67616d0000b273820c0ed614ed30340ba38f28,2020-06-18,2020,172,2194.0
-1,48503,False,2026-06-21,IT,1Ntc1XTLjhjPSHStfXhu1U,VACCI PIANO (feat. Rkomi),single,https://i.scdn.co/image/ab67616d0000b273559780cc510a9e2906a7e80d,2026-03-12,2026,174,101.0
-1,48292,True,2026-06-21,IT,1QqHc2RPq59exIRKRolI1O,LOCURA,album,https://i.scdn.co/image/ab67616d0000b27390d7f08f5345410e0efff330,2024-11-26,2024,176,572.0
-1,48159,False,2026-06-21,IT,2HXRjHb2nbLJa5r70FBtdT,Visualízate,album,https://i.scdn.co/image/ab67616d0000b2731e3b9d4d53e0ac334cd9eec4,2016-04-22,2016,177,3712.0
-1,47752,False,2026-06-21,IT,6ylFfzx32ICw4L1A7YWNLN,OASIS,album,https://i.scdn.co/image/ab67616d0000b2734891d9b25d8919448388f3bb,2019-06-28,2019,178,2550.0
-1,47622,False,2026-06-21,IT,66nX0SGMQ7DrGiMrZlMkqS,Logico,album,https://i.scdn.co/image/ab67616d0000b27320f8129d955b34bd12e2b654,2014-01-01,2014,179,4554.0
-1,47354,False,2026-06-21,IT,7mvXPtV4jvA1hp5Wx2FAJA,I Barely Know Her,album,https://i.scdn.co/image/ab67616d0000b2734229702de91cb3d3a4383302,2025-08-22,2025,180,303.0
-1,47340,False,2026-06-21,IT,0grqDgwk7yAw6j4PxjHECP,MI AMI MI ODI,album,https://i.scdn.co/image/ab67616d0000b2733f981babef70a17bfde57956,2025-05-01,2025,181,416.0
-1,47324,False,2026-06-21,IT,5ej3At4Z8jJyL3ObLiHn3g,Rossetto e caffè,single,https://i.scdn.co/image/ab67616d0000b27340434eefd725d623a43a20fc,2024-06-14,2024,182,737.0
-1,47287,True,2026-06-21,IT,4rCMQjEm7zRJDbS5NbtCLY,ICON,album,https://i.scdn.co/image/ab67616d0000b2736fa5dff2130a632bdf7076a7,2024-12-09,2024,183,559.0
-1,47246,True,2026-06-21,IT,5GKjDCxwhXCo7sRyjg6syj,OK,album,https://i.scdn.co/image/ab67616d0000b2738e7ffe7ec58d3f439fe5a0d8,2021-02-12,2021,184,1955.0
-1,47058,False,2026-06-21,IT,2PjyVGPJwYRg9GbNXlicKM,Potere,album,https://i.scdn.co/image/ab67616d0000b2735854bca3d20b22344b300278,2018-06-29,2018,185,2914.0
-1,46887,False,2026-06-21,IT,7iCLgEbIDDHWP6UWzbzNJ4,MAX 20,album,https://i.scdn.co/image/ab67616d0000b273c44013257c466d2e6d34b30d,2013-06-04,2013,187,4765.0
-1,46532,True,2026-06-21,IT,43dl8hP5uNN9s6YeeJA5fv,DÁKITI,single,https://i.scdn.co/image/ab67616d0000b27334c8199b0b3b3fb42b8a98a8,2020-10-30,2020,190,2060.0
-1,46471,True,2026-06-21,IT,3ilgQgVMtxAxN2Jmb1OM29,X2VR,album,https://i.scdn.co/image/ab67616d0000b2733c0eada9fb45ba9d43116f1d,2023-11-17,2023,191,947.0
-1,46468,False,2026-06-21,IT,2M3o8iR1OVUWa50OmAOkK3,Maggese,album,https://i.scdn.co/image/ab67616d0000b2737839771341a65f97aa2c7f47,2005-06-10,2005,192,7681.0
-1,46269,False,2026-06-21,IT,1uE3dRPe3SrGdNhd1nWlSa,Bird's Eye,album,https://i.scdn.co/image/ab67616d0000b2730e62daaea2c7b94053e1c142,2024-08-09,2024,193,681.0
-1,46036,False,2026-06-21,IT,5YLRVHDVRw3QqWbeTGpC5B,So Good,album,https://i.scdn.co/image/ab67616d0000b273401bf6103d4b7f5230a21582,2017-03-17,2017,196,3383.0
-1,45765,False,2026-06-21,IT,71Vl3fngzF0TtanIzdUBKz,Bam Bam Bambina,single,https://i.scdn.co/image/ab67616d0000b273e47d4261a2971d3f28141708,2026-05-21,2026,198,31.0
+10,1003848,True,2026-06-22,IT,2gqFeF2xx9zMEwUWRc5UK4,Vangelo,album,https://i.scdn.co/image/ab67616d0000b273106c24b2e7323189f68e8a4c,2026-04-10,2026,6,73.0
+10,934787,True,2026-06-22,IT,58OUscdI2nOUKFpoPlp2eb,TUTTO È POSSIBILE,album,https://i.scdn.co/image/ab67616d0000b2738f6566879ccbdbc90b4fc974,2026-01-16,2026,3,157.0
+6,504035,True,2026-06-22,IT,5K79FLRUCSysQnVESLcTdb,DeBÍ TiRAR MáS FOToS,album,https://i.scdn.co/image/ab67616d0000b273bbd45c8d36e0e045ef640411,2025-01-05,2025,27,533.0
+6,405074,False,2026-06-22,IT,7Hww6TqaOQMRjWJSNqVyyY,IL GIORNO CHE ASPETTAVO,album,https://i.scdn.co/image/ab67616d0000b273ec2b58c5dbabf8745c701799,2026-06-19,2026,46,3.0
+3,312758,True,2026-06-22,IT,2NBjD7HfilmlALNet5aPFH,LA BELLAVITA,album,https://i.scdn.co/image/ab67616d0000b2739e03e651e481bb0b5fb14b7a,2025-03-28,2025,13,451.0
+4,308765,False,2026-06-22,IT,3tiuh424B3Leg8bxHc1Jv5,Comuni Mortali,album,https://i.scdn.co/image/ab67616d0000b273264663d274f67b13c4ae531e,2025-04-18,2025,32,430.0
+4,284041,False,2026-06-22,IT,4QpLnSupGsuYYJYYoj29Q7,TUTTA VITA,album,https://i.scdn.co/image/ab67616d0000b2739a9754efa9799615cf6045e9,2024-10-25,2024,61,605.0
+1,278415,True,2026-06-22,IT,2UXBH30efrkteg2hSfUB10,SWAG MUSIC,single,https://i.scdn.co/image/ab67616d0000b273367221e0ff226ec629714cc6,2026-05-15,2026,1,38.0
+1,270572,False,2026-06-22,IT,2DbfTApmD8EQye9mNgVpcK,OSSESSIONE,single,https://i.scdn.co/image/ab67616d0000b2734305c86a243ca7e7db9d710c,2026-02-25,2026,2,117.0
+4,254435,False,2026-06-22,IT,08SB1CgIS0yVIH7ZV99I6f,TUTTA VITA (SEMPRE),album,https://i.scdn.co/image/ab67616d0000b2736752cb3279906514dd04c8aa,2025-09-26,2025,54,269.0
+1,244960,False,2026-06-22,IT,7GQvp2mrr9bRxhPV18oBok,LA TESTA GIRA,single,https://i.scdn.co/image/ab67616d0000b27303fcfef7dec7395e7f34a83b,2026-03-27,2026,4,87.0
+1,223526,False,2026-06-22,IT,2puopS5aH6YlpFJYqx6jGK,AL MIO PAESE,single,https://i.scdn.co/image/ab67616d0000b2737743f0476cc177c770396986,2026-04-03,2026,5,80.0
+2,214613,False,2026-06-22,IT,7o2Ac7nDPNLO0tOsdZ73JD,SOLITO CINEMA,album,https://i.scdn.co/image/ab67616d0000b27311db5c0adf8b90e0c5138336,2026-04-24,2026,24,59.0
+4,206678,True,2026-06-22,IT,5QGyZ7xyZX8vrwI4DB6pvV,Anche gli Eroi Muoiono,album,https://i.scdn.co/image/ab67616d0000b27361d90e6750f76fe0ad95befe,2026-01-30,2026,106,143.0
+3,204981,True,2026-06-22,IT,3ixf929ty0cKT46gJ0sJ9Y,PER SOLDI E PER AMORE,album,https://i.scdn.co/image/ab67616d0000b273c1fc667f2f142100a44348e8,2025-09-18,2025,50,277.0
+1,201329,True,2026-06-22,IT,3TV20ouePm2YUPAMSj4C0n,AYAYAY,single,https://i.scdn.co/image/ab67616d0000b27353942b2114b943472cc99c83,2026-06-05,2026,7,17.0
+1,198683,False,2026-06-22,IT,1XjzMjgg0ktZSGrUv3j1bs,Da Dio,single,https://i.scdn.co/image/ab67616d0000b2733ad214f34f047352b54a2ebd,2026-05-15,2026,8,38.0
+1,188989,True,2026-06-22,IT,6R0HGRmgF4A0wMrwkTh6yr,Splinter Cell,single,https://i.scdn.co/image/ab67616d0000b273e9c1ffd4d58b8b5be2e2d602,2026-05-22,2026,9,31.0
+2,181066,False,2026-06-22,IT,2ANVost0y2y52ema1E9xAZ,Thriller,album,https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5,1982-11-30,1982,40,15910.0
+1,170857,True,2026-06-22,IT,1MdbSkPqc1AeqWJQBk3Weq,WHITE GIRL WASTED,single,https://i.scdn.co/image/ab67616d0000b27302175b6fb6e333973c7af750,2026-06-18,2026,11,4.0
+1,164931,False,2026-06-22,IT,10y0yFd5imPOaVmDIQ2lP1,ROMANTICA,single,https://i.scdn.co/image/ab67616d0000b273bf9b4c37370c80131a4a6809,2026-05-22,2026,12,31.0
+2,162087,True,2026-06-22,IT,3vAjsYdC3b1kYWqmZaM4sd,È O G.,album,https://i.scdn.co/image/ab67616d0000b27307bdc873725e7084d79d693f,2026-06-04,2026,55,18.0
+1,158868,False,2026-06-22,IT,6fsms67vLncXwehxDegR5I,Sorry Scusa Lo Siento,single,https://i.scdn.co/image/ab67616d0000b273d91aefd33813beab9a9f23ff,2026-05-15,2026,15,38.0
+2,157417,False,2026-06-22,IT,0Put06lJPKgGFHmMntdV7f,AMATORE,album,https://i.scdn.co/image/ab67616d0000b273ec6dd44403255d31f03eb164,2026-05-21,2026,33,32.0
+2,154027,True,2026-06-22,IT,71agI93AilqukvHURp6tGy,SANTANA MONEY GANG,album,https://i.scdn.co/image/ab67616d0000b273d6cdd0e09df54245b00fa9c6,2025-04-10,2025,65,438.0
+1,145340,False,2026-06-22,IT,7vTk9JCF1hzUNCjUA5vgkI,Maladie,single,https://i.scdn.co/image/ab67616d0000b2730bec8cf6742b5d00f101b0e8,2026-03-20,2026,16,94.0
+1,132553,True,2026-06-22,IT,2CCna0QTtaOVDjFvobTZeO,AUTORITÀ,single,https://i.scdn.co/image/ab67616d0000b2737d5cf75f7c49628406fe56fc,2026-06-04,2026,17,18.0
+1,131313,False,2026-06-22,IT,164ST8Sbg81Pr7rJZ1iKBN,Canto d’amore (con Marco Mengoni),single,https://i.scdn.co/image/ab67616d0000b273d5c202928352e775059dedbb,2026-06-12,2026,18,10.0
+1,127760,False,2026-06-22,IT,3IZTQfXDz7gAJtqB6UDKt9,Cuore rotto,single,https://i.scdn.co/image/ab67616d0000b27358005fdf22ddffcd402f207d,2026-06-05,2026,19,17.0
+1,127404,False,2026-06-22,IT,374Z5kI6lNCztQV7HItzUJ,Talk To You (ft. 54 Ultra),single,https://i.scdn.co/image/ab67616d0000b273b42ed7f52290f1583760a7e2,2026-03-06,2026,20,108.0
+2,124599,False,2026-06-22,IT,5IMzuX8ITydV8NBq10xG2T,È sempre bello,album,https://i.scdn.co/image/ab67616d0000b2735ae8c639d8e9c6c2a02989a2,2019-03-29,2019,76,2642.0
+1,124442,False,2026-06-22,IT,5cxMa6oLINJzmZ8lF7wWQN,Believe,album,https://i.scdn.co/image/ab67616d0000b273f1d02a6cec967f8b6b78f76e,2012-01-01,2012,22,5286.0
+1,120591,True,2026-06-22,IT,4Xdo78uvvt1P7rWRX8TOPt,La Plena (W Sound 05),single,https://i.scdn.co/image/ab67616d0000b273c0353d023daf5ebda0eb003b,2025-02-19,2025,23,488.0
+1,120015,True,2026-06-22,IT,5fTgdXawyLC7oZEry7jGEk,Famoso,album,https://i.scdn.co/image/ab67616d0000b273affffa7ab8803fca453be456,2021-02-12,2021,25,1956.0
+1,114409,True,2026-06-22,IT,4Kb07sqP1OQ9xkfazOi7C3,ACQUARIO,single,https://i.scdn.co/image/ab67616d0000b273644652160595bfc09c495c22,2026-01-09,2026,26,164.0
+1,113593,False,2026-06-22,IT,06ge45XUS63W0ENu9QjjQN,Buon Vento,single,https://i.scdn.co/image/ab67616d0000b2737265c7cbbc7f89bba30614ff,2026-05-21,2026,28,32.0
+1,113218,False,2026-06-22,IT,02UzV7oxqKA0Kkp3n205KB,DISINCANTO,album,https://i.scdn.co/image/ab67616d0000b2732e29d8e9ccb757f686385250,2026-04-16,2026,29,67.0
+1,110593,False,2026-06-22,IT,2MAslE3CpEJAIvLG8EW1Gh,Questa domenica,single,https://i.scdn.co/image/ab67616d0000b273b2543a4312d07cffe4205d98,2025-08-29,2025,31,297.0
+1,105520,False,2026-06-22,IT,6jZqXuGjnCopndMocQFEcm,Cabana,single,https://i.scdn.co/image/ab67616d0000b27357a423d58da2d9d974de3df6,2026-05-15,2026,34,38.0
+1,103331,False,2026-06-22,IT,3ROTuddVE79FtfYVw5BfzG,ALASKA BABY,album,https://i.scdn.co/image/ab67616d0000b2738105d9afaf9247e8345e0ed6,2024-11-28,2024,35,571.0
+1,101135,True,2026-06-22,IT,3RQQmkQEvNCY4prGKE6oc5,Un Verano Sin Ti,album,https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72,2022-05-06,2022,37,1508.0
+1,100947,False,2026-06-22,IT,6QXhh6j3OifW2hTvVWXbVW,I romantici,single,https://i.scdn.co/image/ab67616d0000b273f36d9162096b9c61c3fd388b,2026-02-25,2026,38,117.0
+1,100865,False,2026-06-22,IT,7aeDTh7h77f5hsLz6f7DrP,Bandito,single,https://i.scdn.co/image/ab67616d0000b273b1b466b83a568261768acaa3,2026-06-19,2026,39,3.0
+1,100297,False,2026-06-22,IT,2op7wmZ9fVyLGLhjGmrLMG,Stupida sfortuna,single,https://i.scdn.co/image/ab67616d0000b2736ee6ea583faf9653c920b030,2026-02-25,2026,41,117.0
+1,100152,False,2026-06-22,IT,7Cdqksm4yTfiq0EfKPa86M,Self Aware,single,https://i.scdn.co/image/ab67616d0000b273d6c26d2ae723f7ab553d64cc,2026-02-15,2026,42,127.0
+1,99393,False,2026-06-22,IT,2eeufspLkAubwTJfOGSrI8,Dai Dai,single,https://i.scdn.co/image/ab67616d0000b27303cadf1b3fe324c1dc710ed4,2026-05-14,2026,43,39.0
+1,99165,False,2026-06-22,IT,5ZX3Zdp20YCGI4ruAfZlMj,Jamaican (Bam Bam),single,https://i.scdn.co/image/ab67616d0000b273450a730dd72f3bf49882ae9d,2025-11-07,2025,44,227.0
+1,98853,False,2026-06-22,IT,0WijS8Oq1zVzbVCepggKgV,LA GRACIOSA,single,https://i.scdn.co/image/ab67616d0000b273762bb4d1f3481df994ce5f40,2026-04-23,2026,45,60.0
+2,98606,False,2026-06-22,IT,1bdXMUERNI9dwREDryk6C7,DIO LO SA,album,https://i.scdn.co/image/ab67616d0000b273b68cc2f7d1956d743a7ee322,2024-06-07,2024,158,745.0
+2,96666,True,2026-06-22,IT,79HurwZ9TQ8y5jrWlUDrIE,Hello World,album,https://i.scdn.co/image/ab67616d0000b27335f945f4057381447c5bb654,2024-12-06,2024,169,563.0
+1,95026,True,2026-06-22,IT,582gc2Nyig9saw8gHx9sUw,Via dei Mille,single,https://i.scdn.co/image/ab67616d0000b273fba738f77d26eebb07d07e0d,2026-03-13,2026,48,101.0
+1,94771,False,2026-06-22,IT,0vrr3P8BXPhM3eXtsBptuq,Labirinto,single,https://i.scdn.co/image/ab67616d0000b273797d3bac974be0c1292bed48,2026-02-25,2026,49,117.0
+1,92064,False,2026-06-22,IT,1CSskxZMvTHis0a3YwBOHR,Schiena,album,https://i.scdn.co/image/ab67616d0000b273dcceee76ed8d7d01d0b0d109,2013-01-01,2013,53,4920.0
+1,88891,False,2026-06-22,IT,0fRRdNGgVZ1tiPjfDPlD8k,TU MI PIACI TANTO,single,https://i.scdn.co/image/ab67616d0000b273e1eafe16a2cb5d4e306f1918,2026-02-25,2026,57,117.0
+1,80487,False,2026-06-22,IT,18YymC6IWBNcNo46Qe8r50,"PARTENOPE (feat. Serena Brancale, The Kolors)",single,https://i.scdn.co/image/ab67616d0000b27381e9c6bfc08d4a1e56a38400,2026-06-05,2026,64,17.0
+1,79620,True,2026-06-22,IT,4Are0mNScwygiibFFK39db,BIG 5,single,https://i.scdn.co/image/ab67616d0000b273ae327bdcc50cf2b33e8e254f,2025-07-18,2025,67,339.0
+1,79251,False,2026-06-22,IT,17jBG75ANeNCWTNsi4QSwn,BUONA DOMENICA,single,https://i.scdn.co/image/ab67616d0000b273482ba9d105682caa91f0ddc8,2026-04-02,2026,68,81.0
+1,79026,False,2026-06-22,IT,05jbNkYoEQdjVDHEHtg1gY,"Don't Forget About Me, Demos",album,https://i.scdn.co/image/ab67616d0000b2737b1b6f41c1645af9757d5616,2018-10-16,2018,69,2806.0
+1,77558,True,2026-06-22,IT,3AtmmwCyWNlimeMrEC8rq7,M'AMA NON M'AMA,single,https://i.scdn.co/image/ab67616d0000b27350586a7401ee494fc8f47a08,2026-06-18,2026,70,4.0
+1,76662,True,2026-06-22,IT,5w4WlFG5HhXOichH3hwKPH,EL MOCO VERDE,single,https://i.scdn.co/image/ab67616d0000b2735c72961c9ad2bfe912fb56c3,2026-06-12,2026,72,10.0
+1,76517,False,2026-06-22,IT,3s3ThjVMEWRqXV8b4H6sy4,Faccio un casino,album,https://i.scdn.co/image/ab67616d0000b273061bf53ff7abeb2e89429bdf,2017-05-05,2017,73,3335.0
+1,74894,False,2026-06-22,IT,3sysiYphqNRQw7VKLCg1yE,Love?,album,https://i.scdn.co/image/ab67616d0000b273d7b2aa3834b82b1cbe899a48,2011-04-29,2011,74,5533.0
+1,72639,True,2026-06-22,IT,4BmvCSV4ZqsnyAcQQQnv0S,Hustle Mixtape Vol. 2,album,https://i.scdn.co/image/ab67616d0000b27361e1eb765192dae01672b56a,2025-10-31,2025,77,234.0
+1,69473,True,2026-06-22,IT,3mFxzu5rkiqHh8P6xqJc7B,WAR,album,https://i.scdn.co/image/ab67616d0000b2730a9af73ab167cd5aac3c1709,2026-06-12,2026,79,10.0
+1,68790,False,2026-06-22,IT,4t5euIQosseN76E6f3b8NF,Halo,single,https://i.scdn.co/image/ab67616d0000b2735dd97ee52973b7230b4b7a95,2025-06-13,2025,81,374.0
+1,68592,False,2026-06-22,IT,4JDXBZdRPId4devseaAOKH,DECIDE,album,https://i.scdn.co/image/ab67616d0000b273fddfffec51b4580acae727c1,2022-09-16,2022,82,1375.0
+1,67359,False,2026-06-22,IT,5CZNj3Q2W3mOnK4n71zq9C,MA IO SONO FUOCO,album,https://i.scdn.co/image/ab67616d0000b273f34a244e1db435c40720d9d2,2025-10-10,2025,83,255.0
+1,67193,False,2026-06-22,IT,3WZZF72ihlKPZBS4zSsNHl,you seem pretty sad for a girl so in love,album,https://i.scdn.co/image/ab67616d0000b2735cf234eeb7a2edf44bf64a46,2026-06-12,2026,84,10.0
+1,66450,False,2026-06-22,IT,0Kh1PxZEW7VJa84HBdjnNa,Canzone Estiva,single,https://i.scdn.co/image/ab67616d0000b273f9a91a2ef78e9d2c60611d32,2026-03-13,2026,86,101.0
+1,65928,False,2026-06-22,IT,4UMjBXcRqIgMZ1XumU2x5T,Dizzy up the Girl,album,https://i.scdn.co/image/ab67616d0000b273eda9478c39a21e1cdc6609ca,1998-01-01,1998,87,10399.0
+1,65503,True,2026-06-22,IT,5r8qz3XZd9YULzc47y8Nd5,Arricchiti (feat. Guè),single,https://i.scdn.co/image/ab67616d0000b2733229760f6f277909f88d0710,2026-06-11,2026,88,11.0
+1,64497,False,2026-06-22,IT,1afcyvrWTSivDef7JDO0ot,Introvabile,single,https://i.scdn.co/image/ab67616d0000b273beb9c31e5cbe50c5f7d9371d,2026-01-23,2026,90,150.0
+1,64325,False,2026-06-22,IT,2g1UKV8THjSEhJjmCqOoWd,Nord Sud Ovest Est,album,https://i.scdn.co/image/ab67616d0000b273243b73f0b9fd2500f491f5bf,1993-01-01,1993,91,12225.0
+1,63710,False,2026-06-22,IT,0sWJ3v0FROzcNzyjNYUs6t,LA CIUDAD,album,https://i.scdn.co/image/ab67616d0000b2736abd0fcf50a20ac09a028c92,2024-12-24,2024,93,545.0
+1,63328,True,2026-06-22,IT,2U9mwmcJrUmkIpJm9gq8n7,RYAN TED,album,https://i.scdn.co/image/ab67616d0000b273112a9d73a9662074bb98a086,2026-05-22,2026,94,31.0
+1,62683,True,2026-06-22,IT,3ATVZVuF9q5phfA8Fwl96O,MUCHACHA,single,https://i.scdn.co/image/ab67616d0000b273bf3151af9c5e4d7c1de59ae9,2026-02-05,2026,95,137.0
+1,62619,False,2026-06-22,IT,5ylbxH7EqpsmHZCRuiYewS,Si Antes Te Hubiera Conocido,single,https://i.scdn.co/image/ab67616d0000b273491678beaffcefac517a699e,2024-06-21,2024,96,731.0
+1,61804,False,2026-06-22,IT,6tOe4eAF8xNhEkl9WyvsE4,(What's The Story) Morning Glory? (Deluxe Remastered Edition),album,https://i.scdn.co/image/ab67616d0000b2737a4c8c59851c88f6794c3cbf,1995-01-01,1995,98,11495.0
+1,61686,False,2026-06-22,IT,64mzxfRIXYCm6NVj0NTefe,Kriminal (Prod. by Roberto Ferrante),single,https://i.scdn.co/image/ab67616d0000b273b5664fc4700d1a24595116d0,2025-07-18,2025,99,339.0
+1,61642,False,2026-06-22,IT,5PdqPLG4hUzuLAWUDFaZap,"Gira, il mondo gira",album,https://i.scdn.co/image/ab67616d0000b2734743343cec324c534a99ca39,2023-02-10,2023,100,1228.0
+1,61148,False,2026-06-22,IT,59i1dzyF8wpUTk3KJ5zNXq,"Status (Inediti, Rarità & Live)",album,https://i.scdn.co/image/ab67616d0000b273bfff1cc3a4f34f0b59445642,2016-01-22,2016,103,3804.0
+1,60826,False,2026-06-22,IT,1MMVWEgrIylF7v0er9IjWm,Poesie Clandestine,single,https://i.scdn.co/image/ab67616d0000b273c3528a1f7556e36edb0b0cf8,2026-02-25,2026,104,117.0
+1,60679,True,2026-06-22,IT,0zjgFMnfRoOd0meFbxIogc,Il mio lato peggiore,album,https://i.scdn.co/image/ab67616d0000b273c62c7920980cba87cda1867f,2025-05-16,2025,105,402.0
+1,60477,True,2026-06-22,IT,6LmhYmD5q0vflzqQhkfeN1,Hustle Mixtape,album,https://i.scdn.co/image/ab67616d0000b273b7f751e1f4c492ab41c9d9d3,2022-06-03,2022,107,1480.0
+1,60421,False,2026-06-22,IT,7DCQMEasHZn2y5VHAmSlBF,Tu Me Quieres,single,https://i.scdn.co/image/ab67616d0000b273425ff4d7d6105cc5be872dca,2024-09-13,2024,108,647.0
+1,59902,False,2026-06-22,IT,5spP5OwikL076tVBuw7gb8,Magnetic / Addicted To Your Love,single,https://i.scdn.co/image/ab67616d0000b273158cbe80b9b9573b46d2b50f,2026-02-27,2026,109,115.0
+1,59814,False,2026-06-22,IT,1sIUqfQsBmRIlSmhDnkB0u,Che fastidio!,single,https://i.scdn.co/image/ab67616d0000b27357fc29e972e43683bc409cd1,2026-02-25,2026,110,117.0
+1,59308,True,2026-06-22,IT,17R63Sb8OrPikc2R4mlpdC,GIRLS,single,https://i.scdn.co/image/ab67616d0000b273c8af7237bb25ad59488944c1,2024-06-28,2024,111,724.0
+1,59294,False,2026-06-22,IT,53b1lFTsC7lV3pieOFYZ9i,Edge of Desire,single,https://i.scdn.co/image/ab67616d0000b2736d69d34ade62de08bff530ca,2025-07-18,2025,112,339.0
+1,59268,False,2026-06-22,IT,0zMH1I8EZPPGYAzxZ9H0gU,1969 - Achille Idol Rebirth,album,https://i.scdn.co/image/ab67616d0000b273bf803cb00dd8eadd0a98b28f,2020-09-25,2020,113,2096.0
+1,58988,False,2026-06-22,IT,6zm0N3GCyTiHOD7V5i8TZQ,DIO LO SA - ATTO II,album,https://i.scdn.co/image/ab67616d0000b273e76cba16da2dd7b52ed3577d,2024-11-22,2024,115,577.0
+1,58818,False,2026-06-22,IT,3pHFjWCK7d5YLtEuFwfR5N,54+1,album,https://i.scdn.co/image/ab67616d0000b273d8243a13e6f41310a5fa7b96,2019-03-22,2019,117,2649.0
+1,58405,False,2026-06-22,IT,6v8Dh5jr3ykfLoBPvZKrmj,QUESTA INSENSATA VOGLIA DI TE,single,https://i.scdn.co/image/ab67616d0000b27366f37f0953e6f6821a9f78ff,2026-04-29,2026,119,54.0
+1,58237,False,2026-06-22,IT,2biVG6BYnVVSwLYd1OjbPT,Dream Your Life Away (Deluxe Edition),album,https://i.scdn.co/image/ab67616d0000b27305d081cbdc2f67d37a364d63,2014-08-05,2014,121,4339.0
+1,57820,False,2026-06-22,IT,4M05X6484OBedfXnueiugs,ITALIA STARTER PACK,single,https://i.scdn.co/image/ab67616d0000b273e0ed7743fb9034a663e195cd,2026-02-25,2026,122,117.0
+1,57287,False,2026-06-22,IT,3jCG9BHzeIC5m4ifWQozsS,Bossa Nostra,single,https://i.scdn.co/image/ab67616d0000b273418d5ec9d002ad8ff54cc6ce,2026-05-01,2026,124,52.0
+1,57010,False,2026-06-22,IT,2fip0ycNIWi34aIEaderBP,Comuni Immortali,album,https://i.scdn.co/image/ab67616d0000b273d486121d31133e11814c4e29,2026-04-17,2026,125,66.0
+1,56764,False,2026-06-22,IT,5W9OT0a5iZlBr83a9WMKFY,Synchronicity (Remastered 2003),album,https://i.scdn.co/image/ab67616d0000b273c8e97cafeb2acb85b21a777e,1983-06-17,1983,126,15711.0
+1,56522,False,2026-06-22,IT,01sqwTOTrN9gaYQc1rr6Zw,WHERE IS MY HUSBAND!,single,https://i.scdn.co/image/ab67616d0000b2736ac3c7938191585c53c8180d,2025-09-19,2025,129,276.0
+1,56407,True,2026-06-22,IT,4oJZFEKPVLVViFlG5VnAhN,KING OF DARK,album,https://i.scdn.co/image/ab67616d0000b273bc46258c61df24809b76d98f,2026-02-13,2026,130,129.0
+1,55609,False,2026-06-22,IT,3OpmNTT7hIZMoO9NNcKnmz,La Teoria Dei Colori,album,https://i.scdn.co/image/ab67616d0000b27322ae5b5ba67f6f218b5f3e34,2012-01-01,2012,133,5286.0
+1,55379,False,2026-06-22,IT,1tcX4ysSZEeMMshVVbkkDa,Possibili Scenari,album,https://i.scdn.co/image/ab67616d0000b27312d5ab24a8b636d56d3e39e9,2017-11-24,2017,134,3132.0
+1,54744,True,2026-06-22,IT,1g9x6zzynCJggRwNaeAExc,Scendo E Cerco Un’Altra,single,https://i.scdn.co/image/ab67616d0000b27372392744c47a65a3b1467be5,2026-04-24,2026,136,59.0
+1,53877,False,2026-06-22,IT,5QWHes9ODwn42DHTifGkXd,The Heist,album,https://i.scdn.co/image/ab67616d0000b2732a6b364528b128a4a17d100d,2012-10-09,2012,137,5004.0
+1,53747,False,2026-06-22,IT,4k06f6YoESEJSz52yesIOX,Mediterraneo,album,https://i.scdn.co/image/ab67616d0000b2739791f57ba5b3843bda70c0fd,2025-06-06,2025,138,381.0
+1,53501,False,2026-06-22,IT,2UsIHnX2RaOOQVkpspAYDj,Completamente Sold Out,album,https://i.scdn.co/image/ab67616d0000b273ebcc0e1956fb93e0d3e13c24,2016-10-21,2016,143,3531.0
+1,53098,False,2026-06-22,IT,0Ua2qdU4Z3xzdmcXFkDCgF,SANTISSIMO,album,https://i.scdn.co/image/ab67616d0000b273a5c0891335314e40e309ae91,2026-05-08,2026,144,45.0
+1,53077,False,2026-06-22,IT,5k3P92L8FfhP1n8ye6FotE,20 (Deluxe Edition),album,https://i.scdn.co/image/ab67616d0000b273b2396df413b2694c4a93d81a,2018-11-30,2018,145,2761.0
+1,53076,False,2026-06-22,IT,0idasMxjLcTfRitXmkvJ93,CALCINACCI,album,https://i.scdn.co/image/ab67616d0000b273ff26d9e6888e0a1ab315aa6a,2026-03-13,2026,146,101.0
+1,52961,True,2026-06-22,IT,4KakTQXezMez5owYFuGAF2,VERA BADDIE,album,https://i.scdn.co/image/ab67616d0000b273fb7329a6fb6154b1fa3704c7,2024-06-27,2024,147,725.0
+1,52886,True,2026-06-22,IT,0Rqdxqcqq0wKQISWQwGLT1,SEXY RAVE (feat. Baby Gang),single,https://i.scdn.co/image/ab67616d0000b273d690b3baacf4199f53fb4f95,2025-04-11,2025,148,437.0
+1,52650,True,2026-06-22,IT,14aEL5lLrcr9ohOnpdIeVi,DÉSOLÉE,single,https://i.scdn.co/image/ab67616d0000b273d1d098940f465aa6cbcabf42,2025-06-12,2025,151,375.0
+1,52621,False,2026-06-22,IT,0uo2O3BcYrZJzCnHk0I0BU,Free Your Mind,single,https://i.scdn.co/image/ab67616d0000b27338974737cba5770d9dba1cd6,2026-03-27,2026,152,87.0
+1,51889,True,2026-06-22,IT,3LXvt5r3boBy4sQQpxmsi9,Gemelli,album,https://i.scdn.co/image/ab67616d0000b273820c0ed614ed30340ba38f28,2020-06-18,2020,153,2195.0
+1,51661,False,2026-06-22,IT,7mvXPtV4jvA1hp5Wx2FAJA,I Barely Know Her,album,https://i.scdn.co/image/ab67616d0000b2734229702de91cb3d3a4383302,2025-08-22,2025,154,304.0
+1,51598,False,2026-06-22,IT,1eoYupgvxWRBT6nHnAHjEQ,Emigrante Del Mundo (Remastered),album,https://i.scdn.co/image/ab67616d0000b273dd6b19d30e8b2531c625fbc4,2011-12-19,2011,155,5299.0
+1,51413,False,2026-06-22,IT,32HEGXJyQkqHh888V70rdu,Per sempre sì,single,https://i.scdn.co/image/ab67616d0000b2739fee241bfd5d68e758b4e4e5,2026-02-25,2026,156,117.0
+1,51209,True,2026-06-22,IT,7g7002AcxLMerhLQEA8naR,FERITE (Deluxe Edition),album,https://i.scdn.co/image/ab67616d0000b2737ade13538524e557ba8954c6,2024-11-15,2024,159,584.0
+1,50048,False,2026-06-22,IT,4OaPU3DM8Mr7yOnVPXeCuh,Mediterraneo (Dopo il Mare),album,https://i.scdn.co/image/ab67616d0000b27313f95e59fc87aa92b6e63d70,2026-06-05,2026,161,17.0
+1,49952,False,2026-06-22,IT,1uE3dRPe3SrGdNhd1nWlSa,Bird's Eye,album,https://i.scdn.co/image/ab67616d0000b2730e62daaea2c7b94053e1c142,2024-08-09,2024,162,682.0
+1,49908,False,2026-06-22,IT,3m8nR8iBBvwln3ziNW2QZ1,Buon compleanno Elvis [Remastered Version],album,https://i.scdn.co/image/ab67616d0000b2736d6b8a01a80f084d6e35ccbb,1995-01-01,1995,163,11495.0
+1,49874,True,2026-06-22,IT,5GKjDCxwhXCo7sRyjg6syj,OK,album,https://i.scdn.co/image/ab67616d0000b2738e7ffe7ec58d3f439fe5a0d8,2021-02-12,2021,164,1956.0
+1,49857,True,2026-06-22,IT,3qeuGcOLjfDGmMYIYJI4OU,PECCATO PER I TESTI (Acoustic Version),single,https://i.scdn.co/image/ab67616d0000b27314f560a2fd915fb25a44667e,2025-12-04,2025,165,200.0
+1,49789,False,2026-06-22,IT,4LPEPv5dG2Cu5aceakd1cm,M' Manc (con Geolier & Sfera Ebbasta),single,https://i.scdn.co/image/ab67616d0000b273521496cca18501a2ffeebfa9,2020-06-11,2020,166,2202.0
+1,49537,True,2026-06-22,IT,1QqHc2RPq59exIRKRolI1O,LOCURA,album,https://i.scdn.co/image/ab67616d0000b27390d7f08f5345410e0efff330,2024-11-26,2024,168,573.0
+1,49416,False,2026-06-22,IT,4L3EeygK6Qm1blF5q4PQyX,Plume,album,https://i.scdn.co/image/ab67616d0000b273a6f221182f3372804a24a901,2018-06-01,2018,170,2943.0
+1,49412,False,2026-06-22,IT,1Ntc1XTLjhjPSHStfXhu1U,VACCI PIANO (feat. Rkomi),single,https://i.scdn.co/image/ab67616d0000b273559780cc510a9e2906a7e80d,2026-03-12,2026,171,102.0
+1,49020,False,2026-06-22,IT,7iCLgEbIDDHWP6UWzbzNJ4,MAX 20,album,https://i.scdn.co/image/ab67616d0000b273c44013257c466d2e6d34b30d,2013-06-04,2013,172,4766.0
+1,48403,True,2026-06-22,IT,4nJJuilxSgfHHaaC7dwDfp,Rockstar,album,https://i.scdn.co/image/ab67616d0000b273a7a64be797303ff304ca43b2,2018-01-19,2018,175,3076.0
+1,48334,False,2026-06-22,IT,14JkAa6IiFaOh5s0nMyMU9,KPop Demon Hunters (Soundtrack from the Netflix Film),album,https://i.scdn.co/image/ab67616d0000b2734dcb6c5df15cf74596ab25a4,2025-06-20,2025,176,367.0
+1,48293,True,2026-06-22,IT,1vU1ePx8IOwsYRo5nh63nn,VETRI NERI,single,https://i.scdn.co/image/ab67616d0000b27389d383468d78b997ca457ab7,2023-05-19,2023,177,1130.0
+1,48257,True,2026-06-22,IT,5tSQtQGkrCJx3hoQxmLgfM,Gata Only,single,https://i.scdn.co/image/ab67616d0000b273c4583f3ad76630879a75450a,2024-02-02,2024,178,871.0
+1,48002,False,2026-06-22,IT,4PNqWiJAfjj32hVvlchV5u,"Quevedo: Bzrp Music Sessions, Vol. 52/66",single,https://i.scdn.co/image/ab67616d0000b273946f1ea32cc7681e7a86e9ca,2022-07-06,2022,180,1447.0
+1,47740,False,2026-06-22,IT,5YLRVHDVRw3QqWbeTGpC5B,So Good,album,https://i.scdn.co/image/ab67616d0000b273401bf6103d4b7f5230a21582,2017-03-17,2017,181,3384.0
+1,47642,False,2026-06-22,IT,1x159B5VzbDWAGBik5cr1z,hate that i made you love me,single,https://i.scdn.co/image/ab67616d0000b273b622d42c30697e1e1414343c,2026-05-29,2026,182,24.0
+1,47612,False,2026-06-22,IT,1n1JDgaChYT1nDCvbQAOGn,Le più belle canzoni di Loretta Goggi,album,https://i.scdn.co/image/ab67616d0000b27357ed9ab403ec31e3e8554776,2005-05-27,2005,183,7696.0
+1,47540,False,2026-06-22,IT,6hPkbAV3ZXpGZBGUvL6jVM,Hybrid Theory (Bonus Edition),album,https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a,2000-10-24,2000,184,9372.0
+1,47477,False,2026-06-22,IT,75fqs09f3rJCfAUdf9Vl3I,Non so chi ha creato il mondo ma so che era innamorato (Deluxe),album,https://i.scdn.co/image/ab67616d0000b2737665d2abd6083ca6663b135a,2025-05-30,2025,185,388.0
+1,46900,False,2026-06-22,IT,6ev90z3DfY97xaak6RZ0EX,XXDONO (feat. Lazza),single,https://i.scdn.co/image/ab67616d0000b273bbe7f32dd22c7d163a8dae07,2026-05-14,2026,190,39.0
+1,46782,True,2026-06-22,IT,6KFq3hJB6JnNvDbEHRvPoK,Dracula (Remix),single,https://i.scdn.co/image/ab67616d0000b273c7c031ce9d06b131f8563676,2026-02-06,2026,191,136.0
+1,46772,True,2026-06-22,IT,3ilgQgVMtxAxN2Jmb1OM29,X2VR,album,https://i.scdn.co/image/ab67616d0000b2733c0eada9fb45ba9d43116f1d,2023-11-17,2023,192,948.0
+1,46723,False,2026-06-22,IT,78tnU3OxzvnGue3gOIPTlZ,Nessun Pericolo...Per Te (Remastered 2017),album,https://i.scdn.co/image/ab67616d0000b273121902de4bc28e87685506ec,1996-10-28,1996,193,10829.0
+1,46616,False,2026-06-22,IT,2cHhcN6iNLNXc7FByWBGi5,"Oral Fixation, Vol. 2 (Expanded Edition)",album,https://i.scdn.co/image/ab67616d0000b27385432abc16fd92be0d435cb9,2005-11-28,2005,194,7511.0
+1,46562,True,2026-06-22,IT,4oUqxRcUDEwAPqpYgOYuUG,Santana Season,album,https://i.scdn.co/image/ab67616d0000b273bdf95756e045c23358d4cc98,2023-06-09,2023,196,1109.0
+1,46411,False,2026-06-22,IT,2HXRjHb2nbLJa5r70FBtdT,Visualízate,album,https://i.scdn.co/image/ab67616d0000b2731e3b9d4d53e0ac334cd9eec4,2016-04-22,2016,197,3713.0
+1,46371,False,2026-06-22,IT,6xomx5ekO7qHDvDh57rZ5S,Ordinary,single,https://i.scdn.co/image/ab67616d0000b273457cfd5a54720ab3b0820064,2025-02-07,2025,198,500.0
+1,46299,True,2026-06-22,IT,7cZB2w7ju8vYRGzTSJ1H1v,Persona,album,https://i.scdn.co/image/ab67616d0000b27389070654f69ee060803403f3,2019-10-31,2019,199,2426.0
+1,46089,False,2026-06-22,IT,0grqDgwk7yAw6j4PxjHECP,MI AMI MI ODI,album,https://i.scdn.co/image/ab67616d0000b2733f981babef70a17bfde57956,2025-05-01,2025,200,417.0
