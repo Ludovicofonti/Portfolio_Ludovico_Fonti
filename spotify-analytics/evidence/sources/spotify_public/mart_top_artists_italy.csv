@@ -1,155 +1,151 @@
 chart_date,country,spotify_artist_id,artist_name,spotify_artist_url,track_count,streams,best_rank,average_rank,artist_stream_rank
-2026-07-12,IT,27LlKWxS3KXW7RRAxN5S8s,Geolier,https://open.spotify.com/artist/27LlKWxS3KXW7RRAxN5S8s,21,1808577,1,98.38,1
-2026-07-12,IT,7K80yOTC0Id95gRaOxDG5u,ANNA,https://open.spotify.com/artist/7K80yOTC0Id95gRaOxDG5u,17,1540570,5,79.0,2
-2026-07-12,IT,23TFHmajVfBtlRx5MXqgoz,Sfera Ebbasta,https://open.spotify.com/artist/23TFHmajVfBtlRx5MXqgoz,19,1409098,8,113.89,3
-2026-07-12,IT,2K5nCggbhSZ00YCYP5qkZS,Shiva,https://open.spotify.com/artist/2K5nCggbhSZ00YCYP5qkZS,12,983948,6,98.75,4
-2026-07-12,IT,3hN3iJMbbBmqBSAMx5veDa,Ultimo,https://open.spotify.com/artist/3hN3iJMbbBmqBSAMx5veDa,8,666505,10,81.62,5
-2026-07-12,IT,4q3ewBCX7sLwd24euuV69X,Bad Bunny,https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X,8,626754,30,93.25,6
-2026-07-12,IT,2R4kNOwHUUsuDYhKsESVbF,Artie 5ive,https://open.spotify.com/artist/2R4kNOwHUUsuDYhKsESVbF,6,626282,4,71.83,7
-2026-07-12,IT,4rj3KWaLAnuxgtMMkypZhf,Juli,https://open.spotify.com/artist/4rj3KWaLAnuxgtMMkypZhf,7,506041,44,88.71,8
-2026-07-12,IT,2n0Ki4A5tKTEloq3WCt1IH,Samurai Jay,https://open.spotify.com/artist/2n0Ki4A5tKTEloq3WCt1IH,3,436618,2,44.33,9
-2026-07-12,IT,2QJ1AReDewmz4fcRhGxW6Y,Vito Salamanca,https://open.spotify.com/artist/2QJ1AReDewmz4fcRhGxW6Y,3,436618,2,44.33,10
-2026-07-12,IT,25u1DN0MwQVSav4XoJS7hl,Olly,https://open.spotify.com/artist/25u1DN0MwQVSav4XoJS7hl,6,420141,44,94.33,11
-2026-07-12,IT,7FeObngbQ0GY3SojNwKdKn,Bresh,https://open.spotify.com/artist/7FeObngbQ0GY3SojNwKdKn,5,415285,9,109.8,12
-2026-07-12,IT,2ifTEcQqKSPwijIEcPHQ1R,Flatpearl,https://open.spotify.com/artist/2ifTEcQqKSPwijIEcPHQ1R,4,323150,14,97.0,13
-2026-07-12,IT,1dlyjeDlgXalzt5oqbgWDs,G.Mineiro,https://open.spotify.com/artist/1dlyjeDlgXalzt5oqbgWDs,4,323150,14,97.0,14
-2026-07-12,IT,1l1A1U8VJM15W7zonFqKhg,Succo,https://open.spotify.com/artist/1l1A1U8VJM15W7zonFqKhg,4,323150,14,97.0,15
-2026-07-12,IT,0lI3rF4hi4op6UxqlLHPzv,Achille Lauro,https://open.spotify.com/artist/0lI3rF4hi4op6UxqlLHPzv,4,294506,36,94.25,16
-2026-07-12,IT,0QrUbsrL5imqntAfDl8i7q,Fred De Palma,https://open.spotify.com/artist/0QrUbsrL5imqntAfDl8i7q,2,261810,3,96.0,17
-2026-07-12,IT,51OKuyM4BiiYxFm8Mi6fa9,Mauvais djo,https://open.spotify.com/artist/51OKuyM4BiiYxFm8Mi6fa9,3,261372,17,87.67,18
-2026-07-12,IT,6RdcIWVKYYzNzjQRd3oyHS,Pinguini Tattici Nucleari,https://open.spotify.com/artist/6RdcIWVKYYzNzjQRd3oyHS,3,253623,11,117.33,19
-2026-07-12,IT,7108jelN43seqWILMvJwKi,Serena Brancale,https://open.spotify.com/artist/7108jelN43seqWILMvJwKi,2,253385,7,45.5,20
-2026-07-12,IT,6bMul6rmRS03x38tWKYifO,883,https://open.spotify.com/artist/6bMul6rmRS03x38tWKYifO,4,227752,70,136.25,21
-2026-07-12,IT,38CThoTDmXugNnfonW466d,Jiz,https://open.spotify.com/artist/38CThoTDmXugNnfonW466d,2,223537,14,37.5,22
-2026-07-12,IT,3LvwPiJQJ0da0GurKMToV0,Baby Gang,https://open.spotify.com/artist/3LvwPiJQJ0da0GurKMToV0,4,221056,83,143.25,23
-2026-07-12,IT,5AZuEF0feCXMkUCwQiQlW7,Marracash,https://open.spotify.com/artist/5AZuEF0feCXMkUCwQiQlW7,3,215458,35,110.33,24
-2026-07-12,IT,7FNnA9vBm6EKceENgCGRMb,Anitta,https://open.spotify.com/artist/7FNnA9vBm6EKceENgCGRMb,1,214638,3,3.0,25
-2026-07-12,IT,6FtwCmLY6L1sqvjaQ2lV6G,Emis Killa,https://open.spotify.com/artist/6FtwCmLY6L1sqvjaQ2lV6G,1,214638,3,3.0,26
-2026-07-12,IT,52iwsT98xCoGgiGntTiR7K,Quevedo,https://open.spotify.com/artist/52iwsT98xCoGgiGntTiR7K,3,211718,31,129.67,27
-2026-07-12,IT,5dXlc7MnpaTeUIsHLVe3n4,Coez,https://open.spotify.com/artist/5dXlc7MnpaTeUIsHLVe3n4,3,211594,58,83.33,28
-2026-07-12,IT,7GacyaFUp0qkEJglERX9N7,Alfa,https://open.spotify.com/artist/7GacyaFUp0qkEJglERX9N7,3,202667,37,136.67,29
-2026-07-12,IT,5SulO4l40qDuV9zUGLZx7n,Capo Plaza,https://open.spotify.com/artist/5SulO4l40qDuV9zUGLZx7n,3,200419,46,112.33,30
-2026-07-12,IT,396Jr76018oUMR6QBnqT8T,Cesare Cremonini,https://open.spotify.com/artist/396Jr76018oUMR6QBnqT8T,3,195734,56,104.0,31
-2026-07-12,IT,0EUR8jz8L936AEbV2Spkca,Kid Yugi,https://open.spotify.com/artist/0EUR8jz8L936AEbV2Spkca,3,195183,52,111.33,32
-2026-07-12,IT,5PlfkPxwCpRRWQJBxCa0By,HUGEL,https://open.spotify.com/artist/5PlfkPxwCpRRWQJBxCa0By,2,195006,29,44.5,33
-2026-07-12,IT,3HAwumPgGOSXlZSyGWuLhB,Sayf,https://open.spotify.com/artist/3HAwumPgGOSXlZSyGWuLhB,2,190004,33,47.0,34
-2026-07-12,IT,0BjRnUqiITQwjqGtTeoxUS,DELIA,https://open.spotify.com/artist/0BjRnUqiITQwjqGtTeoxUS,1,185515,7,7.0,35
-2026-07-12,IT,5mTg1ztZByLRHsOEtwmT4G,Levante,https://open.spotify.com/artist/5mTg1ztZByLRHsOEtwmT4G,1,185515,7,7.0,36
-2026-07-12,IT,1A6HBLulvBFzNtlMb7b08f,Angelina Mango,https://open.spotify.com/artist/1A6HBLulvBFzNtlMb7b08f,2,185397,21,69.5,37
-2026-07-12,IT,3fhMfkPPzksWuw0hEm4ldm,Ernia,https://open.spotify.com/artist/3fhMfkPPzksWuw0hEm4ldm,3,184597,66,120.33,38
-2026-07-12,IT,1cKyknhftNKXCjMBd2hDrG,DYSTINCT,https://open.spotify.com/artist/1cKyknhftNKXCjMBd2hDrG,1,184255,8,8.0,39
-2026-07-12,IT,3yiEJ9SByXZMXTwaKdVFN4,Luchè,https://open.spotify.com/artist/3yiEJ9SByXZMXTwaKdVFN4,3,183416,64,125.33,40
-2026-07-12,IT,2DaxqgrOhkeH0fpeiQq2f4,Oasis,https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4,2,170067,26,95.5,41
-2026-07-12,IT,1vgQksyJ0IVz8y9XerEOy3,Madame,https://open.spotify.com/artist/1vgQksyJ0IVz8y9XerEOy3,2,161229,35,92.0,42
-2026-07-12,IT,26toJml6wSdf58ZgNG0ci9,Dipinto,https://open.spotify.com/artist/26toJml6wSdf58ZgNG0ci9,2,159343,50,63.5,43
-2026-07-12,IT,6HQ27YefiitrZ9YsWrgRHX,Fresh Beatz,https://open.spotify.com/artist/6HQ27YefiitrZ9YsWrgRHX,2,159343,50,63.5,44
-2026-07-12,IT,47z0zz9ZMCn9GBiPRTn5Bc,Tommaso Paradiso,https://open.spotify.com/artist/47z0zz9ZMCn9GBiPRTn5Bc,2,147150,42,94.0,45
-2026-07-12,IT,3fMbdgg4jU18AjLCKBhRSm,Michael Jackson,https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm,2,145867,59,75.5,46
-2026-07-12,IT,1QeqGmpgU5Yg74GNcjIIq3,Fulminacci,https://open.spotify.com/artist/1QeqGmpgU5Yg74GNcjIIq3,2,143511,41,113.0,47
-2026-07-12,IT,3wcj11K77LjEY1PkEazffa,Burna Boy,https://open.spotify.com/artist/3wcj11K77LjEY1PkEazffa,1,142929,15,15.0,48
-2026-07-12,IT,0EmeFodog0BfCgMzAIvKQp,Shakira,https://open.spotify.com/artist/0EmeFodog0BfCgMzAIvKQp,1,142929,15,15.0,49
-2026-07-12,IT,6X5L6rmyvrWWu60Gx6exiZ,54 Ultra,https://open.spotify.com/artist/6X5L6rmyvrWWu60Gx6exiZ,1,138273,18,18.0,50
-2026-07-12,IT,4p5WgeiPSPpqPDs7T6OkWf,ANOTR,https://open.spotify.com/artist/4p5WgeiPSPpqPDs7T6OkWf,1,138273,18,18.0,51
-2026-07-12,IT,0gzwXezN4IUHAwLufA6YcX,Emma,https://open.spotify.com/artist/0gzwXezN4IUHAwLufA6YcX,2,130397,62,111.5,52
-2026-07-12,IT,76UCIJTB0jcJvBaL0CdIqx,Takagi & Ketra,https://open.spotify.com/artist/76UCIJTB0jcJvBaL0CdIqx,2,127641,75,100.5,53
-2026-07-12,IT,3xGlLcG9CUrs5MvFkSLOS5,Marco Mengoni,https://open.spotify.com/artist/3xGlLcG9CUrs5MvFkSLOS5,1,126926,21,21.0,54
-2026-07-12,IT,1eBPcZCSWh1EAv0aOXusye,Higashi,https://open.spotify.com/artist/1eBPcZCSWh1EAv0aOXusye,2,126830,83,99.5,55
-2026-07-12,IT,7a0XAaPaK2aDSqa8p3QnC7,Beéle,https://open.spotify.com/artist/7a0XAaPaK2aDSqa8p3QnC7,1,125447,22,22.0,56
-2026-07-12,IT,3m5qlPf2OkihLz3dRYnkPA,Ovy On The Drums,https://open.spotify.com/artist/3m5qlPf2OkihLz3dRYnkPA,1,125447,22,22.0,57
-2026-07-12,IT,5uwa6tAMMfNbBFIHiI6NV4,W Sound,https://open.spotify.com/artist/5uwa6tAMMfNbBFIHiI6NV4,1,125447,22,22.0,58
-2026-07-12,IT,1UjxAZqzphB1tsMb1aWBj0,Omega,https://open.spotify.com/artist/1UjxAZqzphB1tsMb1aWBj0,2,123783,83,107.5,59
-2026-07-12,IT,2aiM1OfMODFLUXaQgEVPK1,Roberto Ferrante,https://open.spotify.com/artist/2aiM1OfMODFLUXaQgEVPK1,2,123783,83,107.5,60
-2026-07-12,IT,0EqkKYDK9EkKY5N7zU3FPv,Annalisa,https://open.spotify.com/artist/0EqkKYDK9EkKY5N7zU3FPv,2,122637,101,104.0,61
-2026-07-12,IT,5iot8OPcosJN9nCl7I5SdK,Irama,https://open.spotify.com/artist/5iot8OPcosJN9nCl7I5SdK,1,121410,24,24.0,62
-2026-07-12,IT,0F3tUZeb9dLNEpxCpzEBQt,SOLTO (FR),https://open.spotify.com/artist/0F3tUZeb9dLNEpxCpzEBQt,1,115081,29,29.0,63
-2026-07-12,IT,1c22GXH30ijlOfXhfLz9Df,Elvis Crespo,https://open.spotify.com/artist/1c22GXH30ijlOfXhfLz9Df,1,114266,31,31.0,64
-2026-07-12,IT,7cdIY4mDfM1dbjgl7s2fGR,Sal Da Vinci,https://open.spotify.com/artist/7cdIY4mDfM1dbjgl7s2fGR,2,110330,93,143.0,65
-2026-07-12,IT,6FcVd3KlRxozcLl19FMXu9,Max Pezzali,https://open.spotify.com/artist/6FcVd3KlRxozcLl19FMXu9,2,109036,122,141.0,66
-2026-07-12,IT,7tmMPdOmFvdRvbj2aWoiRi,Jovanotti,https://open.spotify.com/artist/7tmMPdOmFvdRvbj2aWoiRi,1,107827,37,37.0,67
-2026-07-12,IT,7GgpsUpkj3olseoaTY7TEY,Elodie,https://open.spotify.com/artist/7GgpsUpkj3olseoaTY7TEY,2,106310,121,150.5,68
-2026-07-12,IT,1uNFoZAHBGtllmzznpCI3s,Justin Bieber,https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s,1,105306,38,38.0,69
-2026-07-12,IT,0hCNtLu0JehylgoiP8L4Gh,Nicki Minaj,https://open.spotify.com/artist/0hCNtLu0JehylgoiP8L4Gh,1,105306,38,38.0,70
-2026-07-12,IT,5mHUmlJWkcoOk1NbjfrXWz,Temper City,https://open.spotify.com/artist/5mHUmlJWkcoOk1NbjfrXWz,1,91188,47,47.0,71
-2026-07-12,IT,6PsQc21YZU7WNfiODG69Qk,Tony Boy,https://open.spotify.com/artist/6PsQc21YZU7WNfiODG69Qk,1,86361,54,54.0,72
-2026-07-12,IT,17yREPqyU875WJnX9U082A,Imael Angel,https://open.spotify.com/artist/17yREPqyU875WJnX9U082A,1,79925,60,60.0,73
-2026-07-12,IT,1cK2Abwkni7m51wJCSGllN,Ultra Naté,https://open.spotify.com/artist/1cK2Abwkni7m51wJCSGllN,1,79925,60,60.0,74
-2026-07-12,IT,01XCyobLTxOrswogL7YNIu,Dibla,https://open.spotify.com/artist/01XCyobLTxOrswogL7YNIu,1,79290,61,61.0,75
-2026-07-12,IT,0jdNdfi4vAuVi7a6cPDFBM,Lazza,https://open.spotify.com/artist/0jdNdfi4vAuVi7a6cPDFBM,1,78525,63,63.0,76
-2026-07-12,IT,7krakxeyEmge6pzTthKNyg,The Bausa,https://open.spotify.com/artist/7krakxeyEmge6pzTthKNyg,1,78080,65,65.0,77
-2026-07-12,IT,1uZVxckdGGKhFMpCnupXmP,Los Pleneros de la Cresta,https://open.spotify.com/artist/1uZVxckdGGKhFMpCnupXmP,1,77275,67,67.0,78
-2026-07-12,IT,2R21vXR83lH98kGeO99Y66,Anuel AA,https://open.spotify.com/artist/2R21vXR83lH98kGeO99Y66,1,75900,68,68.0,79
-2026-07-12,IT,6RWMnZmXs8Ob715qLr4374,Aissa,https://open.spotify.com/artist/6RWMnZmXs8Ob715qLr4374,1,75821,69,69.0,80
-2026-07-12,IT,3g9MKjIP9xrMTY5Pbwr6Nk,Kreamly,https://open.spotify.com/artist/3g9MKjIP9xrMTY5Pbwr6Nk,1,75821,69,69.0,81
-2026-07-12,IT,2CCgb0KApjfQDuTppovpf8,Rvfv,https://open.spotify.com/artist/2CCgb0KApjfQDuTppovpf8,1,75821,69,69.0,82
-2026-07-12,IT,2LRoIwlKmHjgvigdNGBHNo,Feid,https://open.spotify.com/artist/2LRoIwlKmHjgvigdNGBHNo,1,73154,73,73.0,83
-2026-07-12,IT,1HBjj22wzbscIZ9sEb5dyf,Jonas Blue,https://open.spotify.com/artist/1HBjj22wzbscIZ9sEb5dyf,1,69957,78,78.0,84
-2026-07-12,IT,5JsnFhU4OqgEtNXs7Sq1Vm,Malive,https://open.spotify.com/artist/5JsnFhU4OqgEtNXs7Sq1Vm,1,69957,78,78.0,85
-2026-07-12,IT,5rRcnWrevHgbuWjl7Lhft7,Merk & Kremont,https://open.spotify.com/artist/5rRcnWrevHgbuWjl7Lhft7,1,67870,84,84.0,86
-2026-07-12,IT,72A0Z8q8NiochyK9gUHpCR,The Kolors,https://open.spotify.com/artist/72A0Z8q8NiochyK9gUHpCR,1,67870,84,84.0,87
-2026-07-12,IT,6JhUHne9H09NdkTI5E9GSt,Dardust,https://open.spotify.com/artist/6JhUHne9H09NdkTI5E9GSt,1,67859,85,85.0,88
-2026-07-12,IT,3DeOmVSmpv7WknXoo1OS8p,Alleh,https://open.spotify.com/artist/3DeOmVSmpv7WknXoo1OS8p,1,65976,89,89.0,89
-2026-07-12,IT,4eq1q0o9XPyNq9RG3fNDD1,Yorghaki,https://open.spotify.com/artist/4eq1q0o9XPyNq9RG3fNDD1,1,65976,89,89.0,90
-2026-07-12,IT,2sil8z5kiy4r76CRTXxBCA,The Goo Goo Dolls,https://open.spotify.com/artist/2sil8z5kiy4r76CRTXxBCA,1,65741,90,90.0,91
-2026-07-12,IT,790FomKkXshlbRYZFtlgla,KAROL G,https://open.spotify.com/artist/790FomKkXshlbRYZFtlgla,1,65735,91,91.0,92
-2026-07-12,IT,6USv9qhCn6zfxlBQIYJ9qs,Dominic Fike,https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs,1,63379,96,96.0,93
-2026-07-12,IT,1yq9UuPp5DIb5w6eswGbKV,Adriano Celentano,https://open.spotify.com/artist/1yq9UuPp5DIb5w6eswGbKV,1,63360,97,97.0,94
-2026-07-12,IT,44DWomjW1oDuxIoBIRpmQ4,Rhove,https://open.spotify.com/artist/44DWomjW1oDuxIoBIRpmQ4,1,63060,98,98.0,95
-2026-07-12,IT,5H1nN1SzW0qNeUEZvuXjAj,Danny Ocean,https://open.spotify.com/artist/5H1nN1SzW0qNeUEZvuXjAj,1,62370,102,102.0,96
-2026-07-12,IT,10exVja0key0uqUkk6LJRT,Vance Joy,https://open.spotify.com/artist/10exVja0key0uqUkk6LJRT,1,62088,103,103.0,97
-2026-07-12,IT,5p9HO3XC5P3BLxJs5Mtrhm,Djo,https://open.spotify.com/artist/5p9HO3XC5P3BLxJs5Mtrhm,1,59960,110,110.0,98
-2026-07-12,IT,7MdlXmq2HViAJWo9cf30sR,Cloonee,https://open.spotify.com/artist/7MdlXmq2HViAJWo9cf30sR,1,59486,113,113.0,99
-2026-07-12,IT,6HabM2PUM519iIxervGWSb,Prospa,https://open.spotify.com/artist/6HabM2PUM519iIxervGWSb,1,59486,113,113.0,100
-2026-07-12,IT,1EbIfIjVcauDatNO4vagL1,Sybil,https://open.spotify.com/artist/1EbIfIjVcauDatNO4vagL1,1,59486,113,113.0,101
-2026-07-12,IT,5Otk4eRecMMbC5YR4Iliou,Le-one,https://open.spotify.com/artist/5Otk4eRecMMbC5YR4Iliou,1,58580,116,116.0,102
-2026-07-12,IT,2eFv7NVs8R6Go7msuqikeg,Pino Daniele,https://open.spotify.com/artist/2eFv7NVs8R6Go7msuqikeg,1,58422,119,119.0,103
-2026-07-12,IT,2DlGxzQSjYe5N6G9nkYghR,Jennifer Lopez,https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR,1,57379,123,123.0,104
-2026-07-12,IT,0TnOYISbd1XYRBk9myaseg,Pitbull,https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg,1,57379,123,123.0,105
-2026-07-12,IT,3wDn3kW2zDRLnaQAnX0S3x,Dat Boi Dee,https://open.spotify.com/artist/3wDn3kW2zDRLnaQAnX0S3x,1,56533,126,126.0,106
-2026-07-12,IT,6hkKbkZGvAXuvle2FhCnxy,Shablo,https://open.spotify.com/artist/6hkKbkZGvAXuvle2FhCnxy,1,56027,127,127.0,107
-2026-07-12,IT,5NGO30tJxFlKixkPSgXcFE,The Police,https://open.spotify.com/artist/5NGO30tJxFlKixkPSgXcFE,1,55672,130,130.0,108
-2026-07-12,IT,2oQX8QiMXOyuqbcZEFsZfm,El Alfa,https://open.spotify.com/artist/2oQX8QiMXOyuqbcZEFsZfm,1,55533,132,132.0,109
-2026-07-12,IT,05brE7yGJDmIYlMirfSi0B,Federica Abbate,https://open.spotify.com/artist/05brE7yGJDmIYlMirfSi0B,1,55439,133,133.0,110
-2026-07-12,IT,0harR1ApYeMN6GOLBNMiUR,Eddie Brock,https://open.spotify.com/artist/0harR1ApYeMN6GOLBNMiUR,1,55417,134,134.0,111
-2026-07-12,IT,0lQtBhjEJpoOroQS6fbWMc,Aka 7even,https://open.spotify.com/artist/0lQtBhjEJpoOroQS6fbWMc,1,53402,142,142.0,112
-2026-07-12,IT,5FwDaIGy29GQC5d0MR7fKf,LDA,https://open.spotify.com/artist/5FwDaIGy29GQC5d0MR7fKf,1,53402,142,142.0,113
-2026-07-12,IT,6YBgd2LKccEB3pX6UaW1Yp,Thegiornalisti,https://open.spotify.com/artist/6YBgd2LKccEB3pX6UaW1Yp,1,52863,146,146.0,114
-2026-07-12,IT,1Yj5Xey7kTwvZla8sqdsdE,Cris MJ,https://open.spotify.com/artist/1Yj5Xey7kTwvZla8sqdsdE,1,52101,150,150.0,115
-2026-07-12,IT,7CvTknweLr9feJtRGrpDBy,FloyyMenor,https://open.spotify.com/artist/7CvTknweLr9feJtRGrpDBy,1,52101,150,150.0,116
-2026-07-12,IT,7h1amg0X7Q5d0D5KfuyKTg,Pyrex,https://open.spotify.com/artist/7h1amg0X7Q5d0D5KfuyKTg,1,51905,152,152.0,117
-2026-07-12,IT,3AVx3OBPIk4pJQllAXoVs1,Gaia,https://open.spotify.com/artist/3AVx3OBPIk4pJQllAXoVs1,1,51848,153,153.0,118
-2026-07-12,IT,3JhNCzhSMTxs9WLGJJxWOY,Macklemore,https://open.spotify.com/artist/3JhNCzhSMTxs9WLGJJxWOY,1,51639,154,154.0,119
-2026-07-12,IT,5BcAKTbp20cv7tC5VqPFoC,Macklemore & Ryan Lewis,https://open.spotify.com/artist/5BcAKTbp20cv7tC5VqPFoC,1,51639,154,154.0,120
-2026-07-12,IT,4e0nWw2r4BoQSKPQ2zpU13,Ray Dalton,https://open.spotify.com/artist/4e0nWw2r4BoQSKPQ2zpU13,1,51639,154,154.0,121
-2026-07-12,IT,5mZJerulcERBZV7xnhrVp1,Ryan Lewis,https://open.spotify.com/artist/5mZJerulcERBZV7xnhrVp1,1,51639,154,154.0,122
-2026-07-12,IT,7F2utINZ6tSokSiZTQBE27,Guè,https://open.spotify.com/artist/7F2utINZ6tSokSiZTQBE27,1,51549,155,155.0,123
-2026-07-12,IT,33ScadVnbm2X8kkUqOkC6Z,Don Omar,https://open.spotify.com/artist/33ScadVnbm2X8kkUqOkC6Z,1,51528,156,156.0,124
-2026-07-12,IT,5bv5RplEOwdCvhq0EILh9E,Lucenzo,https://open.spotify.com/artist/5bv5RplEOwdCvhq0EILh9E,1,51528,156,156.0,125
-2026-07-12,IT,0fTSzq9jAh4c36UVb4V7CB,Alex Warren,https://open.spotify.com/artist/0fTSzq9jAh4c36UVb4V7CB,1,51491,157,157.0,126
-2026-07-12,IT,0r310cYIlI5aMcuDTChNlO,Loretta Goggi,https://open.spotify.com/artist/0r310cYIlI5aMcuDTChNlO,1,51426,158,158.0,127
-2026-07-12,IT,7u710e44HW3K7A5eTnRqHC,Fabri Fibra,https://open.spotify.com/artist/7u710e44HW3K7A5eTnRqHC,1,51237,161,161.0,128
-2026-07-12,IT,7gjqZ8coFZimZDtdk04WP1,MACE,https://open.spotify.com/artist/7gjqZ8coFZimZDtdk04WP1,1,51213,162,162.0,129
-2026-07-12,IT,2nftqfbLohpDYzY8VUlvbm,Benji & Fede,https://open.spotify.com/artist/2nftqfbLohpDYzY8VUlvbm,1,50535,166,166.0,130
-2026-07-12,IT,7HtzacrJpksCiS6qHypb8l,Ditonellapiaga,https://open.spotify.com/artist/7HtzacrJpksCiS6qHypb8l,1,50435,167,167.0,131
-2026-07-12,IT,2PEMswqQspTSsAltdeF5kO,Simba La Rue,https://open.spotify.com/artist/2PEMswqQspTSsAltdeF5kO,1,50101,169,169.0,132
-2026-07-12,IT,2dAKW1tsAariQ0Ta2gqp8N,Gow Tribe,https://open.spotify.com/artist/2dAKW1tsAariQ0Ta2gqp8N,1,49915,170,170.0,133
-2026-07-12,IT,2cy1zPcrFcXAJTP0APWewL,Gente De Zona,https://open.spotify.com/artist/2cy1zPcrFcXAJTP0APWewL,1,49900,171,171.0,134
-2026-07-12,IT,4wLXwxDeWQ8mtUIRPxGiD6,Marc Anthony,https://open.spotify.com/artist/4wLXwxDeWQ8mtUIRPxGiD6,1,49900,171,171.0,135
-2026-07-12,IT,2i04Yoaa4wV8J75w8aPX1G,Kano Choir,https://open.spotify.com/artist/2i04Yoaa4wV8J75w8aPX1G,1,48981,174,174.0,136
-2026-07-12,IT,7H8ZC8uHJMPZGLMApRRNIz,Ligabue,https://open.spotify.com/artist/7H8ZC8uHJMPZGLMApRRNIz,1,48944,177,177.0,137
-2026-07-12,IT,2jnjbAYKylrmBMCFZE0OCK,Poison Beatz,https://open.spotify.com/artist/2jnjbAYKylrmBMCFZE0OCK,1,48656,178,178.0,138
-2026-07-12,IT,7KFOc3T4Xo8DVZt4PWw2qN,Gazzelle,https://open.spotify.com/artist/7KFOc3T4Xo8DVZt4PWw2qN,1,48579,179,179.0,139
-2026-07-12,IT,1fctva4kpRbg2k3v7kwRuS,Rvssian,https://open.spotify.com/artist/1fctva4kpRbg2k3v7kwRuS,1,48575,180,180.0,140
-2026-07-12,IT,6wH6iStAh4KIaWfuhf0NYM,Manu Chao,https://open.spotify.com/artist/6wH6iStAh4KIaWfuhf0NYM,1,48343,182,182.0,141
-2026-07-12,IT,0du5cEVh5yTK9QJze8zA0C,Bruno Mars,https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C,1,48315,183,183.0,142
-2026-07-12,IT,0Wwji82sLA0Hcvtuak3omb,AUDREY NUNA,https://open.spotify.com/artist/0Wwji82sLA0Hcvtuak3omb,1,48175,184,184.0,143
-2026-07-12,IT,0RMJOzHDhAKY1o2j0W0vxY,EJAE,https://open.spotify.com/artist/0RMJOzHDhAKY1o2j0W0vxY,1,48175,184,184.0,144
-2026-07-12,IT,2yNNYQBChuox9A5Ka93BIn,HUNTR/X,https://open.spotify.com/artist/2yNNYQBChuox9A5Ka93BIn,1,48175,184,184.0,145
-2026-07-12,IT,7mW7Tv7NvywKKXqafZo0Lc,KPop Demon Hunters Cast,https://open.spotify.com/artist/7mW7Tv7NvywKKXqafZo0Lc,1,48175,184,184.0,146
-2026-07-12,IT,6U1dV7aL68N7Gb0Naq34V5,REI AMI,https://open.spotify.com/artist/6U1dV7aL68N7Gb0Naq34V5,1,48175,184,184.0,147
-2026-07-12,IT,6jwzGu5VdkR5tsRROYuxso,DrefGold,https://open.spotify.com/artist/6jwzGu5VdkR5tsRROYuxso,1,47804,186,186.0,148
-2026-07-12,IT,716NhGYqD1jl2wI1Qkgq36,Bizarrap,https://open.spotify.com/artist/716NhGYqD1jl2wI1Qkgq36,1,47106,190,190.0,149
-2026-07-12,IT,5YV5crRpcdknHgEzystZHr,SHUNE,https://open.spotify.com/artist/5YV5crRpcdknHgEzystZHr,1,46273,192,192.0,150
-2026-07-12,IT,3o7fC2O4nraaicpID6bBZW,Elettra Lamborghini,https://open.spotify.com/artist/3o7fC2O4nraaicpID6bBZW,1,46073,194,194.0,151
-2026-07-12,IT,1vyhD5VmyZ7KMfW5gqLgo5,J Balvin,https://open.spotify.com/artist/1vyhD5VmyZ7KMfW5gqLgo5,1,46061,195,195.0,152
-2026-07-12,IT,6nVcHLIgY5pE2YCl8ubca1,JHAYCO,https://open.spotify.com/artist/6nVcHLIgY5pE2YCl8ubca1,1,46030,196,196.0,153
-2026-07-12,IT,4gzpq5DPGxSnKTe4SA8HAU,Coldplay,https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU,1,45851,199,199.0,154
+2026-07-13,IT,27LlKWxS3KXW7RRAxN5S8s,Geolier,https://open.spotify.com/artist/27LlKWxS3KXW7RRAxN5S8s,19,1710901,1,97.05,1
+2026-07-13,IT,7K80yOTC0Id95gRaOxDG5u,ANNA,https://open.spotify.com/artist/7K80yOTC0Id95gRaOxDG5u,17,1592443,4,77.88,2
+2026-07-13,IT,23TFHmajVfBtlRx5MXqgoz,Sfera Ebbasta,https://open.spotify.com/artist/23TFHmajVfBtlRx5MXqgoz,19,1466342,7,109.37,3
+2026-07-13,IT,2K5nCggbhSZ00YCYP5qkZS,Shiva,https://open.spotify.com/artist/2K5nCggbhSZ00YCYP5qkZS,13,1057686,6,104.62,4
+2026-07-13,IT,3hN3iJMbbBmqBSAMx5veDa,Ultimo,https://open.spotify.com/artist/3hN3iJMbbBmqBSAMx5veDa,9,725549,10,95.0,5
+2026-07-13,IT,2R4kNOwHUUsuDYhKsESVbF,Artie 5ive,https://open.spotify.com/artist/2R4kNOwHUUsuDYhKsESVbF,6,660124,3,59.17,6
+2026-07-13,IT,4q3ewBCX7sLwd24euuV69X,Bad Bunny,https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X,7,577879,32,80.29,7
+2026-07-13,IT,4rj3KWaLAnuxgtMMkypZhf,Juli,https://open.spotify.com/artist/4rj3KWaLAnuxgtMMkypZhf,8,576011,44,98.12,8
+2026-07-13,IT,25u1DN0MwQVSav4XoJS7hl,Olly,https://open.spotify.com/artist/25u1DN0MwQVSav4XoJS7hl,7,487096,44,104.43,9
+2026-07-13,IT,2n0Ki4A5tKTEloq3WCt1IH,Samurai Jay,https://open.spotify.com/artist/2n0Ki4A5tKTEloq3WCt1IH,3,429513,2,51.0,10
+2026-07-13,IT,2QJ1AReDewmz4fcRhGxW6Y,Vito Salamanca,https://open.spotify.com/artist/2QJ1AReDewmz4fcRhGxW6Y,3,429513,2,51.0,11
+2026-07-13,IT,7FeObngbQ0GY3SojNwKdKn,Bresh,https://open.spotify.com/artist/7FeObngbQ0GY3SojNwKdKn,4,392803,8,79.0,12
+2026-07-13,IT,0EUR8jz8L936AEbV2Spkca,Kid Yugi,https://open.spotify.com/artist/0EUR8jz8L936AEbV2Spkca,6,352057,47,146.67,13
+2026-07-13,IT,2ifTEcQqKSPwijIEcPHQ1R,Flatpearl,https://open.spotify.com/artist/2ifTEcQqKSPwijIEcPHQ1R,4,346225,14,80.75,14
+2026-07-13,IT,1dlyjeDlgXalzt5oqbgWDs,G.Mineiro,https://open.spotify.com/artist/1dlyjeDlgXalzt5oqbgWDs,4,346225,14,80.75,15
+2026-07-13,IT,1l1A1U8VJM15W7zonFqKhg,Succo,https://open.spotify.com/artist/1l1A1U8VJM15W7zonFqKhg,4,346225,14,80.75,16
+2026-07-13,IT,0lI3rF4hi4op6UxqlLHPzv,Achille Lauro,https://open.spotify.com/artist/0lI3rF4hi4op6UxqlLHPzv,4,293787,35,93.5,17
+2026-07-13,IT,3LvwPiJQJ0da0GurKMToV0,Baby Gang,https://open.spotify.com/artist/3LvwPiJQJ0da0GurKMToV0,5,276286,76,149.0,18
+2026-07-13,IT,51OKuyM4BiiYxFm8Mi6fa9,Mauvais djo,https://open.spotify.com/artist/51OKuyM4BiiYxFm8Mi6fa9,3,266553,17,78.0,19
+2026-07-13,IT,5SulO4l40qDuV9zUGLZx7n,Capo Plaza,https://open.spotify.com/artist/5SulO4l40qDuV9zUGLZx7n,4,262733,42,123.5,20
+2026-07-13,IT,0QrUbsrL5imqntAfDl8i7q,Fred De Palma,https://open.spotify.com/artist/0QrUbsrL5imqntAfDl8i7q,2,249006,5,91.5,21
+2026-07-13,IT,7108jelN43seqWILMvJwKi,Serena Brancale,https://open.spotify.com/artist/7108jelN43seqWILMvJwKi,2,236151,9,52.0,22
+2026-07-13,IT,5AZuEF0feCXMkUCwQiQlW7,Marracash,https://open.spotify.com/artist/5AZuEF0feCXMkUCwQiQlW7,3,224691,31,101.67,23
+2026-07-13,IT,38CThoTDmXugNnfonW466d,Jiz,https://open.spotify.com/artist/38CThoTDmXugNnfonW466d,2,222973,14,42.5,24
+2026-07-13,IT,5dXlc7MnpaTeUIsHLVe3n4,Coez,https://open.spotify.com/artist/5dXlc7MnpaTeUIsHLVe3n4,3,217762,59,78.67,25
+2026-07-13,IT,6RdcIWVKYYzNzjQRd3oyHS,Pinguini Tattici Nucleari,https://open.spotify.com/artist/6RdcIWVKYYzNzjQRd3oyHS,2,207281,12,83.5,26
+2026-07-13,IT,7FNnA9vBm6EKceENgCGRMb,Anitta,https://open.spotify.com/artist/7FNnA9vBm6EKceENgCGRMb,1,199486,5,5.0,27
+2026-07-13,IT,6FtwCmLY6L1sqvjaQ2lV6G,Emis Killa,https://open.spotify.com/artist/6FtwCmLY6L1sqvjaQ2lV6G,1,199486,5,5.0,28
+2026-07-13,IT,396Jr76018oUMR6QBnqT8T,Cesare Cremonini,https://open.spotify.com/artist/396Jr76018oUMR6QBnqT8T,3,194568,58,110.67,29
+2026-07-13,IT,5PlfkPxwCpRRWQJBxCa0By,HUGEL,https://open.spotify.com/artist/5PlfkPxwCpRRWQJBxCa0By,2,194093,34,45.0,30
+2026-07-13,IT,3fhMfkPPzksWuw0hEm4ldm,Ernia,https://open.spotify.com/artist/3fhMfkPPzksWuw0hEm4ldm,3,192487,62,112.0,31
+2026-07-13,IT,1cKyknhftNKXCjMBd2hDrG,DYSTINCT,https://open.spotify.com/artist/1cKyknhftNKXCjMBd2hDrG,1,191479,7,7.0,32
+2026-07-13,IT,1A6HBLulvBFzNtlMb7b08f,Angelina Mango,https://open.spotify.com/artist/1A6HBLulvBFzNtlMb7b08f,2,187707,22,63.5,33
+2026-07-13,IT,3HAwumPgGOSXlZSyGWuLhB,Sayf,https://open.spotify.com/artist/3HAwumPgGOSXlZSyGWuLhB,2,184417,33,52.0,34
+2026-07-13,IT,2DaxqgrOhkeH0fpeiQq2f4,Oasis,https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4,2,174782,23,101.0,35
+2026-07-13,IT,52iwsT98xCoGgiGntTiR7K,Quevedo,https://open.spotify.com/artist/52iwsT98xCoGgiGntTiR7K,2,171016,28,96.5,36
+2026-07-13,IT,0BjRnUqiITQwjqGtTeoxUS,DELIA,https://open.spotify.com/artist/0BjRnUqiITQwjqGtTeoxUS,1,170431,9,9.0,37
+2026-07-13,IT,5mTg1ztZByLRHsOEtwmT4G,Levante,https://open.spotify.com/artist/5mTg1ztZByLRHsOEtwmT4G,1,170431,9,9.0,38
+2026-07-13,IT,1vgQksyJ0IVz8y9XerEOy3,Madame,https://open.spotify.com/artist/1vgQksyJ0IVz8y9XerEOy3,2,170240,31,79.5,39
+2026-07-13,IT,26toJml6wSdf58ZgNG0ci9,Dipinto,https://open.spotify.com/artist/26toJml6wSdf58ZgNG0ci9,2,156293,55,67.0,40
+2026-07-13,IT,6HQ27YefiitrZ9YsWrgRHX,Fresh Beatz,https://open.spotify.com/artist/6HQ27YefiitrZ9YsWrgRHX,2,156293,55,67.0,41
+2026-07-13,IT,7GacyaFUp0qkEJglERX9N7,Alfa,https://open.spotify.com/artist/7GacyaFUp0qkEJglERX9N7,2,153576,38,117.5,42
+2026-07-13,IT,47z0zz9ZMCn9GBiPRTn5Bc,Tommaso Paradiso,https://open.spotify.com/artist/47z0zz9ZMCn9GBiPRTn5Bc,2,145853,46,110.5,43
+2026-07-13,IT,3fMbdgg4jU18AjLCKBhRSm,Michael Jackson,https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm,2,144860,64,80.0,44
+2026-07-13,IT,3yiEJ9SByXZMXTwaKdVFN4,Luchè,https://open.spotify.com/artist/3yiEJ9SByXZMXTwaKdVFN4,2,143905,60,81.0,45
+2026-07-13,IT,1QeqGmpgU5Yg74GNcjIIq3,Fulminacci,https://open.spotify.com/artist/1QeqGmpgU5Yg74GNcjIIq3,2,143708,50,110.5,46
+2026-07-13,IT,3wcj11K77LjEY1PkEazffa,Burna Boy,https://open.spotify.com/artist/3wcj11K77LjEY1PkEazffa,1,138307,16,16.0,47
+2026-07-13,IT,0EmeFodog0BfCgMzAIvKQp,Shakira,https://open.spotify.com/artist/0EmeFodog0BfCgMzAIvKQp,1,138307,16,16.0,48
+2026-07-13,IT,1eBPcZCSWh1EAv0aOXusye,Higashi,https://open.spotify.com/artist/1eBPcZCSWh1EAv0aOXusye,2,134190,76,88.5,49
+2026-07-13,IT,6X5L6rmyvrWWu60Gx6exiZ,54 Ultra,https://open.spotify.com/artist/6X5L6rmyvrWWu60Gx6exiZ,1,133786,19,19.0,50
+2026-07-13,IT,4p5WgeiPSPpqPDs7T6OkWf,ANOTR,https://open.spotify.com/artist/4p5WgeiPSPpqPDs7T6OkWf,1,133786,19,19.0,51
+2026-07-13,IT,0gzwXezN4IUHAwLufA6YcX,Emma,https://open.spotify.com/artist/0gzwXezN4IUHAwLufA6YcX,2,129470,67,115.5,52
+2026-07-13,IT,1UjxAZqzphB1tsMb1aWBj0,Omega,https://open.spotify.com/artist/1UjxAZqzphB1tsMb1aWBj0,2,127153,76,107.0,53
+2026-07-13,IT,2aiM1OfMODFLUXaQgEVPK1,Roberto Ferrante,https://open.spotify.com/artist/2aiM1OfMODFLUXaQgEVPK1,2,127153,76,107.0,54
+2026-07-13,IT,3xGlLcG9CUrs5MvFkSLOS5,Marco Mengoni,https://open.spotify.com/artist/3xGlLcG9CUrs5MvFkSLOS5,1,126257,22,22.0,55
+2026-07-13,IT,7a0XAaPaK2aDSqa8p3QnC7,Beéle,https://open.spotify.com/artist/7a0XAaPaK2aDSqa8p3QnC7,1,123772,25,25.0,56
+2026-07-13,IT,3m5qlPf2OkihLz3dRYnkPA,Ovy On The Drums,https://open.spotify.com/artist/3m5qlPf2OkihLz3dRYnkPA,1,123772,25,25.0,57
+2026-07-13,IT,5uwa6tAMMfNbBFIHiI6NV4,W Sound,https://open.spotify.com/artist/5uwa6tAMMfNbBFIHiI6NV4,1,123772,25,25.0,58
+2026-07-13,IT,5iot8OPcosJN9nCl7I5SdK,Irama,https://open.spotify.com/artist/5iot8OPcosJN9nCl7I5SdK,1,123426,26,26.0,59
+2026-07-13,IT,76UCIJTB0jcJvBaL0CdIqx,Takagi & Ketra,https://open.spotify.com/artist/76UCIJTB0jcJvBaL0CdIqx,2,119772,90,121.0,60
+2026-07-13,IT,1c22GXH30ijlOfXhfLz9Df,Elvis Crespo,https://open.spotify.com/artist/1c22GXH30ijlOfXhfLz9Df,1,119318,28,28.0,61
+2026-07-13,IT,0EqkKYDK9EkKY5N7zU3FPv,Annalisa,https://open.spotify.com/artist/0EqkKYDK9EkKY5N7zU3FPv,2,117457,113,116.5,62
+2026-07-13,IT,6bMul6rmRS03x38tWKYifO,883,https://open.spotify.com/artist/6bMul6rmRS03x38tWKYifO,2,117203,91,129.5,63
+2026-07-13,IT,6FcVd3KlRxozcLl19FMXu9,Max Pezzali,https://open.spotify.com/artist/6FcVd3KlRxozcLl19FMXu9,2,109964,130,142.5,64
+2026-07-13,IT,0F3tUZeb9dLNEpxCpzEBQt,SOLTO (FR),https://open.spotify.com/artist/0F3tUZeb9dLNEpxCpzEBQt,1,109252,34,34.0,65
+2026-07-13,IT,7GgpsUpkj3olseoaTY7TEY,Elodie,https://open.spotify.com/artist/7GgpsUpkj3olseoaTY7TEY,2,108256,129,148.0,66
+2026-07-13,IT,1uNFoZAHBGtllmzznpCI3s,Justin Bieber,https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s,1,107230,36,36.0,67
+2026-07-13,IT,0hCNtLu0JehylgoiP8L4Gh,Nicki Minaj,https://open.spotify.com/artist/0hCNtLu0JehylgoiP8L4Gh,1,107230,36,36.0,68
+2026-07-13,IT,7tmMPdOmFvdRvbj2aWoiRi,Jovanotti,https://open.spotify.com/artist/7tmMPdOmFvdRvbj2aWoiRi,1,106601,38,38.0,69
+2026-07-13,IT,5mHUmlJWkcoOk1NbjfrXWz,Temper City,https://open.spotify.com/artist/5mHUmlJWkcoOk1NbjfrXWz,1,101643,41,41.0,70
+2026-07-13,IT,6PsQc21YZU7WNfiODG69Qk,Tony Boy,https://open.spotify.com/artist/6PsQc21YZU7WNfiODG69Qk,1,90200,53,53.0,71
+2026-07-13,IT,17yREPqyU875WJnX9U082A,Imael Angel,https://open.spotify.com/artist/17yREPqyU875WJnX9U082A,1,84841,56,56.0,72
+2026-07-13,IT,1cK2Abwkni7m51wJCSGllN,Ultra Naté,https://open.spotify.com/artist/1cK2Abwkni7m51wJCSGllN,1,84841,56,56.0,73
+2026-07-13,IT,0jdNdfi4vAuVi7a6cPDFBM,Lazza,https://open.spotify.com/artist/0jdNdfi4vAuVi7a6cPDFBM,1,83486,57,57.0,74
+2026-07-13,IT,1uZVxckdGGKhFMpCnupXmP,Los Pleneros de la Cresta,https://open.spotify.com/artist/1uZVxckdGGKhFMpCnupXmP,1,81712,61,61.0,75
+2026-07-13,IT,7krakxeyEmge6pzTthKNyg,The Bausa,https://open.spotify.com/artist/7krakxeyEmge6pzTthKNyg,1,78382,65,65.0,76
+2026-07-13,IT,2LRoIwlKmHjgvigdNGBHNo,Feid,https://open.spotify.com/artist/2LRoIwlKmHjgvigdNGBHNo,1,75384,69,69.0,77
+2026-07-13,IT,6RWMnZmXs8Ob715qLr4374,Aissa,https://open.spotify.com/artist/6RWMnZmXs8Ob715qLr4374,1,74974,70,70.0,78
+2026-07-13,IT,3g9MKjIP9xrMTY5Pbwr6Nk,Kreamly,https://open.spotify.com/artist/3g9MKjIP9xrMTY5Pbwr6Nk,1,74974,70,70.0,79
+2026-07-13,IT,2CCgb0KApjfQDuTppovpf8,Rvfv,https://open.spotify.com/artist/2CCgb0KApjfQDuTppovpf8,1,74974,70,70.0,80
+2026-07-13,IT,01XCyobLTxOrswogL7YNIu,Dibla,https://open.spotify.com/artist/01XCyobLTxOrswogL7YNIu,1,74720,71,71.0,81
+2026-07-13,IT,2R21vXR83lH98kGeO99Y66,Anuel AA,https://open.spotify.com/artist/2R21vXR83lH98kGeO99Y66,1,73520,73,73.0,82
+2026-07-13,IT,44DWomjW1oDuxIoBIRpmQ4,Rhove,https://open.spotify.com/artist/44DWomjW1oDuxIoBIRpmQ4,1,67971,82,82.0,83
+2026-07-13,IT,3DeOmVSmpv7WknXoo1OS8p,Alleh,https://open.spotify.com/artist/3DeOmVSmpv7WknXoo1OS8p,1,67468,84,84.0,84
+2026-07-13,IT,4eq1q0o9XPyNq9RG3fNDD1,Yorghaki,https://open.spotify.com/artist/4eq1q0o9XPyNq9RG3fNDD1,1,67468,84,84.0,85
+2026-07-13,IT,2sil8z5kiy4r76CRTXxBCA,The Goo Goo Dolls,https://open.spotify.com/artist/2sil8z5kiy4r76CRTXxBCA,1,67280,85,85.0,86
+2026-07-13,IT,6JhUHne9H09NdkTI5E9GSt,Dardust,https://open.spotify.com/artist/6JhUHne9H09NdkTI5E9GSt,1,66910,87,87.0,87
+2026-07-13,IT,6USv9qhCn6zfxlBQIYJ9qs,Dominic Fike,https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs,1,66742,88,88.0,88
+2026-07-13,IT,1HBjj22wzbscIZ9sEb5dyf,Jonas Blue,https://open.spotify.com/artist/1HBjj22wzbscIZ9sEb5dyf,1,65926,93,93.0,89
+2026-07-13,IT,5JsnFhU4OqgEtNXs7Sq1Vm,Malive,https://open.spotify.com/artist/5JsnFhU4OqgEtNXs7Sq1Vm,1,65926,93,93.0,90
+2026-07-13,IT,5rRcnWrevHgbuWjl7Lhft7,Merk & Kremont,https://open.spotify.com/artist/5rRcnWrevHgbuWjl7Lhft7,1,65720,95,95.0,91
+2026-07-13,IT,72A0Z8q8NiochyK9gUHpCR,The Kolors,https://open.spotify.com/artist/72A0Z8q8NiochyK9gUHpCR,1,65720,95,95.0,92
+2026-07-13,IT,790FomKkXshlbRYZFtlgla,KAROL G,https://open.spotify.com/artist/790FomKkXshlbRYZFtlgla,1,64985,97,97.0,93
+2026-07-13,IT,10exVja0key0uqUkk6LJRT,Vance Joy,https://open.spotify.com/artist/10exVja0key0uqUkk6LJRT,1,63503,99,99.0,94
+2026-07-13,IT,5p9HO3XC5P3BLxJs5Mtrhm,Djo,https://open.spotify.com/artist/5p9HO3XC5P3BLxJs5Mtrhm,1,63434,100,100.0,95
+2026-07-13,IT,5Otk4eRecMMbC5YR4Iliou,Le-one,https://open.spotify.com/artist/5Otk4eRecMMbC5YR4Iliou,1,63085,101,101.0,96
+2026-07-13,IT,5H1nN1SzW0qNeUEZvuXjAj,Danny Ocean,https://open.spotify.com/artist/5H1nN1SzW0qNeUEZvuXjAj,1,60794,107,107.0,97
+2026-07-13,IT,2DlGxzQSjYe5N6G9nkYghR,Jennifer Lopez,https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR,1,60100,109,109.0,98
+2026-07-13,IT,0TnOYISbd1XYRBk9myaseg,Pitbull,https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg,1,60100,109,109.0,99
+2026-07-13,IT,0harR1ApYeMN6GOLBNMiUR,Eddie Brock,https://open.spotify.com/artist/0harR1ApYeMN6GOLBNMiUR,1,59665,112,112.0,100
+2026-07-13,IT,7F2utINZ6tSokSiZTQBE27,Guè,https://open.spotify.com/artist/7F2utINZ6tSokSiZTQBE27,1,58896,115,115.0,101
+2026-07-13,IT,7MdlXmq2HViAJWo9cf30sR,Cloonee,https://open.spotify.com/artist/7MdlXmq2HViAJWo9cf30sR,1,58881,116,116.0,102
+2026-07-13,IT,6HabM2PUM519iIxervGWSb,Prospa,https://open.spotify.com/artist/6HabM2PUM519iIxervGWSb,1,58881,116,116.0,103
+2026-07-13,IT,1EbIfIjVcauDatNO4vagL1,Sybil,https://open.spotify.com/artist/1EbIfIjVcauDatNO4vagL1,1,58881,116,116.0,104
+2026-07-13,IT,3JhNCzhSMTxs9WLGJJxWOY,Macklemore,https://open.spotify.com/artist/3JhNCzhSMTxs9WLGJJxWOY,1,58451,119,119.0,105
+2026-07-13,IT,5BcAKTbp20cv7tC5VqPFoC,Macklemore & Ryan Lewis,https://open.spotify.com/artist/5BcAKTbp20cv7tC5VqPFoC,1,58451,119,119.0,106
+2026-07-13,IT,4e0nWw2r4BoQSKPQ2zpU13,Ray Dalton,https://open.spotify.com/artist/4e0nWw2r4BoQSKPQ2zpU13,1,58451,119,119.0,107
+2026-07-13,IT,5mZJerulcERBZV7xnhrVp1,Ryan Lewis,https://open.spotify.com/artist/5mZJerulcERBZV7xnhrVp1,1,58451,119,119.0,108
+2026-07-13,IT,2eFv7NVs8R6Go7msuqikeg,Pino Daniele,https://open.spotify.com/artist/2eFv7NVs8R6Go7msuqikeg,1,58047,122,122.0,109
+2026-07-13,IT,05brE7yGJDmIYlMirfSi0B,Federica Abbate,https://open.spotify.com/artist/05brE7yGJDmIYlMirfSi0B,1,58046,123,123.0,110
+2026-07-13,IT,7cdIY4mDfM1dbjgl7s2fGR,Sal Da Vinci,https://open.spotify.com/artist/7cdIY4mDfM1dbjgl7s2fGR,1,57119,127,127.0,111
+2026-07-13,IT,5NGO30tJxFlKixkPSgXcFE,The Police,https://open.spotify.com/artist/5NGO30tJxFlKixkPSgXcFE,1,56842,132,132.0,112
+2026-07-13,IT,7h1amg0X7Q5d0D5KfuyKTg,Pyrex,https://open.spotify.com/artist/7h1amg0X7Q5d0D5KfuyKTg,1,56255,137,137.0,113
+2026-07-13,IT,2oQX8QiMXOyuqbcZEFsZfm,El Alfa,https://open.spotify.com/artist/2oQX8QiMXOyuqbcZEFsZfm,1,56048,138,138.0,114
+2026-07-13,IT,1yq9UuPp5DIb5w6eswGbKV,Adriano Celentano,https://open.spotify.com/artist/1yq9UuPp5DIb5w6eswGbKV,1,55677,141,141.0,115
+2026-07-13,IT,2i04Yoaa4wV8J75w8aPX1G,Kano Choir,https://open.spotify.com/artist/2i04Yoaa4wV8J75w8aPX1G,1,54640,145,145.0,116
+2026-07-13,IT,0fTSzq9jAh4c36UVb4V7CB,Alex Warren,https://open.spotify.com/artist/0fTSzq9jAh4c36UVb4V7CB,1,54363,147,147.0,117
+2026-07-13,IT,0du5cEVh5yTK9QJze8zA0C,Bruno Mars,https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C,1,53585,149,149.0,118
+2026-07-13,IT,3wDn3kW2zDRLnaQAnX0S3x,Dat Boi Dee,https://open.spotify.com/artist/3wDn3kW2zDRLnaQAnX0S3x,1,53415,152,152.0,119
+2026-07-13,IT,2cy1zPcrFcXAJTP0APWewL,Gente De Zona,https://open.spotify.com/artist/2cy1zPcrFcXAJTP0APWewL,1,52979,154,154.0,120
+2026-07-13,IT,4wLXwxDeWQ8mtUIRPxGiD6,Marc Anthony,https://open.spotify.com/artist/4wLXwxDeWQ8mtUIRPxGiD6,1,52979,154,154.0,121
+2026-07-13,IT,2dAKW1tsAariQ0Ta2gqp8N,Gow Tribe,https://open.spotify.com/artist/2dAKW1tsAariQ0Ta2gqp8N,1,52757,156,156.0,122
+2026-07-13,IT,6hkKbkZGvAXuvle2FhCnxy,Shablo,https://open.spotify.com/artist/6hkKbkZGvAXuvle2FhCnxy,1,52493,159,159.0,123
+2026-07-13,IT,2PEMswqQspTSsAltdeF5kO,Simba La Rue,https://open.spotify.com/artist/2PEMswqQspTSsAltdeF5kO,1,52257,160,160.0,124
+2026-07-13,IT,1Yj5Xey7kTwvZla8sqdsdE,Cris MJ,https://open.spotify.com/artist/1Yj5Xey7kTwvZla8sqdsdE,1,52067,162,162.0,125
+2026-07-13,IT,7CvTknweLr9feJtRGrpDBy,FloyyMenor,https://open.spotify.com/artist/7CvTknweLr9feJtRGrpDBy,1,52067,162,162.0,126
+2026-07-13,IT,7u710e44HW3K7A5eTnRqHC,Fabri Fibra,https://open.spotify.com/artist/7u710e44HW3K7A5eTnRqHC,1,51828,164,164.0,127
+2026-07-13,IT,1fctva4kpRbg2k3v7kwRuS,Rvssian,https://open.spotify.com/artist/1fctva4kpRbg2k3v7kwRuS,1,51148,167,167.0,128
+2026-07-13,IT,3AVx3OBPIk4pJQllAXoVs1,Gaia,https://open.spotify.com/artist/3AVx3OBPIk4pJQllAXoVs1,1,50999,169,169.0,129
+2026-07-13,IT,33ScadVnbm2X8kkUqOkC6Z,Don Omar,https://open.spotify.com/artist/33ScadVnbm2X8kkUqOkC6Z,1,50471,170,170.0,130
+2026-07-13,IT,5bv5RplEOwdCvhq0EILh9E,Lucenzo,https://open.spotify.com/artist/5bv5RplEOwdCvhq0EILh9E,1,50471,170,170.0,131
+2026-07-13,IT,5KKpBU5eC2tJDzf0wmlRp2,RAYE,https://open.spotify.com/artist/5KKpBU5eC2tJDzf0wmlRp2,1,50091,174,174.0,132
+2026-07-13,IT,6YBgd2LKccEB3pX6UaW1Yp,Thegiornalisti,https://open.spotify.com/artist/6YBgd2LKccEB3pX6UaW1Yp,1,50006,175,175.0,133
+2026-07-13,IT,2pzFTbri7ew8mW2CbYpCNq,Astro,https://open.spotify.com/artist/2pzFTbri7ew8mW2CbYpCNq,1,49870,176,176.0,134
+2026-07-13,IT,08ppjXEpROUgrG1X0DEquB,Nerissima Serpe,https://open.spotify.com/artist/08ppjXEpROUgrG1X0DEquB,1,49870,176,176.0,135
+2026-07-13,IT,7KFOc3T4Xo8DVZt4PWw2qN,Gazzelle,https://open.spotify.com/artist/7KFOc3T4Xo8DVZt4PWw2qN,1,49763,177,177.0,136
+2026-07-13,IT,7gjqZ8coFZimZDtdk04WP1,MACE,https://open.spotify.com/artist/7gjqZ8coFZimZDtdk04WP1,1,48971,183,183.0,137
+2026-07-13,IT,1Xylc3o4UrD53lo9CvFvVg,Zara Larsson,https://open.spotify.com/artist/1Xylc3o4UrD53lo9CvFvVg,1,48621,184,184.0,138
+2026-07-13,IT,0lQtBhjEJpoOroQS6fbWMc,Aka 7even,https://open.spotify.com/artist/0lQtBhjEJpoOroQS6fbWMc,1,48349,185,185.0,139
+2026-07-13,IT,5FwDaIGy29GQC5d0MR7fKf,LDA,https://open.spotify.com/artist/5FwDaIGy29GQC5d0MR7fKf,1,48349,185,185.0,140
+2026-07-13,IT,7HtzacrJpksCiS6qHypb8l,Ditonellapiaga,https://open.spotify.com/artist/7HtzacrJpksCiS6qHypb8l,1,48226,187,187.0,141
+2026-07-13,IT,3o7fC2O4nraaicpID6bBZW,Elettra Lamborghini,https://open.spotify.com/artist/3o7fC2O4nraaicpID6bBZW,1,48214,188,188.0,142
+2026-07-13,IT,4G9NDjRyZFDlJKMRL8hx3S,sombr,https://open.spotify.com/artist/4G9NDjRyZFDlJKMRL8hx3S,1,48187,189,189.0,143
+2026-07-13,IT,6jwzGu5VdkR5tsRROYuxso,DrefGold,https://open.spotify.com/artist/6jwzGu5VdkR5tsRROYuxso,1,48110,191,191.0,144
+2026-07-13,IT,6XyY86QOPPrYVGvF9ch6wz,Linkin Park,https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz,1,47678,192,192.0,145
+2026-07-13,IT,1AgAVqo74e2q4FVvg0xpT7,Tedua,https://open.spotify.com/artist/1AgAVqo74e2q4FVvg0xpT7,1,47356,193,193.0,146
+2026-07-13,IT,2nftqfbLohpDYzY8VUlvbm,Benji & Fede,https://open.spotify.com/artist/2nftqfbLohpDYzY8VUlvbm,1,47283,194,194.0,147
+2026-07-13,IT,7H8ZC8uHJMPZGLMApRRNIz,Ligabue,https://open.spotify.com/artist/7H8ZC8uHJMPZGLMApRRNIz,1,46785,198,198.0,148
+2026-07-13,IT,6nVcHLIgY5pE2YCl8ubca1,JHAYCO,https://open.spotify.com/artist/6nVcHLIgY5pE2YCl8ubca1,1,46349,199,199.0,149
+2026-07-13,IT,4gzpq5DPGxSnKTe4SA8HAU,Coldplay,https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU,1,46260,200,200.0,150
