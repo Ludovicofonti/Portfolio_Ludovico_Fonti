@@ -1,36 +1,21 @@
-# 🤖 Formazione Strumenti AI per il Team
+# Formazione e documentazione su strumenti AI
 
-## 📌 Contesto
+## Contesto
 
-L'adozione di nuovi strumenti AI all'interno del team richiedeva una documentazione strutturata e un percorso di onboarding che consentisse ai colleghi di utilizzare in autonomia GitHub Copilot, Speckit Copilot e le relative AI Skills, indipendentemente dal loro background tecnico.
+In un contesto professionale, l'adozione di strumenti AI richiedeva materiali di onboarding comprensibili anche da utenti con background tecnico eterogeneo.
 
-## 🎯 Obiettivo
+## Obiettivo
 
-Abilitare il team all'uso efficace degli strumenti AI attraverso guide operative step-by-step, riducendo la curva di apprendimento e favorendo l'adozione diffusa.
+Creare documentazione operativa e supportare il team nell'utilizzo consapevole di strumenti AI per attività di sviluppo, analisi e produttività.
 
-## 🏗️ Attività Svolte
+## Attività
 
-- **Redazione della guida tecnica e operativa** per l'adozione di **Speckit Copilot**: setup dell'ambiente (download, installazione, configurazione), metodologie di implementazione progettuale, casi d'uso pratici
-- **Documentazione su GitHub Copilot**: utilizzo dell'assistente AI nel ciclo di sviluppo, best practice, integrazione con VS Code
-- **Guida all'uso delle AI Skills**: configurazione e personalizzazione delle skill per i flussi di lavoro aziendali
-- Pubblicazione della documentazione su **Microsoft Teams** come risorsa condivisa del team
-- **Supporto diretto ai colleghi** durante le prime fasi di adozione (mentoring, Q&A, troubleshooting)
+- Redazione di guide operative ad alto livello.
+- Supporto all'adozione di strumenti AI nel workflow quotidiano.
+- Mentoring e sessioni di chiarimento per utenti con competenze diverse.
 
-## 🧰 Strumenti Documentati
+## Competenze dimostrate
 
-`GitHub Copilot` · `Speckit Copilot` · `AI Skills` · `VS Code` · `Microsoft Teams`
+Technical writing, AI adoption, prompt engineering, mentoring, knowledge sharing, documentazione tecnica.
 
-## 📈 Impatto
-
-| Metrica | Risultato |
-|---------|-----------|
-| Team abilitato | Colleghi con background eterogenei in autonomia sugli strumenti |
-| Documentazione | Guida integrale dal setup all'uso operativo |
-| Adozione | Riduzione della dipendenza da supporto individuale |
-
-## 👤 Ruolo
-
-Technical Writing, configurazione ambienti, mentoring & knowledge sharing.
-
----
-
+> Nota: il materiale interno originale non è pubblicato. La scheda descrive solo attività e competenze dimostrate.
