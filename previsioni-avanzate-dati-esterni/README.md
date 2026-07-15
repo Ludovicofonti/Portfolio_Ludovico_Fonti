@@ -1,46 +1,23 @@
-# 📈 Previsioni Avanzate con Integrazione di Dati Esterni
+# Forecasting con variabili esterne
 
-> **SYEEW SRL** · 2024 – 2025
+## Contesto
 
-## 📌 Contesto
+In un contesto professionale, i modelli previsionali basati solo su dati storici risultavano poco robusti quando le performance erano influenzate da fattori esterni.
 
-I modelli predittivi esistenti si basavano esclusivamente su dati storici interni (vendite passate, stagionalità), ignorando completamente i fattori esterni che influenzano le performance commerciali. Il risultato erano previsioni fragili di fronte a qualsiasi evento contestuale non catturato dai dati interni.
+## Obiettivo
 
-> **Esempio concreto:** un ristorante sul lungomare vede le proprie performance crollare in una giornata di pioggia. Un modello che guarda solo le serie storiche di fatturato non può anticipare questo calo — ma un modello che integra le previsioni meteo sì.
+Migliorare la qualità delle previsioni integrando variabili esogene, come calendario, stagionalità, meteo e indicatori di contesto.
 
-I clienti operavano in settori dove le performance erano sistematicamente condizionate da variabili esterne — meteo, inflazione, indici di fiducia dei consumatori — che i modelli basati sui soli dati interni non riuscivano a catturare. Le previsioni risultavano quindi inaccurate proprio nei momenti di maggiore variabilità, quando servivano di più.
+## Soluzione
 
-## 🎯 Obiettivo
+Ho lavorato su una pipeline di forecasting multivariato che integra dati storici, feature temporali e variabili esterne. Il modello è stato valutato rispetto a baseline tradizionali per verificare il contributo informativo delle covariate.
 
-Migliorare l'accuratezza e la robustezza dei modelli predittivi integrando sistematicamente **variabili esogene** (meteo, indicatori macroeconomici, festività), rendendo le previsioni affidabili anche in presenza di fattori di contesto non visibili dai soli dati di vendita.
+## Ruolo
 
-## 🏗️ Soluzione
+Integrazione dati, feature engineering, modellazione time series, valutazione delle performance e analisi degli errori.
 
-Pipeline end-to-end di forecasting multi-variato che unifica tre fonti dati in un unico modello predittivo:
+## Competenze dimostrate
 
-- **Data Integration** — merge automatizzato di dati di vendita, dati meteo giornalieri (temperatura, precipitazioni, umidità) e indicatori macroeconomici mensili (indice di fiducia consumatori, indice dei prezzi)
-- **Feature Engineering** — arricchimento temporale con encoding ciclico (mese, trimestre, giorno della settimana) e calendario festività italiane come covariate
-- **Modello Custom TSMixer** — architettura MLP-Mixer adattata alle serie temporali, con attivazione Mish per un gradient flow più stabile e **regressione quantilica** per output probabilistici (intervalli di confidenza, non solo previsioni puntuali)
-- **Previsioni multi-gruppo** — forecasting simultaneo su più entità (punti vendita × categorie prodotto), con covariate statiche e dinamiche
-- **Hyperparameter Tuning** — ottimizzazione multi-obiettivo (RMSE + MAE) con Optuna e sampler NSGA-III
+Python, time series forecasting, feature engineering, API, scikit-learn/PyTorch, validazione modelli, analisi predittiva.
 
-## 🧰 Tech Stack
-
-`Python` · `Darts` · `PyTorch` · `PyTorch Lightning` · `Optuna` · `Scikit-Learn` · `API REST` · `Time Series Analysis`
-
-## 📈 Impatto
-
-| Metrica | Risultato |
-|---------|-----------|
-| Accuratezza modelli predittivi | **+23%** rispetto al modello senza variabili esogene |
-| Robustezza previsioni | Significativamente migliorate su fattori di mercato e stagionalità anomale |
-| Copertura | Multi-settore: ristorazione, retail, servizi |
-| Output | Previsioni probabilistiche con intervalli di confidenza |
-
-## 👤 Ruolo
-
-Unica risorsa Data Science sul progetto. Progettazione dell'architettura predittiva, integrazione variabili esogene, sviluppo modello custom, feature engineering e ottimizzazione iperparametri.
-
----
-
-> 📂 *Il codice sorgente e i dataset (anonimizzati) sono disponibili nella cartella [`Script/`](Script/). Consultare il [README tecnico](Script/README.md) per i dettagli implementativi.*
+> Nota: progetto realizzato in contesto professionale. Per riservatezza aziendale non sono pubblicati codice, dati, clienti, metriche operative, modelli custom o dettagli implementativi.
