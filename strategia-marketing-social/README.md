@@ -1,32 +1,19 @@
-# 📱 Strategia Marketing e Analisi Social — Nuova Comes
+# Case study marketing per PMI B2B
 
-> **Progetto Universitario** · Università Politecnica delle Marche
+## Natura del progetto
 
-## 📌 Contesto
+Case study accademico sull'analisi integrata di canali digitali e sulla segmentazione di audience per una PMI B2B. La versione pubblica è anonimizzata e non rappresenta un incarico professionale.
 
-Nuova Comes necessitava di ottimizzare le proprie campagne social media, identificando segmenti di audience ad alto potenziale per massimizzare il ritorno sull'investimento pubblicitario.
+## Obiettivo
 
-## 🎯 Obiettivo
+Esplorare come dati aggregati provenienti da canali differenti possano supportare la definizione di segmenti e la valutazione qualitativa di iniziative marketing.
 
-Applicare tecniche di clustering per l'ottimizzazione del target audience e la massimizzazione del ROI nelle campagne social media.
+## Approccio
 
-## 🏗️ Approccio
+Il lavoro ha combinato analisi esplorativa, clustering, analisi testuale e visualizzazione. Sono pubblicati solo obiettivi, approccio generale e competenze; dati CRM, dati commerciali, costi, conversioni, contenuti testuali originali e materiali aziendali sono stati rimossi.
 
-- **Analisi esplorativa** dei dati di engagement e comportamento utenti sui canali social
-- Applicazione di tecniche di **clustering** (K-Means, Hierarchical Clustering) per la segmentazione dell'audience
-- Identificazione dei **segmenti ad alto valore** e definizione di strategie differenziate per cluster
-- Ottimizzazione del **budget allocation** sulle campagne social in base ai segmenti identificati
+## Competenze dimostrate
 
-## 🧰 Tech Stack
+Python, pandas, scikit-learn, clustering, marketing analytics, data visualization, analisi multicanale.
 
-`Python` · `Scikit-Learn` · `K-Means` · `Pandas` · `Matplotlib / Seaborn` · `Social Media Data`
-
-## 📊 Output
-
-- Mappa dei segmenti di audience con profili comportamentali
-- Strategia di targeting ottimizzata per cluster
-- Raccomandazioni per l'allocazione del budget marketing
-
-## 🏷️ Tags
-
-`Clustering` · `Marketing Analytics` · `ROI` · `Social Media` · `Segmentazione`
+> Case study accademico anonimizzato. Non include dati CRM, contatti, dati di campagna, strategie operative, report, asset o informazioni commerciali non pubbliche.
