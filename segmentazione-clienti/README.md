@@ -54,3 +54,5 @@ Dataset di **2.999 osservazioni** e 18 variabili, con dati di vendita raccolti d
 ## 🏷️ Tags
 
 `Clustering` · `CRM` · `Apprendimento Non Supervisionato` · `Marketing` · `Sales Analytics` · `PAM`
+
+> Progetto didattico. Non contiene dati reali di clienti aziendali: il dataset originario non è pubblicato perché fonte e diritti di redistribuzione non sono documentati nel repository. Il codice va eseguito solo con dati pubblici, sintetici o correttamente autorizzati.
