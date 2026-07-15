@@ -1,36 +1,23 @@
-# ⚙️ Automazione Demo Commerciali e Conversione Clienti
+# Automazione della preparazione dati per demo commerciali
 
-> **SYEEW SRL** · 2024 – 2025
+## Contesto
 
-## 📌 Contesto
+In un contesto B2B, la preparazione manuale di ambienti dimostrativi richiedeva attività ripetitive di generazione, pulizia e personalizzazione dei dati.
 
-Il processo di acquisizione di nuovi clienti si articolava in più fasi: una prima demo per presentare il prodotto, seguita da sessioni successive in cui il prospect richiedeva approfondimenti su scenari specifici del proprio settore. In entrambi i casi, il team commerciale aveva bisogno di dati realistici e contestualizzati — non dati generici — per rendere la demo convincente e mantenere alto l'interesse durante tutto il percorso di vendita.
+## Obiettivo
 
-La preparazione manuale di questi dati richiedeva 3–4 giorni lavorativi per ogni prospect, diventando un collo di bottiglia critico dell'intero funnel.
+Automatizzare parte del processo di preparazione dei dati demo, migliorando rapidità, coerenza e riutilizzabilità degli ambienti dimostrativi.
 
-## 🎯 Obiettivo
+## Soluzione
 
-Automatizzare la generazione e il mantenimento dei dati demo personalizzati per ogni prospect, supportando il team commerciale dall'approccio iniziale fino alla chiusura del contratto.
+Ho contribuito all'ottimizzazione di flussi SQL ed ETL per generare dati dimostrativi coerenti con diversi scenari d'uso, riducendo il carico operativo sul team.
 
-## 🏗️ Soluzione
+## Ruolo
 
-- Ottimizzazione delle **Stored Procedure** su SQL Server per l'automazione del data preparation
-- **Generazione di dati fittizi ma realistici**, costruiti sul caso d'uso specifico del prospect (settore, dimensione, KPI rilevanti)
-- Possibilità di **aggiornare e ri-personalizzare la demo** in tempi rapidi ad ogni nuova richiesta del prospect durante il percorso di acquisizione
-- Automazione completa delle **pipeline di ingestion** per ridurre il carico operativo del team commerciale
+Ottimizzazione database, automazione SQL, supporto alla preparazione dati e collaborazione con stakeholder commerciali.
 
-## 🧰 Tech Stack
+## Competenze dimostrate
 
-`SQL Server` · `Stored Procedures` · `Pipeline ETL`
+SQL Server, stored procedures, ETL, data preparation, automazione processi, collaborazione business-tech.
 
-## 📈 Impatto
-
-| Metrica | Risultato |
-|---------|-----------|
-| Tempi di preparazione demo | **Da 4 giorni a poche ore** |
-| Personalizzazione | **Dati fittizi specifici per settore e caso d'uso del prospect** |
-| Mantenimento nel funnel | **Aggiornamento rapido della demo** ad ogni nuova richiesta |
-
-## 👤 Ruolo
-
-Ottimizzazione DB, sviluppo automazioni SQL, supporto al team commerciale.
+> Nota: progetto realizzato in contesto professionale. Non sono pubblicati codice, query, stored procedure, schemi database, clienti, prospect, dati o metriche operative.
