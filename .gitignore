@@ -67,3 +67,36 @@ __pycache__/
 *.egg-info/
 
 # 
+
+# ----------------------------------------
+#       Dati sensibili e artefatti
+# ----------------------------------------
+
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+*.sqlite
+*.db
+*.parquet
+*.csv
+*.xlsx
+*.xls
+*.json
+!package.json
+!tsconfig.json
+!spotify-analytics/data/raw/*.csv
+!spotify-analytics/data/raw/*.json
+!spotify-analytics/evidence/sources/spotify_public/*.csv
+*.pdf
+*.docx
+.ipynb_checkpoints/
+.DS_Store
+outputs/
+datasets/
+exports/
+secrets/
+credentials/
