@@ -43,10 +43,11 @@ Il turnover dei dipendenti rappresenta un costo significativo per le aziende: re
 ```
 Script/
 ├── HR_analysis.R      # Script unico con l'intera pipeline
-├── HR_Analytics.csv   # Dataset (~1.500 dipendenti)
 └── README.md          # Guida tecnica allo script
 ```
 
 ## 🏷️ Tags
 
 `People Analytics` · `Classificazione` · `HR` · `Regressione Logistica` · `Clustering` · `PCA` · `LDA` · `EDA`
+
+> Progetto didattico. Non contiene dati personali reali di dipendenti o informazioni HR aziendali: dataset e report originari non sono pubblicati perché fonte e diritti di redistribuzione non sono documentati nel repository. Il codice va usato solo con dati pubblici o sintetici.
