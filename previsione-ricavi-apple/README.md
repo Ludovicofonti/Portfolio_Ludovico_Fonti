@@ -61,3 +61,5 @@ Il modello indica una **crescita stabile e moderata**, confermando la resilienza
 ## 🏷️ Tags
 
 `Time Series` · `Forecasting` · `SVR` · `ARIMA` · `Variabili Macroeconomiche` · `Apple` · `Finance`
+
+> Progetto didattico basato su dati finanziari e macroeconomici pubblicamente accessibili. Le analisi non costituiscono consulenza finanziaria o raccomandazione di investimento; per ogni riuso degli input vanno verificate fonte e licenza.
