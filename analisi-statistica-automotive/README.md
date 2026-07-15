@@ -40,11 +40,11 @@ Il mercato automotive presenta un'elevata eterogeneità nei prezzi di vendita co
 ```
 Script/
 ├── analisi_automotive.R   # Script unico con l'intera pipeline
-├── data.csv               # Dataset (~11.000 veicoli)
-├── Relazione Finale.pdf   # Report accademico completo
 └── README.md              # Guida tecnica allo script
 ```
 
 ## 🏷️ Tags
 
 `Statistica` · `Automotive` · `Machine Learning` · `Clustering` · `PCA` · `Regressione` · `Classificazione` · `EDA`
+
+> Progetto didattico. Il dataset e il report originari non sono pubblicati perché fonte e diritti di redistribuzione non sono documentati nel repository; il codice va utilizzato soltanto con dati pubblici, sintetici o correttamente autorizzati.
