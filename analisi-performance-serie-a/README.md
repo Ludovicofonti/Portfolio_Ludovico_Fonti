@@ -33,3 +33,5 @@ Creare un ecosistema BI completo per l'analisi delle performance sportive, dimos
 ## 🏷️ Tags
 
 `Business Intelligence` · `Web Scraping` · `Analisi Sportiva` · `Visualizzazione Dati` · `Multi-Piattaforma`
+
+> Progetto didattico basato su dati sportivi pubblicamente accessibili. I marchi e i nomi delle competizioni appartengono ai rispettivi titolari; il repository non include contenuti premium, loghi o immagini protette. L'eventuale raccolta dati deve rispettare termini d'uso e regole di accesso delle fonti.
