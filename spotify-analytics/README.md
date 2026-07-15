@@ -102,3 +102,5 @@ http://localhost:3000/Portfolio
 - Business and technical project narrative: `spotify_pipeline_portfolio.md`
 - Data catalog and API limitations: `docs/spotify_data_catalog.md`
 - Evidence-specific run notes: `evidence/README.md`
+
+> Il progetto utilizza dati pubblici o ottenuti tramite API nel rispetto delle condizioni del provider. Le credenziali non sono incluse; configurare l'ambiente locale tramite variabili d'ambiente.
