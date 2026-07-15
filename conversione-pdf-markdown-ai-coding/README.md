@@ -91,3 +91,5 @@ Progettazione e sviluppo end-to-end della web app: definizione requisiti, archit
 La documentazione tecnica del codice sorgente è disponibile in:
 
 [Script/README.md](./Script/README.md)
+
+> I file demo eventualmente utilizzati devono essere sintetici o pubblici. Il progetto non deve essere usato per caricare documenti riservati senza autorizzazione e adeguate misure di sicurezza; credenziali, endpoint privati e documenti aziendali non sono inclusi.
