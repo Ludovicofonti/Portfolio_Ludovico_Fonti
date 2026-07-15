@@ -64,3 +64,5 @@ Il modello è stato applicato a un campione di **aziende italiane del settore me
 ## 🏷️ Tags
 
 `Regressione` · `Finance` · `Media` · `Russell 3000` · `EPS Forecasting` · `Analisi Finanziaria`
+
+> Progetto didattico e analitico: non costituisce consulenza finanziaria o commerciale né una raccomandazione di investimento. Gli input non sono inclusi e l'analisi va riprodotta esclusivamente con dati pubblici, sintetici o dotati di licenza compatibile.
