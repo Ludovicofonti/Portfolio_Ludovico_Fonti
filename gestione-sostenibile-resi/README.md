@@ -1,32 +1,19 @@
-# 🌿 Gestione Sostenibile dei Resi — Stella McCartney
+# Gestione sostenibile dei resi
 
-> **Progetto Universitario** · Università Politecnica delle Marche
+## Natura del progetto
 
-## 📌 Contesto
+Case study universitario dedicato all'analisi dell'impatto ambientale della logistica inversa nel settore fashion. Non è un progetto commissionato da un brand né descrive un incarico professionale.
 
-Il settore fashion è caratterizzato da tassi elevati di reso, con un impatto significativo sulle emissioni di CO₂ generate dalla logistica inversa. Stella McCartney, brand noto per il suo impegno nella sostenibilità, rappresenta un caso studio ideale per analizzare strategie di riduzione.
+## Obiettivo
 
-## 🎯 Obiettivo
+Valutare, in forma didattica, come modelli statistici e analisi di scenario possano supportare la riduzione delle emissioni associate ai resi.
 
-Stimare le emissioni di CO₂ legate ai resi nel settore fashion e identificare strategie logistiche per la riduzione dell'impatto ambientale.
+## Approccio
 
-## 🏗️ Approccio
+Il lavoro ha previsto analisi esplorativa, modellazione predittiva e confronto qualitativo tra possibili strategie logistiche. La scheda pubblica mantiene soltanto obiettivi, metodo e competenze dimostrate.
 
-- **Modello di regressione** per la stima quantitativa delle emissioni CO₂ associate ai processi di reso
-- Analisi delle **variabili logistiche** che influenzano l'impronta carbonica (distanze, modalità di trasporto, packaging)
-- Valutazione comparativa di **strategie di riduzione** (consolidamento spedizioni, centri resi locali, politiche di reso)
-- Raccomandazioni operative per la **supply chain sostenibile**
+## Competenze dimostrate
 
-## 🧰 Tech Stack
+Python, pandas, scikit-learn, regressione, analisi di scenario, data visualization, sostenibilità.
 
-`Python` · `Scikit-Learn` · `Pandas` · `Regressione Lineare/Multipla` · `Data Visualization`
-
-## 📊 Output
-
-- Modello predittivo delle emissioni per scenario logistico
-- Analisi comparativa delle strategie di riduzione resi
-- Report con raccomandazioni per il management
-
-## 🏷️ Tags
-
-`Regressione` · `Sostenibilità` · `Logistica` · `Fashion` · `ESG`
+> Case study accademico. I materiali operativi, il dataset e la presentazione originariamente usati nell'elaborato non sono pubblicati; il repository non contiene asset, dati o contenuti proprietari di brand.
