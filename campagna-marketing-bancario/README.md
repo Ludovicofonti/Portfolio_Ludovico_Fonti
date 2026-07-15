@@ -70,3 +70,5 @@ Costruire un modello predittivo in grado di stimare la probabilità di adesione 
 ## 🏷️ Tags
 
 `Classificazione` · `Marketing` · `Banking` · `Regressione Logistica` · `Feature Engineering` · `Analisi Statistica`
+
+> Progetto didattico di classificazione. Non contiene dati bancari proprietari o informazioni riconducibili a clienti reali: il dataset e il report originari non sono pubblicati perché fonte e diritti di redistribuzione non sono documentati nel repository.
