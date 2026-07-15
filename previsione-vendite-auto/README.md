@@ -82,3 +82,5 @@ Identificati 4 periodi di shock sulla serie con impatto quantificato:
 ## 🏷️ Tags
 
 `Time Series` · `Forecasting` · `Automotive` · `ARIMAX` · `Variabili Esogene` · `Analisi degli Shock`
+
+> Progetto didattico di forecasting basato su serie macroeconomiche pubbliche e materiale accademico. I dati non derivano da sistemi aziendali interni; prima di redistribuire o aggiornare gli input è necessario verificare le condizioni delle fonti originarie.
