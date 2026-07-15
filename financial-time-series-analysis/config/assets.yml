@@ -1,0 +1,53 @@
+assets:
+  BTC-USDT: &btc_crypto
+    asset_class: crypto
+    exchange: binance
+    market: spot
+    quote_currency: USDT
+    trades_24_7: true
+    annualization_days: 365
+    annualization_hours: 8760
+    primary_frequency: 1h
+    supported_frequencies: [1h, 4h, 1d]
+    seasonal_periods:
+      1h: [24, 168]
+      4h: [6, 42]
+      1d: [7, 30]
+    benchmark: [ETH-USDT, SPY]
+    derivatives_symbol: BTCUSDT
+  BTC-USD:
+    <<: *btc_crypto
+    quote_currency: USD
+    data_symbol: BTCUSDT
+  ETH-USDT: &eth_crypto
+    asset_class: crypto
+    exchange: binance
+    market: spot
+    quote_currency: USDT
+    trades_24_7: true
+    annualization_days: 365
+    annualization_hours: 8760
+    primary_frequency: 1h
+    supported_frequencies: [1h, 4h, 1d]
+    seasonal_periods:
+      1h: [24, 168]
+      4h: [6, 42]
+      1d: [7, 30]
+    benchmark: [BTC-USDT]
+    derivatives_symbol: ETHUSDT
+  ETH-USD:
+    <<: *eth_crypto
+    quote_currency: USD
+    data_symbol: ETHUSDT
+  AAPL:
+    asset_class: equity
+    exchange: nasdaq
+    market: spot
+    quote_currency: USD
+    trades_24_7: false
+    annualization_days: 252
+    annualization_hours: 1638
+    primary_frequency: 1d
+    supported_frequencies: [1d]
+    seasonal_periods:
+      1d: [5, 21]

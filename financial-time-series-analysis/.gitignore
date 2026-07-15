@@ -1,0 +1,47 @@
+# Ambienti e cache Python
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Credenziali e configurazioni locali
+.env
+.env.*
+!.env.example
+.dlt/secrets.toml
+dbt/.user.yml
+credentials/
+secrets/
+*.key
+*.pem
+*.pfx
+*.p12
+
+# Database e dataset locali
+data/
+*.duckdb
+*.db
+*.sqlite
+*.parquet
+*.csv
+*.xlsx
+*.xls
+
+# Output di esecuzione
+reports/
+dbt/logs/
+dbt/target/
+outputs/
+artifacts/
+exports/
+*.log
+
+# File di lavoro e backup editor
+*.orig
+*.bak
+*.tmp
+*~
+.DS_Store
+.ipynb_checkpoints/

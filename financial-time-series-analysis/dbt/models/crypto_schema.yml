@@ -1,0 +1,42 @@
+version: 2
+models:
+  - name: stg_exchange_ohlcv
+    columns:
+      - name: exchange
+        tests: [not_null]
+      - name: symbol
+        tests: [not_null]
+      - name: interval
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['1h', '4h', '1d']
+      - name: open_time
+        tests: [not_null]
+      - name: available_time
+        tests: [not_null]
+  - name: stg_funding_rates
+    columns:
+      - name: funding_time
+        tests: [not_null]
+      - name: funding_rate
+        tests: [not_null]
+  - name: stg_open_interest
+    columns:
+      - name: timestamp
+        tests: [not_null]
+      - name: open_interest
+        tests: [not_null]
+  - name: stg_onchain_metrics
+    columns:
+      - name: provider
+        tests: [not_null]
+      - name: asset
+        tests: [not_null]
+      - name: metric
+        tests: [not_null]
+      - name: observation_time
+        tests: [not_null]
+      - name: available_time
+        tests: [not_null]

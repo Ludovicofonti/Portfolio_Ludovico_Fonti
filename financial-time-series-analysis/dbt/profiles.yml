@@ -1,0 +1,8 @@
+finance_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "data/finance.duckdb"   # relativo alla CWD (root progetto)
+      schema: analytics
+      threads: 4

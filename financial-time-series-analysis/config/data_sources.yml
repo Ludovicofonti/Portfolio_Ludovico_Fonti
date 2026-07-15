@@ -1,0 +1,40 @@
+sources:
+  binance_spot:
+    base_url: https://api.binance.com
+    intervals: [1h, 4h, 1d]
+    request_limit: 1000
+    expected_delay_seconds: 120
+    initial_backfill_days: 365
+    include_orderbook_snapshot: true
+    retry_attempts: 5
+    retry_backoff_seconds: 0.5
+  binance_futures:
+    base_url: https://fapi.binance.com
+    intervals: [1h, 4h, 1d]
+    request_limit: 1000
+    expected_delay_seconds: 120
+    initial_backfill_days: 365
+    retry_attempts: 5
+    retry_backoff_seconds: 0.5
+  fred:
+    enabled: false
+    vintage_aware: false
+    api_key_env: FRED_API_KEY
+  alfred:
+    enabled: false
+    vintage_aware: true
+    api_key_env: FRED_API_KEY
+  onchain:
+    enabled: true
+    provider: coinmetrics_community
+    base_url: https://community-api.coinmetrics.io/v4
+    api_key_env: COINMETRICS_API_KEY
+    frequency: 1d
+    initial_backfill_days: 1095
+    page_size: 10000
+    retry_attempts: 5
+    retry_backoff_seconds: 1.0
+    assets:
+      BTCUSDT: btc
+      ETHUSDT: eth
+    metrics: [AdrActCnt, TxCnt, HashRate, CapMrktCurUSD, SplyCur]

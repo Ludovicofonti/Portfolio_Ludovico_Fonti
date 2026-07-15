@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: raw_finance
+    schema: raw_finance
+    tables:
+      - name: prices_stocks
+      - name: prices_crypto
+      - name: prices_forex
+      - name: prices_commodities
+      - name: prices_indices
+      - name: prices_bonds
+      - name: macro_gdpc1
+      - name: macro_cpiaucsl
+      - name: macro_fedfunds
+      - name: macro_dgs10
+      - name: macro_t10y2y
+      - name: macro_vixcls
+      - name: macro_dcoilwtico
+      - name: exchange_ohlcv
+      - name: funding_rates
+      - name: open_interest
+      - name: exchange_orderbook
+      - name: long_short_ratios
+      - name: taker_volume_ratios
+      - name: basis_metrics
+      - name: onchain_metrics

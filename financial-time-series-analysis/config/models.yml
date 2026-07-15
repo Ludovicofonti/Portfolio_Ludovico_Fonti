@@ -1,0 +1,79 @@
+models:
+  ridge_return:
+    model_family: RidgeRegression
+    target: future_return
+    horizon: 1
+    frequency: 1h
+    financial_hypothesis: Market, flow and derivatives features may contain weak short-horizon conditional information.
+    baselines: [zero_return, historical_mean, last_observed_return]
+    primary_metric: mae
+    secondary_metrics: [rmse, huber_loss, information_coefficient]
+    decision_use: [cost_aware_position]
+    rejection_conditions: [fails_primary_baseline, unstable_folds, negative_net_performance]
+    allowed_assets: [crypto]
+    hyperparameters: {ridge_alpha: 1.0}
+  arima_return:
+    model_family: ARIMA
+    target: future_log_return
+    horizon: 1
+    frequency: 1d
+    financial_hypothesis: Short-memory autocorrelation may exist in returns.
+    baselines: [zero_return, historical_mean, last_observed_return]
+    primary_metric: mae
+    secondary_metrics: [rmse, huber_loss, information_coefficient]
+    decision_use: [conditional_direction_input]
+    rejection_conditions: [fails_primary_baseline, unstable_folds, negative_net_performance]
+    allowed_assets: [crypto, equity, forex, commodity, index, bond]
+    hyperparameters: {order: [1, 0, 1]}
+  sarima_return:
+    model_family: SARIMA
+    target: future_return
+    horizon: 1
+    frequency: 1h
+    financial_hypothesis: Calendar seasonality may add information beyond a short-memory return model.
+    baselines: [zero_return, historical_mean, last_observed_return]
+    primary_metric: mae
+    secondary_metrics: [rmse, huber_loss, information_coefficient]
+    decision_use: [conditional_direction_input]
+    rejection_conditions: [fails_primary_baseline, unstable_folds, negative_net_performance]
+    allowed_assets: [crypto]
+    hyperparameters: {order: [1, 0, 1], seasonal_order: [1, 0, 1, 24]}
+  ridge_direction:
+    model_family: RidgeProbability
+    target: future_direction
+    horizon: 1
+    frequency: 1h
+    financial_hypothesis: Market and flow features may contain weak information about the sign of the next return.
+    baselines: [neutral_probability, historical_prevalence, last_direction]
+    primary_metric: brier_score
+    secondary_metrics: [balanced_accuracy, mcc, roc_auc, pr_auc]
+    decision_use: [cost_aware_position]
+    rejection_conditions: [fails_primary_baseline, poor_calibration, unstable_folds]
+    allowed_assets: [crypto]
+    hyperparameters: {ridge_alpha: 2.0}
+  ridge_tail:
+    model_family: RidgeRegression
+    target: future_tail_return
+    horizon: 24
+    frequency: 1h
+    financial_hypothesis: Current volatility, positioning and liquidity may inform the worst return in the next 24 periods.
+    baselines: [historical_mean, last_observed_return]
+    primary_metric: mae
+    secondary_metrics: [rmse, pinball_loss_05]
+    decision_use: [risk_limits]
+    rejection_conditions: [fails_primary_baseline, unstable_folds]
+    allowed_assets: [crypto]
+    hyperparameters: {ridge_alpha: 2.0, quantile: 0.05}
+  garch_student_t_1_1:
+    model_family: GARCH
+    target: realized_volatility
+    horizon: 1
+    frequency: 1d
+    financial_hypothesis: Volatility clusters and crypto returns have heavy tails.
+    baselines: [rolling_volatility, ewma_volatility]
+    primary_metric: qlike
+    secondary_metrics: [mae, rmse, var_coverage]
+    decision_use: [position_sizing, risk_limits]
+    rejection_conditions: [fails_primary_baseline, invalid_residuals, unstable_folds]
+    allowed_assets: [crypto, equity]
+    hyperparameters: {p: 1, q: 1, distribution: t}

@@ -1,0 +1,24 @@
+cost_scenarios:
+  optimistic: {fee_multiplier: 0.75, spread_multiplier: 0.75, slippage_multiplier: 0.75}
+  base: {fee_multiplier: 1.0, spread_multiplier: 1.0, slippage_multiplier: 1.0}
+  stress: {fee_multiplier: 1.5, spread_multiplier: 1.75, slippage_multiplier: 2.0}
+venues:
+  binance_spot:
+    maker_fee_bps: 10
+    taker_fee_bps: 10
+    minimum_slippage_bps: 2
+    default_spread_bps: 4
+    spread_model: observed
+    include_funding: false
+  binance_perpetual:
+    maker_fee_bps: 2
+    taker_fee_bps: 5
+    minimum_slippage_bps: 3
+    default_spread_bps: 5
+    spread_model: observed
+    include_funding: true
+slippage:
+  model: fixed
+  volatility_coefficient: 0.05
+  size_coefficient: 0.10
+  regime_multipliers: {normal: 1.0, high_volatility: 1.5, liquidity_stress: 2.5}

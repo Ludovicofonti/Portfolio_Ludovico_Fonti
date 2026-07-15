@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "financial-ts-platform"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "yfinance",
+    "fredapi",
+    "dlt[duckdb]",
+    "dbt-duckdb",
+    "statsmodels",
+    "arch",
+    "prophet",
+    "scipy",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "pyyaml",
+    "requests",
+]
+
+[project.scripts]
+financial-ts = "platform_cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools]
+packages = ["analysis", "baselines", "evaluation", "experiments", "features", "models", "models.risk", "pipelines", "reporting", "strategy"]
+py-modules = ["config", "platform_cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -62,6 +62,7 @@ Data Scientist con background economico-statistico, specializzato nel ciclo end-
 | Progetto | Ambito | Tech |
 |----------|--------|------|
 | [Spotify Italy Analytics](./spotify-analytics) | Data Engineering · Analytics Dashboard | Airflow, dlt, PostgreSQL, dbt, Evidence, GitHub Actions |
+| [Financial Time Series Research Platform](./financial-time-series-analysis) | Quant Research · Data Engineering · Risk | Python, DuckDB, dbt, dlt, statsmodels |
 | [Conversione PDF a Markdown con AI](./conversione-pdf-markdown-ai-coding) | AI Generativa · Coding Agent | Python, LLM, FastAPI, React |
 
 ### 🎓 Progetti universitari / case study

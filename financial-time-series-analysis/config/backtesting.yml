@@ -1,0 +1,21 @@
+walk_forward:
+  mode: expanding
+  initial_train_size: 500
+  train_size: null
+  test_size: 24
+  step_size: 24
+  gap_size: 1
+  retrain_every: 24
+  forecast_horizons: [1, 4, 24]
+  allow_overlapping_forecasts: false
+  random_seed: 42
+  initial_train_size_by_frequency: {1h: 500, 4h: 500, 1d: 180}
+  test_size_by_frequency: {1h: 24, 4h: 24, 1d: 20}
+  step_size_by_frequency: {1h: 24, 4h: 24, 1d: 20}
+promotion:
+  require_naive_baseline: true
+  require_financial_baseline: true
+  minimum_stability_score: 0.60
+  minimum_calibration_score: 0.70
+  require_positive_net_performance: true
+  confidence_level: 0.95
