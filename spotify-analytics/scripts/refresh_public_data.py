@@ -3,7 +3,6 @@ import csv
 import json
 import os
 import sys
-import time
 from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
@@ -11,15 +10,22 @@ from pathlib import Path
 import requests
 from dotenv import load_dotenv
 
-
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_DIR / "dlt"))
 
-from spotify_api import fetch_italy_daily_chart, get_access_token, search_track_details
-
+from spotify_api import (  # noqa: E402
+    SpotifyRequestStats,
+    fetch_italy_daily_chart,
+    get_access_token,
+    get_track_details,
+)
 
 RAW_DIR = PROJECT_DIR / "data" / "raw"
+CACHE_PATH = PROJECT_DIR / "data" / "cache" / "spotify_tracks.json"
+QUALITY_DIR = PROJECT_DIR / "data" / "quality"
 PUBLIC_SOURCE_DIR = PROJECT_DIR / "evidence" / "sources" / "spotify_public"
+MIN_CHART_ROWS = 190
+MIN_METADATA_MATCH_RATE = 0.95
 
 
 def parse_args():
@@ -30,6 +36,13 @@ def parse_args():
         default=None,
         help="Only enrich the first N chart rows. Intended for smoke tests.",
     )
+    parser.add_argument(
+        "--extract-only",
+        action="store_true",
+        help="Write validated raw inputs only; dbt will build the public marts.",
+    )
+    parser.add_argument("--min-chart-rows", type=int, default=MIN_CHART_ROWS)
+    parser.add_argument("--min-match-rate", type=float, default=MIN_METADATA_MATCH_RATE)
     return parser.parse_args()
 
 
@@ -59,30 +72,96 @@ def largest_album_image(track):
     return max(images, key=lambda image: image.get("width") or 0).get("url")
 
 
-def enrich_chart(chart_rows, token):
+def enrich_chart(chart_rows, token, stats=None, failures=None):
+    """Enrich chart rows deterministically via GET /tracks/{track_id}."""
     track_details = {}
+    stats = stats or SpotifyRequestStats()
+    failures = failures if failures is not None else []
     for row in chart_rows:
-        artists = row["artist_names"]
         try:
-            track = search_track_details(
+            track = get_track_details(
                 token,
-                row["track_name"],
-                artists[0] if artists else "",
+                row["track_id"],
                 market=row["country"],
+                stats=stats,
             )
         except requests.HTTPError as exc:
             response = exc.response
-            if response is not None and response.status_code == 429:
-                print(
-                    f"Spotify rate limit reached while enriching rank {row['rank']} "
-                    f"({row['track_name']}). Continuing with available metadata."
-                )
-                break
-            raise
+            failures.append(
+                {
+                    "chart_date": row["chart_date"],
+                    "track_id": row["track_id"],
+                    "chart_rank": row["rank"],
+                    "reason": "spotify_http_{}".format(
+                        response.status_code if response is not None else "unknown"
+                    ),
+                }
+            )
+            continue
+        except (ValueError, requests.RequestException) as exc:
+            failures.append(
+                {
+                    "chart_date": row["chart_date"],
+                    "track_id": row["track_id"],
+                    "chart_rank": row["rank"],
+                    "reason": type(exc).__name__,
+                }
+            )
+            continue
         if track:
             track_details[row["track_id"]] = track
-        time.sleep(0.25)
     return track_details
+
+
+def validate_chart_rows(chart_rows, min_rows=MIN_CHART_ROWS):
+    if len(chart_rows) < min_rows:
+        raise ValueError(
+            f"Chart health gate failed: {len(chart_rows)} rows, expected at least {min_rows}"
+        )
+
+    required = ("chart_date", "country", "rank", "track_id")
+    missing = [
+        row.get("rank")
+        for row in chart_rows
+        if any(row.get(column) in (None, "") for column in required)
+    ]
+    if missing:
+        raise ValueError(
+            f"Chart health gate failed: {len(missing)} rows have missing required values"
+        )
+
+    grains = {(row["chart_date"], row["country"], row["track_id"]) for row in chart_rows}
+    ranks = {(row["chart_date"], row["country"], row["rank"]) for row in chart_rows}
+    if len(grains) != len(chart_rows):
+        raise ValueError("Chart health gate failed: duplicate chart_date/country/track_id")
+    if len(ranks) != len(chart_rows):
+        raise ValueError("Chart health gate failed: duplicate chart_date/country/rank")
+    if any(not 1 <= row["rank"] <= 200 for row in chart_rows):
+        raise ValueError("Chart health gate failed: rank outside the 1-200 range")
+
+
+def _atomic_json_write(path, value):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path = path.with_suffix(path.suffix + ".tmp")
+    with temporary_path.open("w", encoding="utf-8") as handle:
+        json.dump(value, handle, ensure_ascii=False, indent=2)
+    temporary_path.replace(path)
+
+
+def load_metadata_cache():
+    if not CACHE_PATH.exists():
+        return {}
+    with CACHE_PATH.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def write_pipeline_quality(metrics, failures):
+    QUALITY_DIR.mkdir(parents=True, exist_ok=True)
+    history_path = QUALITY_DIR / "pipeline_runs.jsonl"
+    with history_path.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(metrics, ensure_ascii=False) + "\n")
+    _atomic_json_write(QUALITY_DIR / "latest_run.json", metrics)
+    _atomic_json_write(QUALITY_DIR / "unmatched_tracks.json", failures)
 
 
 def load_raw_track_details(chart_date):
@@ -263,7 +342,11 @@ def build_chart_momentum(songs):
                 "rank_change": rank_change,
                 "days_on_chart": song["days_on_chart"],
                 "peak_rank": song["peak_rank"],
-                "rank_momentum": "Rising" if rank_change > 0 else "Falling" if rank_change < 0 else "Stable",
+                "rank_momentum": "Rising"
+                if rank_change > 0
+                else "Falling"
+                if rank_change < 0
+                else "Stable",
                 "streams_momentum": (
                     "Streams up"
                     if streams_change and streams_change > 0
@@ -283,10 +366,12 @@ def write_csv(path, rows):
     if not rows:
         raise ValueError(f"Cannot write empty dataset: {path.name}")
 
-    with path.open("w", newline="", encoding="utf-8") as handle:
+    temporary_path = path.with_suffix(path.suffix + ".tmp")
+    with temporary_path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=rows[0].keys())
         writer.writeheader()
         writer.writerows(rows)
+    temporary_path.replace(path)
 
 
 def write_raw_snapshot(chart_rows, track_details):
@@ -303,12 +388,12 @@ def write_raw_snapshot(chart_rows, track_details):
         raw_chart_rows.append(serialized)
 
     write_csv(raw_chart_path, raw_chart_rows)
-    with raw_details_path.open("w", encoding="utf-8") as handle:
-        json.dump(track_details, handle, ensure_ascii=False, indent=2)
+    _atomic_json_write(raw_details_path, track_details)
 
 
 def main():
     args = parse_args()
+    started_at = datetime.now().astimezone()
     load_dotenv(PROJECT_DIR / ".env")
 
     client_id = os.environ.get("SPOTIFY_CLIENT_ID")
@@ -319,34 +404,67 @@ def main():
     chart_rows = fetch_italy_daily_chart()
     if args.limit:
         chart_rows = chart_rows[: args.limit]
+    validate_chart_rows(chart_rows, min_rows=1 if args.limit else args.min_chart_rows)
 
     chart_date = chart_rows[0]["chart_date"]
-    track_details = load_raw_track_details(chart_date)
-    if track_details is None:
-        track_details = load_cached_track_details()
+    track_details = load_metadata_cache()
+    track_details.update(load_cached_track_details() or {})
+    track_details.update(load_raw_track_details(chart_date) or {})
 
-    if track_details is None:
+    expected_track_ids = {row["track_id"] for row in chart_rows}
+    missing_track_ids = expected_track_ids.difference(track_details)
+    failures = []
+    stats = SpotifyRequestStats()
+    if missing_track_ids:
         token = get_access_token(client_id, client_secret)
-        track_details = enrich_chart(chart_rows, token)
-    else:
-        expected_track_ids = {row["track_id"] for row in chart_rows}
-        missing_track_ids = expected_track_ids.difference(track_details)
-        if missing_track_ids:
-            token = get_access_token(client_id, client_secret)
-            missing_rows = [row for row in chart_rows if row["track_id"] in missing_track_ids]
-            track_details.update(enrich_chart(missing_rows, token))
+        missing_rows = [row for row in chart_rows if row["track_id"] in missing_track_ids]
+        track_details.update(enrich_chart(missing_rows, token, stats=stats, failures=failures))
 
-    songs = build_top_songs(chart_rows, track_details)
-    artists = build_top_artists(songs, track_details)
+    _atomic_json_write(CACHE_PATH, track_details)
+    current_track_details = {
+        track_id: track_details[track_id]
+        for track_id in expected_track_ids
+        if track_id in track_details
+    }
+    match_rate = len(current_track_details) / len(chart_rows)
+    if match_rate < args.min_match_rate:
+        raise ValueError(
+            f"Metadata health gate failed: {match_rate:.1%} matched, "
+            f"expected at least {args.min_match_rate:.1%}"
+        )
+
+    songs = build_top_songs(chart_rows, current_track_details)
+    artists = build_top_artists(songs, current_track_details)
     albums = build_album_release_analysis(songs)
     momentum = build_chart_momentum(songs)
 
     if not args.limit:
-        write_raw_snapshot(chart_rows, track_details)
-        write_csv(PUBLIC_SOURCE_DIR / "mart_top_songs_italy.csv", songs)
-        write_csv(PUBLIC_SOURCE_DIR / "mart_top_artists_italy.csv", artists)
-        write_csv(PUBLIC_SOURCE_DIR / "mart_album_release_analysis.csv", albums)
-        write_csv(PUBLIC_SOURCE_DIR / "mart_chart_momentum.csv", momentum)
+        write_raw_snapshot(chart_rows, current_track_details)
+        if not args.extract_only:
+            write_csv(PUBLIC_SOURCE_DIR / "mart_top_songs_italy.csv", songs)
+            write_csv(PUBLIC_SOURCE_DIR / "mart_top_artists_italy.csv", artists)
+            write_csv(PUBLIC_SOURCE_DIR / "mart_album_release_analysis.csv", albums)
+            write_csv(PUBLIC_SOURCE_DIR / "mart_chart_momentum.csv", momentum)
+
+    finished_at = datetime.now().astimezone()
+    metrics = {
+        "run_id": started_at.strftime("%Y%m%dT%H%M%S%z"),
+        "run_started_at": started_at.isoformat(),
+        "chart_date": chart_date,
+        "chart_rows": len(chart_rows),
+        "matched_tracks": len(current_track_details),
+        "match_rate": match_rate,
+        "duplicate_tracks": len(chart_rows) - len(expected_track_ids),
+        "missing_streams": sum(row.get("streams") is None for row in chart_rows),
+        "spotify_requests": stats.requests,
+        "spotify_retries": stats.retries,
+        "spotify_429_responses": stats.rate_limited,
+        "pipeline_duration_seconds": round((finished_at - started_at).total_seconds(), 3),
+        "pipeline_status": "fresh",
+        "generated_at": finished_at.isoformat(),
+    }
+    if not args.limit:
+        write_pipeline_quality(metrics, failures)
 
     print(
         json.dumps(
@@ -354,7 +472,11 @@ def main():
                 "chart_date": songs[0]["chart_date"],
                 "dry_run": bool(args.limit),
                 "songs": len(songs),
-                "matched_tracks": len(track_details),
+                "matched_tracks": len(current_track_details),
+                "metadata_match_rate": match_rate,
+                "spotify_requests": stats.requests,
+                "spotify_retries": stats.retries,
+                "spotify_429_responses": stats.rate_limited,
                 "artists": len(artists),
                 "albums": len(albums),
                 "generated_at": datetime.now().astimezone().isoformat(),

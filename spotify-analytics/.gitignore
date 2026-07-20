@@ -1,0 +1,15 @@
+*.tmp
+.coverage
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+htmlcov/
+dbt/.user.yml
+dbt/dbt_packages/
+dbt/logs/
+dbt/target/
+evidence/.env
+evidence/.evidence/
+evidence/build/
+evidence/node_modules/

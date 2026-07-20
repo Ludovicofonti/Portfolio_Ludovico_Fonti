@@ -1,0 +1,62 @@
+name: Spotify Analytics - CI
+
+on:
+  pull_request:
+    paths:
+      - "spotify-analytics/**"
+      - ".github/workflows/spotify-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "spotify-analytics/**"
+      - ".github/workflows/spotify-ci.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: spotify-analytics-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: spotify-analytics
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: spotify-analytics/requirements-dev.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Ruff
+        run: ruff check dlt scripts tests airflow/dags
+
+      - name: Python tests
+        run: pytest
+
+      - name: Parse dbt BigQuery project
+        env:
+          DBT_PROFILES_DIR: ${{ github.workspace }}/spotify-analytics/dbt
+          GCP_PROJECT_ID: spotify-analytics-ci
+        run: dbt parse --project-dir dbt --target bigquery --no-partial-parse
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: spotify-analytics/evidence/package-lock.json
+
+      - name: Build Evidence
+        run: |
+          npm ci --prefix evidence --no-audit --no-fund
+          npm run sources --prefix evidence
+          npm run build --prefix evidence

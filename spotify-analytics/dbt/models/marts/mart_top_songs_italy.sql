@@ -1,6 +1,9 @@
 select
     chart_date,
+    country,
     chart_rank,
+    chart_track_id,
+    spotify_track_id,
     track_name,
     artist_names_text,
     album_name,

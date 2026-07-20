@@ -1,25 +1,29 @@
-import dlt
+from spotify_api import fetch_italy_daily_chart, get_access_token, get_track_details
 
-from spotify_api import fetch_italy_daily_chart, get_access_token, search_track_details
+import dlt
 
 
 @dlt.source
 def spotify_source(client_id, client_secret):
-    @dlt.resource(write_disposition="replace")
+    @dlt.resource(
+        write_disposition="merge",
+        primary_key=("chart_date", "country", "track_id"),
+    )
     def italy_daily_chart():
         yield from fetch_italy_daily_chart()
 
-    @dlt.resource(write_disposition="replace")
+    @dlt.resource(
+        write_disposition="merge",
+        primary_key=("chart_date", "chart_country", "chart_track_id"),
+    )
     def italy_daily_track_details():
         chart_rows = fetch_italy_daily_chart()
         token = get_access_token(client_id, client_secret)
 
         for chart_row in chart_rows:
-            main_artist = chart_row["artist_names"][0] if chart_row["artist_names"] else ""
-            track = search_track_details(
+            track = get_track_details(
                 token,
-                chart_row["track_name"],
-                main_artist,
+                chart_row["track_id"],
                 market=chart_row["country"],
             )
             if not track:

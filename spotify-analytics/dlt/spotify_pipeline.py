@@ -1,10 +1,11 @@
-import dlt
 from spotify_source import spotify_source
+
+import dlt
 
 pipeline = dlt.pipeline(
     pipeline_name="spotify",
-    destination="postgres",           # dlt ha un connector nativo per Postgres
-    dataset_name="spotify_raw",       # schema nel DB
+    destination="postgres",  # dlt ha un connector nativo per Postgres
+    dataset_name="spotify_raw",  # schema nel DB
 )
 
 source = spotify_source(

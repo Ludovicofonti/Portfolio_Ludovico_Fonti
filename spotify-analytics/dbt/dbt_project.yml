@@ -20,10 +20,55 @@ models:
   spotify_analytics:
     staging:
       +materialized: view
-      +schema: spotify_staging
+      +schema: "{{ env_var('SPOTIFY_BQ_STAGING_DATASET', 'spotify_analytics_staging') if target.type == 'bigquery' else 'spotify_staging' }}"
     intermediate:
       +materialized: view
-      +schema: spotify_intermediate
+      +schema: "{{ env_var('SPOTIFY_BQ_INTERMEDIATE_DATASET', 'spotify_analytics_intermediate') if target.type == 'bigquery' else 'spotify_intermediate' }}"
     marts:
       +materialized: table
-      +schema: spotify_marts
+      +schema: "{{ env_var('SPOTIFY_BQ_MARTS_DATASET', 'spotify_analytics_marts') if target.type == 'bigquery' else 'spotify_marts' }}"
+      +labels:
+        application: spotify-analytics
+        managed_by: dbt
+      fct_track_chart_daily:
+        +partition_by: {field: chart_date, data_type: date, granularity: day}
+        +require_partition_filter: true
+        +cluster_by: [country, chart_track_id]
+      mart_album_release_analysis:
+        +partition_by: {field: chart_date, data_type: date, granularity: day}
+        +require_partition_filter: true
+        +cluster_by: [country, spotify_album_id]
+      mart_artist_market_share:
+        +partition_by: {field: chart_date, data_type: date, granularity: day}
+        +require_partition_filter: true
+        +cluster_by: [country, spotify_artist_id]
+      mart_chart_concentration:
+        +partition_by: {field: chart_date, data_type: date, granularity: day}
+        +require_partition_filter: true
+        +cluster_by: [country]
+      mart_chart_entries_exits:
+        +partition_by: {field: chart_date, data_type: date, granularity: day}
+        +require_partition_filter: true
+        +cluster_by: [country, chart_track_id]
+      mart_chart_momentum:
+        +partition_by: {field: chart_date, data_type: date, granularity: day}
+        +require_partition_filter: true
+        +cluster_by: [chart_rank]
+      mart_data_quality_daily:
+        +partition_by: {field: chart_date, data_type: date, granularity: day}
+        +require_partition_filter: true
+        +cluster_by: [country]
+      mart_release_cohorts:
+        +partition_by: {field: chart_date, data_type: date, granularity: day}
+        +require_partition_filter: true
+        +cluster_by: [country, release_cohort_month]
+      mart_top_artists_italy:
+        +partition_by: {field: chart_date, data_type: date, granularity: day}
+        +require_partition_filter: true
+        +cluster_by: [country, spotify_artist_id]
+      mart_top_songs_italy:
+        +partition_by: {field: chart_date, data_type: date, granularity: day}
+        +require_partition_filter: true
+        +cluster_by: [country, chart_track_id]
+      mart_track_lifecycle:
+        +cluster_by: [country, chart_track_id]
