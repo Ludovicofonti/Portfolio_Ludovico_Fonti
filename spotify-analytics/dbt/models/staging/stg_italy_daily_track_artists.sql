@@ -13,6 +13,7 @@ renamed as (
         href as spotify_artist_api_url,
         external_urls__spotify as spotify_artist_url
     from source
+    where {{ raw_partition_filter('chart_date') }}
 )
 
 select * from renamed

@@ -10,8 +10,19 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: spotify-analytics-refresh
+  cancel-in-progress: false
+
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  GCP_PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
+  BIGQUERY_LOCATION: ${{ vars.BIGQUERY_LOCATION || 'EU' }}
+  SPOTIFY_BQ_RAW_DATASET: spotify_analytics_raw
+  SPOTIFY_BQ_STAGING_DATASET: spotify_analytics_staging
+  SPOTIFY_BQ_INTERMEDIATE_DATASET: spotify_analytics_intermediate
+  SPOTIFY_BQ_MARTS_DATASET: spotify_analytics_marts
+  BIGQUERY_MAXIMUM_BYTES_BILLED: "10000000000"
 
 jobs:
   update-data:
@@ -20,6 +31,22 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Validate Google Cloud configuration
+        env:
+          WIF_PROVIDER: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          SERVICE_ACCOUNT: ${{ vars.GCP_SPOTIFY_SERVICE_ACCOUNT }}
+        run: |
+          test -n "$GCP_PROJECT_ID" || (echo "GCP_PROJECT_ID repository variable is missing." && exit 1)
+          test -n "$WIF_PROVIDER" || (echo "GCP_WORKLOAD_IDENTITY_PROVIDER repository variable is missing." && exit 1)
+          test -n "$SERVICE_ACCOUNT" || (echo "GCP_SPOTIFY_SERVICE_ACCOUNT repository variable is missing." && exit 1)
+
+      - name: Authenticate to Google Cloud with Workload Identity Federation
+        uses: google-github-actions/auth@v3
+        with:
+          project_id: ${{ vars.GCP_PROJECT_ID }}
+          workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ vars.GCP_SPOTIFY_SERVICE_ACCOUNT }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -39,24 +66,24 @@ jobs:
           test -n "$SPOTIFY_CLIENT_ID" || (echo "SPOTIFY_CLIENT_ID repository secret is missing." && exit 1)
           test -n "$SPOTIFY_CLIENT_SECRET" || (echo "SPOTIFY_CLIENT_SECRET repository secret is missing." && exit 1)
 
-      - name: Refresh public Spotify snapshot
+      - name: Refresh, test and export public marts with dbt-BigQuery
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-        run: python spotify-analytics/scripts/refresh_public_data.py
+        run: python spotify-analytics/scripts/run_public_pipeline.py
 
       - name: Commit refreshed datasets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add spotify-analytics/data/raw spotify-analytics/evidence/sources/spotify_public
+          git add spotify-analytics/data/raw spotify-analytics/data/cache spotify-analytics/data/quality spotify-analytics/evidence/sources/spotify_public
           git diff --cached --quiet || git commit -m "chore(spotify): refresh public chart data"
           git push
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: "24"
+          node-version: "20"
           cache: npm
           cache-dependency-path: spotify-analytics/evidence/package-lock.json
 

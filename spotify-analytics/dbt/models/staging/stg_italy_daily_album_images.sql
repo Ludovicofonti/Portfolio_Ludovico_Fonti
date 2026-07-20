@@ -13,6 +13,7 @@ ranked as (
             order by cast(width as integer) desc nulls last
         ) as image_rank
     from source
+    where {{ raw_partition_filter('chart_date') }}
 )
 
 select * from ranked

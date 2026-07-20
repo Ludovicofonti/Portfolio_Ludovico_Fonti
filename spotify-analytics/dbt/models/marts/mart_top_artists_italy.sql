@@ -24,7 +24,7 @@ aggregated as (
         count(distinct spotify_track_id) as track_count,
         sum(chart_streams) as streams,
         min(chart_rank) as best_rank,
-        avg(chart_rank)::numeric(10, 2) as average_rank
+        cast(avg(chart_rank) as numeric) as average_rank
     from artists
     group by 1, 2, 3, 4, 5
 )

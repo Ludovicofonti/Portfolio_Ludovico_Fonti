@@ -11,7 +11,6 @@ from airflow.sdk import dag, task
     tags=["spotify", "test"],
 )
 def hello_spotify_pipeline():
-
     @task
     def hello():
         print("Airflow is ready for the Spotify pipeline.")
