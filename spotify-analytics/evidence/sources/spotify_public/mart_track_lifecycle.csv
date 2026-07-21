@@ -1,404 +1,406 @@
 country,chart_track_id,track_name,artist_names_text,first_chart_date,latest_chart_date,chart_days_observed,observed_peak_rank,observed_streams,current_rank,current_rank_change,current_streams_change,lifecycle_status
-IT,5XOhmBwIBhaj5jg2ZIvRMI,A NAPOLI NON PIOVE,Geolier,2026-06-09,2026-07-18,37,58,2313472,149,-9,-2432,declining
-IT,6n5g6FiWp9NudnRnUwyoZN,Malpensa,"G.Mineiro, Flatpearl, Succo",2026-07-06,2026-07-18,13,66,935718,77,-8,-4621,declining
-IT,4b4Dg5WN3jNjTE2I9XkUsY,È festa,"Olly, Juli",2026-06-20,2026-06-20,1,198,51707,198,0,,resilient
-IT,7BqBn9nzAq8spo5e7cZ0dJ,Just the Way You Are,Bruno Mars,2026-07-15,2026-07-15,1,190,46965,190,0,,resilient
+IT,5XOhmBwIBhaj5jg2ZIvRMI,A NAPOLI NON PIOVE,Geolier,2026-06-09,2026-07-19,38,58,2361495,154,-5,-9548,declining
 IT,7F54orEV7IMKtKG5X9Ig9y,Nord sud ovest est,883,2026-07-12,2026-07-12,1,187,47529,187,0,,resilient
+IT,7BqBn9nzAq8spo5e7cZ0dJ,Just the Way You Are,Bruno Mars,2026-07-15,2026-07-15,1,190,46965,190,0,,resilient
 IT,6lrlFMu06aGPDH0phlCnct,Per dimenticare,Zero Assoluto,2026-06-28,2026-07-18,4,161,191796,198,0,,resilient
-IT,4gjmX7aKN7tVt3eqi4aP9P,Luna - Remastered,Gianni Togni,2026-07-16,2026-07-18,3,187,150651,187,12,503,rising
-IT,7nRFsITVaSHko2Fw2Gcy59,Destri,Gazzelle,2026-06-01,2026-07-18,42,135,2186890,186,-49,-9606,declining
-IT,7kktKNHgINrBczPUGoG38p,Bang Bang,Sfera Ebbasta,2026-06-01,2026-07-18,40,112,2141417,154,-38,-8182,declining
+IT,4b4Dg5WN3jNjTE2I9XkUsY,È festa,"Olly, Juli",2026-06-20,2026-06-20,1,198,51707,198,0,,resilient
+IT,6n5g6FiWp9NudnRnUwyoZN,Malpensa,"G.Mineiro, Flatpearl, Succo",2026-07-06,2026-07-19,14,66,1002562,76,1,-13688,rising
+IT,4gjmX7aKN7tVt3eqi4aP9P,Luna - Remastered,Gianni Togni,2026-07-16,2026-07-19,4,149,198953,149,38,-2866,rising
 IT,3MCoJ2yjtBmL1CWkBpdYyJ,OLÈ,"Geolier, Kid Yugi",2026-06-01,2026-07-17,45,65,2622834,170,-34,-2597,declining
-IT,1SWUq0qtTSDRGrDtgq7POw,DARKMONEY,"Pyrex, Sfera Ebbasta",2026-06-01,2026-07-18,46,82,2720228,190,-33,-6542,declining
-IT,6EGUow6OQ28at9wB2TTvyo,FaXXX,"Tedua, Latrelle",2026-06-01,2026-06-26,14,63,871838,171,-30,70,declining
 IT,2pULqfE2k1DHr24dtJwMRh,ADRENALINA,"Samurai Jay, Vito Salamanca",2026-06-01,2026-06-24,23,98,1260636,192,-30,-3164,declining
-IT,7uu3YZytpYW15VIfa7ynJk,Niente Canzoni D'Amore - Inedito,"Marracash, Federica Abbate",2026-06-01,2026-07-18,46,59,3059496,135,-28,-6315,declining
+IT,6EGUow6OQ28at9wB2TTvyo,FaXXX,"Tedua, Latrelle",2026-06-01,2026-06-26,14,63,871838,171,-30,70,declining
+IT,1K9qAxGT4cWUicf2OezSen,VETRI NERI,"AVA, ANNA, Capo Plaza",2026-06-01,2026-07-19,30,139,1549062,192,-30,-12077,declining
+IT,0pxwzHAlnK86CIfDbbJLr4,Kriminal - Prod. by Roberto Ferrante,"Baby Gang, El Alfa, Omega, Roberto Ferrante",2026-06-01,2026-07-19,47,85,2982646,136,-29,-17152,declining
 IT,5BAJMdCQqax0oBQigQTl5h,Dove e quando,Benji & Fede,2026-06-01,2026-07-13,17,140,876485,194,-28,-3252,declining
-IT,3Eh8NAQVV8b1EzgKang5ne,Diversi,Shiva,2026-06-01,2026-07-17,27,110,1413722,185,-26,-694,declining
-IT,3cGuiySfwJPXqvE15OiEEg,Tran Tran,Sfera Ebbasta,2026-06-01,2026-07-18,40,106,2187303,147,-26,-6012,declining
-IT,5WssaPhjCCUFBMk9PpnHYj,Anche Stasera,Sfera Ebbasta,2026-06-01,2026-07-18,40,121,2140942,156,-25,-5224,declining
-IT,7qjZnBKE73H4Oxkopwulqe,back to friends,sombr,2026-06-01,2026-07-18,42,116,2228313,196,-23,-3768,declining
+IT,1k3pzheXrbtHgvvOsQeMkU,Che fastidio!,Ditonellapiaga,2026-06-01,2026-07-19,47,55,2949394,193,-27,-11191,declining
+IT,55lijDD6OAjLFFUHU9tcDm,WHERE IS MY HUSBAND!,RAYE,2026-06-01,2026-07-19,46,96,2629480,194,-21,-10299,declining
+IT,4X4R6qsIicxIQIFbnDcJLO,Scarabocchi,"Olly, Juli",2026-06-01,2026-07-17,33,85,1883468,193,-19,172,declining
 IT,4vbxC18tQdekz9pOEvly2X,MARIA,"Il Ghost, Baby Gang",2026-06-01,2026-06-16,14,72,858451,181,-19,-797,declining
 IT,1V8SElaiJmR7SJiGELr6Rc,Peccati,Shiva,2026-06-01,2026-07-17,45,49,2931629,197,-19,505,declining
-IT,4X4R6qsIicxIQIFbnDcJLO,Scarabocchi,"Olly, Juli",2026-06-01,2026-07-17,33,85,1883468,193,-19,172,declining
 IT,0D3QZNAMH2d5MFkVlebo6h,Non lo Sai,Shiva,2026-06-01,2026-06-03,3,177,142356,195,-18,480,declining
 IT,20jbSiX29FDX4oQxBXyUEi,hate that i made you love me,Ariana Grande,2026-06-01,2026-06-23,20,55,1326562,200,-18,-322,declining
-IT,1JSTJqkT5qHq8MDJnJbRE1,Every Breath You Take,The Police,2026-06-01,2026-07-18,46,103,2717897,127,-17,-4123,declining
-IT,5NX1BUQi3Z5r9koZVhU6kf,Introvabile,Bresh,2026-06-01,2026-07-18,46,54,3299559,115,-16,-5035,declining
-IT,3l109GEhkVYrTvDoKuNGlu,BERLINO,Ernia,2026-06-01,2026-07-18,46,37,4401171,79,-15,-10185,declining
-IT,3uExyCdMa9XfVuXpuYhod4,Push It,"Kid Yugi, ANNA",2026-06-01,2026-07-18,46,88,2830200,151,-15,-3547,declining
-IT,10nZU1tAX7XepntuYDJUVO,BRATZ,"Sayf, Nerissima Serpe",2026-06-01,2026-06-16,13,101,720336,193,-15,-4,declining
-IT,6DhMZVuD6TH0jd4bMNChCU,PER TE,Ernia,2026-06-01,2026-07-18,46,78,3038813,109,-15,-5112,declining
-IT,6RRxP0B9bVZnbTnSpxfo9W,Spie,Shiva,2026-06-01,2026-07-18,46,21,4085843,111,-15,-4705,declining
+IT,1ej2NcW0CHnscPp1RZpr1V,Devastante,"Olly, Juli",2026-06-01,2026-07-19,47,55,3633054,104,-16,-18700,declining
+IT,0RkFzXmEJzSv4Bu6YwZJx6,Maledetto me,Fulminacci,2026-06-01,2026-07-19,47,124,2569167,160,-16,-11105,declining
 IT,4EoJ151oQ5jY48z4RhSE96,the cure,Olivia Rodrigo,2026-06-01,2026-06-18,17,58,1109550,114,-15,-3920,declining
 IT,3w73qvCSGWPCx7w1UMIh6e,Lo So Che,Capo Plaza,2026-06-01,2026-07-17,27,106,1470775,184,-15,742,declining
-IT,3qhlB30KknSejmIvZZLjOD,End of Beginning,Djo,2026-06-01,2026-07-18,46,65,3233619,120,-14,-3098,declining
+IT,10nZU1tAX7XepntuYDJUVO,BRATZ,"Sayf, Nerissima Serpe",2026-06-01,2026-06-16,13,101,720336,193,-15,-4,declining
+IT,6PtEfaLwNxmBtK4LX7Ffi6,1H,Geolier,2026-06-01,2026-07-19,47,59,3123003,130,-14,-12031,declining
 IT,3ppXueOTvYpYp7zQUbuIKh,Polvere,"Shiva, Tony Boy",2026-06-01,2026-06-11,10,169,495891,193,-13,-1342,declining
-IT,27teXnNekA5jBFLCcsCFoq,7ELEVEN,Artie 5ive,2026-06-01,2026-07-18,46,48,3759586,91,-13,-5710,declining
-IT,3C0nOe05EIt1390bVABLyN,On The Floor,"Jennifer Lopez, Pitbull",2026-06-01,2026-07-18,46,44,3600940,113,-12,-4226,declining
-IT,4VLr4Esg0hHSVoNjs19u3u,Mai,Tedua,2026-06-01,2026-06-11,10,68,651263,148,-11,-1669,declining
-IT,7sh95K3HXkne9mVYDOIRWs,Completamente,Thegiornalisti,2026-06-01,2026-07-18,46,121,2519979,155,-11,-2924,declining
-IT,09wmUkefYD7B2IWpHP6v3P,Gilgamesh,Kid Yugi,2026-06-01,2026-06-30,16,151,796966,198,-11,1017,declining
-IT,55lijDD6OAjLFFUHU9tcDm,WHERE IS MY HUSBAND!,RAYE,2026-06-01,2026-07-18,45,96,2586343,173,-11,-2057,declining
+IT,1lslS1hUsIvAScXvWVTLt2,INTRO (La Bella Vita),Artie 5ive,2026-06-01,2026-07-19,47,74,2917410,144,-12,-11539,declining
 IT,3IvxmTprJJTfr0M4dwSTpP,ROMANZO CRIMINALE,"Yunes LaGrintaa, Kassimi, Nabi, Néza, Lucifer",2026-06-01,2026-06-09,3,168,149807,190,-11,3,declining
-IT,78F6s5j8febWk0ICOAIxjM,FOTOGRAFIA,Geolier,2026-06-01,2026-07-18,46,65,2877167,140,-11,-3672,declining
-IT,7dFfkSJrAHnUdKM5jaUOLt,Tristano e Isotta,Kid Yugi,2026-06-01,2026-07-14,22,115,1128132,200,-10,-1180,declining
-IT,7yq4Qj7cqayVTp3FF9CWbm,Riptide,Vance Joy,2026-06-01,2026-07-18,46,99,2777116,121,-10,-2216,declining
-IT,2RkZ5LkEzeHGRsmDqKwmaJ,Ordinary,Alex Warren,2026-06-01,2026-07-18,36,101,2006511,124,-10,-2806,declining
-IT,21KdF0KGmSXmDBcif3XZd4,Dai che fai,Bresh,2026-06-01,2026-07-18,46,86,2789391,128,-10,-3343,declining
-IT,56n5UQJ0SDVaxwQNnu90ee,Eroina,"Kid Yugi, Tutti Fenomeni",2026-06-01,2026-06-09,8,142,409160,194,-10,185,declining
-IT,0jkAr7eZsvWDLYiQCfaxak,NEON,"Sfera Ebbasta, Shiva",2026-06-01,2026-07-18,46,37,4371694,72,-10,-8454,declining
-IT,1QMGYNbDtHIRzDMKugpg7t,Balorda nostalgia,"Olly, Juli",2026-06-01,2026-07-18,46,50,3754115,85,-10,-3940,declining
+IT,4VLr4Esg0hHSVoNjs19u3u,Mai,Tedua,2026-06-01,2026-06-11,10,68,651263,148,-11,-1669,declining
+IT,78F6s5j8febWk0ICOAIxjM,FOTOGRAFIA,Geolier,2026-06-01,2026-07-19,47,65,2925368,151,-11,-10420,declining
+IT,5nFyfjGy6AMZqkW0OMUWJJ,Per due come noi,"Olly, Angelina Mango, Juli",2026-06-01,2026-07-19,47,62,3380555,82,-11,-20244,declining
+IT,09wmUkefYD7B2IWpHP6v3P,Gilgamesh,Kid Yugi,2026-06-01,2026-06-30,16,151,796966,198,-11,1017,declining
 IT,3FrbT8aqk9xHtTfQc9Z3IR,VVS CARTIER,"Sfera Ebbasta, Shiva",2026-06-01,2026-07-14,25,137,1265523,183,-10,-1015,declining
+IT,7dFfkSJrAHnUdKM5jaUOLt,Tristano e Isotta,Kid Yugi,2026-06-01,2026-07-14,22,115,1128132,200,-10,-1180,declining
+IT,56n5UQJ0SDVaxwQNnu90ee,Eroina,"Kid Yugi, Tutti Fenomeni",2026-06-01,2026-06-09,8,142,409160,194,-10,185,declining
 IT,3ip2477VESffCtFkPFT0ov,La Gozadera,"Gente De Zona, Marc Anthony",2026-06-01,2026-07-08,35,112,1888031,191,-10,-297,declining
-IT,22skzmqfdWrjJylampe0kt,Can't Hold Us,"Macklemore & Ryan Lewis, Macklemore, Ryan Lewis, Ray Dalton",2026-06-01,2026-07-18,46,109,2614698,158,-9,-1982,declining
-IT,7lLSzMu2EKwIJ4co0sJSEe,PARLAR D’AMORE,"Sayf, Bresh",2026-06-01,2026-07-18,42,57,2532536,179,-8,-1549,declining
+IT,4oMiCgeROySnMbUDwH9lt3,V per Vangelo,Shiva,2026-06-01,2026-07-19,47,40,3433998,162,-9,-9844,declining
 IT,6kfLv8uKJNS5DfodQAzpco,Blue,Tedua,2026-06-01,2026-07-10,37,28,2712713,200,-8,1657,declining
 IT,0mRRblaBsr3Vq79sNfv8Ty,BUONA DOMENICA,Sayf,2026-06-01,2026-06-11,10,81,708975,88,-8,-598,declining
-IT,7yNf9YjeO5JXUE3JEBgnYc,Babydoll,Dominic Fike,2026-06-01,2026-07-18,46,46,3584420,102,-7,-2448,declining
-IT,4Cd1cCCqG3nlf07i5A0IPH,Yakuza,"Elodie, Sfera Ebbasta, Rvssian",2026-06-01,2026-07-17,24,132,1216061,198,-7,1926,declining
-IT,6bdTp8Jkp3IAU15rVPWFuJ,DAVVERODAVVERO,Artie 5ive,2026-06-01,2026-07-18,46,8,7844933,23,-7,-8212,declining
+IT,4MzXwWMhyBbmu6hOcLVD49,DÁKITI,"Bad Bunny, JHAYCO",2026-06-01,2026-07-19,38,73,2050719,81,-8,-17441,declining
+IT,3UUqp8cf3sWFSmxw6r0Tqm,I romantici,Tommaso Paradiso,2026-06-01,2026-07-19,47,17,5293540,52,-8,-29873,declining
+IT,7lLSzMu2EKwIJ4co0sJSEe,PARLAR D’AMORE,"Sayf, Bresh",2026-06-01,2026-07-18,42,57,2532536,179,-8,-1549,declining
 IT,1yDx5sCkmpCX0NZ3ilC1UE,Bacio di Giuda,"Shiva, Tiziano Ferro",2026-06-01,2026-06-04,3,179,146785,192,-7,1445,declining
+IT,3C0nOe05EIt1390bVABLyN,On The Floor,"Jennifer Lopez, Pitbull",2026-06-01,2026-07-19,47,44,3653770,120,-7,-12144,declining
 IT,1nLGeFQuY7PFxrou3ezEvP,Rossetto e caffè,Sal Da Vinci,2026-06-01,2026-07-12,27,129,1405586,193,-7,-7628,declining
-IT,6UrPST46XxYPqbAAThhSMS,VOLEVO CAPIRE CON MARRACASH,"Madame, Marracash",2026-06-01,2026-07-18,46,25,5454326,42,-7,-7728,declining
+IT,5NX1BUQi3Z5r9koZVhU6kf,Introvabile,Bresh,2026-06-01,2026-07-19,47,54,3352147,122,-7,-11657,declining
 IT,4haEJXWUw7uyrHBBvJGool,YAMAL,Le-one,2026-06-01,2026-06-01,1,191,47955,191,-7,580,declining
-IT,2qBPVhXAvX3kTFp2mk46gn,Via dei Mille,"Dipinto, Fresh Beatz",2026-06-01,2026-07-18,46,19,4434054,90,-7,-2841,declining
-IT,1ej2NcW0CHnscPp1RZpr1V,Devastante,"Olly, Juli",2026-06-01,2026-07-18,46,55,3576366,88,-6,-1228,declining
-IT,28v57vssZ488EEIBivY3NF,Ogni Male,Capo Plaza,2026-06-01,2026-07-18,46,37,4010302,47,-6,-9137,declining
+IT,21KdF0KGmSXmDBcif3XZd4,Dai che fai,Bresh,2026-06-01,2026-07-19,47,86,2839499,135,-7,-11066,declining
+IT,7fH13hSOyNoeiDGbjEnTUC,Brivido,"Guè, Marracash",2026-06-01,2026-06-30,7,177,336961,200,-6,1160,declining
+IT,1CqQgE0m019MYN0WnxwtL6,Cadillac,"Guè, TonyPitony, Shablo",2026-06-01,2026-06-04,4,118,217786,146,-6,731,declining
+IT,5pk3bAZLMs1PqdMuHITZU9,Perdutamente,Achille Lauro,2026-06-01,2026-07-19,47,44,4133187,67,-6,-17815,declining
 IT,3lFI8rgdb6ScFGyxin4Dh7,Coscienza,Shiva,2026-06-01,2026-06-23,21,86,1219778,192,-6,513,declining
 IT,0NwuXciw6eQc4edjwSBnV3,Non Abbiamo Età,Luchè,2026-06-01,2026-07-06,26,140,1323619,194,-6,-167,declining
-IT,2bT6QX29M7GLSuTDSirwaS,DÉSOLÉE,ANNA,2026-06-01,2026-07-18,46,105,2546130,161,-6,-1735,declining
-IT,1CqQgE0m019MYN0WnxwtL6,Cadillac,"Guè, TonyPitony, Shablo",2026-06-01,2026-06-04,4,118,217786,146,-6,731,declining
-IT,7os93Vpc5gJ40Fm0QC48a8,ARCOBALENO,"Geolier, Anuel AA",2026-06-01,2026-07-18,46,35,3980338,83,-6,-2790,declining
-IT,6Qyc6fS4DsZjB2mRW9DsQs,Iris,The Goo Goo Dolls,2026-06-01,2026-07-18,46,66,3076919,80,-6,-2508,declining
-IT,7fH13hSOyNoeiDGbjEnTUC,Brivido,"Guè, Marracash",2026-06-01,2026-06-30,7,177,336961,200,-6,1160,declining
-IT,4qW3BbQAwZsrnu8a3ZRdyT,Self Aware,Temper City,2026-06-01,2026-07-18,46,35,4723455,64,-5,-5556,declining
-IT,5ZliWdrEfiHceXVGnGzlxA,Serenamente,"Juli, Bresh",2026-06-01,2026-07-18,46,24,4650544,55,-5,-5324,declining
-IT,4ZAjcfbt84O79SGc0jWqu7,ITALIA STARTER PACK,J-AX,2026-06-01,2026-07-09,37,58,2374149,170,-5,603,declining
-IT,6IdiuMw1FSAvU3e6bgWQVX,È sempre bello,Coez,2026-06-01,2026-07-18,46,75,2931108,114,-5,-1055,declining
 IT,1VsUaDLGDWdaITdEB8BZmY,Comuni Immortali,Achille Lauro,2026-06-01,2026-07-16,33,78,2007726,185,-5,1303,declining
-IT,3CaLAEZ5u8PEiylYQVIv10,Obsessed,"Shiva, ANNA",2026-06-01,2026-07-18,46,4,8708028,24,-5,-6320,declining
 IT,4cgjA7B4fJBHyB9Ya2bu0t,Human Nature,Michael Jackson,2026-06-01,2026-06-11,10,123,531439,196,-5,-351,declining
-IT,0P0GZSQTYSdCPzQar8Rbqf,ACQUARIO,Ultimo,2026-06-01,2026-07-18,46,16,4935296,49,-5,-8016,declining
-IT,00URgxWgyVoybGLhhmKr7g,Tu Me Quieres - Prod. by Higashi x Roberto Ferrante,"Baby Gang, Omega, Higashi, Roberto Ferrante",2026-06-01,2026-07-18,46,76,3107593,129,-5,-2070,declining
+IT,5W1mx7Oeg2HxmASrth1nTt,Per sempre sì,Sal Da Vinci,2026-06-01,2026-07-19,47,49,3106059,100,-5,-13162,declining
+IT,4ZAjcfbt84O79SGc0jWqu7,ITALIA STARTER PACK,J-AX,2026-06-01,2026-07-09,37,58,2374149,170,-5,603,declining
 IT,3oTuTpF1F3A7rEC6RKsMRz,Raindance,"Dave, Tems",2026-06-01,2026-06-09,8,151,401893,181,-5,1423,declining
-IT,3qtuOAI0YyfoBM1s7Tvm46,La Nuova Stella Di Broadway,Cesare Cremonini,2026-06-01,2026-07-18,46,64,2977265,139,-5,-2770,declining
-IT,5bhYjElbPmm2FyB0PxP8Wd,Nessuna,Luchè,2026-06-01,2026-07-18,46,64,3118413,101,-4,-849,declining
-IT,6S9jhAReGPzub7RkRbv8HM,2 GIORNI DI FILA,"Geolier, Sfera Ebbasta, ANNA",2026-06-01,2026-07-18,46,7,7895686,15,-4,-4208,declining
+IT,59D4DOkspUbWyMmbAPQkxZ,VOY A LLeVARTE PA PR,Bad Bunny,2026-06-01,2026-07-19,33,45,1911483,49,-4,-22474,declining
 IT,0j4gmizuiIh5k7F62XISiF,Take 6,Shiva,2026-06-01,2026-06-17,15,103,840083,193,-4,157,declining
-IT,6QFCMUUq1T2Vf5sFUXcuQ7,Beauty And A Beat,"Justin Bieber, Nicki Minaj",2026-06-01,2026-07-18,46,13,5980599,40,-3,-2511,declining
-IT,0TJYJrUDKQ1btt4g0Xwklw,LA GRACIOSA,"Quevedo, Elvis Crespo",2026-06-01,2026-07-18,46,20,4970044,26,-3,-1310,declining
-IT,549DrPfwUQuZB3q53WQh1z,FLAMENCO PARANOIA,"Samurai Jay, Vito Salamanca",2026-06-01,2026-07-18,46,20,5192505,29,-3,-5707,declining
-IT,25idOmfSOCGGdgPhw9iCRm,Ora che non ho più te,Cesare Cremonini,2026-06-01,2026-07-18,46,24,4867179,52,-3,-4197,declining
-IT,46w75NfLpau9juuoeiY3ZM,COME SE NON FOSSI NEI GUAI,"Sfera Ebbasta, Shiva",2026-06-01,2026-07-18,46,56,3573132,96,-3,-2490,declining
-IT,4DnrAI8WyUY6gkOwl8GlPN,capaz (merengueton),"Alleh, Yorghaki",2026-06-01,2026-07-18,46,71,3291038,78,-2,-303,declining
-IT,1WitbPTd3SjoUJOWobxzVF,Bad Bad Bad,"Shiva, Geolier",2026-06-01,2026-07-18,46,4,10459807,7,-2,-4110,declining
-IT,16lyLmCVYv9Tvj6iGXKAAm,Da Dio,Bresh,2026-06-01,2026-07-18,46,6,9392591,9,-2,-6886,declining
-IT,1YaSQXYPqhwtw35Wf3Z0nI,L'Amore Non Mi Basta,Emma,2026-06-01,2026-07-18,46,36,4498220,63,-2,-3062,declining
-IT,3QGY1Tr2MePboAxYtsdbn4,SWAG MUSIC,Artie 5ive,2026-06-01,2026-07-18,46,1,13089962,5,-2,-10732,declining
-IT,5ukcsJ6xFum4aGyd4s2clw,STELLE,Geolier,2026-06-01,2026-07-18,46,15,4873150,39,-1,-436,declining
-IT,4uDzwzT9vjM6pUnhxmClxK,AL MIO PAESE,"Serena Brancale, Levante, DELIA",2026-06-01,2026-07-18,46,4,9850081,11,-1,15937,declining
-IT,3UUqp8cf3sWFSmxw6r0Tqm,I romantici,Tommaso Paradiso,2026-06-01,2026-07-18,46,17,5210266,44,-1,-1240,declining
-IT,3jG1o72wNvvjQn2kDoNsIu,ROMANTICA,Ultimo,2026-06-01,2026-07-17,45,4,7595694,12,-1,9527,declining
-IT,362nbPmkrCtts9zhlLFfIR,UNA VITA FA,"Geolier, Shiva, MACE",2026-06-01,2026-07-18,46,104,2655521,146,-1,-1315,declining
-IT,6Y1SibRCnVlbaa7dS8slzr,Sorry Scusa Lo Siento,Pinguini Tattici Nucleari,2026-06-01,2026-07-18,46,10,7736643,14,-1,6533,declining
-IT,0fR79MubHtwcEiGJzUw8Au,Polvere Rosa,Shiva,2026-06-01,2026-07-18,46,49,3138616,168,-1,-448,declining
+IT,4A56h4B9xUuMMXoKuj18HT,Edge of Desire,"Jonas Blue, Malive",2026-06-01,2026-07-19,47,70,3181797,78,-4,-14792,declining
+IT,5LN0gLSxSEaigog3VjCci3,Babyface,"Shiva, Kid Yugi",2026-06-01,2026-07-19,47,11,5782129,57,-4,-19664,declining
+IT,7i0zYckMTyvLyKAFxfOKIS,SOGNO AMERICANO,Artie 5ive,2026-06-01,2026-07-19,47,40,4620143,51,-3,-22118,declining
+IT,16mdISuTFms1vnxc8gXyQu,Esibizionista,Annalisa,2026-06-01,2026-07-19,47,69,3272961,107,-3,-12194,declining
+IT,4Z43nMEiOiNeDrqu2BN0JD,La tua canzone,Coez,2026-06-01,2026-07-19,47,61,3569854,84,-3,-15015,declining
+IT,7qjZnBKE73H4Oxkopwulqe,back to friends,sombr,2026-06-01,2026-07-19,43,116,2271048,199,-3,-7101,declining
+IT,22skzmqfdWrjJylampe0kt,Can't Hold Us,"Macklemore & Ryan Lewis, Macklemore, Ryan Lewis, Ray Dalton",2026-06-01,2026-07-19,47,109,2661747,161,-3,-9147,declining
+IT,0fR79MubHtwcEiGJzUw8Au,Polvere Rosa,Shiva,2026-06-01,2026-07-19,47,49,3183655,171,-3,-9249,declining
+IT,6iOndD4OFo7GkaDypWQIou,La Plena - W Sound 05,"W Sound, Beéle, Ovy On The Drums",2026-06-01,2026-07-19,47,16,6467417,22,-2,-28480,declining
+IT,2qoacuHNUgG2GQ0e5KhR7D,TU MI PIACI TANTO,"Sayf, Dibla, Jiz",2026-06-01,2026-07-19,47,25,4421808,70,-2,-16645,declining
+IT,7e4zDInS6tA2jwzphvs2Ay,Jamaican (Bam Bam),"HUGEL, SOLTO (FR)",2026-06-01,2026-07-19,47,24,5018713,29,-1,-22402,declining
+IT,53GaYNLUejzouMIDRaukD1,Cabana,Irama,2026-06-01,2026-07-19,47,22,4842982,28,-1,-20241,declining
+IT,6bdTp8Jkp3IAU15rVPWFuJ,DAVVERODAVVERO,Artie 5ive,2026-06-01,2026-07-19,47,8,7973305,24,-1,-29778,declining
+IT,1i41RQ2km1sO8JD6fFVCxX,Mayday,"Shiva, Lazza, Sfera Ebbasta",2026-06-01,2026-07-19,47,15,5102914,61,-1,-16682,declining
+IT,0TJYJrUDKQ1btt4g0Xwklw,LA GRACIOSA,"Quevedo, Elvis Crespo",2026-06-01,2026-07-19,47,20,5094750,27,-1,-22463,declining
+IT,1IHWl5LamUGEuP4ozKQSXZ,Tití Me Preguntó,Bad Bunny,2026-06-01,2026-07-19,47,13,5056841,14,-1,-29877,declining
 IT,4TBp0V4Slb8emBDN8PWU3j,Giovani Re,Sfera Ebbasta,2026-06-01,2026-06-11,10,20,1367372,23,-1,-455,declining
-IT,5tY8rR8cdFsQdBauMGB7nz,DONNE RICCHE - Acoustic Version,TonyPitony,2026-06-01,2026-07-08,34,100,1836451,194,0,,resilient
-IT,3qBtltssunsFuzn6DxXI0b,Margarita (con Marracash),"Elodie, Marracash",2026-06-01,2026-06-29,6,166,291872,196,0,,resilient
-IT,4QNpBfC0zvjKqPJcyqBy9W,Give Me Everything,"Pitbull, Ne-Yo, AFROJACK, Nayer",2026-06-01,2026-06-13,2,197,98768,199,0,,resilient
-IT,5T7ywazdGIydr6JCW6t02j,Smooth Criminal - 2012 Remaster,Michael Jackson,2026-06-01,2026-06-16,14,107,768653,199,0,,resilient
-IT,2mdrVnxEnPR6iFijakkxQS,QLOO*,"Young Cister, Kreamly",2026-06-01,2026-06-13,5,156,255559,194,0,,resilient
+IT,5ukcsJ6xFum4aGyd4s2clw,STELLE,Geolier,2026-06-01,2026-07-19,47,15,4973241,40,-1,-21478,declining
+IT,3jG1o72wNvvjQn2kDoNsIu,ROMANTICA,Ultimo,2026-06-01,2026-07-17,45,4,7595694,12,-1,9527,declining
+IT,1SWUq0qtTSDRGrDtgq7POw,DARKMONEY,"Pyrex, Sfera Ebbasta",2026-06-01,2026-07-19,47,82,2763588,191,-1,-7055,declining
+IT,6S9jhAReGPzub7RkRbv8HM,2 GIORNI DI FILA,"Geolier, Sfera Ebbasta, ANNA",2026-06-01,2026-07-19,47,7,8039832,16,-1,-33997,declining
+IT,16lyLmCVYv9Tvj6iGXKAAm,Da Dio,Bresh,2026-06-01,2026-07-19,47,6,9565837,10,-1,-34016,declining
+IT,3yaRrdo3DDeKgDaubuBsId,Cantilene,"Juli, Olly",2026-06-01,2026-07-19,47,21,5078439,47,-1,-17012,declining
+IT,5vdmfjy5CVrV0xYEcO2f4Q,Buon Vento,"Jovanotti, Alfa",2026-06-01,2026-07-19,47,23,5596548,37,-1,-20470,declining
+IT,4hFDFmMnSYZ32ssqNUOCjt,Magnetic,The Bausa,2026-06-01,2026-07-19,47,54,3353192,55,-1,-17808,declining
+IT,1WitbPTd3SjoUJOWobxzVF,Bad Bad Bad,"Shiva, Geolier",2026-06-01,2026-07-19,47,4,10637859,8,-1,-34426,declining
+IT,6Y1SibRCnVlbaa7dS8slzr,Sorry Scusa Lo Siento,Pinguini Tattici Nucleari,2026-06-01,2026-07-19,47,10,7891681,15,-1,-27124,declining
+IT,3BovdzfaX4jb5KFQwoPfAw,Beat It,Michael Jackson,2026-06-01,2026-07-19,47,31,3942871,101,-1,-11649,declining
 IT,168t3ud7jZIslO0P5ZDKnj,Felpa Nera,"Tedua, ANNA",2026-06-01,2026-06-08,7,97,411919,185,0,,resilient
-IT,53GaYNLUejzouMIDRaukD1,Cabana,Irama,2026-06-01,2026-07-18,46,22,4722290,27,0,617,resilient
+IT,4hJSzUREpdDo8uhgEflbHr,Sally,Vasco Rossi,2026-06-01,2026-07-01,20,130,1024340,188,0,,resilient
+IT,3sK8wGT43QFpWrvNQsrQya,DtMF,Bad Bunny,2026-06-01,2026-07-19,47,6,6055969,6,0,-29141,resilient
+IT,2ceJa7d62wQ3eRBK589ALG,Gotham,"Shiva, Kid Yugi",2026-06-01,2026-06-29,7,164,344946,182,0,,resilient
+IT,5k5scIRaBAJStJF1xWCqgc,LA TESTA GIRA,"Fred De Palma, Anitta, Emis Killa",2026-06-01,2026-07-19,47,3,11437516,3,0,-34405,resilient
+IT,5tY8rR8cdFsQdBauMGB7nz,DONNE RICCHE - Acoustic Version,TonyPitony,2026-06-01,2026-07-08,34,100,1836451,194,0,,resilient
+IT,0HS9jzQvqyEyVLuo7sskFO,Stupida sfortuna,Fulminacci,2026-06-01,2026-07-19,47,29,5025516,43,0,-16300,resilient
 IT,2DkiFEQ1ihXcYKaIRsfGFp,LEI,Marracash,2026-06-01,2026-06-08,6,167,294423,198,0,,resilient
-IT,4oMiCgeROySnMbUDwH9lt3,V per Vangelo,Shiva,2026-06-01,2026-07-18,46,40,3387054,153,0,-970,resilient
+IT,07qo9gnLM488CUr0EtgIA1,Poetica,Cesare Cremonini,2026-06-01,2026-07-19,43,71,2575568,168,0,,resilient
+IT,6Ahg1hncxUdK0ICqU03BCu,Superclassico,Ernia,2026-06-01,2026-07-19,42,132,2225965,173,0,,resilient
+IT,3Eh8NAQVV8b1EzgKang5ne,Diversi,Shiva,2026-06-01,2026-07-19,28,110,1457551,187,0,,resilient
+IT,0bKDQionn4VKcgNKbs4SWX,Pastello Bianco,Pinguini Tattici Nucleari,2026-06-01,2026-07-18,11,162,538763,195,0,,resilient
+IT,41lOxc6ARYZPXpKeMWcHsD,Islanda,Pinguini Tattici Nucleari,2026-06-01,2026-07-16,28,160,1396269,186,0,,resilient
+IT,6J5kc12BW5HuP3d7C3vvx8,EoO,Bad Bunny,2026-06-01,2026-07-19,47,30,3231881,30,0,-26189,resilient
+IT,5TFD2bmFKGhoCRbX61nXY5,NUEVAYoL,Bad Bunny,2026-06-01,2026-07-19,47,4,6093555,4,0,-30544,resilient
+IT,63vgQs2pr8e0fU10Jp2MrW,OSSESSIONE,"Samurai Jay, Vito Salamanca",2026-06-01,2026-07-19,47,1,13316059,2,0,-32213,resilient
+IT,0O5KcmgOeEgublW6ySQ6Vc,Amelie,Kid Yugi,2026-06-01,2026-07-09,29,116,1509391,188,0,,resilient
+IT,4QNpBfC0zvjKqPJcyqBy9W,Give Me Everything,"Pitbull, Ne-Yo, AFROJACK, Nayer",2026-06-01,2026-06-13,2,197,98768,199,0,,resilient
+IT,2mdrVnxEnPR6iFijakkxQS,QLOO*,"Young Cister, Kreamly",2026-06-01,2026-06-13,5,156,255559,194,0,,resilient
+IT,1b8tFExEyHyxTzrrlQAsu4,Marmellata #25,Cesare Cremonini,2026-06-01,2026-07-01,19,102,1075697,190,0,,resilient
+IT,2tTmW7RDtMQtBk7m2rYeSw,"Quevedo: Bzrp Music Sessions, Vol. 52","Bizarrap, Quevedo",2026-06-01,2026-07-19,46,128,2425594,141,0,-9381,resilient
+IT,5T7ywazdGIydr6JCW6t02j,Smooth Criminal - 2012 Remaster,Michael Jackson,2026-06-01,2026-06-16,14,107,768653,199,0,,resilient
+IT,27teXnNekA5jBFLCcsCFoq,7ELEVEN,Artie 5ive,2026-06-01,2026-07-19,47,48,3820949,91,0,-11148,resilient
+IT,7MMJa7cjMadOSR6CFWvB1x,La musica non c'è,Coez,2026-06-01,2026-07-19,47,52,3980023,59,0,-15130,resilient
+IT,6ErRedGqcOC4HmUEfUneiY,Dio Esiste,Shiva,2026-06-01,2026-06-29,23,70,1438371,177,0,,resilient
+IT,46eu3SBuFCXWsPT39Yg3tJ,Don't Stop 'Til You Get Enough - Single Version,Michael Jackson,2026-06-01,2026-06-20,18,92,1059513,190,0,,resilient
+IT,1vkDKchOzwZM4rXsJTdtGs,XXDONO,"Tiziano Ferro, Lazza",2026-06-01,2026-07-01,22,122,1186103,189,0,,resilient
 IT,5yvVYFDUpbnjcnRBgjwTzM,Dracula - JENNIE Remix,"Tame Impala, JENNIE",2026-06-01,2026-06-22,17,142,880727,191,0,,resilient
-IT,7oJtUqvumujVKarcXa1SPj,a me mi piace,"Alfa, Manu Chao",2026-06-01,2026-07-18,36,117,1904540,177,0,,resilient
+IT,0xEgDBXYO9gGzmxCFWKxNg,CRUDELIA - I nervi,Marracash,2026-06-01,2026-07-15,19,136,977482,191,0,,resilient
+IT,1XpmMe95dk9jh3zuOMpeU2,Capri Sun,Capo Plaza,2026-06-01,2026-07-19,47,75,3256781,89,0,-13285,resilient
+IT,3QGY1Tr2MePboAxYtsdbn4,SWAG MUSIC,Artie 5ive,2026-06-01,2026-07-19,47,1,13281058,5,0,-39348,resilient
+IT,3WL6jUG9qR8rhOOVlD51JE,CANZONE D'AMORE,Geolier,2026-06-01,2026-07-19,47,1,12899210,1,0,-42518,resilient
+IT,15ZWSMDQMfBKVn4zurLX7k,Amaro,Pinguini Tattici Nucleari,2026-06-01,2026-07-03,5,156,253208,196,0,,resilient
+IT,3qBtltssunsFuzn6DxXI0b,Margarita (con Marracash),"Elodie, Marracash",2026-06-01,2026-06-29,6,166,291872,196,0,,resilient
 IT,5eSC7faDYHxnklPjcxZjD6,BRAVI A CADERE - I polmoni,Marracash,2026-06-01,2026-06-17,7,157,350049,198,0,,resilient
 IT,0P45YtqtAT6AkNDDX1lySE,COOOK PARDON,"Lvbel C5, AKDO",2026-06-01,2026-06-01,1,200,47033,200,0,,resilient
-IT,2ceJa7d62wQ3eRBK589ALG,Gotham,"Shiva, Kid Yugi",2026-06-01,2026-06-29,7,164,344946,182,0,,resilient
-IT,6ErRedGqcOC4HmUEfUneiY,Dio Esiste,Shiva,2026-06-01,2026-06-29,23,70,1438371,177,0,,resilient
-IT,5LN0gLSxSEaigog3VjCci3,Babyface,"Shiva, Kid Yugi",2026-06-01,2026-07-18,46,11,5702932,53,0,-1821,resilient
-IT,63vgQs2pr8e0fU10Jp2MrW,OSSESSIONE,"Samurai Jay, Vito Salamanca",2026-06-01,2026-07-18,46,1,13074089,2,0,9090,resilient
-IT,46eu3SBuFCXWsPT39Yg3tJ,Don't Stop 'Til You Get Enough - Single Version,Michael Jackson,2026-06-01,2026-06-20,18,92,1059513,190,0,,resilient
-IT,6Ahg1hncxUdK0ICqU03BCu,Superclassico,Ernia,2026-06-01,2026-07-17,41,132,2181323,180,0,,resilient
-IT,41lOxc6ARYZPXpKeMWcHsD,Islanda,Pinguini Tattici Nucleari,2026-06-01,2026-07-16,28,160,1396269,186,0,,resilient
-IT,4hJSzUREpdDo8uhgEflbHr,Sally,Vasco Rossi,2026-06-01,2026-07-01,20,130,1024340,188,0,,resilient
-IT,7i0zYckMTyvLyKAFxfOKIS,SOGNO AMERICANO,Artie 5ive,2026-06-01,2026-07-18,46,40,4536805,48,0,-2294,resilient
-IT,0O5KcmgOeEgublW6ySQ6Vc,Amelie,Kid Yugi,2026-06-01,2026-07-09,29,116,1509391,188,0,,resilient
-IT,15ZWSMDQMfBKVn4zurLX7k,Amaro,Pinguini Tattici Nucleari,2026-06-01,2026-07-03,5,156,253208,196,0,,resilient
-IT,1vkDKchOzwZM4rXsJTdtGs,XXDONO,"Tiziano Ferro, Lazza",2026-06-01,2026-07-01,22,122,1186103,189,0,,resilient
-IT,3xkHsmpQCBMytMJNiDf3Ii,Beautiful Things,Benson Boone,2026-06-01,2026-07-16,9,173,445351,199,0,,resilient
-IT,5pYy054Wcuj9CFdDIxZSVU,Menomale che c'è il mare,"Olly, Juli",2026-06-01,2026-07-18,40,72,2401711,163,0,,resilient
-IT,0bKDQionn4VKcgNKbs4SWX,Pastello Bianco,Pinguini Tattici Nucleari,2026-06-01,2026-07-18,11,162,538763,195,0,,resilient
-IT,4vF4VnzL47EVsZZEVsEfbF,VACCI PIANO,"Emma, Rkomi",2026-06-01,2026-07-18,41,112,2223215,191,0,,resilient
-IT,1b8tFExEyHyxTzrrlQAsu4,Marmellata #25,Cesare Cremonini,2026-06-01,2026-07-01,19,102,1075697,190,0,,resilient
-IT,1CPZ5BxNNd0n0nF4Orb9JS,Golden,"HUNTR/X, EJae, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast",2026-06-01,2026-07-18,32,86,1785685,181,0,,resilient
+IT,2gI2IA7QGtzKZKuahon3W1,Amore Disperato,Achille Lauro,2026-06-01,2026-07-19,47,76,3178033,110,0,-10370,resilient
 IT,4xI3U4sDj1TPmO9Iz5TkYp,4K,"El Alfa, Darell, Noriel",2026-06-01,2026-06-13,2,188,99380,200,0,,resilient
-IT,0xEgDBXYO9gGzmxCFWKxNg,CRUDELIA - I nervi,Marracash,2026-06-01,2026-07-15,19,136,977482,191,0,,resilient
-IT,3WL6jUG9qR8rhOOVlD51JE,CANZONE D'AMORE,Geolier,2026-06-01,2026-07-18,46,1,12651998,1,0,-2660,resilient
-IT,7vc09IDmFH0MfyPYHPEWRM,AMOR,Achille Lauro,2026-06-01,2026-07-18,46,20,5487675,41,1,4209,rising
-IT,5k5scIRaBAJStJF1xWCqgc,LA TESTA GIRA,"Fred De Palma, Anitta, Emis Killa",2026-06-01,2026-07-18,46,3,11231163,3,1,13188,rising
-IT,3yaRrdo3DDeKgDaubuBsId,Cantilene,"Juli, Olly",2026-06-01,2026-07-18,46,21,4988147,46,1,-1763,rising
-IT,3CbcXXMMV42h0WZ9zIf4d8,Maladie,Mauvais djo,2026-06-01,2026-06-17,16,14,2465938,16,1,3800,rising
-IT,1rIKgCH4H52lrvDcz50hS8,Lush Life,Zara Larsson,2026-06-01,2026-07-17,38,107,2009386,194,1,2917,rising
+IT,3xkHsmpQCBMytMJNiDf3Ii,Beautiful Things,Benson Boone,2026-06-01,2026-07-16,9,173,445351,199,0,,resilient
+IT,2a1o6ZejUi8U3wzzOtCOYw,Danza Kuduro,"Don Omar, Lucenzo",2026-06-01,2026-07-19,45,105,2536344,157,0,-8784,resilient
+IT,4Cd1cCCqG3nlf07i5A0IPH,Yakuza,"Elodie, Sfera Ebbasta, Rvssian",2026-06-01,2026-07-19,25,132,1260263,181,0,,resilient
+IT,6XjDF6nds4DE2BBbagZol6,Gata Only,"FloyyMenor, Cris MJ",2026-06-01,2026-07-19,47,96,2568283,96,1,-10276,rising
+IT,0fea68AdmYNygeTGI4RC18,LA CANCIÓN,"J Balvin, Bad Bunny",2026-06-01,2026-07-19,31,68,1648961,68,1,-14247,rising
+IT,3qtuOAI0YyfoBM1s7Tvm46,La Nuova Stella Di Broadway,Cesare Cremonini,2026-06-01,2026-07-19,47,64,3026705,138,1,-9329,rising
 IT,2gSNBigeWMVtY3QBIvPAEc,Bad - 2012 Remaster,Michael Jackson,2026-06-01,2026-06-07,7,148,356270,179,1,-7663,rising
-IT,2gI2IA7QGtzKZKuahon3W1,Amore Disperato,Achille Lauro,2026-06-01,2026-07-18,46,76,3122678,110,2,732,rising
-IT,0kl6Ozan3fuUdCl6TlB15v,Talk To You,"ANOTR, 54 Ultra",2026-06-01,2026-06-11,10,22,1309238,25,2,1407,rising
-IT,2qf4KviAhT4cNGydUT28Qo,Labirinto,Luchè,2026-06-01,2026-07-18,46,22,4642916,56,2,1459,rising
+IT,3CaLAEZ5u8PEiylYQVIv10,Obsessed,"Shiva, ANNA",2026-06-01,2026-07-19,47,4,8836676,23,1,-26241,rising
+IT,7J1uxwnxfQLu4APicE5Rnj,Billie Jean,Michael Jackson,2026-06-01,2026-07-19,47,19,4796041,66,1,-15568,rising
+IT,2lTm559tuIvatlT1u0JYG2,BAILE INoLVIDABLE,Bad Bunny,2026-06-01,2026-07-19,47,7,5308917,7,1,-29384,rising
+IT,0P0GZSQTYSdCPzQar8Rbqf,ACQUARIO,Ultimo,2026-06-01,2026-07-19,47,16,5022426,48,1,-18232,rising
+IT,3CbcXXMMV42h0WZ9zIf4d8,Maladie,Mauvais djo,2026-06-01,2026-06-17,16,14,2465938,16,1,3800,rising
+IT,7oJtUqvumujVKarcXa1SPj,a me mi piace,"Alfa, Manu Chao",2026-06-01,2026-07-19,37,117,1948894,176,1,-8386,rising
+IT,1rIKgCH4H52lrvDcz50hS8,Lush Life,Zara Larsson,2026-06-01,2026-07-17,38,107,2009386,194,1,2917,rising
+IT,28v57vssZ488EEIBivY3NF,Ogni Male,Capo Plaza,2026-06-01,2026-07-19,47,37,4101877,45,2,-14763,rising
+IT,6IdiuMw1FSAvU3e6bgWQVX,È sempre bello,Coez,2026-06-01,2026-07-19,47,75,2986378,112,2,-9269,rising
+IT,6VNXmo59yDYgcwLS17UNAW,CAFé CON RON,"Bad Bunny, Los Pleneros de la Cresta",2026-06-01,2026-07-19,47,17,4130681,17,2,-22225,rising
+IT,6ifUES3keWjwXgae8pXI3o,Me Rehúso,Danny Ocean,2026-06-01,2026-07-19,47,69,3136762,92,2,-9600,rising
+IT,7nRFsITVaSHko2Fw2Gcy59,Destri,Gazzelle,2026-06-01,2026-07-19,43,135,2230851,184,2,-7299,rising
 IT,3KsGBiWVuybY3Zm7LDKuqK,Splinter Cell,"G.Mineiro, Flatpearl, Jiz, Succo",2026-06-01,2026-06-07,7,10,1130206,10,2,-24311,rising
-IT,07qo9gnLM488CUr0EtgIA1,Poetica,Cesare Cremonini,2026-06-01,2026-07-17,42,71,2529896,187,2,3290,rising
-IT,7e4zDInS6tA2jwzphvs2Ay,Jamaican (Bam Bam),"HUGEL, SOLTO (FR)",2026-06-01,2026-07-18,46,24,4900597,28,3,4938,rising
-IT,1XpmMe95dk9jh3zuOMpeU2,Capri Sun,Capo Plaza,2026-06-01,2026-07-18,46,75,3194840,89,3,1672,rising
-IT,1VX2LLBpUPS2QJVou4WGz3,Questa domenica,"Olly, Juli",2026-06-01,2026-07-18,46,23,5043120,51,3,2605,rising
-IT,1i41RQ2km1sO8JD6fFVCxX,Mayday,"Shiva, Lazza, Sfera Ebbasta",2026-06-01,2026-07-18,46,15,5029194,60,3,68,rising
-IT,7EFFg3umzGzCnOIHG6Fr6V,Bossa Nostra,Gaia,2026-06-01,2026-07-18,46,92,2624923,125,3,-556,rising
-IT,0rjVRGqVuNwnGCxwBkBZXd,FELLINI,"Ernia, Kid Yugi",2026-06-01,2026-07-02,28,127,1465406,178,3,2238,rising
-IT,1K9qAxGT4cWUicf2OezSen,VETRI NERI,"AVA, ANNA, Capo Plaza",2026-06-01,2026-07-18,29,139,1505728,162,3,474,rising
-IT,3BovdzfaX4jb5KFQwoPfAw,Beat It,Michael Jackson,2026-06-01,2026-07-18,46,31,3885492,100,3,157,rising
-IT,0HS9jzQvqyEyVLuo7sskFO,Stupida sfortuna,Fulminacci,2026-06-01,2026-07-18,46,29,4928562,43,3,3230,rising
+IT,2qf4KviAhT4cNGydUT28Qo,Labirinto,Luchè,2026-06-01,2026-07-19,47,22,4724274,54,2,-15129,rising
+IT,0kl6Ozan3fuUdCl6TlB15v,Talk To You,"ANOTR, 54 Ultra",2026-06-01,2026-06-11,10,22,1309238,25,2,1407,rising
+IT,6RRxP0B9bVZnbTnSpxfo9W,Spie,Shiva,2026-06-01,2026-07-19,47,21,4141271,109,2,-9888,rising
+IT,4uDzwzT9vjM6pUnhxmClxK,AL MIO PAESE,"Serena Brancale, Levante, DELIA",2026-06-01,2026-07-19,47,4,10025297,9,2,-30165,rising
+IT,5ZliWdrEfiHceXVGnGzlxA,Serenamente,"Juli, Bresh",2026-06-01,2026-07-19,47,24,4733392,53,2,-14885,rising
+IT,7kktKNHgINrBczPUGoG38p,Bang Bang,Sfera Ebbasta,2026-06-01,2026-07-19,41,112,2189609,152,2,-8429,rising
+IT,7vc09IDmFH0MfyPYHPEWRM,AMOR,Achille Lauro,2026-06-01,2026-07-19,47,20,5590415,38,3,-16803,rising
+IT,7os93Vpc5gJ40Fm0QC48a8,ARCOBALENO,"Geolier, Anuel AA",2026-06-01,2026-07-19,47,35,4045780,80,3,-12012,rising
 IT,2LlQb7Uoj1kKyGhlkBf9aC,Thriller,Michael Jackson,2026-06-01,2026-06-02,2,171,96836,171,3,-3028,rising
-IT,4hFDFmMnSYZ32ssqNUOCjt,Magnetic,The Bausa,2026-06-01,2026-07-18,46,54,3272627,54,3,1665,rising
-IT,2qoacuHNUgG2GQ0e5KhR7D,TU MI PIACI TANTO,"Sayf, Dibla, Jiz",2026-06-01,2026-07-18,46,25,4351418,68,4,4191,rising
-IT,0il2Hwwf6U8haOn1rMwUak,Bam Bam Bambina,Elettra Lamborghini,2026-06-01,2026-07-18,12,165,606498,165,4,83,rising
+IT,0rjVRGqVuNwnGCxwBkBZXd,FELLINI,"Ernia, Kid Yugi",2026-06-01,2026-07-02,28,127,1465406,178,3,2238,rising
+IT,549DrPfwUQuZB3q53WQh1z,FLAMENCO PARANOIA,"Samurai Jay, Vito Salamanca",2026-06-01,2026-07-19,47,20,5319629,26,3,-11013,rising
+IT,362nbPmkrCtts9zhlLFfIR,UNA VITA FA,"Geolier, Shiva, MACE",2026-06-01,2026-07-19,47,104,2704468,143,3,-9007,rising
+IT,46w75NfLpau9juuoeiY3ZM,COME SE NON FOSSI NEI GUAI,"Sfera Ebbasta, Shiva",2026-06-01,2026-07-19,47,56,3634323,93,3,-9573,rising
+IT,7ue5uvozLbamg0rjS65FeT,SEXY RAVE,"Fred De Palma, Baby Gang",2026-06-01,2026-07-19,44,90,2400089,156,3,-7964,rising
+IT,0jkAr7eZsvWDLYiQCfaxak,NEON,"Sfera Ebbasta, Shiva",2026-06-01,2026-07-19,47,37,4442608,69,3,-12226,rising
+IT,4qW3BbQAwZsrnu8a3ZRdyT,Self Aware,Temper City,2026-06-01,2026-07-19,47,35,4799191,60,4,-12541,rising
+IT,2qBPVhXAvX3kTFp2mk46gn,Via dei Mille,"Dipinto, Fresh Beatz",2026-06-01,2026-07-19,47,19,4496496,86,4,-10879,rising
 IT,0D9p9lpsUkzIYbZ72Z8EyT,Aranciata,Frah Quintale,2026-06-01,2026-06-27,4,181,201888,189,4,-1278,rising
 IT,3QjM7blH1a157YfP8G33TA,RATATA,Capo Plaza,2026-06-01,2026-07-17,44,106,2434745,183,4,3388,rising
-IT,4Z43nMEiOiNeDrqu2BN0JD,La tua canzone,Coez,2026-06-01,2026-07-18,46,61,3506988,81,4,2998,rising
-IT,16mdISuTFms1vnxc8gXyQu,Esibizionista,Annalisa,2026-06-01,2026-07-18,46,69,3217200,104,4,2291,rising
-IT,5vdmfjy5CVrV0xYEcO2f4Q,Buon Vento,"Jovanotti, Alfa",2026-06-01,2026-07-18,46,23,5492138,36,4,8866,rising
 IT,5MJc4IVIt17xEt6angtZcq,BUIO DAVANTI,Lazza,2026-06-01,2026-07-17,34,125,1769801,176,4,3019,rising
-IT,4A56h4B9xUuMMXoKuj18HT,Edge of Desire,"Jonas Blue, Malive",2026-06-01,2026-07-18,46,70,3115102,74,5,3488,rising
-IT,6iOndD4OFo7GkaDypWQIou,La Plena - W Sound 05,"W Sound, Beéle, Ovy On The Drums",2026-06-01,2026-07-18,46,16,6335736,20,5,12781,rising
-IT,0RkFzXmEJzSv4Bu6YwZJx6,Maledetto me,Fulminacci,2026-06-01,2026-07-18,46,124,2522099,144,6,18,rising
+IT,5bhYjElbPmm2FyB0PxP8Wd,Nessuna,Luchè,2026-06-01,2026-07-19,47,64,3177132,97,4,-9841,rising
+IT,6QFCMUUq1T2Vf5sFUXcuQ7,Beauty And A Beat,"Justin Bieber, Nicki Minaj",2026-06-01,2026-07-19,47,13,6086570,36,4,-15227,rising
+IT,2kZV7d0A4BIN5I8iFBnbqp,16 Marzo,"Achille Lauro, Gow Tribe",2026-06-01,2026-07-19,47,89,2745634,165,5,-7701,rising
+IT,14DFx4gDrW7b84MziUD6aM,Poesie Clandestine,"LDA, Aka 7even",2026-06-01,2026-07-19,47,47,3112856,147,5,-8258,rising
+IT,6Qyc6fS4DsZjB2mRW9DsQs,Iris,The Goo Goo Dolls,2026-06-01,2026-07-19,47,66,3145570,75,5,-10558,rising
+IT,1YaSQXYPqhwtw35Wf3Z0nI,L'Amore Non Mi Basta,Emma,2026-06-01,2026-07-19,47,36,4576412,58,5,-10640,rising
+IT,1VX2LLBpUPS2QJVou4WGz3,Questa domenica,"Olly, Juli",2026-06-01,2026-07-19,47,23,5133491,46,5,-12563,rising
+IT,2RkZ5LkEzeHGRsmDqKwmaJ,Ordinary,Alex Warren,2026-06-01,2026-07-19,37,101,2059432,119,5,-9095,rising
+IT,1QMGYNbDtHIRzDMKugpg7t,Balorda nostalgia,"Olly, Juli",2026-06-01,2026-07-19,47,50,3819611,79,6,-11135,rising
 IT,3ZFTkvIE7kyPt6Nu3PEa7V,Hips Don't Lie,"Shakira, Wyclef Jean",2026-06-01,2026-07-07,15,145,768851,145,6,2716,rising
-IT,7MMJa7cjMadOSR6CFWvB1x,La musica non c'è,Coez,2026-06-01,2026-07-18,46,52,3902929,59,6,2915,rising
-IT,7J1uxwnxfQLu4APicE5Rnj,Billie Jean,Michael Jackson,2026-06-01,2026-07-18,46,19,4723964,67,6,5175,rising
-IT,2tTmW7RDtMQtBk7m2rYeSw,"Quevedo: Bzrp Music Sessions, Vol. 52","Bizarrap, Quevedo",2026-06-01,2026-07-18,45,128,2376425,141,7,263,rising
-IT,19DHPlTC2gx1j4jrFzNbwL,30ºC,ANNA,2026-06-01,2026-07-18,38,108,2014320,174,7,287,rising
-IT,6PtEfaLwNxmBtK4LX7Ffi6,1H,Geolier,2026-06-01,2026-07-18,46,59,3071494,116,7,363,rising
-IT,1lslS1hUsIvAScXvWVTLt2,INTRO (La Bella Vita),Artie 5ive,2026-06-01,2026-07-18,46,74,2868602,132,7,214,rising
-IT,6WatFBLVB0x077xWeoVc2k,Si Antes Te Hubiera Conocido,KAROL G,2026-06-01,2026-07-18,46,66,3265019,82,8,3718,rising
-IT,2a1o6ZejUi8U3wzzOtCOYw,Danza Kuduro,"Don Omar, Lucenzo",2026-06-01,2026-07-18,44,105,2488624,157,9,1652,rising
-IT,6ifUES3keWjwXgae8pXI3o,Me Rehúso,Danny Ocean,2026-06-01,2026-07-18,46,69,3075551,94,10,2053,rising
-IT,5TFD2bmFKGhoCRbX61nXY5,NUEVAYoL,Bad Bunny,2026-06-01,2026-07-18,46,4,5890006,4,10,58949,rising
-IT,5pk3bAZLMs1PqdMuHITZU9,Perdutamente,Achille Lauro,2026-06-01,2026-07-18,46,44,4061204,61,10,5518,rising
-IT,14DFx4gDrW7b84MziUD6aM,Poesie Clandestine,"LDA, Aka 7even",2026-06-01,2026-07-18,46,47,3064160,152,12,1802,rising
+IT,6UrPST46XxYPqbAAThhSMS,VOLEVO CAPIRE CON MARRACASH,"Madame, Marracash",2026-06-01,2026-07-19,47,25,5561156,35,7,-12000,rising
+IT,4DnrAI8WyUY6gkOwl8GlPN,capaz (merengueton),"Alleh, Yorghaki",2026-06-01,2026-07-19,47,71,3360801,71,7,-10459,rising
+IT,3qhlB30KknSejmIvZZLjOD,End of Beginning,Djo,2026-06-01,2026-07-19,47,65,3288554,113,7,-8262,rising
+IT,19DHPlTC2gx1j4jrFzNbwL,30ºC,ANNA,2026-06-01,2026-07-19,39,108,2060390,167,7,-7229,rising
+IT,7yNf9YjeO5JXUE3JEBgnYc,Babydoll,Dominic Fike,2026-06-01,2026-07-19,47,46,3644340,95,7,-8420,rising
+IT,25idOmfSOCGGdgPhw9iCRm,Ora che non ho più te,Cesare Cremonini,2026-06-01,2026-07-19,47,24,4958778,44,8,-8218,rising
+IT,6WatFBLVB0x077xWeoVc2k,Si Antes Te Hubiera Conocido,KAROL G,2026-06-01,2026-07-19,47,66,3333861,73,9,-8891,rising
+IT,2UswOCldBaG2mp073YKkf0,Canzone Estiva,Annalisa,2026-06-01,2026-07-19,47,72,3077147,94,9,-7450,rising
+IT,4qycYIAF967ij8lKoxCyqt,Maledetta primavera,Loretta Goggi,2026-06-01,2026-07-19,38,102,2034533,102,10,-8448,rising
+IT,6DhMZVuD6TH0jd4bMNChCU,PER TE,Ernia,2026-06-01,2026-07-19,47,78,3096841,99,10,-7860,rising
+IT,6zjlQ39iHKMaPcY9Fz4d9e,Halo,"Samurai Jay, Vito Salamanca",2026-06-01,2026-07-19,47,36,3520891,116,10,-7579,rising
+IT,0il2Hwwf6U8haOn1rMwUak,Bam Bam Bambina,Elettra Lamborghini,2026-06-01,2026-07-19,13,155,654513,155,10,-6439,rising
+IT,1CPZ5BxNNd0n0nF4Orb9JS,Golden,"HUNTR/X, EJae, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast",2026-06-01,2026-07-19,33,86,1830826,170,11,-7065,rising
+IT,4vF4VnzL47EVsZZEVsEfbF,VACCI PIANO,"Emma, Rkomi",2026-06-01,2026-07-19,42,112,2267420,180,11,-6191,rising
 IT,5nEdwtSv0qqeE0l4o1lR4q,(When You Gonna) Give It Up to Me,"Sean Paul, Keyshia Cole",2026-06-01,2026-07-18,12,147,617366,184,12,835,rising
-IT,6VNXmo59yDYgcwLS17UNAW,CAFé CON RON,"Bad Bunny, Los Pleneros de la Cresta",2026-06-01,2026-07-18,46,19,3988227,19,13,31161,rising
-IT,2lTm559tuIvatlT1u0JYG2,BAILE INoLVIDABLE,Bad Bunny,2026-06-01,2026-07-18,46,8,5128362,8,13,56172,rising
+IT,5wpNF7XLTW4gLyU0NjVOL8,Bottiglie Vuote,"Pinguini Tattici Nucleari, Max Pezzali",2026-06-01,2026-07-19,45,106,2428127,106,12,-7272,rising
+IT,2bT6QX29M7GLSuTDSirwaS,DÉSOLÉE,ANNA,2026-06-01,2026-07-19,47,105,2594621,148,13,-7212,rising
 IT,3l4KzIHsh002W3evllH3EF,Incoscienti Giovani,Achille Lauro,2026-06-01,2026-07-16,34,62,2181455,181,13,3565,rising
-IT,3sK8wGT43QFpWrvNQsrQya,DtMF,Bad Bunny,2026-06-01,2026-07-18,46,6,5872363,6,14,52316,rising
-IT,6zjlQ39iHKMaPcY9Fz4d9e,Halo,"Samurai Jay, Vito Salamanca",2026-06-01,2026-07-18,46,36,3467048,126,15,1530,rising
-IT,5nFyfjGy6AMZqkW0OMUWJJ,Per due come noi,"Olly, Angelina Mango, Juli",2026-06-01,2026-07-18,46,62,3317091,71,16,9383,rising
-IT,1IHWl5LamUGEuP4ozKQSXZ,Tití Me Preguntó,Bad Bunny,2026-06-01,2026-07-18,46,13,4896274,13,17,54331,rising
-IT,2UswOCldBaG2mp073YKkf0,Canzone Estiva,Annalisa,2026-06-01,2026-07-18,46,72,3016312,103,17,4177,rising
-IT,6J5kc12BW5HuP3d7C3vvx8,EoO,Bad Bunny,2026-06-01,2026-07-18,46,30,3120930,30,21,35582,rising
-IT,1k3pzheXrbtHgvvOsQeMkU,Che fastidio!,Ditonellapiaga,2026-06-01,2026-07-18,46,55,2906177,166,22,2241,rising
-IT,59D4DOkspUbWyMmbAPQkxZ,VOY A LLeVARTE PA PR,Bad Bunny,2026-06-01,2026-07-18,32,45,1824934,45,25,24737,rising
-IT,0pxwzHAlnK86CIfDbbJLr4,Kriminal - Prod. by Roberto Ferrante,"Baby Gang, El Alfa, Omega, Roberto Ferrante",2026-06-01,2026-07-18,46,85,2932826,107,26,5395,rising
-IT,0gkV0FyCdrJqwyrFW7NsEQ,Come mai,883,2026-06-01,2026-07-18,45,70,2988110,108,27,4971,rising
-IT,5wpNF7XLTW4gLyU0NjVOL8,Bottiglie Vuote,"Pinguini Tattici Nucleari, Max Pezzali",2026-06-01,2026-07-18,44,118,2372164,118,28,4211,rising
-IT,4MzXwWMhyBbmu6hOcLVD49,DÁKITI,"Bad Bunny, JHAYCO",2026-06-01,2026-07-18,37,73,1986552,73,29,12690,rising
-IT,0fea68AdmYNygeTGI4RC18,LA CANCIÓN,"J Balvin, Bad Bunny",2026-06-01,2026-07-18,30,69,1577788,69,29,16027,rising
-IT,2kZV7d0A4BIN5I8iFBnbqp,16 Marzo,"Achille Lauro, Gow Tribe",2026-06-01,2026-07-18,46,89,2699095,170,30,3659,rising
-IT,7ue5uvozLbamg0rjS65FeT,SEXY RAVE,"Fred De Palma, Baby Gang",2026-06-01,2026-07-18,43,90,2352189,159,31,3882,rising
-IT,5W1mx7Oeg2HxmASrth1nTt,Per sempre sì,Sal Da Vinci,2026-06-01,2026-07-18,46,49,3048435,95,31,7810,rising
-IT,6XjDF6nds4DE2BBbagZol6,Gata Only,"FloyyMenor, Cris MJ",2026-06-01,2026-07-18,46,97,2508700,97,35,8178,rising
-IT,4qycYIAF967ij8lKoxCyqt,Maledetta primavera,Loretta Goggi,2026-06-01,2026-07-18,37,112,1977725,112,40,7263,rising
+IT,00URgxWgyVoybGLhhmKr7g,Tu Me Quieres - Prod. by Higashi x Roberto Ferrante,"Baby Gang, Omega, Higashi, Roberto Ferrante",2026-06-01,2026-07-19,47,76,3161581,115,14,-7023,rising
+IT,7EFFg3umzGzCnOIHG6Fr6V,Bossa Nostra,Gaia,2026-06-01,2026-07-19,47,92,2680196,111,14,-6489,rising
+IT,3l109GEhkVYrTvDoKuNGlu,BERLINO,Ernia,2026-06-01,2026-07-19,47,37,4474463,62,17,-6197,rising
+IT,7uu3YZytpYW15VIfa7ynJk,Niente Canzoni D'Amore - Inedito,"Marracash, Federica Abbate",2026-06-01,2026-07-19,47,59,3113056,117,18,-6233,rising
+IT,7yq4Qj7cqayVTp3FF9CWbm,Riptide,Vance Joy,2026-06-01,2026-07-19,47,99,2833814,103,18,-6274,rising
+IT,1JSTJqkT5qHq8MDJnJbRE1,Every Breath You Take,The Police,2026-06-01,2026-07-19,47,103,2773565,108,19,-5561,rising
+IT,3cGuiySfwJPXqvE15OiEEg,Tran Tran,Sfera Ebbasta,2026-06-01,2026-07-19,41,106,2238997,128,19,-6126,rising
+IT,3uExyCdMa9XfVuXpuYhod4,Push It,"Kid Yugi, ANNA",2026-06-01,2026-07-19,47,88,2881689,131,20,-5901,rising
+IT,7sh95K3HXkne9mVYDOIRWs,Completamente,Thegiornalisti,2026-06-01,2026-07-19,47,121,2570944,132,23,-5630,rising
+IT,0gkV0FyCdrJqwyrFW7NsEQ,Come mai,883,2026-06-01,2026-07-19,46,70,3051001,83,25,-3171,rising
+IT,5pYy054Wcuj9CFdDIxZSVU,Menomale che c'è il mare,"Olly, Juli",2026-06-01,2026-07-19,41,72,2451850,134,29,-4778,rising
+IT,5WssaPhjCCUFBMk9PpnHYj,Anche Stasera,Sfera Ebbasta,2026-06-01,2026-07-19,41,121,2192991,124,32,-4484,rising
 IT,4WFgvKVfEhb3IUAFGrutTR,Love Me Not,Ravyn Lenae,2026-06-02,2026-07-17,21,126,1081639,191,-14,1326,declining
 IT,1QcmAp6Ev2HuYxKujUwnw0,il filo rosso,Alfa,2026-06-02,2026-07-13,18,161,907807,197,-6,478,declining
 IT,6bN41HjY008ggroMFxNLaa,Calcolatrici,Sfera Ebbasta,2026-06-02,2026-07-18,28,127,1467078,194,-5,-2055,declining
 IT,1mea3bSkSGXuIRvnydlB5b,Viva La Vida,Coldplay,2026-06-02,2026-07-13,12,160,601355,200,-1,409,declining
 IT,4CQNELF3U3gyNcI6sLr6yK,Guasto D'Amore,"Bresh, SHUNE",2026-06-02,2026-07-14,16,134,811331,199,0,,resilient
-IT,4Js31maTathTS2flQOQr2c,Fragole,"Achille Lauro, Rose Villain",2026-06-02,2026-07-05,7,165,351475,199,0,,resilient
+IT,311m4sWQq8MZZROimkSGF7,Ginevra,"Luchè, Geolier",2026-06-02,2026-07-18,34,126,1776260,188,0,,resilient
 IT,695AOnYHYnvHIMaTNKjkA5,Felicità puttana,Thegiornalisti,2026-06-02,2026-06-28,2,193,89668,193,0,,resilient
 IT,2QjOHCTQ1Jl3zawyYOpxh6,Sweater Weather,The Neighbourhood,2026-06-02,2026-06-02,1,195,44416,195,0,,resilient
-IT,311m4sWQq8MZZROimkSGF7,Ginevra,"Luchè, Geolier",2026-06-02,2026-07-18,34,126,1776260,188,0,,resilient
+IT,4Js31maTathTS2flQOQr2c,Fragole,"Achille Lauro, Rose Villain",2026-06-02,2026-07-05,7,165,351475,199,0,,resilient
 IT,2SvXqxiG2ntfkEWvuABT7u,Il mio canto libero,Lucio Battisti,2026-06-02,2026-06-02,1,199,44062,199,0,,resilient
-IT,5gTuH5Jl8PVUitsFzFslWu,Certe notti,Ligabue,2026-06-02,2026-07-18,38,103,2102970,133,26,3274,rising
+IT,5gTuH5Jl8PVUitsFzFslWu,Certe notti,Ligabue,2026-06-02,2026-07-19,39,103,2156060,118,15,-6928,rising
 IT,2QKgQOxXoIGq711vdah54G,Volare,Tedua,2026-06-03,2026-06-04,2,166,101741,180,-14,-587,declining
 IT,7z3PblAN3dH1JMewiRydkZ,GIRLS,The Kid LAROI,2026-06-03,2026-07-07,29,83,1740857,192,-9,711,declining
-IT,2jG4lgrHeFXjRpvl3Cv29E,Uno+Gangsta,"Tedua, Nerissima Serpe",2026-06-03,2026-06-03,1,199,46580,199,0,,resilient
-IT,4gYOPsRynx7hXQm5q47o04,La violenza Necessaria,"Kid Yugi, Shiva",2026-06-03,2026-06-08,2,194,93816,197,0,,resilient
-IT,6xyco3qjTY4RjPpYFOy7Uj,Ryan Ted Freestyle,Tedua,2026-06-03,2026-06-03,1,191,47233,191,0,,resilient
 IT,5omIW7YOPhA6CULhkdz6jE,Paradiso Artificiale,"Tedua, Baby Gang, Kid Yugi",2026-06-03,2026-07-13,16,139,814965,193,0,,resilient
-IT,1zrEskyOLXViiYdZgggiUI,DAL TACCO,RRARI DAL TACCO,2026-06-03,2026-06-19,15,98,888340,197,0,,resilient
 IT,4UFP9J6zLvb6rnkXByjYtH,ANCELOTTI,Astro,2026-06-03,2026-06-12,2,142,112411,142,0,,resilient
-IT,2YVIDa7ZPLtce3VLGNcxvv,LE RAGAZZE,"CLARA, sangiovanni",2026-06-03,2026-06-28,4,190,191055,192,0,,resilient
+IT,4gYOPsRynx7hXQm5q47o04,La violenza Necessaria,"Kid Yugi, Shiva",2026-06-03,2026-06-08,2,194,93816,197,0,,resilient
 IT,0qFzTGufPnqkI4GrAwXCg1,Scendo E Cerco Un’Altra,"G.Mineiro, Flatpearl, Succo",2026-06-03,2026-06-03,1,159,52240,159,0,,resilient
+IT,2jG4lgrHeFXjRpvl3Cv29E,Uno+Gangsta,"Tedua, Nerissima Serpe",2026-06-03,2026-06-03,1,199,46580,199,0,,resilient
+IT,1zrEskyOLXViiYdZgggiUI,DAL TACCO,RRARI DAL TACCO,2026-06-03,2026-06-19,15,98,888340,197,0,,resilient
+IT,6xyco3qjTY4RjPpYFOy7Uj,Ryan Ted Freestyle,Tedua,2026-06-03,2026-06-03,1,191,47233,191,0,,resilient
+IT,2YVIDa7ZPLtce3VLGNcxvv,LE RAGAZZE,"CLARA, sangiovanni",2026-06-03,2026-06-28,4,190,191055,192,0,,resilient
 IT,7zivIUyCw9MmYftdcayXnN,Uno squillo,Capo Plaza,2026-06-03,2026-06-04,2,193,96228,193,4,2754,rising
 IT,5HVFs7yWSDpUJoFHNdyEb3,Scendo E Cerco Un’Altra,"G.Mineiro, Flatpearl, Succo",2026-06-04,2026-06-24,20,66,1295132,177,-29,-3917,declining
-IT,5W5lGzvUR9jWQ7kyz9rr4T,TUTTO È POSSIBILE,"Geolier, Pino Daniele",2026-06-04,2026-07-18,39,72,2345471,167,-13,-3066,declining
-IT,05wb6MEyJeG2z1MVCIXxC8,15 Piani,Sfera Ebbasta,2026-06-04,2026-07-17,11,94,614299,172,-5,1704,declining
-IT,347HJzwbn0cmrxJUmAXj5c,MAI PER SEMPRE,"Geolier, Dardust",2026-06-04,2026-07-18,39,73,2482041,130,-5,-2022,declining
-IT,1ljOXO8cgSa8qntDVlP9uu,Bullet Ballet,"Kid Yugi, Artie 5ive",2026-06-04,2026-06-04,1,195,48962,195,0,,resilient
-IT,60a0Rd6pjrkxjPbaKzXjfq,In the End,Linkin Park,2026-06-04,2026-07-13,14,182,683949,192,0,,resilient
-IT,3I9z79CW67VLa4wCH3dkhQ,AUTORITÀ,Geolier,2026-06-04,2026-07-18,43,1,7270868,34,0,-3169,resilient
+IT,347HJzwbn0cmrxJUmAXj5c,MAI PER SEMPRE,"Geolier, Dardust",2026-06-04,2026-07-19,40,73,2530195,153,-23,-12855,declining
+IT,3I9z79CW67VLa4wCH3dkhQ,AUTORITÀ,Geolier,2026-06-04,2026-07-19,44,1,7372773,39,-5,-26071,declining
+IT,05wb6MEyJeG2z1MVCIXxC8,15 Piani,Sfera Ebbasta,2026-06-04,2026-07-19,12,94,658617,177,0,,resilient
 IT,1bXER40RxwNWTf9fnQOY64,Prima che,nayt,2026-06-04,2026-06-04,1,200,48453,200,0,,resilient
+IT,60a0Rd6pjrkxjPbaKzXjfq,In the End,Linkin Park,2026-06-04,2026-07-13,14,182,683949,192,0,,resilient
+IT,1ljOXO8cgSa8qntDVlP9uu,Bullet Ballet,"Kid Yugi, Artie 5ive",2026-06-04,2026-06-04,1,195,48962,195,0,,resilient
+IT,5W5lGzvUR9jWQ7kyz9rr4T,TUTTO È POSSIBILE,"Geolier, Pino Daniele",2026-06-04,2026-07-19,40,72,2392282,163,4,-7568,rising
 IT,1Xm2e1vDwOMeJJioWuG1s7,Soldi in Nero,"Shiva, Sfera Ebbasta",2026-06-04,2026-06-06,3,189,153810,195,5,-442,rising
 IT,3L9wipeeSlOjBGHVJyykhd,Cuore di latta,Bresh,2026-06-05,2026-06-06,2,56,155141,194,-138,-51449,declining
 IT,1XzHasEgB7QoXXtoD3sUKY,E Allora,"G.Mineiro, Flatpearl, Succo",2026-06-05,2026-07-14,37,70,2308023,175,-14,-1811,declining
-IT,5eVWsjUs8OUajXFUWk9fXo,Devo Andare Con Le Mie Winx,"G.Mineiro, Rhove, Flatpearl, Succo",2026-06-05,2026-07-18,42,31,3634113,99,-8,-4482,declining
-IT,3xPMN6Ojy4uV0jicQf5dYZ,AYAYAY,"Sfera Ebbasta, DYSTINCT",2026-06-05,2026-07-18,42,5,8576061,12,-3,345,declining
-IT,45vry78xJDOxCzW6oPbLyN,Cuore rotto,Tony Boy,2026-06-05,2026-07-18,42,1,6298298,58,-2,-3156,declining
-IT,5uPaqMMt59KGrdKIitDRqa,"I Knew It, I Knew You",Taylor Swift,2026-06-05,2026-06-05,1,65,94625,65,0,,resilient
+IT,4rDCRcln8WCHWPRt0YTFLs,MUCHACHA,"Aissa, Rvfv, Kreamly",2026-06-05,2026-07-19,43,61,3110729,65,-3,-17230,declining
+IT,7lwRULBv1wRCY4sTBHOUNy,PARTENOPE,"Merk & Kremont, Serena Brancale, The Kolors",2026-06-05,2026-07-19,40,57,3059985,77,-2,-14503,declining
+IT,3xPMN6Ojy4uV0jicQf5dYZ,AYAYAY,"Sfera Ebbasta, DYSTINCT",2026-06-05,2026-07-19,43,5,8739149,13,-1,-38977,declining
+IT,6S2MIE3XINNCiFYWshMXyV,Dopo il mare,Bresh,2026-06-05,2026-06-05,1,87,79655,87,0,,resilient
 IT,0V5wQoMnbw7YvGjIjVVVkS,Umore marea,Bresh,2026-06-05,2026-06-05,1,167,56664,167,0,,resilient
 IT,5ALOxyMNUQfAwaFTYYvoc9,Relax,Bresh,2026-06-05,2026-06-05,1,130,63293,130,0,,resilient
-IT,6S2MIE3XINNCiFYWshMXyV,Dopo il mare,Bresh,2026-06-05,2026-06-05,1,87,79655,87,0,,resilient
-IT,4rDCRcln8WCHWPRt0YTFLs,MUCHACHA,"Aissa, Rvfv, Kreamly",2026-06-05,2026-07-18,42,61,3038361,62,4,1248,rising
+IT,5uPaqMMt59KGrdKIitDRqa,"I Knew It, I Knew You",Taylor Swift,2026-06-05,2026-06-05,1,65,94625,65,0,,resilient
+IT,5eVWsjUs8OUajXFUWk9fXo,Devo Andare Con Le Mie Winx,"G.Mineiro, Rhove, Flatpearl, Succo",2026-06-05,2026-07-19,43,31,3692405,98,1,-11059,rising
+IT,45vry78xJDOxCzW6oPbLyN,Cuore rotto,Tony Boy,2026-06-05,2026-07-19,43,1,6378612,56,2,-13545,rising
 IT,6TWbY1dq8eYtFiMiGdBlOa,Free Your Mind,"Prospa, Cloonee",2026-06-05,2026-07-07,31,107,1724430,122,9,3349,rising
-IT,7lwRULBv1wRCY4sTBHOUNy,PARTENOPE,"Merk & Kremont, Serena Brancale, The Kolors",2026-06-05,2026-07-18,39,57,2993157,75,11,6808,rising
 IT,66umGLEmn0B3CFp1lBT7lN,Tutto a puttane,Bresh,2026-06-05,2026-07-02,23,79,1294624,170,14,4387,rising
 IT,5tGZsRaBr98La6avokHGb3,Kalashnikov,"DDM 80146, Whizy",2026-06-06,2026-06-08,3,155,151466,196,-41,-1615,declining
 IT,0kHTkvGavvk2MjBTSUtOZx,Ricchi x Sempre,Sfera Ebbasta,2026-06-06,2026-07-16,13,123,695568,192,-19,-342,declining
 IT,5M8Z823Sb2BhMpecHksN0T,ANEMA E CORE,Serena Brancale,2026-06-06,2026-06-14,3,191,149103,197,-6,-6618,declining
 IT,1m69ELEgE6k5ZWsap40ozt,Se Preparó,Ozuna,2026-06-06,2026-07-04,2,190,103457,196,0,,resilient
 IT,3QAU2pj4LUKf7yaTgANlQV,ITALODISCO,The Kolors,2026-06-06,2026-06-27,2,198,102378,200,0,,resilient
-IT,0MLu1cFYL4ikdRTdasCQT9,M' Manc (con Geolier & Sfera Ebbasta),"Shablo, Geolier, Sfera Ebbasta",2026-06-07,2026-07-18,37,93,2037549,193,-25,-4462,declining
+IT,69VAE3LA7jn5rGAsdflMOS,EL PIBE DE ORO,"Geolier, Poison Beatz",2026-06-07,2026-07-19,35,102,1881854,200,-25,-10379,declining
 IT,7LSBkEm5LQSkhe6yqqqBPs,Buon Viaggio (Share The Love),Cesare Cremonini,2026-06-07,2026-06-14,7,123,369495,180,-16,-10078,declining
 IT,6swHvavSroD4ur3Q18MjYz,Una volta ancora,"Fred De Palma, Ana Mena",2026-06-07,2026-07-11,8,163,401317,197,0,,resilient
-IT,69VAE3LA7jn5rGAsdflMOS,EL PIBE DE ORO,"Geolier, Poison Beatz",2026-06-07,2026-07-18,34,102,1839125,175,20,1949,rising
-IT,0y7D9JFF6APyFc18atzG9n,Splinter Cell,"G.Mineiro, Flatpearl, Jiz, Succo",2026-06-08,2026-07-18,39,6,7069569,25,-3,-2523,declining
-IT,7jUJ2RmT4PFHHq4goMWqm3,Chic,Izi,2026-06-08,2026-07-01,2,193,94130,194,0,,resilient
-IT,1IkzT4wzFJRbFOmKOSqTen,EPISODIO D'AMORE,"Geolier, Takagi & Ketra, Dat Boi Dee",2026-06-08,2026-07-18,33,102,1859756,169,5,696,rising
+IT,0MLu1cFYL4ikdRTdasCQT9,M' Manc (con Geolier & Sfera Ebbasta),"Shablo, Geolier, Sfera Ebbasta",2026-06-07,2026-07-19,38,93,2081843,179,14,-5792,rising
+IT,1IkzT4wzFJRbFOmKOSqTen,EPISODIO D'AMORE,"Geolier, Takagi & Ketra, Dat Boi Dee",2026-06-08,2026-07-19,34,102,1904546,172,-3,-9479,declining
+IT,0y7D9JFF6APyFc18atzG9n,Splinter Cell,"G.Mineiro, Flatpearl, Jiz, Succo",2026-06-08,2026-07-19,40,6,7197353,25,0,-22795,resilient
+IT,7jUJ2RmT4PFHHq4goMWqm3,Chic,Izi,2026-06-08,2026-07-19,3,175,138509,175,0,,resilient
 IT,4M6eMu2CMR9MxO2c3MQgaI,Logico #1,Cesare Cremonini,2026-06-08,2026-06-21,13,128,702233,179,21,-3853,rising
+IT,1A1xTBtNnJ09JNINiLjdOK,ALTROVE,Ultimo,2026-06-11,2026-07-19,27,54,1693373,125,-19,-15472,declining
 IT,4pD1Wit3m1IHA7Ixgww9b6,Una canzone d'amore,883,2026-06-11,2026-07-09,11,158,573901,183,-8,-43,declining
-IT,0kosUz0jePvjiz4ctmR6wL,Dai Dai,"Shakira, Burna Boy",2026-06-11,2026-07-18,37,14,4506533,16,-1,11524,declining
 IT,6Lc0La3OwOmAouQjbID4uX,Nera,Irama,2026-06-11,2026-07-04,7,146,359783,199,0,,resilient
-IT,1A1xTBtNnJ09JNINiLjdOK,ALTROVE,Ultimo,2026-06-11,2026-07-18,26,54,1641400,106,7,2525,rising
+IT,0kosUz0jePvjiz4ctmR6wL,Dai Dai,"Shakira, Burna Boy",2026-06-11,2026-07-19,38,12,4670849,12,4,-13706,rising
 IT,7Hc6qcJG4NtyZgbNvQyd8U,drop dead,Olivia Rodrigo,2026-06-12,2026-06-18,7,78,421117,185,-29,-2646,declining
 IT,7agE2kK4XZnjRrbwnVJV1T,Arricchiti,"22simba, Guè",2026-06-12,2026-07-02,20,17,1490280,166,-24,-1723,declining
 IT,49j6SvuvWfbEKZKzsHCdLJ,stupid song,Olivia Rodrigo,2026-06-12,2026-07-09,25,25,1661062,200,-11,45,declining
-IT,4MR5DmTbTZUA9asyyUmJgP,PIENXA EN MI,"Feid, Sfera Ebbasta",2026-06-12,2026-07-18,36,43,2738961,84,-4,-335,declining
-IT,7aNsNTpMq7D4fffUiYKXNR,Giovani Re,Sfera Ebbasta,2026-06-12,2026-07-18,36,16,4767569,31,-3,-6587,declining
-IT,5zEcbencrcP0p5Z8508vWz,Talk To You (ft. 54 Ultra),ANOTR,2026-06-12,2026-07-18,36,16,5053553,18,-1,4026,declining
-IT,72cZH5WkVaC46FPMmZvEcm,COLPA MIA,Astro,2026-06-12,2026-06-12,1,166,58382,166,0,,resilient
+IT,4MR5DmTbTZUA9asyyUmJgP,PIENXA EN MI,"Feid, Sfera Ebbasta",2026-06-12,2026-07-19,37,43,2800639,90,-6,-15690,declining
+IT,5zEcbencrcP0p5Z8508vWz,Talk To You (ft. 54 Ultra),ANOTR,2026-06-12,2026-07-19,37,16,5190303,19,-1,-29755,declining
 IT,2Cd9iWfcOpGDHLz6tVA3G4,Waka Waka (This Time for Africa) [The Official 2010 FIFA World Cup (TM) Song],"Shakira, Freshlyground",2026-06-12,2026-06-12,1,160,60188,160,0,,resilient
-IT,6Hdc3IQeyCxG5d14uAcwQW,u + me = <3,Olivia Rodrigo,2026-06-12,2026-06-12,1,112,72722,112,0,,resilient
-IT,5Ndn1irZG8l6xpcLMGeNvc,purple,Olivia Rodrigo,2026-06-12,2026-06-12,1,149,62226,149,0,,resilient
-IT,7K6caTVssUphoNByyqnb75,I NOSTRI ANNI BELLISSIMI,Astro,2026-06-12,2026-06-12,1,150,62047,150,0,,resilient
-IT,6H6pT8Q0JOl3v3DweLGONt,SCARAFAGGI,"Noyz Narcos, Sine, Danno",2026-06-12,2026-06-12,1,141,63715,141,0,,resilient
-IT,2e3YJ6Hm8tR5L5Zy8HzOtv,what’s wrong with me,"Olivia Rodrigo, Robert Smith",2026-06-12,2026-06-12,1,115,71912,115,0,,resilient
-IT,2pSURRoZPhpgjFGpVdcj9q,MXP MIA,"Astro, Sayf",2026-06-12,2026-06-12,1,179,56410,179,0,,resilient
 IT,2duvkmcQAezPigFEGlERuA,begged,Olivia Rodrigo,2026-06-12,2026-06-12,1,134,65290,134,0,,resilient
-IT,6bOwCTgqiUIEuGNdwTDpi5,CHROME HEARTS,"Astro, Nerissima Serpe",2026-06-12,2026-07-13,21,53,1313122,176,0,,resilient
-IT,4VgCoWwGOglwXOTaCqszXV,WAR,Astro,2026-06-12,2026-06-12,1,146,62968,146,0,,resilient
 IT,0e4u0sFRGxHL4U2iFBrUvZ,cigarette smoke,Olivia Rodrigo,2026-06-12,2026-06-12,1,188,55250,188,0,,resilient
+IT,6jfiwkcwt8iYCdkbLukxeI,maggots for brains,Olivia Rodrigo,2026-06-12,2026-06-12,1,97,76723,97,0,,resilient
+IT,2pSURRoZPhpgjFGpVdcj9q,MXP MIA,"Astro, Sayf",2026-06-12,2026-06-12,1,179,56410,179,0,,resilient
+IT,6Hdc3IQeyCxG5d14uAcwQW,u + me = <3,Olivia Rodrigo,2026-06-12,2026-06-12,1,112,72722,112,0,,resilient
+IT,4VgCoWwGOglwXOTaCqszXV,WAR,Astro,2026-06-12,2026-06-12,1,146,62968,146,0,,resilient
+IT,4GxajvmEhUPqhBfWd96vc6,VAMONOS,"Astro, Ghali",2026-06-12,2026-06-12,1,99,76580,99,0,,resilient
+IT,6H6pT8Q0JOl3v3DweLGONt,SCARAFAGGI,"Noyz Narcos, Sine, Danno",2026-06-12,2026-06-12,1,141,63715,141,0,,resilient
+IT,6bOwCTgqiUIEuGNdwTDpi5,CHROME HEARTS,"Astro, Nerissima Serpe",2026-06-12,2026-07-13,21,53,1313122,176,0,,resilient
+IT,7aNsNTpMq7D4fffUiYKXNR,Giovani Re,Sfera Ebbasta,2026-06-12,2026-07-19,37,16,4878406,31,0,-21602,resilient
+IT,7K6caTVssUphoNByyqnb75,I NOSTRI ANNI BELLISSIMI,Astro,2026-06-12,2026-06-12,1,150,62047,150,0,,resilient
+IT,16xRAbH0vI3iKvDEhWQ4ZO,less,Olivia Rodrigo,2026-06-12,2026-06-12,1,132,66247,132,0,,resilient
+IT,2e3YJ6Hm8tR5L5Zy8HzOtv,what’s wrong with me,"Olivia Rodrigo, Robert Smith",2026-06-12,2026-06-12,1,115,71912,115,0,,resilient
 IT,4Ilw2lD6z4WBqh65vUUZUf,my way,Olivia Rodrigo,2026-06-12,2026-06-12,1,109,73295,109,0,,resilient
 IT,4bkClAuofJULiaIZsuL3gT,expectations,Olivia Rodrigo,2026-06-12,2026-06-12,1,159,60325,159,0,,resilient
-IT,4GxajvmEhUPqhBfWd96vc6,VAMONOS,"Astro, Ghali",2026-06-12,2026-06-12,1,99,76580,99,0,,resilient
-IT,6jfiwkcwt8iYCdkbLukxeI,maggots for brains,Olivia Rodrigo,2026-06-12,2026-06-12,1,97,76723,97,0,,resilient
-IT,16xRAbH0vI3iKvDEhWQ4ZO,less,Olivia Rodrigo,2026-06-12,2026-06-12,1,132,66247,132,0,,resilient
-IT,4oYTKjG6JYD0Fn8xxAZy2w,BUONA DOMENICA,Sayf,2026-06-12,2026-07-18,36,31,3503354,35,1,2497,rising
-IT,3JjyzXQ07ODREBhJknQgLS,Canto d’amore (con Marco Mengoni),"Angelina Mango, Marco Mengoni",2026-06-12,2026-07-18,36,15,4665638,22,2,10059,rising
+IT,72cZH5WkVaC46FPMmZvEcm,COLPA MIA,Astro,2026-06-12,2026-06-12,1,166,58382,166,0,,resilient
+IT,5Ndn1irZG8l6xpcLMGeNvc,purple,Olivia Rodrigo,2026-06-12,2026-06-12,1,149,62226,149,0,,resilient
+IT,3JjyzXQ07ODREBhJknQgLS,Canto d’amore (con Marco Mengoni),"Angelina Mango, Marco Mengoni",2026-06-12,2026-07-19,37,15,4798328,21,1,-25465,rising
 IT,4kX7xkopoXZCfE1D6fNwl2,honeybee,Olivia Rodrigo,2026-06-12,2026-06-15,4,69,237039,170,3,1376,rising
+IT,4oYTKjG6JYD0Fn8xxAZy2w,BUONA DOMENICA,Sayf,2026-06-12,2026-07-19,37,31,3613797,32,3,-16460,rising
 IT,4ObR0HIDnDfycaxGTALioH,CHE SOLE OGGI,"Geolier, Dat Boi Dee",2026-06-13,2026-06-30,5,151,251487,162,-11,892,declining
 IT,2Q4Z2js0C6DDUVc7GuLGdF,SESSO E SAMBA,"Tony Effe, Gaia",2026-06-13,2026-06-28,7,155,362305,155,13,-5768,rising
-IT,0RYqzVMfEjbDr1CTL7fta5,L'universo tranne noi,Max Pezzali,2026-06-13,2026-07-18,33,107,1801502,164,13,1553,rising
+IT,0RYqzVMfEjbDr1CTL7fta5,L'universo tranne noi,Max Pezzali,2026-06-13,2026-07-19,34,107,1854140,121,43,-2086,rising
 IT,21Ay8mJRYQuOMZp7qyQXl6,50 Special,Lùnapop,2026-06-14,2026-06-14,1,193,45698,193,0,,resilient
 IT,2458SfCYo5icZorTEbo1TY,Qualcosa Di Grande,Lùnapop,2026-06-14,2026-06-14,1,176,47747,176,0,,resilient
 IT,1ypwNj8eK2qAMDEs4EiIIX,Miss You - Bonus Track,"Oliver Tree, Robin Schulz",2026-06-15,2026-06-19,5,122,280642,182,-24,2165,declining
 IT,0eu4C55hL6x29mmeAjytzC,Life Goes On,Oliver Tree,2026-06-15,2026-06-18,3,150,149785,199,-8,-698,declining
-IT,2fqbBzhl01hcq6JRYoIo11,UN RICCO E UN POVERO,Geolier,2026-06-16,2026-07-18,32,25,2548673,87,-6,-1365,declining
+IT,2fqbBzhl01hcq6JRYoIo11,UN RICCO E UN POVERO,Geolier,2026-06-16,2026-07-19,33,25,2610794,88,-1,-13821,declining
 IT,75Y6WgUldQN8mipAVLy8KJ,Quei ricordi là,"Olly, Juli",2026-06-16,2026-07-14,22,108,1192633,193,2,325,rising
 IT,148uoUpRp6FJK5qYoXijwm,Notte prima degli esami,Antonello Venditti,2026-06-17,2026-06-18,2,72,130640,168,-96,-27322,declining
 IT,0xju4u3DFjOy1fhITDPZ6B,Depresso fortunato,"Olly, Juli",2026-06-17,2026-07-09,22,99,1198803,198,-3,895,declining
 IT,4RTMLSmkfK9kqKlmTPGRzo,La tana del granchio,Bresh,2026-06-17,2026-06-17,1,188,49593,188,0,,resilient
-IT,2n4L2a5xgpJmPdLzDl3mE6,Maladie,Mauvais djo,2026-06-18,2026-07-18,30,14,4563055,21,-3,-2021,declining
-IT,5qqabIl2vWzo9ApSC317sa,Wonderwall - Remastered,Oasis,2026-06-18,2026-07-18,30,12,2620292,32,-3,-9659,declining
-IT,5oJVfPUHsD7A8bZtKVqgL2,L'ULTIMA POESIA,"Geolier, Ultimo, Takagi & Ketra",2026-06-18,2026-07-18,23,52,1619129,93,7,1540,rising
+IT,5oJVfPUHsD7A8bZtKVqgL2,L'ULTIMA POESIA,"Geolier, Ultimo, Takagi & Ketra",2026-06-18,2026-07-19,24,52,1673789,114,-21,-16155,declining
+IT,5qqabIl2vWzo9ApSC317sa,Wonderwall - Remastered,Oasis,2026-06-18,2026-07-19,31,12,2727729,34,-2,-21001,declining
+IT,2n4L2a5xgpJmPdLzDl3mE6,Maladie,Mauvais djo,2026-06-18,2026-07-19,31,14,4697146,20,1,-25975,rising
 IT,3M5e1yWYMKQPE0IUePwdBt,QUESTA INSENSATA VOGLIA DI TE,Ultimo,2026-06-19,2026-07-10,19,73,1140102,151,-46,-5123,declining
 IT,43pI6fNu7Ukh6VFkE6oyLw,AVEVAMO CENT'ANNI,Ultimo,2026-06-19,2026-06-23,5,65,309124,188,-38,-4290,declining
 IT,65NhK0RCouuwOg031RO9rl,CUORE DI PLASTICA,Ultimo,2026-06-19,2026-06-23,5,62,314720,175,-34,-3939,declining
 IT,5K9vZRUGLvnASW667N9bFb,QUALCOSA DI BELLO,Ultimo,2026-06-19,2026-06-23,5,42,338606,167,-25,-3026,declining
 IT,0pjqXWOiT5xMh2ua6sq4dl,Così così,"Olly, Juli",2026-06-19,2026-07-04,12,136,631585,195,-22,-4606,declining
-IT,1dhMyPqkX3Q0PvlLyUFSvI,M'AMA NON M'AMA,Madame,2026-06-19,2026-07-18,29,23,1982989,136,-21,-5624,declining
 IT,720PSWBbm4UVzHdxRJeqZY,IO NON SO,Ultimo,2026-06-19,2026-07-07,7,58,419981,196,-16,98,declining
-IT,77uiPp5CwS14DPThQSLsNs,QUANDO DORME LA CITTÀ,Ultimo,2026-06-19,2026-07-18,29,19,2899309,65,-13,-13418,declining
-IT,3d56FH7ZlHf9tjojZSwv8U,WHITE GIRL WASTED,ANNA,2026-06-19,2026-07-18,28,1,5560121,10,-2,-3360,declining
+IT,77uiPp5CwS14DPThQSLsNs,QUANDO DORME LA CITTÀ,Ultimo,2026-06-19,2026-07-19,30,19,2968019,74,-9,-19373,declining
+IT,1dhMyPqkX3Q0PvlLyUFSvI,M'AMA NON M'AMA,Madame,2026-06-19,2026-07-19,30,23,2032140,142,-6,-10041,declining
+IT,3d56FH7ZlHf9tjojZSwv8U,WHITE GIRL WASTED,ANNA,2026-06-19,2026-07-19,29,1,5728195,11,-1,-38249,declining
+IT,4kkbhtfbTCp3JN4H7zu9ny,IL GIORNO CHE ASPETTAVO,Ultimo,2026-06-19,2026-07-15,24,14,1920901,200,0,,resilient
 IT,22pDDaPCT3zthpC73iy5ui,Selena Gomez,Lubi,2026-06-19,2026-06-19,1,143,62017,143,0,,resilient
+IT,0FhB5LAmIn6iFg4b2XL1hJ,Goya,"Fabri Fibra, Pinguini Tattici Nucleari",2026-06-19,2026-06-19,1,69,92686,69,0,,resilient
 IT,3GIMiT4lX02eNHR9rnGgQv,CI SIAMO DETTI TUTTO,Ultimo,2026-06-19,2026-06-19,1,80,87447,80,0,,resilient
 IT,1EVOcQcJeAbtmzmuYnI14C,Occhi color mare,"Olly, Juli",2026-06-19,2026-07-07,13,140,684020,178,0,,resilient
-IT,3mqxRagFK2tlhXQC8tHnuC,Agitare coca cola,Tommaso Paradiso,2026-06-19,2026-07-18,3,115,175304,176,0,,resilient
-IT,4kkbhtfbTCp3JN4H7zu9ny,IL GIORNO CHE ASPETTAVO,Ultimo,2026-06-19,2026-07-15,24,14,1920901,200,0,,resilient
-IT,0FhB5LAmIn6iFg4b2XL1hJ,Goya,"Fabri Fibra, Pinguini Tattici Nucleari",2026-06-19,2026-06-19,1,69,92686,69,0,,resilient
-IT,4TTJpJqCoG1HrXhnNENqAp,Bandito,"Dipinto, Fresh Beatz",2026-06-19,2026-07-18,29,30,2839708,66,1,613,rising
-IT,3oyJa5AEBL1gS3ALTo0rWg,Tu cosa fai questa sera,"Noemi, Vito Salamanca",2026-06-23,2026-06-24,2,189,95590,200,-11,-800,declining
-IT,3Vac8kKIqOTCEE3nuaIcec,Pilé,Mauvais djo,2026-06-23,2026-07-18,25,67,1840758,70,-2,-575,declining
-IT,6hkOqJ5mE093AQf2lbZnsG,The One That Got Away,Katy Perry,2026-06-23,2026-06-23,1,195,47672,195,0,,resilient
+IT,4TTJpJqCoG1HrXhnNENqAp,Bandito,"Dipinto, Fresh Beatz",2026-06-19,2026-07-19,30,30,2912206,64,2,-15194,rising
+IT,3mqxRagFK2tlhXQC8tHnuC,Agitare coca cola,Tommaso Paradiso,2026-06-19,2026-07-19,4,115,221704,166,10,-6677,rising
+IT,3Vac8kKIqOTCEE3nuaIcec,Pilé,Mauvais djo,2026-06-23,2026-07-19,26,67,1909697,72,-2,-16019,declining
 IT,6MZbnl9hKMgYweTqBZdLyW,64 BARRE DI TERRORE (Red Bull 64 Bars),Kid Yugi,2026-06-23,2026-07-13,17,16,1218419,186,0,,resilient
-IT,5g7sDjBhZ4I3gcFIpkrLuI,Locked out of Heaven,Bruno Mars,2026-06-24,2026-07-18,14,85,787358,131,-26,-6493,declining
+IT,3oyJa5AEBL1gS3ALTo0rWg,Tu cosa fai questa sera,"Noemi, Vito Salamanca",2026-06-23,2026-07-19,3,189,138349,198,0,,resilient
+IT,6hkOqJ5mE093AQf2lbZnsG,The One That Got Away,Katy Perry,2026-06-23,2026-06-23,1,195,47672,195,0,,resilient
 IT,20MwAekzD46VMJP0JmjmhS,Con un deca,883,2026-06-24,2026-07-14,11,143,560300,192,-24,-3482,declining
+IT,5g7sDjBhZ4I3gcFIpkrLuI,Locked out of Heaven,Bruno Mars,2026-06-24,2026-07-19,15,85,836061,146,-15,-12292,declining
 IT,4JGozY7PWUikJ3qJ1Egef8,Nessun rimpianto,883,2026-06-24,2026-07-11,11,175,553667,195,0,,resilient
 IT,25DgjoTlKK8KjstM4cZ8L2,Movin' To The Sun,"HUGEL, Imael Angel, Ultra Naté",2026-06-24,2026-07-04,10,67,646435,67,3,-495,rising
-IT,5EtlojWtD8y7pnoDb80JwP,081,Geolier,2026-06-26,2026-07-18,23,101,1352530,180,-37,-7404,declining
+IT,36TnyBCBhUUSrSy1pTKasT,ANTIDROGA,"Emma, Fabri Fibra",2026-06-26,2026-07-19,19,107,1057605,129,-12,-11871,declining
+IT,5EtlojWtD8y7pnoDb80JwP,081,Geolier,2026-06-26,2026-07-19,24,101,1396421,186,-6,-8386,declining
 IT,4JKX37OcxWbq2qL0eyVYs2,Parapluie,"Rhove, Madfingerz",2026-06-26,2026-07-07,9,113,471308,188,-6,1284,declining
 IT,5nPbKG04fhLkIAjcPFaZq7,I Adore You,"HUGEL, Topic, Arash, Daecolm",2026-06-26,2026-07-18,5,176,248583,199,0,,resilient
 IT,6DfdaRmIddhoXWX20DWBYy,NAPOLETANA,Niky Savage,2026-06-26,2026-06-26,1,185,53896,185,0,,resilient
-IT,36TnyBCBhUUSrSy1pTKasT,ANTIDROGA,"Emma, Fabri Fibra",2026-06-26,2026-07-18,18,107,1005964,117,10,712,rising
-IT,4ySxBjhmdnkeFUqhKxW3cY,Visiera A Becco,Sfera Ebbasta,2026-06-27,2026-07-16,13,134,678113,196,-29,-1534,declining
+IT,4ySxBjhmdnkeFUqhKxW3cY,Visiera A Becco,Sfera Ebbasta,2026-06-27,2026-07-19,14,134,722429,178,0,,resilient
 IT,4z9xPVz2Sii4dhM7yhxOpj,IO T’O GIUR’,"Geolier, Sfera Ebbasta",2026-06-27,2026-06-30,3,176,149256,176,2,2562,rising
 IT,435NOlfzITSEghoaUNRle3,PHANTOM,"Geolier, 50 Cent",2026-06-27,2026-06-28,2,126,115723,126,3,-7811,rising
 IT,7xQvWfPyfhYBx6oFaMvr03,PHANTOM,"Geolier, 50 Cent",2026-06-29,2026-07-01,3,124,158651,183,-38,-6228,declining
-IT,1yOrvnfHb2t8CmMdfcBHTl,Pilé - Gospel,"Mauvais djo, Kano Choir",2026-06-29,2026-07-18,20,101,1167332,171,-33,-6032,declining
+IT,1yOrvnfHb2t8CmMdfcBHTl,Pilé - Gospel,"Mauvais djo, Kano Choir",2026-06-29,2026-07-19,21,101,1211463,182,-11,-10090,declining
+IT,5zVQoMHyELfcHYviXDao3I,MILANO TESTAROSSA,"Artie 5ive, Guè",2026-07-01,2026-07-19,18,115,981512,188,-51,-15359,declining
 IT,5m765S50ytWrB8hfdcbQds,Gli anni (96),883,2026-07-01,2026-07-15,11,112,601490,187,-15,-3058,declining
-IT,5zVQoMHyELfcHYviXDao3I,MILANO TESTAROSSA,"Artie 5ive, Guè",2026-07-01,2026-07-18,17,115,937744,137,-15,-4452,declining
-IT,7EOKcZX9TRkIs0nwWbCCbD,Non è mica te,Eddie Brock,2026-07-01,2026-07-18,18,112,1003380,189,-7,-2125,declining
-IT,39efIaQFmERjt8U71FrJzs,L'Emozione Non Ha voce (Io Non So Parlar D'Amore),Adriano Celentano,2026-07-01,2026-07-18,18,97,1046404,122,-5,-2052,declining
-IT,6XbtvPmIpyCbjuT0e8cQtp,Columbia,Quevedo,2026-07-01,2026-07-18,18,150,943209,150,1,-431,rising
-IT,4kK4uxstY0lTdun71200Al,MALE NECESSARIO,"Fedez, Marco Masini",2026-07-02,2026-07-02,1,185,50352,185,0,,resilient
+IT,6XbtvPmIpyCbjuT0e8cQtp,Columbia,Quevedo,2026-07-01,2026-07-19,19,140,992390,140,10,-8384,rising
+IT,39efIaQFmERjt8U71FrJzs,L'Emozione Non Ha voce (Io Non So Parlar D'Amore),Adriano Celentano,2026-07-01,2026-07-19,19,97,1102808,105,17,-6155,rising
+IT,7EOKcZX9TRkIs0nwWbCCbD,Non è mica te,Eddie Brock,2026-07-01,2026-07-19,19,112,1048954,169,20,-5064,rising
 IT,0YI32qkEhhUjoGVMGXDm8b,ANELLI E COLLANE,"Artie 5ive, ANNA",2026-07-02,2026-07-16,3,188,144523,197,0,1662,resilient
+IT,4kK4uxstY0lTdun71200Al,MALE NECESSARIO,"Fedez, Marco Masini",2026-07-02,2026-07-02,1,185,50352,185,0,,resilient
 IT,381VH1JFj9q08V1OMlPU5m,Le luci della città,Coez,2026-07-03,2026-07-06,3,195,144898,197,-2,626,declining
-IT,7oTJZG74R9yizgxAUEd6Wm,BOBO,"Promessa, IDUA",2026-07-03,2026-07-03,1,189,53217,189,0,,resilient
 IT,10TkqPWcmci21OmdxRrhlf,MAFIA COCO,"Il Ghost, Paky",2026-07-03,2026-07-03,1,188,53319,188,0,,resilient
 IT,0ODFKSdXfQg92EgSVGjf9q,AMERICA INC.,"Gianna Nannini, Marracash",2026-07-03,2026-07-03,1,104,70046,104,0,,resilient
+IT,7oTJZG74R9yizgxAUEd6Wm,BOBO,"Promessa, IDUA",2026-07-03,2026-07-03,1,189,53217,189,0,,resilient
 IT,2a9BZHsbrUeOxEbatUdust,NEW YORK,Nabi,2026-07-03,2026-07-03,1,167,57097,167,0,,resilient
 IT,3a49TEtsbeAgzZAQH9WiDZ,Danceteria,Madonna,2026-07-03,2026-07-03,1,170,56646,170,0,,resilient
-IT,6sLBJkMyZIkGevtpYgeotT,Piccola Stella,Ultimo,2026-07-04,2026-07-14,11,77,683949,151,-12,-2299,declining
-IT,6GLmGfALwjzCaOiHwgfU7g,Ti dedico il silenzio,Ultimo,2026-07-04,2026-07-17,14,65,910204,147,3,4239,rising
+IT,6sLBJkMyZIkGevtpYgeotT,Piccola Stella,Ultimo,2026-07-04,2026-07-19,12,77,727032,195,0,,resilient
+IT,6GLmGfALwjzCaOiHwgfU7g,Ti dedico il silenzio,Ultimo,2026-07-04,2026-07-19,15,65,953600,190,0,,resilient
 IT,05G7GqOjkYKObUWFDownVV,Quel filo che ci unisce,Ultimo,2026-07-05,2026-07-10,6,113,343709,191,-47,-3730,declining
 IT,0OHD6Ask31KqVqxge0OwlG,Vieni nel mio cuore,Ultimo,2026-07-05,2026-07-09,5,107,282710,185,-18,-918,declining
+IT,2w5wtWq30yTkNSG9YjMFvW,Pianeti,Ultimo,2026-07-05,2026-07-19,15,55,967473,150,-16,-11697,declining
 IT,4HDX2Orm48gaWCyg9F5ZAs,BELLA DAVVERO,Ultimo,2026-07-05,2026-07-09,5,138,267707,162,-6,254,declining
-IT,2w5wtWq30yTkNSG9YjMFvW,Pianeti,Ultimo,2026-07-05,2026-07-18,14,55,919197,134,-4,-2202,declining
+IT,4vTsKN15Kqo3Geo9r7FhAN,Movin' To The Sun,"HUGEL, Imael Angel, Ultra Naté",2026-07-05,2026-07-19,15,38,1352805,42,-4,-24437,declining
 IT,1jhHPnmgZepKU8qX4VhRZ0,Rondini Al Guinzaglio,Ultimo,2026-07-05,2026-07-09,4,127,210647,197,0,,resilient
-IT,4vTsKN15Kqo3Geo9r7FhAN,Movin' To The Sun,"HUGEL, Imael Angel, Ultra Naté",2026-07-05,2026-07-18,14,38,1255301,38,1,1611,rising
 IT,10MzYKMwqyVIg08RuG344S,"Labubu (From the Netflix Rap Show ""Nuova Scena"")","Flextony, Tigerplug, Nuova Scena",2026-07-07,2026-07-08,2,163,102517,185,-22,-1925,declining
-IT,0UvCh63URrLFcPkKt99hHd,Don't Look Back in Anger - Remastered,Oasis,2026-07-07,2026-07-18,10,137,517006,182,-4,-1192,declining
+IT,0UvCh63URrLFcPkKt99hHd,Don't Look Back in Anger - Remastered,Oasis,2026-07-07,2026-07-19,11,137,559832,197,-15,-9087,declining
 IT,093RgZ7RXHZwIrxZhZYX4Q,Tesla,"Capo Plaza, Sfera Ebbasta, DrefGold",2026-07-08,2026-07-18,10,132,521388,197,-11,-2444,declining
-IT,39hHUnYBmyMwprzRaPODCX,Free Your Mind,"Prospa, Cloonee",2026-07-08,2026-07-18,11,84,721761,86,-2,1271,declining
-IT,00ZvHVUdHcZNAwxGSKTGCk,Salvador Dalì,"Marracash, Guè",2026-07-08,2026-07-18,5,160,267341,160,1,72,rising
+IT,00ZvHVUdHcZNAwxGSKTGCk,Salvador Dalì,"Marracash, Guè",2026-07-08,2026-07-19,6,160,314140,164,-4,-8950,declining
+IT,39hHUnYBmyMwprzRaPODCX,Free Your Mind,"Prospa, Cloonee",2026-07-08,2026-07-19,12,84,783953,87,-1,-14312,declining
 IT,7wuJGgpTNzbUyn26IOY6rj,Total Eclipse of the Heart,Bonnie Tyler,2026-07-09,2026-07-10,2,168,108172,186,-18,868,declining
 IT,4TQmmasocRmAr8QC0Uchsf,Bottiglie Privè,Sfera Ebbasta,2026-07-09,2026-07-09,1,176,52494,176,0,,resilient
 IT,5Z0Mx6SeUAFA2rgZB9t1Nu,Serpenti A Sonagli,Sfera Ebbasta,2026-07-09,2026-07-09,1,166,54104,166,0,,resilient
-IT,0OMRAvrtLWE2TvcXorRiB9,La Gozadera,"Gente De Zona, Marc Anthony",2026-07-09,2026-07-18,10,145,538698,145,11,834,rising
+IT,0OMRAvrtLWE2TvcXorRiB9,La Gozadera,"Gente De Zona, Marc Anthony",2026-07-09,2026-07-19,11,139,588056,139,6,-8731,rising
 IT,3Bi5pa92S8MUZkhuwfmCUQ,U LIKE ME,ANNA,2026-07-10,2026-07-11,2,32,216178,120,-88,-81912,declining
 IT,3WHGTXMRVYZumkDVokfk56,HOT POT (interlude),ANNA,2026-07-10,2026-07-11,2,35,210562,123,-88,-80128,declining
 IT,3bFUhrjNmC3179e2R5lqjp,VELENO,ANNA,2026-07-10,2026-07-14,5,26,388109,198,-48,-6469,declining
 IT,3nWODsWETh5zUu3sLuJ2kv,CRYSTAL COLLO,ANNA,2026-07-10,2026-07-17,8,20,621970,192,-41,-2569,declining
 IT,4dB88qTUCkjYQn0ZxIZCuW,CATALANO,ANNA,2026-07-10,2026-07-15,6,16,520695,186,-32,-5379,declining
-IT,3nZ1pM1DxcfAAf9QxIhnpo,SAFARI,ANNA,2026-07-10,2026-07-18,9,7,952053,119,-31,-11001,declining
-IT,2MBfz73GRofl4nPbCcIr6L,DON'T TELL NOBODY,ANNA,2026-07-10,2026-07-18,9,10,746215,185,-25,-4624,declining
+IT,55wR6hA738HnTk4F1z23oR,HONEY,ANNA,2026-07-10,2026-07-19,10,14,946291,123,-25,-17010,declining
 IT,4D1aJZlCbzptGSDsyV1qVo,BENIHANA,ANNA,2026-07-10,2026-07-15,6,31,424825,192,-24,-4070,declining
-IT,4uzXo3sUkY7xXelBvj1L7A,MILLION DOLLAR BABE,ANNA,2026-07-10,2026-07-18,9,2,1171531,76,-16,-12233,declining
-IT,2qPmfC6698p228q3F1Zlbk,SONO IO IL PASS,ANNA,2026-07-10,2026-07-18,9,4,1244097,57,-12,-16272,declining
-IT,55wR6hA738HnTk4F1z23oR,HONEY,ANNA,2026-07-10,2026-07-18,9,14,893745,98,-9,-4621,declining
-IT,40UibIQfdcyLJDgfDDA2MR,SCONTROSA,ANNA,2026-07-10,2026-07-18,9,6,1247729,37,-4,-10002,declining
+IT,3nZ1pM1DxcfAAf9QxIhnpo,SAFARI,ANNA,2026-07-10,2026-07-19,10,7,1002454,133,-14,-12818,declining
+IT,4uzXo3sUkY7xXelBvj1L7A,MILLION DOLLAR BABE,ANNA,2026-07-10,2026-07-19,10,2,1234329,85,-9,-17892,declining
+IT,2qPmfC6698p228q3F1Zlbk,SONO IO IL PASS,ANNA,2026-07-10,2026-07-19,10,4,1317029,63,-6,-22419,declining
+IT,40UibIQfdcyLJDgfDDA2MR,SCONTROSA,ANNA,2026-07-10,2026-07-19,10,6,1345902,41,-4,-24753,declining
+IT,2MBfz73GRofl4nPbCcIr6L,DON'T TELL NOBODY,ANNA,2026-07-10,2026-07-19,10,10,790114,185,0,-7717,resilient
 IT,6mwHTWc7bdlBsiR6s6QFGl,CUORE IN OFF,ANNA,2026-07-10,2026-07-18,8,17,641415,200,0,,resilient
-IT,3fBHfKPOuaZ99tZOMg9Cgw,RAFFAELLA FICO,"Le-one, Higashi",2026-07-10,2026-07-18,9,50,672205,50,5,4463,rising
+IT,3fBHfKPOuaZ99tZOMg9Cgw,RAFFAELLA FICO,"Le-one, Higashi",2026-07-10,2026-07-19,10,50,756783,50,0,-19094,resilient
 IT,3Ip1sc72P5uz8BUB9kb4QQ,POR TI,"Yapi, SOUNDPLUG",2026-07-14,2026-07-18,5,179,246451,192,-13,-2906,declining
 IT,2plbrEY59IikOBgBGLjaoe,Die With A Smile,"Lady Gaga, Bruno Mars",2026-07-14,2026-07-15,2,161,98012,161,35,3516,rising
-IT,7lnA7L04Q3ELVmMoMVeFrw,BOP BOP,Artie 5ive,2026-07-17,2026-07-18,2,6,344875,33,-27,-88149,declining
-IT,36GrJGQRZpCi1Imsnz2NkN,PAO PAO,"Flaco G, Lubi",2026-07-17,2026-07-17,1,163,55246,163,0,,resilient
+IT,5WEF0icHWmAZBBMglBd599,WELTiTA,"Bad Bunny, Chuwi",2026-07-17,2026-07-19,3,123,162849,159,-36,-14996,declining
+IT,7d6yK8v8J484SWH5prIQiE,VeLDÁ,"Bad Bunny, Omar Courtz, Dei V",2026-07-17,2026-07-19,3,92,183018,126,-34,-19367,declining
+IT,3G7agPwWfcORnWCAGMDOpm,LA MuDANZA,Bad Bunny,2026-07-17,2026-07-19,3,105,176205,127,-22,-15842,declining
 IT,5N8XAkHlMe9g6MqVBHB4re,UN UOMO SOLO PUÒ CAMBIARE IL MONDO,"PRACI, 22simba",2026-07-17,2026-07-17,1,119,64450,119,0,,resilient
-IT,7d6yK8v8J484SWH5prIQiE,VeLDÁ,"Bad Bunny, Omar Courtz, Dei V",2026-07-17,2026-07-18,2,92,131075,92,50,11545,rising
-IT,5WEF0icHWmAZBBMglBd599,WELTiTA,"Bad Bunny, Chuwi",2026-07-17,2026-07-18,2,123,115675,123,52,8665,rising
-IT,3G7agPwWfcORnWCAGMDOpm,LA MuDANZA,Bad Bunny,2026-07-17,2026-07-18,2,105,124440,105,53,10774,rising
-IT,4RIoOQSJUih7XWXbdxut8W,ROMANTICA,Ultimo,2026-07-18,2026-07-18,1,17,169904,17,-5,-7034,declining
-IT,4MjDJD8cW7iVeWInc2Bdyj,MONACO,Bad Bunny,2026-07-18,2026-07-18,1,142,58458,142,0,,resilient
+IT,7lnA7L04Q3ELVmMoMVeFrw,BOP BOP,Artie 5ive,2026-07-17,2026-07-19,3,6,453347,33,0,-19891,resilient
+IT,36GrJGQRZpCi1Imsnz2NkN,PAO PAO,"Flaco G, Lubi",2026-07-17,2026-07-17,1,163,55246,163,0,,resilient
+IT,4MjDJD8cW7iVeWInc2Bdyj,MONACO,Bad Bunny,2026-07-18,2026-07-19,2,142,102551,183,-41,-14365,declining
+IT,3tt9i3Hhzq84dPS8H7iSiJ,La Bachata,Manuel Turizo,2026-07-18,2026-07-19,2,178,95618,196,-18,-9674,declining
+IT,7jyZ2rWp2xRk1xvRQaRa5N,LA COSTIERA AMALFITANA,"Fabio Rovazzi, Arisa, Nino D'Angelo",2026-07-18,2026-07-19,2,172,97639,189,-17,-10661,declining
+IT,3k3NWokhRRkEPhCzPmV8TW,Ojitos Lindos,"Bad Bunny, Bomba Estéreo",2026-07-18,2026-07-19,2,143,106094,158,-15,-10814,declining
+IT,0l0vcZMU7AOeQmUIREoI2U,Qué Pasaría...,"Rauw Alejandro, Bad Bunny",2026-07-18,2026-07-19,2,138,107728,145,-7,-10302,declining
+IT,4RIoOQSJUih7XWXbdxut8W,ROMANTICA,Ultimo,2026-07-18,2026-07-19,2,17,311970,18,-1,-27838,declining
 IT,2TH65lNHgvLxCKXM3apjxI,Callaita,"Bad Bunny, Tainy",2026-07-18,2026-07-18,1,183,51780,183,0,,resilient
 IT,0SqqAgdovOE24BzxIClpjw,Yo Perreo Sola,Bad Bunny,2026-07-18,2026-07-18,1,148,57721,148,0,,resilient
-IT,7jyZ2rWp2xRk1xvRQaRa5N,LA COSTIERA AMALFITANA,"Fabio Rovazzi, Arisa, Nino D'Angelo",2026-07-18,2026-07-18,1,172,54150,172,0,,resilient
-IT,3tt9i3Hhzq84dPS8H7iSiJ,La Bachata,Manuel Turizo,2026-07-18,2026-07-18,1,178,52646,178,0,,resilient
-IT,3k3NWokhRRkEPhCzPmV8TW,Ojitos Lindos,"Bad Bunny, Bomba Estéreo",2026-07-18,2026-07-18,1,143,58454,143,0,,resilient
-IT,0l0vcZMU7AOeQmUIREoI2U,Qué Pasaría...,"Rauw Alejandro, Bad Bunny",2026-07-18,2026-07-18,1,138,59015,138,0,,resilient
+IT,1QPjHLJWBXvE5Ymck4wtfW,La Cuarta Estrella (Versión Hinchada),PALMITO,2026-07-19,2026-07-19,1,174,44527,174,0,,resilient
+IT,2wAmparvQdtQemzY9I8PKv,Y Que Fue?,Don Miguelo,2026-07-19,2026-07-19,1,137,49491,137,0,,resilient
