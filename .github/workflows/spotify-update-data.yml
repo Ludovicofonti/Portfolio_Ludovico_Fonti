@@ -53,10 +53,10 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: spotify-analytics/scripts/requirements-public.txt
+          cache-dependency-path: spotify-analytics/requirements.txt
 
       - name: Install public pipeline dependencies
-        run: pip install -r spotify-analytics/scripts/requirements-public.txt
+        run: pip install -r spotify-analytics/requirements.txt
 
       - name: Validate Spotify secrets
         env:

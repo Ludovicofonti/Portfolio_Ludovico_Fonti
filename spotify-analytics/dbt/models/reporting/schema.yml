@@ -1,0 +1,67 @@
+version: 2
+
+models:
+  - name: rpt_market_overview_daily
+    description: Daily executive KPIs prepared for Data Studio scorecards and trends.
+    columns:
+      - name: chart_date
+        tests: [not_null]
+      - name: country
+        tests: [not_null]
+
+  - name: rpt_track_opportunities_daily
+    description: Track-level reporting view with release, momentum and action classifications.
+    columns:
+      - name: chart_date
+        tests: [not_null]
+      - name: chart_track_id
+        tests: [not_null]
+      - name: action_label
+        tests:
+          - accepted_values:
+              arguments:
+                values: [Accelerate, Defend, Extend, Reduce risk, Monitor]
+
+  - name: rpt_artist_performance_daily
+    description: Daily artist streams, market share and portfolio segment.
+    columns:
+      - name: chart_date
+        tests: [not_null]
+      - name: spotify_artist_id
+        tests: [not_null]
+
+  - name: rpt_release_performance_daily
+    description: Track-level release cohorts, lifecycle stages and collaboration format.
+    columns:
+      - name: chart_date
+        tests: [not_null]
+      - name: chart_track_id
+        tests: [not_null]
+
+  - name: rpt_chart_flow_daily
+    description: Daily Top 200 entry and exit events.
+    columns:
+      - name: chart_date
+        tests: [not_null]
+      - name: chart_event
+        tests:
+          - accepted_values:
+              arguments:
+                values: [entry, exit]
+
+  - name: rpt_track_lifecycle
+    description: Current lifecycle state and observed persistence for each charted track.
+    columns:
+      - name: chart_track_id
+        tests: [not_null, unique]
+
+  - name: rpt_pipeline_health_daily
+    description: Daily pipeline quality and cumulative history coverage for Data Studio.
+    columns:
+      - name: chart_date
+        tests: [not_null]
+      - name: pipeline_status
+        tests:
+          - accepted_values:
+              arguments:
+                values: [fresh, degraded]

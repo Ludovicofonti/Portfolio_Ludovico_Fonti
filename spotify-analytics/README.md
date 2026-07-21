@@ -59,7 +59,7 @@ extract -> validate_raw -> dbt_build -> validate_marts -> publish_metadata
 | `mart_chart_concentration` | Top 10/50 stream concentration |
 | `mart_data_quality_daily` | Completeness, match rate and pipeline health |
 
-The repository currently contains one real 200-row snapshot. The pipeline accumulates future daily runs without fabricating backfill; the recruiter-readiness target is 90+ observed days.
+The repository contains only observed daily snapshots. The pipeline accumulates history without fabricating backfill, so every trend shown in the dashboard is traceable to a collected chart date.
 
 ## Data lineage
 
@@ -96,11 +96,32 @@ Full daily refresh requires `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET`:
 python scripts/run_public_pipeline.py
 ```
 
+The BigQuery path also requires Google Application Default Credentials plus
+`GCP_PROJECT_ID`; `BIGQUERY_LOCATION` defaults to `EU`. The pipeline creates the four
+`spotify_analytics_*` datasets and their raw tables when they do not already exist.
+
 Local Airflow/PostgreSQL environment:
 
 ```powershell
 docker compose up -d postgres redis airflow-init airflow-apiserver airflow-scheduler
 ```
+
+## GitHub Actions configuration
+
+The daily schedule remains in `.github/workflows/spotify-update-data.yml`. GitHub must
+contain these repository settings:
+
+| Type | Name | Purpose |
+| --- | --- | --- |
+| Variable | `GCP_PROJECT_ID` | Google Cloud project that owns the Spotify datasets |
+| Variable | `GCP_WORKLOAD_IDENTITY_PROVIDER` | Workload Identity Federation provider resource name |
+| Variable | `GCP_SPOTIFY_SERVICE_ACCOUNT` | Spotify-only deployment service account |
+| Variable | `BIGQUERY_LOCATION` | Dataset location, normally `EU` |
+| Secret | `SPOTIFY_CLIENT_ID` | Spotify Client Credentials authentication |
+| Secret | `SPOTIFY_CLIENT_SECRET` | Spotify Client Credentials authentication |
+
+No Google service-account key is stored in GitHub. The workflow uses short-lived WIF
+credentials; the service account is restricted to the Spotify BigQuery datasets.
 
 ## Quality checks
 
@@ -124,14 +145,17 @@ The Python suite is network-free and uses a saved Kworb HTML fixture. dbt valida
 
 The public architecture uses GitHub Actions, BigQuery, dbt Core, Evidence and GitHub Pages. Raw partitions expire after 365 days; queries and Evidence exports have bounded scan limits; resource labels isolate project cost. PostgreSQL and Airflow remain local and are not production dependencies. BigQuery may remain within its free tier at this data volume, but billing alerts and least-privilege IAM are still required.
 
-## Project documentation
+## Repository guide
 
-- [Recruiter improvement roadmap](docs/RECRUITER_IMPROVEMENT_ROADMAP.md)
-- [BigQuery deployment and IAM](docs/BIGQUERY_DEPLOYMENT.md)
-- [Data catalog](docs/spotify_data_catalog.md)
-- [Technical and business narrative](spotify_pipeline_portfolio.md)
-- [Evidence run notes](evidence/README.md)
+| Path | Role |
+| --- | --- |
+| `scripts/` | BigQuery ingestion, orchestration and bounded Evidence exports |
+| `dbt/` | Staging, intermediate and analytics models with data tests |
+| `evidence/` | Public dashboard application and versioned CSV inputs |
+| `airflow/`, `dlt/` | Optional local orchestration and PostgreSQL engineering lab |
+| [`docs/spotify_data_catalog.md`](docs/spotify_data_catalog.md) | Sources, grains, ownership, quality rules and limitations |
 
-> Il progetto utilizza dati pubblici o ottenuti tramite API nel rispetto delle
-> condizioni del provider. Le credenziali non sono incluse: configurare
-> l'ambiente locale tramite variabili d'ambiente.
+`requirements.txt` is the single runtime dependency set for both publication and the
+local lab. `requirements-dev.txt` extends it with test, coverage, lint and pre-commit
+tooling. Credentials are intentionally excluded and must be supplied through environment
+variables, Application Default Credentials or GitHub repository settings.
