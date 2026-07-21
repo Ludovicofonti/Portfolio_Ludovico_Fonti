@@ -1,5 +1,10 @@
-dlt[postgres]==1.26.0
-dbt-postgres==1.10.0
+# Shared runtime dependencies for the BigQuery publication pipeline and the
+# optional local Airflow/PostgreSQL engineering environment.
 requests==2.33.1
 python-dotenv==1.2.2
 beautifulsoup4==4.14.3
+dlt[postgres]==1.26.0
+dbt-core==1.11.2
+dbt-bigquery==1.11.0
+dbt-postgres==1.10.0
+google-cloud-bigquery==3.38.0
