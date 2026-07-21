@@ -72,3 +72,10 @@ models:
         +cluster_by: [country, chart_track_id]
       mart_track_lifecycle:
         +cluster_by: [country, chart_track_id]
+    reporting:
+      +materialized: view
+      +schema: "{{ env_var('SPOTIFY_BQ_MARTS_DATASET', 'spotify_analytics_marts') if target.type == 'bigquery' else 'spotify_marts' }}"
+      +labels:
+        application: spotify-analytics
+        managed_by: dbt
+        consumption: data-studio

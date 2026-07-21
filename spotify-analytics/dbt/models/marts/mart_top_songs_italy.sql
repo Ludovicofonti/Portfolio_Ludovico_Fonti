@@ -10,6 +10,7 @@ select
     album_type,
     album_release_date,
     release_year,
+    days_since_release,
     streams,
     streams_share,
     streams_change,
