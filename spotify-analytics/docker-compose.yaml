@@ -85,7 +85,6 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/dbt:/opt/airflow/dbt
     - ${AIRFLOW_PROJ_DIR:-.}/scripts:/opt/airflow/scripts
     - ${AIRFLOW_PROJ_DIR:-.}/data:/opt/airflow/data
-    - ${AIRFLOW_PROJ_DIR:-.}/evidence/sources/spotify_public:/opt/airflow/evidence/sources/spotify_public
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
@@ -341,18 +340,5 @@ services:
       airflow-init:
         condition: service_completed_successfully
 
-  evidence:
-    image: node:20-bookworm
-    profiles:
-      - evidence
-    working_dir: /app
-    command: sh -c "npm install --no-audit --no-fund && npm run dev"
-    volumes:
-      - ./evidence:/app
-      - evidence-node-modules:/app/node_modules
-    ports:
-      - "3000:3000"
-
 volumes:
   postgres-db-volume:
-  evidence-node-modules:
