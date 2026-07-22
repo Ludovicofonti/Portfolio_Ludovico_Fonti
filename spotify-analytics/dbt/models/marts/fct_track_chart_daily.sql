@@ -2,10 +2,10 @@
     config(
         materialized='incremental',
         unique_key=['chart_date', 'country', 'chart_track_id'],
-        incremental_strategy='merge' if target.type == 'bigquery' else 'delete+insert',
+        incremental_strategy='merge',
         incremental_predicates=[
             "DBT_INTERNAL_DEST.chart_date >= date_sub(current_date(), interval 365 day)"
-        ] if target.type == 'bigquery' else []
+        ]
     )
 }}
 

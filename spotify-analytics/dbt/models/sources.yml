@@ -3,13 +3,13 @@ version: 2
 sources:
   - name: spotify_raw
     description: Partitioned raw tables loaded into BigQuery from Kworb and Spotify Web API.
-    schema: "{{ env_var('SPOTIFY_BQ_RAW_DATASET', 'spotify_analytics_raw') if target.type == 'bigquery' else 'spotify_raw' }}"
+    schema: "{{ env_var('SPOTIFY_BQ_RAW_DATASET', 'spotify_analytics_raw') }}"
     config:
       loaded_at_field: _loaded_at
       freshness:
         warn_after: {count: 36, period: hour}
         error_after: {count: 48, period: hour}
-        filter: "{{ 'chart_date >= date_sub(current_date(), interval 365 day)' if target.type == 'bigquery' else '1 = 1' }}"
+        filter: "chart_date >= date_sub(current_date(), interval 365 day)"
     tables:
       - name: italy_daily_chart
         description: Daily Spotify Italy Top 200 chart from Kworb.
@@ -18,7 +18,7 @@ sources:
             tests:
               - not_null:
                   config: &raw_partition_test
-                    where: "{{ 'chart_date >= date_sub(current_date(), interval 365 day)' if target.type == 'bigquery' else '1 = 1' }}"
+                    where: "chart_date >= date_sub(current_date(), interval 365 day)"
               - unique:
                   config: *raw_partition_test
           - name: chart_date

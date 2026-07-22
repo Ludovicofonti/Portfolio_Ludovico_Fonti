@@ -34,13 +34,13 @@ jobs:
           cache: pip
           cache-dependency-path: |
             spotify-analytics/requirements.txt
-            spotify-analytics/requirements-dev.txt
+            spotify-analytics/requirements-ci.txt
 
       - name: Install dependencies
-        run: pip install -r requirements-dev.txt
+        run: pip install -r requirements-ci.txt
 
       - name: Ruff
-        run: ruff check dlt scripts tests airflow/dags
+        run: ruff check scripts tests
 
       - name: Python tests
         run: pytest

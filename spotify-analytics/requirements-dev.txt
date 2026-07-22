@@ -1,6 +1,0 @@
-# Runtime dependencies plus local quality tooling.
--r requirements.txt
-pytest==8.4.2
-pytest-cov==7.0.0
-ruff==0.14.10
-pre-commit==4.5.1

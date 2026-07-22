@@ -56,8 +56,8 @@ flowchart LR
 
 GitHub Actions esegue il percorso di produzione ogni giorno e si autentica su Google
 Cloud tramite Workload Identity Federation. BigQuery è sia il data warehouse sia la
-sorgente di pubblicazione. Airflow, dlt e PostgreSQL costituiscono un laboratorio locale
-opzionale e non sono dipendenze della produzione.
+sorgente di pubblicazione. Il repository non contiene ambienti Docker, database locali
+o orchestratori alternativi: esiste un solo percorso operativo, interamente online.
 
 ## Controlli di produzione
 
@@ -92,31 +92,19 @@ Il repository contiene esclusivamente snapshot osservati: non presenta backfill
 sintetici come dati storici reali. Granularità, ownership e regole di qualità sono
 documentate nel [catalogo dati](docs/spotify_data_catalog.md).
 
-## Esecuzione locale
+## Esecuzione online
 
-Costruzione dei modelli BigQuery utilizzando gli snapshot già presenti:
+Il progetto viene eseguito esclusivamente tramite GitHub Actions:
 
-```powershell
-python -m pip install -r requirements-dev.txt
-python scripts/run_public_pipeline.py --skip-extract
-```
+- `spotify-update-data.yml` acquisisce la Top 200, arricchisce i Track ID tramite
+  Spotify, carica BigQuery, esegue dbt e versiona gli snapshot validati;
+- `spotify-ci.yml` esegue lint, test Python e parsing del progetto dbt a ogni pull
+  request e push su `main`.
 
-Aggiornamento completo:
-
-```powershell
-python scripts/run_public_pipeline.py
-```
-
-L'aggiornamento completo richiede `SPOTIFY_CLIENT_ID`,
-`SPOTIFY_CLIENT_SECRET`, le Application Default Credentials di Google e
-`GCP_PROJECT_ID`. `BIGQUERY_LOCATION` usa `EU` come valore predefinito. Il loader
-crea i quattro dataset `spotify_analytics_*` e le tabelle raw se non esistono.
-
-Laboratorio locale Airflow/PostgreSQL:
-
-```powershell
-docker compose up -d postgres redis airflow-init airflow-apiserver airflow-scheduler
-```
+`requirements.txt` contiene soltanto le dipendenze runtime installate dal job
+giornaliero. `requirements-ci.txt` aggiunge pytest, coverage e Ruff per il job di
+qualità. Questa separazione evita di installare strumenti di test durante ogni
+aggiornamento dei dati.
 
 ## Configurazione GitHub Actions
 
@@ -137,11 +125,11 @@ credenziali WIF temporanee e non esegue deploy su GitHub Pages.
 
 ## Verifiche di qualità
 
-```powershell
-ruff check dlt scripts tests airflow/dags
-pytest
-dbt parse --project-dir dbt --profiles-dir dbt --target bigquery --no-partial-parse
-```
+Il workflow CI esegue automaticamente:
+
+- Ruff su `scripts/` e `tests/`;
+- test Python con soglia minima di copertura;
+- parsing completo del progetto dbt con adapter BigQuery.
 
 La suite verifica parsing, retry, controlli di pubblicazione, unicità della granularità
 e delle posizioni giornaliere, intervalli validi di rank e stream, date future,
@@ -164,12 +152,9 @@ coerenza del ciclo di vita e completezza dei metadati.
 | --- | --- |
 | `scripts/` | Acquisizione validata, caricamento BigQuery e orchestrazione |
 | `dbt/` | Staging, intermediate, mart e viste di reporting con test dati |
-| `tests/` | Test di regressione offline e fixture della sorgente |
-| `airflow/`, `dlt/` | Laboratorio locale opzionale di orchestrazione e ingestione |
+| `tests/` | Test di regressione eseguiti dalla CI e fixture della sorgente |
 | [`docs/dashboard_guide.md`](docs/dashboard_guide.md) | Domande, campi e interpretazione della dashboard |
 | [`docs/spotify_data_catalog.md`](docs/spotify_data_catalog.md) | Fonti, granularità, ownership e limitazioni |
 
-`requirements.txt` contiene le dipendenze runtime. `requirements-dev.txt` aggiunge
-test, copertura, lint e pre-commit. Le credenziali non sono versionate e devono essere
-fornite tramite variabili d'ambiente, Application Default Credentials o impostazioni
-del repository GitHub.
+Le credenziali non sono versionate: vengono fornite esclusivamente dai secret e dalle
+variabili GitHub, mentre Google Cloud usa credenziali WIF temporanee.

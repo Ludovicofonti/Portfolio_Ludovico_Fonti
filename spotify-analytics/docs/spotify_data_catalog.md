@@ -17,9 +17,9 @@ Kworb Top 200 Italia + Spotify Web API
   -> Looker Studio
 ```
 
-GitHub Actions è lo scheduler di produzione. BigQuery è sia il data warehouse sia la
-sorgente di pubblicazione. PostgreSQL viene utilizzato soltanto nel laboratorio locale
-opzionale basato su Airflow e dlt.
+GitHub Actions è l'unico scheduler. BigQuery è sia il data warehouse sia la sorgente di
+pubblicazione; il progetto non mantiene un database o un orchestratore locale
+alternativo.
 
 ## Sorgenti
 
@@ -57,8 +57,8 @@ partizione per limitare scansioni complete accidentali.
 | `italy_daily_track_details__artists` | Un artista per brano arricchito | ID riga padre, artist ID e posizione nella lista |
 | `italy_daily_track_details__album__images` | Un'immagine per brano arricchito | ID riga padre e posizione nella lista |
 
-Il loader genera valori `_dlt_id` deterministici, sostituisce soltanto le partizioni
-ricevute e rifiuta dataset vuoti.
+Il loader genera identificativi tecnici deterministici, sostituisce soltanto le
+partizioni ricevute e rifiuta dataset vuoti.
 
 ## Modelli analitici
 
