@@ -57,6 +57,14 @@ crypto-analysis/
 #conversione-pdf-markdown-ai-coding
 conversione-pdf-markdown-ai-coding/specs/
 
+# Artefatti locali generati dagli strumenti di analisi e job-market-agent
+graphify-out/
+job-market-agent/cv_outputs/
+job-market-agent/dbt/target/
+job-market-agent/dbt/.user.yml
+job-market-agent/profile/ludovico_profile.yml
+job-market-agent/reports/
+
 # ----------------------------------------
 #       Python cache
 # ----------------------------------------
