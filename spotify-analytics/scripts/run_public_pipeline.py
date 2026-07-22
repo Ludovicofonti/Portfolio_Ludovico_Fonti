@@ -12,9 +12,9 @@ def parse_args():
         description="Run ingestion and dbt transformations in BigQuery."
     )
     parser.add_argument(
-        "--skip-extract",
+        "--skip-ingest",
         action="store_true",
-        help="Build from existing raw snapshots without network access.",
+        help="Run dbt from existing BigQuery raw tables without acquiring new data.",
     )
     return parser.parse_args()
 
@@ -25,9 +25,8 @@ def run(command, cwd=PROJECT_DIR, env=None):
 
 def main():
     args = parse_args()
-    if not args.skip_extract:
+    if not args.skip_ingest:
         run([sys.executable, "scripts/refresh_public_data.py"])
-    run([sys.executable, "scripts/load_bigquery_raw.py"])
 
     dbt_env = os.environ.copy()
     dbt_env["DBT_PROFILES_DIR"] = str(PROJECT_DIR / "dbt")

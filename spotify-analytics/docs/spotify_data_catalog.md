@@ -10,7 +10,7 @@ visualizzazioni.
 ```text
 Kworb Top 200 Italia + Spotify Web API
   -> validazione Python e arricchimento deterministico tramite Track ID
-  -> tabelle raw BigQuery
+  -> caricamento diretto nelle partizioni raw BigQuery
   -> viste dbt di staging e intermediate
   -> fact e mart dbt
   -> viste di reporting rpt_* in BigQuery
@@ -19,7 +19,7 @@ Kworb Top 200 Italia + Spotify Web API
 
 GitHub Actions è l'unico scheduler. BigQuery è sia il data warehouse sia la sorgente di
 pubblicazione; il progetto non mantiene un database o un orchestratore locale
-alternativo.
+alternativo e non versiona copie CSV o JSON dei dati.
 
 ## Sorgenti
 
@@ -56,9 +56,12 @@ partizione per limitare scansioni complete accidentali.
 | `italy_daily_track_details` | Un arricchimento Spotify per riga osservata | `chart_date`, `chart_track_id` |
 | `italy_daily_track_details__artists` | Un artista per brano arricchito | ID riga padre, artist ID e posizione nella lista |
 | `italy_daily_track_details__album__images` | Un'immagine per brano arricchito | ID riga padre e posizione nella lista |
+| `spotify_track_metadata_cache` | Una versione cache per brano e data | Track ID, mercato e data cache |
+| `pipeline_runs` | Una riga per esecuzione riuscita | `run_id` |
 
-Il loader genera identificativi tecnici deterministici, sostituisce soltanto le
-partizioni ricevute e rifiuta dataset vuoti.
+Il loader riceve i record in memoria, genera identificativi tecnici deterministici,
+sostituisce atomicamente soltanto la partizione giornaliera e rifiuta dataset vuoti.
+La cache e le metriche operative sono anch'esse gestite in BigQuery.
 
 ## Modelli analitici
 

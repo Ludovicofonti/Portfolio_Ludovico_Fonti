@@ -12,6 +12,6 @@ select = ["E", "F", "I", "B", "UP"]
 
 [tool.coverage.run]
 omit = [
-  "scripts/load_bigquery_raw.py",
+  "scripts/bigquery_loader.py",
   "scripts/run_public_pipeline.py",
 ]

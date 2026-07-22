@@ -1,36 +1,63 @@
 import argparse
-import csv
 import json
 import os
-from datetime import datetime
-from pathlib import Path
+from dataclasses import dataclass
+from datetime import UTC, datetime
 
 import requests
-from dotenv import load_dotenv
-from spotify_api import (
-    SpotifyRequestStats,
-    fetch_italy_daily_chart,
-    get_access_token,
-    get_track_details,
-)
+from google.cloud import bigquery
 
-PROJECT_DIR = Path(__file__).resolve().parents[1]
-RAW_DIR = PROJECT_DIR / "data" / "raw"
-CACHE_PATH = PROJECT_DIR / "data" / "cache" / "spotify_tracks.json"
-QUALITY_DIR = PROJECT_DIR / "data" / "quality"
+try:
+    from scripts.bigquery_config import BigQueryConfig
+    from scripts.bigquery_loader import (
+        ensure_datasets,
+        ensure_metadata_cache_table,
+        load_metadata_cache,
+        load_snapshot_to_bigquery,
+    )
+    from scripts.spotify_api import (
+        SpotifyRequestStats,
+        fetch_italy_daily_chart,
+        get_access_token,
+        get_track_details,
+    )
+except ModuleNotFoundError:  # Direct execution: python scripts/refresh_public_data.py
+    from bigquery_config import BigQueryConfig
+    from bigquery_loader import (
+        ensure_datasets,
+        ensure_metadata_cache_table,
+        load_metadata_cache,
+        load_snapshot_to_bigquery,
+    )
+    from spotify_api import (
+        SpotifyRequestStats,
+        fetch_italy_daily_chart,
+        get_access_token,
+        get_track_details,
+    )
+
 MIN_CHART_ROWS = 190
 MIN_METADATA_MATCH_RATE = 0.95
 
 
+@dataclass(frozen=True)
+class SpotifySnapshot:
+    chart_rows: list[dict]
+    track_details: dict[str, dict]
+    new_track_details: dict[str, dict]
+    metrics: dict
+    failures: list[dict]
+
+
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Collect and validate the Spotify Italy chart for BigQuery."
+        description="Collect, validate and load the Spotify Italy chart into BigQuery."
     )
     parser.add_argument(
         "--limit",
         type=int,
         default=None,
-        help="Only enrich the first N chart rows. Intended for smoke tests.",
+        help="Only enrich the first N chart rows without publishing. Intended for smoke tests.",
     )
     parser.add_argument("--min-chart-rows", type=int, default=MIN_CHART_ROWS)
     parser.add_argument("--min-match-rate", type=float, default=MIN_METADATA_MATCH_RATE)
@@ -105,125 +132,54 @@ def validate_chart_rows(chart_rows, min_rows=MIN_CHART_ROWS):
         raise ValueError("Chart health gate failed: rank outside the 1-200 range")
 
 
-def _atomic_json_write(path, value):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temporary_path = path.with_suffix(path.suffix + ".tmp")
-    with temporary_path.open("w", encoding="utf-8") as handle:
-        json.dump(value, handle, ensure_ascii=False, indent=2)
-    temporary_path.replace(path)
-
-
-def load_metadata_cache():
-    if not CACHE_PATH.exists():
-        return {}
-    with CACHE_PATH.open("r", encoding="utf-8") as handle:
-        return json.load(handle)
-
-
-def write_pipeline_quality(metrics, failures):
-    QUALITY_DIR.mkdir(parents=True, exist_ok=True)
-    history_path = QUALITY_DIR / "pipeline_runs.jsonl"
-    with history_path.open("a", encoding="utf-8") as handle:
-        handle.write(json.dumps(metrics, ensure_ascii=False) + "\n")
-    _atomic_json_write(QUALITY_DIR / "latest_run.json", metrics)
-    _atomic_json_write(QUALITY_DIR / "unmatched_tracks.json", failures)
-
-
-def load_raw_track_details(chart_date):
-    raw_details_path = RAW_DIR / f"italy_daily_track_details_{chart_date}.json"
-    if not raw_details_path.exists():
-        return None
-
-    with raw_details_path.open("r", encoding="utf-8") as handle:
-        return json.load(handle)
-
-
-def load_cached_track_details():
-    cached_details = {}
-    for raw_details_path in sorted(RAW_DIR.glob("italy_daily_track_details_*.json")):
-        with raw_details_path.open("r", encoding="utf-8") as handle:
-            cached_details.update(json.load(handle))
-    return cached_details or None
-
-
-def write_csv(path, rows):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    if not rows:
-        raise ValueError(f"Cannot write empty dataset: {path.name}")
-
-    temporary_path = path.with_suffix(path.suffix + ".tmp")
-    with temporary_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=rows[0].keys())
-        writer.writeheader()
-        writer.writerows(rows)
-    temporary_path.replace(path)
-
-
-def write_raw_snapshot(chart_rows, track_details):
-    RAW_DIR.mkdir(parents=True, exist_ok=True)
-    chart_date = chart_rows[0]["chart_date"]
-    raw_chart_path = RAW_DIR / f"italy_daily_chart_{chart_date}.csv"
-    raw_details_path = RAW_DIR / f"italy_daily_track_details_{chart_date}.json"
-
-    raw_chart_rows = []
-    for row in chart_rows:
-        serialized = row.copy()
-        serialized["artist_ids"] = json.dumps(row["artist_ids"], ensure_ascii=False)
-        serialized["artist_names"] = json.dumps(row["artist_names"], ensure_ascii=False)
-        raw_chart_rows.append(serialized)
-
-    write_csv(raw_chart_path, raw_chart_rows)
-    _atomic_json_write(raw_details_path, track_details)
-
-
-def main():
-    args = parse_args()
-    started_at = datetime.now().astimezone()
-    load_dotenv(PROJECT_DIR / ".env")
-
-    client_id = os.environ.get("SPOTIFY_CLIENT_ID")
-    client_secret = os.environ.get("SPOTIFY_CLIENT_SECRET")
-    if not client_id or not client_secret:
-        raise RuntimeError("SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET are required.")
-
+def collect_snapshot(
+    client,
+    config,
+    client_id,
+    client_secret,
+    limit=None,
+    min_chart_rows=MIN_CHART_ROWS,
+    min_match_rate=MIN_METADATA_MATCH_RATE,
+):
+    started_at = datetime.now(UTC)
     chart_rows = fetch_italy_daily_chart()
-    if args.limit:
-        chart_rows = chart_rows[: args.limit]
-    validate_chart_rows(chart_rows, min_rows=1 if args.limit else args.min_chart_rows)
+    if limit:
+        chart_rows = chart_rows[:limit]
+    validate_chart_rows(chart_rows, min_rows=1 if limit else min_chart_rows)
 
     chart_date = chart_rows[0]["chart_date"]
-    track_details = load_metadata_cache()
-    track_details.update(load_cached_track_details() or {})
-    track_details.update(load_raw_track_details(chart_date) or {})
-
     expected_track_ids = {row["track_id"] for row in chart_rows}
-    missing_track_ids = expected_track_ids.difference(track_details)
+    cached_track_details = load_metadata_cache(client, config, expected_track_ids)
+    missing_track_ids = expected_track_ids.difference(cached_track_details)
     failures = []
     stats = SpotifyRequestStats()
+    new_track_details = {}
     if missing_track_ids:
         token = get_access_token(client_id, client_secret)
         missing_rows = [row for row in chart_rows if row["track_id"] in missing_track_ids]
-        track_details.update(enrich_chart(missing_rows, token, stats=stats, failures=failures))
-
-    _atomic_json_write(CACHE_PATH, track_details)
-    current_track_details = {
-        track_id: track_details[track_id]
-        for track_id in expected_track_ids
-        if track_id in track_details
-    }
-    match_rate = len(current_track_details) / len(chart_rows)
-    if match_rate < args.min_match_rate:
-        raise ValueError(
-            f"Metadata health gate failed: {match_rate:.1%} matched, "
-            f"expected at least {args.min_match_rate:.1%}"
+        new_track_details = enrich_chart(
+            missing_rows,
+            token,
+            stats=stats,
+            failures=failures,
         )
 
-    if not args.limit:
-        write_raw_snapshot(chart_rows, current_track_details)
+    all_track_details = {**cached_track_details, **new_track_details}
+    current_track_details = {
+        track_id: all_track_details[track_id]
+        for track_id in expected_track_ids
+        if track_id in all_track_details
+    }
+    match_rate = len(current_track_details) / len(chart_rows)
+    if match_rate < min_match_rate:
+        raise ValueError(
+            f"Metadata health gate failed: {match_rate:.1%} matched, "
+            f"expected at least {min_match_rate:.1%}"
+        )
 
-    finished_at = datetime.now().astimezone()
+    finished_at = datetime.now(UTC)
     metrics = {
-        "run_id": started_at.strftime("%Y%m%dT%H%M%S%z"),
+        "run_id": started_at.strftime("%Y%m%dT%H%M%SZ"),
         "run_started_at": started_at.isoformat(),
         "chart_date": chart_date,
         "chart_rows": len(chart_rows),
@@ -238,25 +194,58 @@ def main():
         "pipeline_status": "fresh",
         "generated_at": finished_at.isoformat(),
     }
-    if not args.limit:
-        write_pipeline_quality(metrics, failures)
-
-    print(
-        json.dumps(
-            {
-                "chart_date": chart_date,
-                "dry_run": bool(args.limit),
-                "chart_rows": len(chart_rows),
-                "matched_tracks": len(current_track_details),
-                "metadata_match_rate": match_rate,
-                "spotify_requests": stats.requests,
-                "spotify_retries": stats.retries,
-                "spotify_429_responses": stats.rate_limited,
-                "generated_at": finished_at.isoformat(),
-            },
-            indent=2,
-        )
+    return SpotifySnapshot(
+        chart_rows=chart_rows,
+        track_details=current_track_details,
+        new_track_details=new_track_details,
+        metrics=metrics,
+        failures=failures,
     )
+
+
+def main():
+    args = parse_args()
+    client_id = os.environ.get("SPOTIFY_CLIENT_ID")
+    client_secret = os.environ.get("SPOTIFY_CLIENT_SECRET")
+    if not client_id or not client_secret:
+        raise RuntimeError("SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET are required.")
+
+    config = BigQueryConfig.from_env()
+    client = bigquery.Client(project=config.project, location=config.location)
+    ensure_datasets(client, config)
+    ensure_metadata_cache_table(client, config)
+    snapshot = collect_snapshot(
+        client,
+        config,
+        client_id,
+        client_secret,
+        limit=args.limit,
+        min_chart_rows=args.min_chart_rows,
+        min_match_rate=args.min_match_rate,
+    )
+
+    summary = {
+        "chart_date": snapshot.metrics["chart_date"],
+        "dry_run": bool(args.limit),
+        "chart_rows": snapshot.metrics["chart_rows"],
+        "matched_tracks": snapshot.metrics["matched_tracks"],
+        "metadata_match_rate": snapshot.metrics["match_rate"],
+        "spotify_requests": snapshot.metrics["spotify_requests"],
+        "spotify_retries": snapshot.metrics["spotify_retries"],
+        "spotify_429_responses": snapshot.metrics["spotify_429_responses"],
+        "generated_at": snapshot.metrics["generated_at"],
+    }
+    if not args.limit:
+        summary["bigquery"] = load_snapshot_to_bigquery(
+            client,
+            config,
+            snapshot.chart_rows,
+            snapshot.track_details,
+            snapshot.new_track_details,
+            snapshot.metrics,
+            snapshot.failures,
+        )
+    print(json.dumps(summary, indent=2))
 
 
 if __name__ == "__main__":
