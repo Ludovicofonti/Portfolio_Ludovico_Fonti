@@ -1,0 +1,5 @@
+# Dipendenze usate esclusivamente dal workflow GitHub Actions di qualità.
+-r requirements.txt
+pytest==8.4.2
+pytest-cov==7.0.0
+ruff==0.14.10

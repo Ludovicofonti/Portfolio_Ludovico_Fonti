@@ -195,19 +195,3 @@ def get_track_details(token, track_id, market="IT", stats=None, **request_kwargs
             f"Spotify returned track {track.get('id')!r} for requested ID {track_id!r}"
         )
     return track
-
-
-def search_track_details(token, track_name, artist_name, market="IT"):
-    """Legacy helper retained for compatibility; new ingestion uses get_track_details."""
-    response = get_spotify_with_retry(
-        f"{SPOTIFY_API_BASE_URL}/search",
-        token,
-        params={
-            "q": f"track:{track_name} artist:{artist_name}",
-            "type": "track",
-            "market": market,
-            "limit": 1,
-        },
-    )
-    items = response.json()["tracks"]["items"]
-    return items[0] if items else None

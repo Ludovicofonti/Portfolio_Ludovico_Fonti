@@ -1,17 +1,6 @@
 spotify_analytics:
-  target: dev
+  target: bigquery
   outputs:
-    dev:
-      type: postgres
-      host: "{{ env_var('POSTGRES_HOST', 'postgres') }}"
-      port: "{{ env_var('POSTGRES_PORT', '5432') | int }}"
-      user: "{{ env_var('POSTGRES_USER', 'airflow') }}"
-      password: "{{ env_var('POSTGRES_PASSWORD', 'airflow') }}"
-      dbname: "{{ env_var('POSTGRES_SPOTIFY_DB', 'spotify_db') }}"
-      schema: spotify_marts
-      threads: 4
-      keepalives_idle: 0
-      connect_timeout: 10
     bigquery:
       type: bigquery
       method: oauth

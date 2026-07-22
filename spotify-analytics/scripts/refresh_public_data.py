@@ -2,23 +2,19 @@ import argparse
 import csv
 import json
 import os
-import sys
 from datetime import datetime
 from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
-
-PROJECT_DIR = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(PROJECT_DIR / "dlt"))
-
-from spotify_api import (  # noqa: E402
+from spotify_api import (
     SpotifyRequestStats,
     fetch_italy_daily_chart,
     get_access_token,
     get_track_details,
 )
 
+PROJECT_DIR = Path(__file__).resolve().parents[1]
 RAW_DIR = PROJECT_DIR / "data" / "raw"
 CACHE_PATH = PROJECT_DIR / "data" / "cache" / "spotify_tracks.json"
 QUALITY_DIR = PROJECT_DIR / "data" / "quality"

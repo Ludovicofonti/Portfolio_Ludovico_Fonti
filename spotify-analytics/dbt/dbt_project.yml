@@ -20,13 +20,13 @@ models:
   spotify_analytics:
     staging:
       +materialized: view
-      +schema: "{{ env_var('SPOTIFY_BQ_STAGING_DATASET', 'spotify_analytics_staging') if target.type == 'bigquery' else 'spotify_staging' }}"
+      +schema: "{{ env_var('SPOTIFY_BQ_STAGING_DATASET', 'spotify_analytics_staging') }}"
     intermediate:
       +materialized: view
-      +schema: "{{ env_var('SPOTIFY_BQ_INTERMEDIATE_DATASET', 'spotify_analytics_intermediate') if target.type == 'bigquery' else 'spotify_intermediate' }}"
+      +schema: "{{ env_var('SPOTIFY_BQ_INTERMEDIATE_DATASET', 'spotify_analytics_intermediate') }}"
     marts:
       +materialized: table
-      +schema: "{{ env_var('SPOTIFY_BQ_MARTS_DATASET', 'spotify_analytics_marts') if target.type == 'bigquery' else 'spotify_marts' }}"
+      +schema: "{{ env_var('SPOTIFY_BQ_MARTS_DATASET', 'spotify_analytics_marts') }}"
       +labels:
         application: spotify-analytics
         managed_by: dbt
@@ -74,7 +74,7 @@ models:
         +cluster_by: [country, chart_track_id]
     reporting:
       +materialized: view
-      +schema: "{{ env_var('SPOTIFY_BQ_MARTS_DATASET', 'spotify_analytics_marts') if target.type == 'bigquery' else 'spotify_marts' }}"
+      +schema: "{{ env_var('SPOTIFY_BQ_MARTS_DATASET', 'spotify_analytics_marts') }}"
       +labels:
         application: spotify-analytics
         managed_by: dbt
