@@ -1,8 +1,7 @@
-import csv
-
 import pytest
 
-from scripts.refresh_public_data import validate_chart_rows, write_csv
+from scripts import refresh_public_data
+from scripts.refresh_public_data import collect_snapshot, validate_chart_rows
 
 
 def chart_row(rank=1, track_id="track-1"):
@@ -24,11 +23,37 @@ def test_validate_chart_rows_rejects_incomplete_or_duplicate_snapshots():
         validate_chart_rows([chart_row(track_id=None)], min_rows=1)
 
 
-def test_write_csv_is_atomic_and_rejects_empty_datasets(tmp_path):
-    output = tmp_path / "mart.csv"
-    write_csv(output, [{"track_id": "track-1", "streams": 100}])
-    with output.open(newline="", encoding="utf-8") as handle:
-        assert list(csv.DictReader(handle))[0]["track_id"] == "track-1"
-    assert not output.with_suffix(".csv.tmp").exists()
-    with pytest.raises(ValueError, match="empty dataset"):
-        write_csv(output, [])
+def test_collect_snapshot_uses_bigquery_cache_and_fetches_only_missing(monkeypatch):
+    rows = [chart_row(1, "track-1"), chart_row(2, "track-2")]
+    cached_track = {"id": "track-1", "artists": [], "album": {"images": []}}
+    fetched_track = {"id": "track-2", "artists": [], "album": {"images": []}}
+    monkeypatch.setattr(refresh_public_data, "fetch_italy_daily_chart", lambda: rows)
+    monkeypatch.setattr(
+        refresh_public_data,
+        "load_metadata_cache",
+        lambda client, config, track_ids: {"track-1": cached_track},
+    )
+    monkeypatch.setattr(refresh_public_data, "get_access_token", lambda *_: "token")
+
+    enriched_rows = []
+
+    def fake_enrich(rows_to_enrich, token, stats, failures):
+        enriched_rows.extend(rows_to_enrich)
+        return {"track-2": fetched_track}
+
+    monkeypatch.setattr(refresh_public_data, "enrich_chart", fake_enrich)
+    snapshot = collect_snapshot(
+        object(),
+        object(),
+        "client-id",
+        "client-secret",
+        min_chart_rows=2,
+    )
+
+    assert [row["track_id"] for row in enriched_rows] == ["track-2"]
+    assert snapshot.track_details == {
+        "track-1": cached_track,
+        "track-2": fetched_track,
+    }
+    assert snapshot.new_track_details == {"track-2": fetched_track}
+    assert snapshot.metrics["match_rate"] == 1

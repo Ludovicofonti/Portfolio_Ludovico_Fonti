@@ -48,7 +48,7 @@ flowchart LR
     S[Spotify Web API tramite Track ID] --> P
     P --> H{Controlli di qualità}
     H -->|dati validi| D[(BigQuery raw)]
-    H -->|dati non validi| L[Mantiene l'ultimo dato valido]
+    H -->|dati non validi| L[Mantiene le partizioni BigQuery valide]
     D --> B[dbt build e test]
     B --> M[(BigQuery marts e viste rpt)]
     M --> G[Looker Studio]
@@ -56,8 +56,9 @@ flowchart LR
 
 GitHub Actions esegue il percorso di produzione ogni giorno e si autentica su Google
 Cloud tramite Workload Identity Federation. BigQuery è sia il data warehouse sia la
-sorgente di pubblicazione. Il repository non contiene ambienti Docker, database locali
-o orchestratori alternativi: esiste un solo percorso operativo, interamente online.
+sorgente di pubblicazione e riceve i dati direttamente in memoria dalla pipeline. Il
+repository non contiene snapshot, ambienti Docker, database locali o orchestratori
+alternativi: esiste un solo percorso operativo, interamente online.
 
 ## Controlli di produzione
 
@@ -67,8 +68,8 @@ o orchestratori alternativi: esiste un solo percorso operativo, interamente onli
   jitter e rispetto dell'header `Retry-After`.
 - La pipeline si interrompe con meno di 190 righe, chiavi mancanti, duplicati di
   posizione o granularità, oppure copertura metadati inferiore al 95%.
-- Gli snapshot sono append-only alla granularità
-  `chart_date + country + track_id`.
+- Le partizioni BigQuery sono aggiornate atomicamente alla granularità
+  `chart_date + country + track_id`, senza CSV o JSON intermedi.
 - Test Python, test dbt e CI impediscono la pubblicazione di dati parziali.
 - Le partizioni raw scadono dopo 365 giorni e le viste di reporting espongono soltanto
   i campi necessari alle visualizzazioni.
@@ -88,16 +89,16 @@ Looker Studio deve collegarsi alle viste seguenti nel dataset
 | `rpt_track_lifecycle` | Picco, persistenza e stato corrente del ciclo di vita |
 | `rpt_pipeline_health_daily` | Freschezza, copertura e stato della pipeline |
 
-Il repository contiene esclusivamente snapshot osservati: non presenta backfill
-sintetici come dati storici reali. Granularità, ownership e regole di qualità sono
-documentate nel [catalogo dati](docs/spotify_data_catalog.md).
+BigQuery contiene esclusivamente osservazioni reali e non presenta backfill sintetici
+come dati storici. Granularità, ownership e regole di qualità sono documentate nel
+[catalogo dati](docs/spotify_data_catalog.md).
 
 ## Esecuzione online
 
 Il progetto viene eseguito esclusivamente tramite GitHub Actions:
 
 - `spotify-update-data.yml` acquisisce la Top 200, arricchisce i Track ID tramite
-  Spotify, carica BigQuery, esegue dbt e versiona gli snapshot validati;
+  Spotify, sostituisce la sola partizione giornaliera in BigQuery ed esegue dbt;
 - `spotify-ci.yml` esegue lint, test Python e parsing del progetto dbt a ogni pull
   request e push su `main`.
 
@@ -105,6 +106,10 @@ Il progetto viene eseguito esclusivamente tramite GitHub Actions:
 giornaliero. `requirements-ci.txt` aggiunge pytest, coverage e Ruff per il job di
 qualità. Questa separazione evita di installare strumenti di test durante ogni
 aggiornamento dei dati.
+
+La cache dei metadati Spotify e le metriche delle esecuzioni sono tabelle BigQuery nel
+dataset raw. GitHub Actions usa soltanto memoria e filesystem temporaneo del runner e
+non effettua commit automatici di dati nel repository.
 
 ## Configurazione GitHub Actions
 
