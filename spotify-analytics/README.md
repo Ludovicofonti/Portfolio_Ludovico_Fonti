@@ -1,136 +1,141 @@
 # Spotify Italy Analytics
 
-Daily, production-style analytics on the Spotify Italy Top 200. The project combines
-deterministic Spotify metadata matching, historical dbt models, data-quality gates,
-BigQuery reporting views and a shared Looker Studio report.
+Piattaforma analitica aggiornata quotidianamente sulla Top 200 Spotify Italia. Il
+progetto combina acquisizione deterministica dei metadati Spotify, modelli storici dbt,
+controlli di qualità, viste BigQuery dedicate al reporting e una dashboard interattiva
+in Looker Studio.
 
 [![Spotify Analytics CI](https://github.com/ludovicofonti/Portfolio_Ludovico_Fonti/actions/workflows/spotify-ci.yml/badge.svg)](https://github.com/ludovicofonti/Portfolio_Ludovico_Fonti/actions/workflows/spotify-ci.yml)
-[![Daily refresh](https://github.com/ludovicofonti/Portfolio_Ludovico_Fonti/actions/workflows/spotify-update-data.yml/badge.svg)](https://github.com/ludovicofonti/Portfolio_Ludovico_Fonti/actions/workflows/spotify-update-data.yml)
-![dbt tests](https://img.shields.io/badge/dbt_tests-42-FF694B)
-![warehouse](https://img.shields.io/badge/warehouse-BigQuery-4285F4)
+[![Aggiornamento giornaliero](https://github.com/ludovicofonti/Portfolio_Ludovico_Fonti/actions/workflows/spotify-update-data.yml/badge.svg)](https://github.com/ludovicofonti/Portfolio_Ludovico_Fonti/actions/workflows/spotify-update-data.yml)
+![test dbt](https://img.shields.io/badge/test_dbt-42-FF694B)
+![data warehouse](https://img.shields.io/badge/data_warehouse-BigQuery-4285F4)
 ![dashboard](https://img.shields.io/badge/dashboard-Looker_Studio-669DF6)
 
-## Live dashboard
+## Dashboard
 
-[**Open the interactive Looker Studio report →**](https://datastudio.google.com/s/lDpEXFyep90)
+[**Apri il report interattivo in Looker Studio →**](https://datastudio.google.com/reporting/33349080-c859-45c9-859f-23671c6b0cc8)
 
-GitHub does not render third-party interactive iframes, so the report is linked rather
-than embedded. The dashboard reads the BigQuery reporting views directly; there is no
-CSV publication layer or duplicate analytical database.
+GitHub non consente di incorporare report interattivi di terze parti nel Markdown,
+quindi la dashboard è collegata direttamente. Looker Studio legge le viste di reporting
+in BigQuery: non esistono esportazioni CSV, un secondo database analitico o un livello
+di pubblicazione duplicato da mantenere.
 
-The current share URL redirects anonymous sessions to Google sign-in. Before sending
-the portfolio to recruiters, set the report's viewer access to “Anyone with the link”
-or add exported screenshots to this section.
-
-| Current verified snapshot | Metadata coverage | Publication warehouse |
+| Ultimo snapshot verificato | Copertura metadati | Warehouse di pubblicazione |
 | ---: | ---: | ---: |
-| 200 chart positions | 199/200 · 99.5% | BigQuery |
+| 200 posizioni in classifica | 199/200 · 99,5% | BigQuery |
 
-The [dashboard guide](docs/dashboard_guide.md) documents every visible scorecard and
-chart, including its business question, Looker Studio fields and interpretation.
+La [guida alla dashboard](docs/dashboard_guide.md) descrive ogni indicatore e grafico,
+specificando domanda di business, vista BigQuery, dimensioni, metriche e criteri di
+interpretazione.
 
-## Business objective
+## Obiettivo di business
 
-What makes a track resilient in Italy's Top 200, and which artists, releases and
-catalogue bets are gaining or losing attention? The report turns daily rank and stream
-observations into market concentration, artist share, release-stage and longevity
-signals for catalogue, marketing and A&R decisions.
+Quali caratteristiche rendono un brano resiliente nella Top 200 italiana? Quali
+artisti, release e cataloghi stanno guadagnando o perdendo attenzione? Il progetto
+trasforma osservazioni giornaliere di posizione e stream in segnali utili per decisioni
+di marketing, catalogo e A&R:
 
-## Architecture
+- concentrazione del mercato;
+- quota e ampiezza del catalogo degli artisti;
+- peso delle nuove uscite rispetto al catalogo consolidato;
+- intensità, longevità e fase del ciclo di vita dei brani.
+
+## Architettura
 
 ```mermaid
 flowchart LR
-    K[Kworb Italy Top 200] --> P[Python ingestion]
-    S[Spotify Web API by Track ID] --> P
-    P --> H{Quality gate}
-    H -->|valid| D[(BigQuery raw)]
-    H -->|invalid| L[Keep last valid data]
-    D --> B[dbt build and tests]
-    B --> M[(BigQuery marts and rpt views)]
+    K[Kworb Top 200 Italia] --> P[Acquisizione Python]
+    S[Spotify Web API tramite Track ID] --> P
+    P --> H{Controlli di qualità}
+    H -->|dati validi| D[(BigQuery raw)]
+    H -->|dati non validi| L[Mantiene l'ultimo dato valido]
+    D --> B[dbt build e test]
+    B --> M[(BigQuery marts e viste rpt)]
     M --> G[Looker Studio]
 ```
 
-GitHub Actions runs the production path daily and authenticates to Google Cloud through
-Workload Identity Federation. BigQuery is both the warehouse and publication source.
-The optional local Airflow, dlt and PostgreSQL stack is an engineering lab, not a
-production dependency.
+GitHub Actions esegue il percorso di produzione ogni giorno e si autentica su Google
+Cloud tramite Workload Identity Federation. BigQuery è sia il data warehouse sia la
+sorgente di pubblicazione. Airflow, dlt e PostgreSQL costituiscono un laboratorio locale
+opzionale e non sono dipendenze della produzione.
 
-## Production controls
+## Controlli di produzione
 
-- Kworb's Spotify Track ID is the canonical key; enrichment uses
-  `GET /tracks/{id}`, not fuzzy search.
-- Metadata is cached and requests use bounded exponential backoff, jitter and
-  `Retry-After`.
-- A refresh stops below 190 chart rows, on missing keys, duplicate grains/ranks or
-  metadata coverage below 95%.
-- Snapshots are append-only at `chart_date + country + track_id`; dbt builds the
-  historical fact and reusable marts.
-- Python tests, dbt data tests and CI run without publishing partial dashboard data.
-- Raw BigQuery partitions expire after 365 days and reporting views expose only the
-  fields required by Looker Studio.
+- Il Track ID presente su Kworb è la chiave canonica; l'arricchimento usa
+  `GET /tracks/{id}` e non il matching testuale.
+- I metadati sono memorizzati in cache; le richieste applicano backoff esponenziale,
+  jitter e rispetto dell'header `Retry-After`.
+- La pipeline si interrompe con meno di 190 righe, chiavi mancanti, duplicati di
+  posizione o granularità, oppure copertura metadati inferiore al 95%.
+- Gli snapshot sono append-only alla granularità
+  `chart_date + country + track_id`.
+- Test Python, test dbt e CI impediscono la pubblicazione di dati parziali.
+- Le partizioni raw scadono dopo 365 giorni e le viste di reporting espongono soltanto
+  i campi necessari alle visualizzazioni.
 
-## Reporting layer
+## Livello di reporting
 
-Looker Studio should connect to these purpose-built views in
-`spotify_analytics_marts`, rather than to the lower-level marts:
+Looker Studio deve collegarsi alle viste seguenti nel dataset
+`spotify_analytics_marts`, evitando l'uso diretto dei mart tecnici:
 
-| Reporting view | Dashboard use |
+| Vista | Utilizzo nella dashboard |
 | --- | --- |
-| `rpt_market_overview_daily` | Executive KPIs, Top 200 trend and release-stage mix |
-| `rpt_artist_performance_daily` | Artist ranking, market share and catalogue breadth |
-| `rpt_track_opportunities_daily` | Track intensity, longevity and action signals |
-| `rpt_release_performance_daily` | Release cohorts and collaboration analysis |
-| `rpt_chart_flow_daily` | Entries and exits |
-| `rpt_track_lifecycle` | Peak, persistence and current lifecycle state |
-| `rpt_pipeline_health_daily` | Freshness, coverage and pipeline status |
+| `rpt_market_overview_daily` | KPI esecutivi, andamento Top 200 e mix per anzianità della release |
+| `rpt_artist_performance_daily` | Classifica artisti, quota di mercato e ampiezza catalogo |
+| `rpt_track_opportunities_daily` | Intensità, longevità e segnali operativi dei brani |
+| `rpt_release_performance_daily` | Coorti di release e collaborazioni |
+| `rpt_chart_flow_daily` | Entrate e uscite dalla classifica |
+| `rpt_track_lifecycle` | Picco, persistenza e stato corrente del ciclo di vita |
+| `rpt_pipeline_health_daily` | Freschezza, copertura e stato della pipeline |
 
-The repository contains only observed snapshots. It never presents synthetic backfill
-as observed history. See the [data catalog](docs/spotify_data_catalog.md) for grains,
-ownership and quality rules.
+Il repository contiene esclusivamente snapshot osservati: non presenta backfill
+sintetici come dati storici reali. Granularità, ownership e regole di qualità sono
+documentate nel [catalogo dati](docs/spotify_data_catalog.md).
 
-## Run locally
+## Esecuzione locale
 
-Build BigQuery models from existing raw snapshots:
+Costruzione dei modelli BigQuery utilizzando gli snapshot già presenti:
 
 ```powershell
 python -m pip install -r requirements-dev.txt
 python scripts/run_public_pipeline.py --skip-extract
 ```
 
-Run a full refresh:
+Aggiornamento completo:
 
 ```powershell
 python scripts/run_public_pipeline.py
 ```
 
-The full refresh requires `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, Google
-Application Default Credentials and `GCP_PROJECT_ID`. `BIGQUERY_LOCATION` defaults
-to `EU`. The loader creates the four `spotify_analytics_*` datasets and raw tables
-when they do not exist.
+L'aggiornamento completo richiede `SPOTIFY_CLIENT_ID`,
+`SPOTIFY_CLIENT_SECRET`, le Application Default Credentials di Google e
+`GCP_PROJECT_ID`. `BIGQUERY_LOCATION` usa `EU` come valore predefinito. Il loader
+crea i quattro dataset `spotify_analytics_*` e le tabelle raw se non esistono.
 
-Optional local Airflow/PostgreSQL lab:
+Laboratorio locale Airflow/PostgreSQL:
 
 ```powershell
 docker compose up -d postgres redis airflow-init airflow-apiserver airflow-scheduler
 ```
 
-## GitHub Actions configuration
+## Configurazione GitHub Actions
 
-The daily schedule remains in `.github/workflows/spotify-update-data.yml`.
+La schedulazione giornaliera rimane in
+`.github/workflows/spotify-update-data.yml`.
 
-| Type | Name | Purpose |
+| Tipo | Nome | Scopo |
 | --- | --- | --- |
-| Variable | `GCP_PROJECT_ID` | Google Cloud project containing the Spotify datasets |
-| Variable | `GCP_WORKLOAD_IDENTITY_PROVIDER` | WIF provider resource name |
-| Variable | `GCP_SPOTIFY_SERVICE_ACCOUNT` | Spotify-only pipeline service account |
-| Variable | `BIGQUERY_LOCATION` | BigQuery dataset location, normally `EU` |
-| Secret | `SPOTIFY_CLIENT_ID` | Spotify Client Credentials authentication |
-| Secret | `SPOTIFY_CLIENT_SECRET` | Spotify Client Credentials authentication |
+| Variabile | `GCP_PROJECT_ID` | Progetto Google Cloud contenente i dataset Spotify |
+| Variabile | `GCP_WORKLOAD_IDENTITY_PROVIDER` | Resource name del provider WIF |
+| Variabile | `GCP_SPOTIFY_SERVICE_ACCOUNT` | Service account dedicato alla pipeline Spotify |
+| Variabile | `BIGQUERY_LOCATION` | Località dei dataset BigQuery, normalmente `EU` |
+| Segreto | `SPOTIFY_CLIENT_ID` | Autenticazione Spotify Client Credentials |
+| Segreto | `SPOTIFY_CLIENT_SECRET` | Autenticazione Spotify Client Credentials |
 
-No Google service-account key is stored in GitHub. The workflow uses short-lived WIF
-credentials and does not deploy a GitHub Pages application.
+Nessuna chiave JSON di service account viene salvata su GitHub. Il workflow usa
+credenziali WIF temporanee e non esegue deploy su GitHub Pages.
 
-## Quality checks
+## Verifiche di qualità
 
 ```powershell
 ruff check dlt scripts tests airflow/dags
@@ -138,33 +143,33 @@ pytest
 dbt parse --project-dir dbt --profiles-dir dbt --target bigquery --no-partial-parse
 ```
 
-The suite validates parsing, retries, publication gates, unique chart grain, unique
-daily ranks, rank and stream ranges, non-future dates, peak consistency and metadata
-completeness.
+La suite verifica parsing, retry, controlli di pubblicazione, unicità della granularità
+e delle posizioni giornaliere, intervalli validi di rank e stream, date future,
+coerenza del ciclo di vita e completezza dei metadati.
 
-## Sources and limitations
+## Fonti e limitazioni
 
-- [Kworb Spotify Italy Daily](https://kworb.net/spotify/country/it_daily.html) supplies
-  chart position and stream observations.
-- Spotify Web API supplies track, artist and album metadata; Spotify links and artwork
-  retain source attribution.
-- The project is not affiliated with Spotify and does not use Spotify content to train
-  AI or machine-learning models.
-- Historical depth starts with the first collected snapshot.
-- Audio features unavailable to newer Spotify applications are intentionally excluded.
+- [Kworb Spotify Italy Daily](https://kworb.net/spotify/country/it_daily.html) fornisce
+  posizione e stream osservati.
+- Spotify Web API fornisce metadati di brano, artista e album; link e immagini
+  mantengono l'attribuzione alla sorgente.
+- Il progetto non è affiliato a Spotify e non usa contenuti Spotify per addestrare
+  modelli di intelligenza artificiale o machine learning.
+- La profondità storica parte dal primo snapshot acquisito.
+- Le audio feature non disponibili alle nuove applicazioni Spotify sono escluse.
 
-## Repository guide
+## Struttura del repository
 
-| Path | Role |
+| Percorso | Ruolo |
 | --- | --- |
-| `scripts/` | Validated extraction, BigQuery loading and orchestration |
-| `dbt/` | Staging, intermediate, marts and reporting views with data tests |
-| `tests/` | Offline regression tests and saved source fixture |
-| `airflow/`, `dlt/` | Optional local orchestration and ingestion lab |
-| [`docs/dashboard_guide.md`](docs/dashboard_guide.md) | Dashboard questions, fields and interpretation |
-| [`docs/spotify_data_catalog.md`](docs/spotify_data_catalog.md) | Sources, grains, ownership and limitations |
+| `scripts/` | Acquisizione validata, caricamento BigQuery e orchestrazione |
+| `dbt/` | Staging, intermediate, mart e viste di reporting con test dati |
+| `tests/` | Test di regressione offline e fixture della sorgente |
+| `airflow/`, `dlt/` | Laboratorio locale opzionale di orchestrazione e ingestione |
+| [`docs/dashboard_guide.md`](docs/dashboard_guide.md) | Domande, campi e interpretazione della dashboard |
+| [`docs/spotify_data_catalog.md`](docs/spotify_data_catalog.md) | Fonti, granularità, ownership e limitazioni |
 
-`requirements.txt` is the single runtime dependency set. `requirements-dev.txt`
-extends it with test, coverage, lint and pre-commit tooling. Credentials are excluded
-and must be supplied through environment variables, Application Default Credentials or
-GitHub repository settings.
+`requirements.txt` contiene le dipendenze runtime. `requirements-dev.txt` aggiunge
+test, copertura, lint e pre-commit. Le credenziali non sono versionate e devono essere
+fornite tramite variabili d'ambiente, Application Default Credentials o impostazioni
+del repository GitHub.
