@@ -8,7 +8,9 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Run ingestion, dbt-BigQuery and Evidence export.")
+    parser = argparse.ArgumentParser(
+        description="Run ingestion and dbt transformations in BigQuery."
+    )
     parser.add_argument(
         "--skip-extract",
         action="store_true",
@@ -24,7 +26,7 @@ def run(command, cwd=PROJECT_DIR, env=None):
 def main():
     args = parse_args()
     if not args.skip_extract:
-        run([sys.executable, "scripts/refresh_public_data.py", "--extract-only"])
+        run([sys.executable, "scripts/refresh_public_data.py"])
     run([sys.executable, "scripts/load_bigquery_raw.py"])
 
     dbt_env = os.environ.copy()
@@ -35,7 +37,6 @@ def main():
         cwd=PROJECT_DIR / "dbt",
         env=dbt_env,
     )
-    run([sys.executable, "scripts/export_bigquery_marts.py"])
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@ import csv
 
 import pytest
 
-from scripts.refresh_public_data import parse_rank_change, validate_chart_rows, write_csv
+from scripts.refresh_public_data import validate_chart_rows, write_csv
 
 
 def chart_row(rank=1, track_id="track-1"):
@@ -13,14 +13,6 @@ def chart_row(rank=1, track_id="track-1"):
         "track_id": track_id,
         "streams": 100,
     }
-
-
-@pytest.mark.parametrize(
-    ("value", "expected"),
-    [("NEW", 0), ("RE", 0), ("=", 0), ("", 0), (None, 0), ("+4", 4), ("-2", -2)],
-)
-def test_parse_rank_change(value, expected):
-    assert parse_rank_change(value) == expected
 
 
 def test_validate_chart_rows_rejects_incomplete_or_duplicate_snapshots():

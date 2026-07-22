@@ -8,7 +8,6 @@ from google.api_core.exceptions import NotFound
 from google.cloud import bigquery
 
 from scripts.bigquery_config import BigQueryConfig
-from scripts.export_bigquery_marts import export_marts, query_for_table
 from scripts.load_bigquery_raw import (
     DAY_MS,
     RAW_RETENTION_DAYS,
@@ -174,56 +173,6 @@ def test_bootstrap_and_raw_table_controls():
     assert job_config.time_partitioning.expiration_ms == RAW_RETENTION_DAYS * DAY_MS
     assert job_config.clustering_fields == ["track_id"]
     assert client.updated[0][0].require_partition_filter is True
-
-
-class FakeQueryResult(list):
-    schema = [bigquery.SchemaField("chart_date", "DATE"), bigquery.SchemaField("value", "INTEGER")]
-
-    def result(self):
-        return self
-
-
-class FakeQueryClient:
-    def list_tables(self, _dataset):
-        return [SimpleNamespace(table_id="mart_test", reference="mart-ref")]
-
-    def get_table(self, _reference):
-        return SimpleNamespace(
-            table_id="mart_test",
-            schema=[
-                bigquery.SchemaField("chart_date", "DATE"),
-                bigquery.SchemaField("value", "INTEGER"),
-            ],
-        )
-
-    def query(self, query, **kwargs):
-        self.query_text = query
-        self.query_kwargs = kwargs
-        return FakeQueryResult([{"chart_date": "2026-07-17", "value": 1}])
-
-
-def test_bigquery_export_is_bounded_and_atomic(tmp_path):
-    client = FakeQueryClient()
-    config = bigquery_config()
-    exported = export_marts(client, config, tmp_path, history_days=90)
-    assert exported == {"mart_test": 1}
-    assert "interval 90 day" in client.query_text
-    assert client.query_kwargs["job_config"].maximum_bytes_billed == 10_000_000_000
-    assert (tmp_path / "mart_test.csv").read_text(encoding="utf-8").splitlines() == [
-        "chart_date,value",
-        "2026-07-17,1",
-    ]
-    assert b"\r\n" not in (tmp_path / "mart_test.csv").read_bytes()
-    assert not (tmp_path / "mart_test.csv.tmp").exists()
-
-
-def test_export_history_range_validation():
-    with pytest.raises(ValueError, match="history_days"):
-        export_marts(FakeQueryClient(), bigquery_config(), None, history_days=0)
-    table = SimpleNamespace(
-        table_id="mart_test", schema=[bigquery.SchemaField("value", "INTEGER")]
-    )
-    assert "where" not in query_for_table(bigquery_config(), table, 90).lower()
 
 
 def test_bigquery_models_do_not_use_current_as_an_alias():

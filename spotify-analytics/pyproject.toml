@@ -5,7 +5,7 @@ addopts = "--cov=dlt --cov=scripts --cov-report=term-missing --cov-fail-under=40
 [tool.ruff]
 target-version = "py312"
 line-length = 100
-exclude = ["airflow/logs", "dbt/target", "evidence/node_modules", "graphify-out"]
+exclude = ["airflow/logs", "dbt/target", "graphify-out"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]
@@ -14,7 +14,6 @@ select = ["E", "F", "I", "B", "UP"]
 omit = [
   "dlt/spotify_pipeline.py",
   "dlt/spotify_source.py",
-  "scripts/export_bigquery_marts.py",
   "scripts/load_bigquery_raw.py",
   "scripts/run_public_pipeline.py",
 ]

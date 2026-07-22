@@ -50,15 +50,3 @@ jobs:
           DBT_PROFILES_DIR: ${{ github.workspace }}/spotify-analytics/dbt
           GCP_PROJECT_ID: spotify-analytics-ci
         run: dbt parse --project-dir dbt --target bigquery --no-partial-parse
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: npm
-          cache-dependency-path: spotify-analytics/evidence/package-lock.json
-
-      - name: Build Evidence
-        run: |
-          npm ci --prefix evidence --no-audit --no-fund
-          npm run sources --prefix evidence
-          npm run build --prefix evidence
