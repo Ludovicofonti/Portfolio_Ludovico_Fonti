@@ -15,14 +15,6 @@ in Looker Studio.
 
 [**Apri il report interattivo in Looker Studio →**](https://datastudio.google.com/reporting/33349080-c859-45c9-859f-23671c6b0cc8)
 
-GitHub non consente di incorporare report interattivi di terze parti nel Markdown,
-quindi la dashboard è collegata direttamente. Looker Studio legge le viste di reporting
-in BigQuery: non esistono esportazioni CSV, un secondo database analitico o un livello
-di pubblicazione duplicato da mantenere.
-
-| Ultimo snapshot verificato | Copertura metadati | Warehouse di pubblicazione |
-| ---: | ---: | ---: |
-| 200 posizioni in classifica | 199/200 · 99,5% | BigQuery |
 
 La [guida alla dashboard](docs/dashboard_guide.md) descrive ogni indicatore e grafico,
 specificando domanda di business, vista BigQuery, dimensioni, metriche e criteri di
@@ -56,9 +48,7 @@ flowchart LR
 
 GitHub Actions esegue il percorso di produzione ogni giorno e si autentica su Google
 Cloud tramite Workload Identity Federation. BigQuery è sia il data warehouse sia la
-sorgente di pubblicazione e riceve i dati direttamente in memoria dalla pipeline. Il
-repository non contiene snapshot, ambienti Docker, database locali o orchestratori
-alternativi: esiste un solo percorso operativo, interamente online.
+sorgente di pubblicazione e riceve i dati direttamente in memoria dalla pipeline.
 
 ## Controlli di produzione
 
@@ -69,7 +59,7 @@ alternativi: esiste un solo percorso operativo, interamente online.
 - La pipeline si interrompe con meno di 190 righe, chiavi mancanti, duplicati di
   posizione o granularità, oppure copertura metadati inferiore al 95%.
 - Le partizioni BigQuery sono aggiornate atomicamente alla granularità
-  `chart_date + country + track_id`, senza CSV o JSON intermedi.
+  `chart_date + country + track_id`.
 - Test Python, test dbt e CI impediscono la pubblicazione di dati parziali.
 - Le partizioni raw scadono dopo 365 giorni e le viste di reporting espongono soltanto
   i campi necessari alle visualizzazioni.

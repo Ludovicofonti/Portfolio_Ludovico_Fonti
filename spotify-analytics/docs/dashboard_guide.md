@@ -56,8 +56,7 @@ selezionato e costituisce il valore di riferimento per valutare picchi o rallent
 **Domanda di business:** il consumo complessivo sta crescendo o diminuendo?
 
 **Significato:** misura la variazione media giornaliera degli stream della Top 200. Un
-valore positivo indica espansione; un valore negativo indica contrazione. Nel layout
-attuale la scorecard compare due volte: deve rimanerne una sola.
+valore positivo indica espansione; un valore negativo indica contrazione.
 
 ### Quota Stream Top 10
 
@@ -136,8 +135,7 @@ catalogo consolidato?
 
 **Significato:** ogni colonna divide gli stream giornalieri in tre fasce di anzianità.
 Una crescita della quota fresh indica un mercato guidato dalle release; una crescita
-del catalogo segnala consumo evergreen. Il grafico deve usare direttamente le tre
-metriche, senza categoria “Altri”, così ogni data totalizza il 100%.
+del catalogo segnala consumo evergreen. 
 
 ## Pagina 2 — Dinamiche di artisti e brani
 
@@ -196,9 +194,7 @@ i cambi di leadership?
 
 **Significato:** ogni linea rappresenta la quota giornaliera dell'artista sugli stream
 totali della Top 200. Movimenti paralleli possono dipendere dal mercato complessivo;
-un'impennata isolata è più probabilmente legata a una release. Lo screenshot mostra un
-picco temporaneo di ANNA a metà luglio: i giorni successivi permettono di distinguere
-un lancio da una crescita strutturale.
+un'impennata isolata è più probabilmente legata a una release. Confrontare gli stream durante il picco e quelli nei giorni successivi permette di distinguere un lancio da una crescita strutturale.
 
 ### Longevità vs Intensità
 
@@ -222,8 +218,7 @@ mantenimento efficiente. La dimensione della bolla evidenzia i movimenti più ri
 
 ## Lettura dello snapshot condiviso
 
-Gli screenshot forniti mostrano dati aggiornati al **20 luglio 2026**. I valori sono una
-fotografia del periodo; il report cambia dopo ogni aggiornamento schedulato riuscito.
+A titolo di esempio, la tabella mostra i dati aggiornati al **20 luglio 2026**. I valori sono una fotografia del periodo; il report cambia dopo ogni aggiornamento schedulato riuscito.
 
 - Stream giornalieri medi: circa **16,8 milioni**.
 - Variazione giornaliera media: circa **−126 mila stream**.
