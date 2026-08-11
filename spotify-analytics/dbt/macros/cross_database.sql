@@ -21,8 +21,8 @@
 {% macro parse_partial_date(expression) -%}
     case
         when {{ expression }} is null then null
-        when length({{ expression }}) = 4 then cast({{ expression }} || '-01-01' as date)
-        when length({{ expression }}) = 7 then cast({{ expression }} || '-01' as date)
-        else cast({{ expression }} as date)
+        when length({{ expression }}) = 4 then safe_cast({{ expression }} || '-01-01' as date)
+        when length({{ expression }}) = 7 then safe_cast({{ expression }} || '-01' as date)
+        else safe_cast({{ expression }} as date)
     end
 {%- endmacro %}
