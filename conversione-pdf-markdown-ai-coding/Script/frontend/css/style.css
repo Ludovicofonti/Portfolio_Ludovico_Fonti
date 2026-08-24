@@ -45,6 +45,19 @@ h2 {
   text-align: center;
 }
 
+.banner.success {
+  background: #d1e7dd;
+  color: #0f5132;
+  border-color: #badbcc;
+}
+
+.privacy-note {
+  margin: -0.5rem 0 1.5rem;
+  color: #555;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
 /* Upload dropzone */
 #dropzone {
   border: 3px dashed #ccc;
@@ -146,6 +159,20 @@ h2 {
 
 .btn:hover {
   background: #357abd;
+}
+
+.btn-secondary {
+  background: #5c636a;
+}
+
+.btn-secondary:hover {
+  background: #454b50;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 /* Sections spacing */

@@ -4,62 +4,88 @@
 
 ## 📌 Contesto
 
-Il progetto studia il legame tra i **ricavi trimestrali di Apple** e un insieme di **indicatori macroeconomici esterni** (Q4 1990 – Q4 2021), con l'obiettivo di formulare una previsione per il **primo trimestre 2022**. L'approccio integra modelli statistici (ARIMA) e machine learning (Support Vector Regression) per catturare relazioni non lineari tra variabili esogene e performance aziendale.
+Il progetto analizza la relazione tra i **ricavi trimestrali di Apple** e tre indicatori macroeconomici: fiducia dei consumatori USA, fiducia delle imprese USA e prezzo del rame. L'obiettivo è valutare un modello di Support Vector Regression su una finestra temporale di test e produrre una previsione dei ricavi per i quattro trimestri successivi alle osservazioni contenute nel dataset.
 
-## 🏗️ Pipeline di Analisi
+## 🎯 Obiettivo
 
-### 1. Variabili Macroeconomiche Analizzate
-- **Fiducia dei consumatori USA** — indicatore instabile, con forte declino post-2007 e durante il COVID-19
-- **Fiducia delle imprese USA** — più stabile, con lieve flessione nel lungo periodo
-- **Prezzo del rame (Copper)** — variabile ciclica e volatile, legata alla domanda di componenti elettronici
-- **PCE (Personal Consumption Expenditures)** — crescita costante, indicatore di domanda strutturale solida
-- **IT Investment** — investimenti in tecnologia, rallentamento post-2015 per possibile maturazione del settore
+- Preparare serie trimestrali stazionarie e confrontabili.
+- Stimare le variazioni dei ricavi con una **Support Vector Regression (SVR)** a kernel radiale.
+- Valutare il modello sulle ultime 10 osservazioni disponibili.
+- Approssimare la SVR con modelli surrogati più interpretabili.
+- Generare previsioni a quattro trimestri usando stime ARIMA delle variabili esogene.
 
-### 2. Preprocessing delle Serie Temporali
-- Trasformazione in **logaritmi naturali** per stabilizzare la varianza
-- **Differenziazione** per soddisfare le condizioni di stazionarietà richieste da ARIMA
+## 🏗️ Pipeline di analisi
 
-### 3. Modelli ARIMA per le Variabili Esogene
-Previsione di ciascuna variabile macroeconomica per alimentare il modello SVR:
+### 1. Dati utilizzati
 
-| Variabile | Modello ARIMA |
-|-----------|--------------|
-| Copper | ARIMA(0,1,0) |
-| PCE | ARIMA(1,1,0) |
-| IT Investment | ARIMA(0,1,0) |
-| Business Confidence | ARIMA(0,1,0) + dummy Q4-2008 |
-| Consumer Confidence | ARIMA(1,1,0) |
+Il file `Script/Ricavi_APPLE.xlsx`, foglio `Dati APPLE`, contiene:
 
-### 4. Modello Predittivo — Support Vector Regression (SVR)
-- **Kernel radiale (RBF)** per catturare pattern complessi e non lineari
-- Split train/test: **80% / 20%**, validazione incrociata a **5 fold**, tuning automatico dei parametri
-- **Albero decisionale come modello surrogato** per l'interpretabilità del modello SVR (black box → white box)
+- ricavi trimestrali Apple;
+- fiducia dei consumatori USA;
+- fiducia delle imprese USA;
+- prezzo del rame (`Copper`).
 
-## 🔍 Importanza delle Variabili (dal modello surrogato)
+### 2. Preprocessing delle serie temporali
 
-| Variabile | Ruolo nel modello |
-|-----------|------------------|
-| **Copper** (prezzo rame) | **Driver principale** — rame elevato → ricavi più alti; usato nei componenti tech, sensibile ai cicli economici |
-| **IT Investment** | Impatto positivo quando gli investimenti sono elevati |
-| **PCE** | Influenza moderata; se molto bassa penalizza le previsioni anche con buoni IT Investment |
-| **Business & Consumer Confidence** | Peso minore, ma rilevante in combinazione: entrambi bassi → previsioni peggiori |
+- Test Augmented Dickey-Fuller per verificare la stazionarietà.
+- Differenziazione al primo ordine di ricavi, fiducia dei consumatori e rame.
+- Mantenimento della fiducia delle imprese in livello, poiché trattata come già stazionaria.
+- Standardizzazione Z-score con conservazione dei parametri necessari alla successiva trasformazione inversa.
+- Suddivisione temporale: le ultime 10 osservazioni formano il test set.
 
-## 📊 Previsione Q1 2022
+### 3. Modello predittivo SVR
 
-| Metrica | Valore |
-|---------|--------|
-| **Ricavi stimati** | **97.520** |
-| Intervallo di confidenza 95% | 97.520 – 105.752 |
-| RMSE | 6.424,33 |
+- Kernel radiale RBF.
+- Cross-validation per serie temporali con `initialWindow = 60`, `horizon = 10` e finestra espandibile.
+- Grid search su 121 combinazioni di `C` e `sigma`, entrambe nell'intervallo da 2⁻⁵ a 2⁵.
+- Valutazione sul test set tramite MAE, RMSE e R².
 
-Il modello indica una **crescita stabile e moderata**, confermando la resilienza del business Apple in un contesto macroeconomico incerto, probabilmente sostenuta dalla fedeltà della clientela e dalla domanda strutturale di prodotti tech.
+### 4. Interpretabilità
+
+Le predizioni della SVR vengono approssimate con due modelli surrogati:
+
+- albero decisionale `rpart`, con ranking dell'importanza delle variabili;
+- regressione polinomiale di secondo grado.
+
+La fedeltà dei surrogati è misurata confrontando le loro predizioni con quelle della SVR tramite R².
+
+### 5. Previsione dei quattro trimestri successivi
+
+Le variabili esogene future vengono stimate separatamente:
+
+| Variabile | Modello ARIMA | Note |
+|---|---|---|
+| Fiducia consumatori differenziata | ARIMA(1,0,1)(1,0,0)[4] | Stagionalità trimestrale |
+| Fiducia imprese | ARIMA(1,0,1)(0,0,1)[4] | Dummy per dicembre 2008 |
+| Rame differenziato | ARIMA(1,0,1)(0,0,1)[4] | Stagionalità trimestrale |
+
+Le stime vengono passate alla SVR, trasformate nuovamente nella scala originale e cumulate a partire dall'ultimo ricavo osservato.
+
+## 📊 Output
+
+Lo script calcola a runtime:
+
+- MAE, RMSE e R² sul test set;
+- R² di fedeltà dei due modelli surrogati;
+- confronto grafico tra valori reali, SVR e surrogati;
+- tabella delle previsioni dei ricavi per quattro trimestri, con intervallo di confidenza al 95%.
+
+I valori numerici non sono riportati in modo statico nel README: dipendono dall'esecuzione sul dataset e dalla versione delle dipendenze installate.
 
 ## 🧰 Tech Stack
 
-`R` · `ARIMA` · `Support Vector Regression (SVR)` · `Albero Decisionale (surrogato)` · `Trasformazione Logaritmica` · `Cross-Validation`
+`R` · `forecast` · `caret` · `e1071` · `SVR` · `ARIMA` · `rpart` · `Time-Series Cross-Validation`
+
+## 📁 Struttura
+
+| Percorso | Contenuto |
+|---|---|
+| `Script/analisi_previsione_ricavi_apple.R` | Pipeline completa di analisi e previsione |
+| `Script/Ricavi_APPLE.xlsx` | Dataset di input |
+| [`Script/README.md`](./Script/README.md) | Documentazione tecnica dettagliata |
 
 ## 🏷️ Tags
 
 `Time Series` · `Forecasting` · `SVR` · `ARIMA` · `Variabili Macroeconomiche` · `Apple` · `Finance`
 
-> Progetto didattico basato su dati finanziari e macroeconomici pubblicamente accessibili. Le analisi non costituiscono consulenza finanziaria o raccomandazione di investimento; per ogni riuso degli input vanno verificate fonte e licenza.
+> Progetto didattico basato su dati finanziari e macroeconomici. Le analisi non costituiscono consulenza finanziaria o raccomandazione di investimento; per ogni riuso degli input vanno verificate fonte, licenza e condizioni d'uso.

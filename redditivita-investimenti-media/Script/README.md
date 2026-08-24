@@ -18,8 +18,9 @@ Lo script `analisi_redditivita_media.R` stima l'EPS (Earnings Per Share) a 12 me
 
 ### 1. Caricamento Dati
 
-- **Training set**: `Russell_3000_Fundamentals_Enlarged_With_README.xlsx` (due fogli: dataset features e target), uniti tramite `left_join` su `Record ID`.
-- **Test set**: `Dati_Sintetici_Settore_Media.csv` con fondamentali di aziende italiane del settore media.
+- **Training set richiesto**: `Russell_3000_Fundamentals_Enlarged_With_README.xlsx` (due fogli: dataset features e target), uniti tramite `left_join` su `Record ID`.
+- **Test set richiesto**: `Dati_Sintetici_Settore_Media.csv` con fondamentali di aziende italiane del settore media.
+- I due file di input **non sono inclusi nel repository**. Per eseguire lo script occorre fornire dataset compatibili e verificarne licenza, provenienza e autorizzazioni d'uso.
 - Rinomina delle variabili: `RETURN_ON_ EQUITY` → `ROE`, `RETURN_ON_ASSET` → `ROA`, `RETURN_ON_INVESTED_CAPITAl` → `ROIC`.
 
 ### 2. Analisi Esplorativa (EDA)
@@ -85,5 +86,5 @@ Lo script `analisi_redditivita_media.R` stima l'EPS (Earnings Per Share) a 12 me
 | File | Descrizione |
 |---|---|
 | `analisi_redditivita_media.R` | Script completo dell'analisi |
-| `Russell_3000_Fundamentals_Enlarged_With_README.xlsx` | Dataset Russell 3000 (training) |
-| `Dati_Sintetici_Settore_Media.csv` | Dataset aziende italiane del settore media (test) |
+| `Russell_3000_Fundamentals_Enlarged_With_README.xlsx` | Input di training richiesto, non incluso nel repository |
+| `Dati_Sintetici_Settore_Media.csv` | Input di test richiesto, non incluso nel repository |

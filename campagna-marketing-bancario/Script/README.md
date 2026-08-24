@@ -20,6 +20,7 @@ Lo script `analisi_campagna_marketing.R` segue una pipeline sequenziale in 22 st
 
 - Due fogli Excel (`Features` e `Targets`) vengono uniti tramite `left_join` sulla chiave `Record ID`.
 - I nomi delle colonne vengono normalizzati con `make_clean_names`.
+- Il file `Marketing_Campaign.xlsx` è un input richiesto ma **non è incluso nel repository**. Per l'esecuzione va fornito un file compatibile, utilizzabile nel rispetto di privacy, licenza e autorizzazioni applicabili.
 
 ### 2. Analisi Esplorativa
 
@@ -129,4 +130,4 @@ Variabili escluse dal modello:
 | File | Descrizione |
 |---|---|
 | `analisi_campagna_marketing.R` | Script completo dell'analisi |
-| `Marketing_Campaign.xlsx` | Dataset di input (fogli: Features, Targets) |
+| `Marketing_Campaign.xlsx` | Input richiesto (fogli: Features, Targets), non incluso nel repository |

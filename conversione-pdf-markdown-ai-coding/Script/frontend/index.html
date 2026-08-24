@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,11 @@
 
         <div id="health-banner" class="banner hidden"></div>
 
+        <p id="privacy-note" class="privacy-note">
+            Nella modalità predefinita i documenti restano in memoria e vengono
+            elaborati esclusivamente sul dispositivo.
+        </p>
+
         <!-- Upload Section -->
         <section id="upload-section">
             <div id="dropzone">
@@ -23,6 +28,7 @@
         <!-- Error Section -->
         <section id="error-section" class="hidden">
             <div class="error-message" id="error-message"></div>
+            <button id="error-reset-btn" class="btn btn-secondary">Nuova conversione</button>
         </section>
 
         <!-- Progress Section -->
@@ -39,7 +45,10 @@
             <h2>Markdown Preview</h2>
             <div id="confidence-warnings"></div>
             <pre id="markdown-preview"></pre>
-            <button id="download-btn" class="btn">Download .md</button>
+            <div class="actions">
+                <button id="download-btn" class="btn">Download .md</button>
+                <button id="reset-btn" class="btn btn-secondary">Elimina e ricomincia</button>
+            </div>
         </section>
     </main>
     <script src="/static/js/app.js"></script>

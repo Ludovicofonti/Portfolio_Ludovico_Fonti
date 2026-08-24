@@ -15,24 +15,45 @@ Realizzare una web app locale che trasformi PDF "sporchi" o scansionati in file 
 Il progetto abilita un flusso semplice:
 
 1. Caricamento di uno o più PDF da interfaccia web
-2. Conversione delle pagine tramite OCR locale
+2. Estrazione del text layer oppure OCR locale delle sole pagine scansionate
 3. Generazione di un documento Markdown consolidato
 4. Anteprima del risultato
 5. Download del file `.md` o di un archivio `.zip` in caso di conversione batch
 
 ## 🏗️ Soluzione
 
-La soluzione è una **web app local-first** per convertire documenti PDF in Markdown strutturato usando OCR eseguito tramite Ollama.
+La soluzione è una **web app local-first** per convertire documenti PDF in Markdown strutturato. Per le scansioni usa RapidOCR/ONNX su CPU; Ollama con GLM-OCR resta una modalità opzionale per layout complessi.
 
 Il sistema:
 
 - Accetta PDF singoli o multipli tramite drag-and-drop
-- Renderizza ogni pagina del PDF lato server
-- Invia le immagini a un modello OCR locale tramite Ollama
+- Estrae direttamente il testo quando il PDF contiene già un text layer
+- Renderizza e invia al motore OCR locale solo le pagine che richiedono OCR
 - Ricostruisce un unico documento Markdown ordinato
 - Mostra l'avanzamento pagina per pagina
 - Espone una preview read-only prima del download
 - Gestisce errori comuni come file non validi, PDF protetti da password, servizio OCR non disponibile, file troppo grandi o documenti con troppe pagine
+
+## ▶️ Avvio Rapido
+
+È richiesto Python 3.11 o successivo. Ollama non è necessario nella configurazione predefinita.
+
+Da PowerShell, partendo dalla radice del portfolio:
+
+```powershell
+cd .\conversione-pdf-markdown-ai-coding\Script
+python -m venv backend\.venv
+.\backend\.venv\Scripts\python.exe -m pip install -r backend\requirements.txt
+.\start.ps1
+```
+
+Aprire quindi `http://127.0.0.1:8000`. Gli avvii successivi richiedono soltanto `.\start.ps1`. Per arrestare il server usare `Ctrl+C`.
+
+Se PowerShell impedisce l'esecuzione dello script:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\start.ps1
+```
 
 ## 💼 Utilità Business
 
@@ -53,13 +74,13 @@ Il progetto risponde a un'esigenza concreta: rendere documenti statici e diffici
 |------|-----------|
 | Produttività | Riduce il tempo necessario per trasformare PDF in contenuti riutilizzabili |
 | Qualità del dato | Produce output più ordinato rispetto al copia-incolla manuale da PDF |
-| Riservatezza | Usa OCR locale tramite Ollama, adatto a documenti sensibili in ambienti trusted |
+| Riservatezza | Mantiene PDF e risultati in RAM e blocca endpoint/modelli cloud per impostazione predefinita |
 | Scalabilità operativa | Supporta conversione batch di più PDF nella stessa sessione |
 | Integrazione AI | Prepara documenti in formato Markdown, ideale per pipeline RAG e LLM |
 
 ## 🧰 Tech Stack
 
-`Python` · `FastAPI` · `PyMuPDF` · `Ollama` · `OCR locale` · `Vanilla HTML/CSS/JavaScript` · `Server-Sent Events`
+`Python` · `FastAPI` · `PyMuPDF` · `RapidOCR` · `ONNX Runtime` · `Ollama opzionale` · `Vanilla HTML/CSS/JavaScript` · `Server-Sent Events`
 
 ## 🔄 Flusso Funzionale
 
@@ -70,13 +91,11 @@ PDF caricati dall'utente
 Validazione file
         │
         ▼
-Rendering PDF → immagini PNG
-        │
-        ▼
-OCR locale tramite Ollama
-        │
-        ▼
-Pulizia e assemblaggio Markdown
+Text layer nativo?
+   ├── sì ──► estrazione diretta ─────────┐
+   └── no ──► rendering ──► OCR locale ──┤
+                                         ▼
+                            Pulizia e assemblaggio Markdown
         │
         ▼
 Preview web + download .md/.zip

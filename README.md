@@ -13,10 +13,10 @@ Data Scientist con background economico-statistico, specializzato nel ciclo end-
 | Area | Tecnologie |
 |------|-----------|
 | **Linguaggi** | Python, SQL, R |
-| **Database** | MongoDB, SQL Server, PySpark |
+| **Database & Data Platform** | MongoDB, SQL Server, BigQuery, DuckDB, PySpark |
 | **Machine Learning** | Scikit-Learn, XGBoost, Regressione, Classificazione, Clustering, Time Series |
 | **Deep Learning** | PyTorch, TensorFlow |
-| **Generative AI** | LLM, RAG, Prompt Engineering |
+| **Generative AI & Document AI** | LLM, RAG, Prompt Engineering, OCR locale |
 | **Cloud & MLOps** | Azure Machine Learning, Azure OpenAI, Azure Data Factory, Docker, Microsoft Fabric |
 | **BI & Data Viz** | Power BI (DAX), Tableau, Qlik, Looker Studio |
 | **Version Control** | Git, GitHub |
@@ -43,31 +43,31 @@ Data Scientist con background economico-statistico, specializzato nel ciclo end-
 
 #### Azienda settore servizi alla PA / tributi locali
 
-| Progetto | Ambito | Tech |
+| Progetto | Ambito | Tecnologie / metodi |
 |----------|--------|------|
 | [Ricerca intelligente su documentazione aziendale](./ricerca-intelligente-documenti) | AI Generativa · Ricerca Documentale | LLM, RAG, OCR, Vector Search |
-| [Automazione Documentale](./automazione-documentale) | Automazione con AI | LLM, Pipeline, NLP |
+| [Automazione Documentale](./automazione-documentale) | Automazione con AI | LLM, RAG, Ricerca semantica, Structured Output |
 | [Scoring geospaziale di asset fisici](./valorizzazione-impianti-pubblicitari) | ML · Geospaziale | ML, Feature Engineering, Data Visualization |
 | [Formazione e documentazione su strumenti AI](./formazione-strumenti-ai) | Formazione · Knowledge Sharing | Technical Writing, AI Adoption, Mentoring |
 
 #### Software house B2B / controllo di gestione
 
-| Progetto | Ambito | Tech |
+| Progetto | Ambito | Tecnologie / metodi |
 |----------|--------|------|
 | [Previsioni Avanzate con Dati Esterni](./previsioni-avanzate-dati-esterni) | Previsioni · ML | Scikit-Learn, API, Time Series |
 | [Automazione Demo Commerciali](./automazione-demo-commerciali) | Automazione · SQL | SQL Server, Stored Procedures |
 
 ### 💻 Progetti personali con codice pubblico
 
-| Progetto | Ambito | Tech |
+| Progetto | Ambito | Tecnologie / metodi |
 |----------|--------|------|
-| [Spotify Italy Analytics](./spotify-analytics) | Data Engineering · Analytics Dashboard | Airflow, dlt, PostgreSQL, dbt, Evidence, GitHub Actions |
+| [Spotify Italy Analytics](./spotify-analytics) | Data Engineering · Analytics Dashboard | Python, BigQuery, dbt, Looker Studio, GitHub Actions |
 | [Financial Time Series Research Platform](./financial-time-series-analysis) | Quant Research · Data Engineering · Risk | Python, DuckDB, dbt, dlt, statsmodels |
-| [Conversione PDF a Markdown con AI](./conversione-pdf-markdown-ai-coding) | AI Generativa · Coding Agent | Python, LLM, FastAPI, React |
+| [Conversione PDF a Markdown local-first](./conversione-pdf-markdown-ai-coding) | Document AI · OCR · Privacy-first | Python, FastAPI, PyMuPDF, RapidOCR/ONNX, JavaScript, Ollama opzionale |
 
 ### 🎓 Progetti universitari / case study
 
-| Progetto | Natura | Tech |
+| Progetto | Natura | Tecnologie / metodi |
 |----------|-----------------|------|
 | [Gestione Sostenibile dei Resi](./gestione-sostenibile-resi) | Case study accademico · Sostenibilità | Regressione, Sostenibilità |
 | [Strategia Marketing per PMI B2B](./strategia-marketing-social) | Case study accademico anonimizzato | Clustering, Marketing Analytics |

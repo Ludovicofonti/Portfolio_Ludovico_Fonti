@@ -42,7 +42,7 @@ install.packages(c(
 ```
 
 ### Dataset
-Il file `data.csv` deve trovarsi nella stessa cartella dello script (o nella working directory di R).
+Il file `data.csv` deve trovarsi nella stessa cartella dello script (o nella working directory di R), ma **non è incluso nel repository**. Per eseguire l'analisi occorre fornire un dataset pubblico, sintetico o comunque autorizzato, compatibile con lo schema descritto sotto.
 
 ---
 
@@ -128,7 +128,7 @@ Output: tabella riepilogativa accuratezza per tutti i modelli.
 
 ---
 
-## Dataset — `data.csv`
+## Schema atteso — `data.csv` (non incluso)
 
 | Colonna | Tipo | Descrizione |
 |---------|------|-------------|

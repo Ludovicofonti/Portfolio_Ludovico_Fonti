@@ -24,7 +24,9 @@ Creare un ecosistema BI completo per l'analisi delle performance sportive, dimos
 
 `Python` · `Web Scraping (BeautifulSoup / Selenium)` · `Qlik Sense` · `Tableau` · `Power BI` · `DAX`
 
-## 📊 Output
+## 📊 Output del lavoro originario (non pubblicati)
+
+Il repository contiene esclusivamente questa scheda descrittiva. Il dataset e le dashboard elencati di seguito documentano il lavoro originario, ma **non sono inclusi nel repository**:
 
 - Dataset strutturato delle statistiche Serie A 2024/25
 - Tre dashboard interattive (Qlik, Tableau, Power BI)

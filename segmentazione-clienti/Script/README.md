@@ -15,7 +15,8 @@ Lo script `analisi_segmentazione_clienti.R` implementa una segmentazione non sup
 
 ### 1. Caricamento Dati
 
-- Dataset `dati_segmentazione_clienti.xlsx` con 2.999 transazioni nel periodo 01/01/2018 – 28/04/2019.
+- Input richiesto: `dati_segmentazione_clienti.xlsx`, con lo schema atteso dallo script. Il file originale, composto da 2.999 transazioni nel periodo 01/01/2018 – 28/04/2019, **non è incluso nel repository**.
+- Per eseguire l'analisi occorre fornire nella stessa cartella uno spreadsheet compatibile e utilizzabile nel rispetto di privacy, licenza e autorizzazioni applicabili.
 
 ### 2. Data Quality e Preprocessing
 
@@ -74,4 +75,4 @@ Lo script `analisi_segmentazione_clienti.R` implementa una segmentazione non sup
 | File | Descrizione |
 |---|---|
 | `analisi_segmentazione_clienti.R` | Script completo dell'analisi |
-| `dati_segmentazione_clienti.xlsx` | Dataset transazionale di input |
+| `dati_segmentazione_clienti.xlsx` | Input richiesto, non incluso nel repository |

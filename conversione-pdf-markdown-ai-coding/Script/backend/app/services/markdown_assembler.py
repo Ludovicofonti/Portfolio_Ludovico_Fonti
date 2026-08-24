@@ -22,7 +22,9 @@ def clean_page_text(text: str) -> str:
     return text.strip()
 
 
-def assemble_markdown(page_texts: list[str]) -> tuple[str, list[PageContent]]:
+def assemble_markdown(
+    page_texts: list[str], extraction_methods: list[str] | None = None
+) -> tuple[str, list[PageContent]]:
     """Assemble cleaned page texts into a single Markdown document.
 
     Returns (full_content, page_contents).
@@ -30,13 +32,19 @@ def assemble_markdown(page_texts: list[str]) -> tuple[str, list[PageContent]]:
     page_contents: list[PageContent] = []
     cleaned_parts: list[str] = []
 
-    for i, raw_text in enumerate(page_texts, start=1):
+    methods = extraction_methods or ["unknown"] * len(page_texts)
+    for i, (raw_text, method) in enumerate(zip(page_texts, methods), start=1):
         cleaned = clean_page_text(raw_text)
         warning = None
         if not cleaned:
             warning = f"No text could be extracted from page {i}."
         page_contents.append(
-            PageContent(page_number=i, text=cleaned, confidence_warning=warning)
+            PageContent(
+                page_number=i,
+                text=cleaned,
+                extraction_method=method,
+                confidence_warning=warning,
+            )
         )
         cleaned_parts.append(cleaned)
 

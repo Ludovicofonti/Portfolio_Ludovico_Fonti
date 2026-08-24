@@ -21,6 +21,7 @@ Lo script `analisi_previsione_vendite_auto.R` è organizzato in due fasi (univar
 - Parsing date in formato `"Jan-1992"` tramite `as.yearmon`.
 - Separazione automatica dei periodi futuri (righe con `Value = NA`).
 - Serie storica: **gennaio 1992 – dicembre 2024** (frequenza mensile).
+- Le variabili macroeconomiche sono già consolidate nel file Excel; lo script non legge file CSV FRED separati.
 
 ### 2. Analisi Esplorativa (EDA)
 
@@ -112,5 +113,3 @@ Il coefficiente di ciascuna dummy (in scala log) misura la direzione e l'entità
 |---|---|
 | `analisi_previsione_vendite_auto.R` | Script completo dell'analisi |
 | `dati_vendite_auto.xlsx` | Dataset principale (vendite + variabili macro) |
-| `FEDFUNDS(tassi interesse).csv` | Serie storica dei tassi d'interesse (fonte: FRED) |
-| `UNRATE(tasso di disoccupazione).csv` | Serie storica del tasso di disoccupazione (fonte: FRED) |
